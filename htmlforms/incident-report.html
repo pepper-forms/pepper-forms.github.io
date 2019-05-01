@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+    <title>Incident Report Form - LSPD</title>
+</head>
+
+<body>
+    <div class="form" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px; color: rgb(0, 0, 0);">
+                        <div align="left"> <br></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; color: rgb(0, 0, 0);">
+                        <div align="center">LOS SANTOS POLICE DEPARTMENT<br><span style="font-weight: bold">INCIDENT REPORT</span> #<span name="case_number">case_number</span></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
+                        <div align="right"><span style="font-size: 85%; line-height: 116%; color: rgb(0, 0, 0);">
+                                <div align="right"><span style="color: #FFFFFF">_</span><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">Filed in:</span> <span name="today">today</span></span></div>
+                            </span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="border-bottom: 1px solid #000; padding: 1px;"></div> <br>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+                    <div align="center">ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Характер инцидента</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="type_of_incident"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_date"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Локация</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="location"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_time"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подробное описание ситуации</span>
+            </span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="incident_description"></textarea></div>
+        </div><br>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+                    <div align="center">ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_name"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_surname"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дивизион</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_division"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Маркировка</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес места жительства</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_adress"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона для связи</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_number"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </span></div><br>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+                    <div align="center">ИНФОРМАЦИЯ ОБ УЧАСТНИКАХ</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Прочие офицеры на ситуации</span></span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="other_officers"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пострадавшие</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="victims"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетели</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="witnesses"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемые</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="suspects"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Улики</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="evidences"></textarea></div>
+        </div><br>
+        <div style="border-bottom: 1px solid #000; padding: 1px;"></div> <br>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+                    <div align="center">ДЛЯ ДЕТЕКТИВА</div>
+                </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_name"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_surname"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Звание</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_rank"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Передано в</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="transfered_to"/></div>
+                            </td>
+                            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="transfer_date"/></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </span></div> <br>
+        <div align="right"><span style="font-size: 85%; line-height: 116%;"></span></div>
+        <div style="border-bottom: 1px solid #000; padding: 1px;"></div>
+    </div>
+
+    <div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+    </div>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+                BBCode
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <textarea id="output" rows="10" style="width: 300px; max-width: 100%;"></textarea>
+            </main>
+            <footer class="modal__footer">
+              <button class="modal__btn modal__btn-primary" onclick="copyCode()">Copy the code</button>
+              <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/incident_report.txt';
+        document.querySelector('[name="today"]').innerText = parseDate();
+        document.querySelector('[name="case_number"]').innerText = Date.now();
+        document.querySelector('[name="type_of_incident"]').focus();   
+    </script>
+</body>
+
+</html>
