@@ -29,15 +29,22 @@ async function parseForm() {
     var dict = form2dict(document);
     var response = await fetch(window.__bbcodeurl);
     var bbcode = await response.text();
-    var output = applyValues(bbcode, dict);
+    var output = applyValues(bbcode, dict); 
     return output;
+}
+
+async function parseBBHeader() {
+    var incident_date = document.getElementsByName("incident_date")[0].value;
+    var h_output = "INCIDENT REPORT #" + Math.floor(Date.now() / 60000) + " from " + incident_date;
+    return h_output;
 }
 
 async function showBB() {
     output = await parseForm();
+    h_output = await parseBBHeader();
     document.getElementById("output").value = output;
+    document.getElementById("header_output").value = h_output;
     MicroModal.show('modal-1');
-    console.log(output)
 }
 
 function copyCode() {

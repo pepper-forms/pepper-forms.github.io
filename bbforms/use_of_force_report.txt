@@ -1,5 +1,5 @@
 [doc][doc_h]|LOS SANTOS POLICE DEPARTMENT
-[b]USE OF FORCE REPORT[/b] #%span:case_number%|[right][color=#FFFFFF]_[/color]
+[b]CUOF REPORT[/b] #%span:case_number%|[right][color=#FFFFFF]_[/color]
 [size=85][b]Filed in:[/b] %span:today%[/right][/size][/doc_h][borderb=#000][/borderb] 
 [doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ][coll][a=Локация]%text:location%[/a]|[a=Дата]%text:incident_date%[/a][/coll]
 [coll][a=Обоснование применение силы]%text:justification%[/a]|[a=Время]%text:incident_time%[/a][/coll][/doc_b]
