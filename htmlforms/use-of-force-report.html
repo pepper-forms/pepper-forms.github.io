@@ -98,8 +98,8 @@
                 </table><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Действия подозреваемого на момент инцидента</span>
             </span><br>
             <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="suspect_activity" placeholder="Максимально подробное и точное описание действий подозреваемого на момент применения силы"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оружие</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_gun"/></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оказана помощь</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_is_treated"/></div>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_gun" placeholder="Было ли у подозреваемого оружие? Если да, то какое" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оказана помощь</span><br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_is_treated" placeholder="put select here" /></div>
         </div><br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
                     <div align="center">ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ</div>
@@ -109,16 +109,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_name"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_name" placeholder="Name" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_surname"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_surname" placeholder="Surname" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_sex"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_sex" placeholder="put select here" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_age"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_age" placeholder="Возраст" /></div>
                             </td>
                         </tr>
                     </tbody>
@@ -127,13 +127,13 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес проживания</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_adress"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_adress" placeholder="Номер дома/ориентиры, улица, район" /></div>
                             </td>
                             <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер телефона</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_number"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_number" placeholder="xxx xxx" /></div>
                             </td>
                             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Расовая принадлежность</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_race"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_race" placeholder="put select here" /></div>
                             </td>
                         </tr>
                     </tbody>
@@ -142,26 +142,25 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дивизион</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_division"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_division" placeholder="put select here" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Маркировка</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign" placeholder="Маркировка юнита" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер значка</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_badge"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_badge" placeholder="xxx or xxxx" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Статус на момент инцидента</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_duty"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_duty" placeholder="put select here" /></div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Действия офицера на момент инцидента</span>
             </span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="officer_activity"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оружие</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_gun"/></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите места воздействия оружия</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="gun_impact"/></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите момент применения оружия</span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="officer_uof_description"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ранен?</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_is_injured"/></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="officer_activity" placeholder="Максимально подробное и точное описание действий офицера на момент инцидента"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оружие</span><br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_gun" placeholder="Какое оружие было применено" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите места воздействия оружия</span><br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="gun_impact" placeholder="Места воздействия оружия, сколько выстрелов (если они были)" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ранен?</span><br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_is_injured" placeholder="Да/Нет (если Да, то как и куда)" /></div>
         </div><br>
         <div style="border-bottom: 1px solid #000; padding: 1px;"></div> <br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
@@ -172,13 +171,13 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="supervisor_name"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется супервайзером</span></div>
                             </td>
                             <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="supervisor_surname"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется супервайзером</span></div>
                             </td>
                             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер жетона</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="supervisor_badge"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется супервайзером</span></div>
                             </td>
                         </tr>
                     </tbody>
@@ -187,16 +186,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Соблюдены ли политики?</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="supervisor_policy_agreement"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется супервайзером</span></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="supervisor_check_date"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется супервайзером</span></div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Комментарий</span>
             </span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="supervisor_commentary"></textarea></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><span name="transfered_to">Заполняется супервайзером</span></div>
         </div> <br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
                     <div align="center">ДЛЯ КОМАНДУЮЩЕГО ДИВИЗИОНОМ</div>
@@ -206,13 +205,13 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="command_name"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется командом</span></div>
                             </td>
                             <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="command_surname"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется командом</span></div>
                             </td>
                             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер жетона</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="command_badge"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется командом</span></div>
                             </td>
                         </tr>
                     </tbody>
@@ -221,16 +220,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Соблюдены ли политики?</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="command_policy_agreement"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется командом</span></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="command_check_date"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется командом</span></div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Комментарий</span>
             </span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="command_commentary"></textarea></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><span name="transfered_to">Заполняется командом дивизиона офицера</span></textarea></div>
         </div> <br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
                     <div align="center">ДЛЯ ДЕТЕКТИВА</div>
@@ -240,16 +239,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_name"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_surname"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Звание</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_rank"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер жетона</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="detective_badge"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                         </tr>
                     </tbody>
@@ -258,10 +257,10 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Передано в</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="transfered_to"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="transfer_date"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><span name="transfered_to">Заполняется детективом</span></div>
                             </td>
                         </tr>
                     </tbody>
@@ -294,11 +293,11 @@
         </div>
     </div>
     <script>
-    MicroModal.init();
-    window.__bbcodeurl = '/bbforms/use_of_force_report.txt';
-    document.querySelector('[name="today"]').innerText = parseDate();
-    document.querySelector('[name="case_number"]').innerText = Math.floor(Date.now() / 60000);
-    document.querySelector('[name="location"]').focus();
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/use_of_force_report.txt';
+        document.querySelector('[name="today"]').innerText = parseDate();
+        document.querySelector('[name="case_number"]').innerText = Math.floor(Date.now() / 60000);
+        document.querySelector('[name="location"]').focus();
     </script>
 </body>
 
