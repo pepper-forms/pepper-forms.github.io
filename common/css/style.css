@@ -27,6 +27,7 @@ body {
     padding: 5px;
     border: 0;
     font-size: 16px;
+    box-sizing: content-box;
 }
 
 .form textarea {
@@ -37,6 +38,7 @@ body {
     border: 0;
     font-size: 16px;
     resize: vertical;
+    box-sizing: content-box;
 }
 
 
