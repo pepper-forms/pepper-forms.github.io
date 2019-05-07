@@ -47,15 +47,25 @@ function generatePostTitle() {
 async function showBB() {
     output = await parseForm();
     h_output = generatePostTitle();
-    document.getElementById("output").value = output;
-    document.getElementById("header_output").value = h_output;
-    MicroModal.show('modal-1');
+    document.getElementById("output__header").value = h_output;
+    document.getElementById("output__body").value = output;
+    $('#output_modal').modal('show')
 }
 
-function copyCode() {
-    document.getElementById("output").select();
+function copyCode(btn) {
+    var output = document.getElementById(btn.getAttribute('data-field'));
+    output.select();
     document.execCommand('copy');
-    MicroModal.close('modal-1');
+    $(btn).tooltip({
+        title: "Copied!",
+        placement: "top",
+        trigger: "manual"
+    })
+    $(btn).tooltip('show');
+    setTimeout(function() {
+        $(btn).tooltip('hide');
+        $(btn).tooltip('dispose');
+    }, 1000)
 }
 
 $(function() {
