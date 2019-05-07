@@ -2,7 +2,11 @@ function form2dict(form) {
     var values = form.querySelectorAll('[name]');
     var data = {};
     for (var i = 0; i < values.length; i++) {
-        data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+        if (values[i].classList.contains('datepicker')) {
+            data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+        } else {
+            data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+        }
     }
     return data;
 }
@@ -33,15 +37,16 @@ async function parseForm() {
     return output;
 }
 
-async function parseBBHeader() {
-    var incident_date = document.getElementsByName("incident_date")[0].value;
-    var h_output = "INCIDENT REPORT #" + Math.floor(Date.now() / 60000) + " from " + incident_date;
+function generatePostTitle() {
+    var incident_date = document.getElementsByName("incident_date")[0].value.toUpperCase();
+    var h_output = "INCIDENT REPORT #" + document.getElementsByName("case_number")[0].innerText;
+    h_output = incident_date ? (h_output + " from " + incident_date) : h_output;
     return h_output;
 }
 
 async function showBB() {
     output = await parseForm();
-    h_output = await parseBBHeader();
+    h_output = generatePostTitle();
     document.getElementById("output").value = output;
     document.getElementById("header_output").value = h_output;
     MicroModal.show('modal-1');
@@ -53,3 +58,8 @@ function copyCode() {
     MicroModal.close('modal-1');
 }
 
+$(function() {
+    $('.datepicker').datepicker({
+        'dateFormat': 'dd/M/yy'
+    });
+});

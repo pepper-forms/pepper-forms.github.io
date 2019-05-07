@@ -4,6 +4,13 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
+.datepicker {
+    text-transform: uppercase;
+}
+.datepicker:invalid {
+    text-transform: none;
+}
+
 .form, .btn-container {
     width: calc(100% - 40px);
     max-width: 960px;

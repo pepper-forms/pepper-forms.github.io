@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="/common/css/style.css">
     <link rel="stylesheet" href="/common/css/micromodal.css">
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
+    
     <title>Incident Report Form - LSPD</title>
 </head>
 
@@ -41,7 +45,7 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="type_of_incident" placeholder="Краткая классификация инцидента"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_date" placeholder="Дата инцидента в формате DD/MMM/YYYY"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="incident_date" placeholder="Дата инцидента"/></div>
                             </td>
                         </tr>
                     </tbody>
