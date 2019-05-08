@@ -37,13 +37,6 @@ async function parseForm() {
     return output;
 }
 
-function generatePostTitle() {
-    var incident_date = document.getElementsByName("incident_date")[0].value.toUpperCase();
-    var h_output = "INCIDENT REPORT #" + document.getElementsByName("case_number")[0].innerText;
-    h_output = incident_date ? (h_output + " from " + incident_date) : h_output;
-    return h_output;
-}
-
 async function showBB() {
     output = await parseForm();
     h_output = generatePostTitle();

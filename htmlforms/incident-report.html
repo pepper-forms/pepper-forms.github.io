@@ -219,6 +219,13 @@
     </div>
 
     <script>
+        function generatePostTitle() {
+            var incident_date = document.getElementsByName("incident_date")[0].value.toUpperCase();
+            var h_output = "INCIDENT REPORT #" + document.getElementsByName("case_number")[0].innerText;
+            h_output = incident_date ? (h_output + " from " + incident_date) : h_output;
+            return h_output;
+        }
+
         MicroModal.init();
         window.__bbcodeurl = '/bbforms/incident_report.txt';
         document.querySelector('[name="today"]').innerText = parseDate();
