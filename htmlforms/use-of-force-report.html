@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="/common/css/style.css">
     <link rel="stylesheet" href="/common/css/micromodal.css">
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
+    
     <title>Categorical Use of Force Report Form - LSPD</title>
 </head>
 
@@ -41,7 +46,7 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="location" placeholder="Ориентиры, улица, район"/></div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_date" placeholder="Дата инцидента в формате DD/MMM/YYYY"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="incident_date" placeholder="Дата инцидента"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -50,10 +55,17 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Обоснование применение силы</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="justification" placeholder="put select here"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="justification" list="justification" placeholder="Выбрать или заполнить" />
+                                    <datalist id="justification">
+                                        <option value="Защита себя или окружающих">
+                                        <option value="Чтобы остановить или сдержать подозреваемого">
+                                        <option value="Предотвратить преступление с возможными жертвами">
+                                    </datalist>
+                                </div>
                             </td>
                             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_time" placeholder="Время инцидента в формате HH:MM"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="incident_time" placeholder="Время инцидента или промежуток"/></div>
                             </td>
                         </tr>
                     </tbody>
@@ -73,7 +85,13 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_surname" placeholder="Surname"/></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_sex" placeholder="put select here"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="suspect_sex" list="suspect_sex" placeholder="Выбрать или заполнить" />
+                                    <datalist id="suspect_sex">
+                                        <option value="Male">
+                                        <option value="Female">
+                                    </datalist>
+                                </div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_age" placeholder="Возраст"/></div>
@@ -91,7 +109,16 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_number" placeholder="xxx xxx"/></div>
                             </td>
                             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Расовая принадлежность</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_race" placeholder="put select here"/></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="suspect_race" list="suspect_race" placeholder="Выбрать или заполнить"/>
+                                    <datalist id="suspect_race">
+                                        <option value="White">
+                                        <option value="African American">
+                                        <option value="Hispanic or Latino">
+                                        <option value="Asian">
+                                        <option value="American Indian">
+                                    </datalist>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -99,7 +126,17 @@
             </span><br>
             <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="suspect_activity" placeholder="Максимально подробное и точное описание действий подозреваемого на момент применения силы"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оружие</span><br>
             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_gun" placeholder="Было ли у подозреваемого оружие? Если да, то какое" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оказана помощь</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="suspect_is_treated" placeholder="put select here" /></div>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                <input type="text" name="suspect_is_treated" list="suspect_is_treated" placeholder="Выбрать или заполнить (если известно кем, указать)" />
+                    <datalist id="suspect_is_treated">
+                        <option value="Мной">
+                        <option value="LSFA">
+                        <option value="ASGH">
+                        <option value="LSPD">
+                        <option value="Оказана, неизвестно кем">
+                        <option value="Не оказана">
+                    </datalist>
+            </div>
         </div><br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
                     <div align="center">ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ</div>
@@ -115,7 +152,13 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_surname" placeholder="Surname" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_sex" placeholder="put select here" /></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="officer_sex" list="officer_sex" placeholder="Выбрать или заполнить" />
+                                    <datalist id="officer_sex">
+                                        <option value="Male">
+                                        <option value="Female">
+                                    </datalist>
+                                </div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_age" placeholder="Возраст" /></div>
@@ -133,7 +176,16 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_number" placeholder="xxx xxx" /></div>
                             </td>
                             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Расовая принадлежность</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_race" placeholder="put select here" /></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="officer_race" list="officer_race" placeholder="Выбрать или заполнить" />
+                                    <datalist id="officer_race">
+                                        <option value="White">
+                                        <option value="African American">
+                                        <option value="Hispanic or Latino">
+                                        <option value="Asian">
+                                        <option value="American Indian">
+                                    </datalist>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -142,7 +194,16 @@
                     <tbody>
                         <tr>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дивизион</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_division" placeholder="put select here" /></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="officer_division" list="officer_division" placeholder="Выбрать или заполнить" />
+                                    <datalist id="officer_division">
+                                        <option value="Central Patrol Division">
+                                        <option value="Central Traffic Division">
+                                        <option value="54th Street Patrol Division">
+                                        <option value="Metropolitan Division">
+                                        <option value="Air Support Division">
+                                    </datalist>
+                                </div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Маркировка</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign" placeholder="Маркировка юнита" /></div>
@@ -151,16 +212,32 @@
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_badge" placeholder="xxx or xxxx" /></div>
                             </td>
                             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Статус на момент инцидента</span><br>
-                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_duty" placeholder="put select here" /></div>
+                                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                                    <input type="text" name="officer_duty" list="officer_duty" placeholder="Выбрать или заполнить" />
+                                    <datalist id="officer_duty">
+                                        <option value="На смене">
+                                        <option value="Вне смены">
+                                        <option value="Отстранен">
+                                        <option value="Специальное назначение">
+                                    </datalist>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Действия офицера на момент инцидента</span>
             </span><br>
             <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="officer_activity" placeholder="Максимально подробное и точное описание действий офицера на момент инцидента"></textarea></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Оружие</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_gun" placeholder="Какое оружие было применено" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите места воздействия оружия</span><br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                <input type="text" name="officer_gun" placeholder="Какое оружие было применено" />
+            </div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите места воздействия оружия</span><br>
             <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="gun_impact" placeholder="Места воздействия оружия, сколько выстрелов (если они были)" /></div><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ранен?</span><br>
-            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="officer_is_injured" placeholder="Да/Нет (если Да, то как и куда)" /></div>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                <input type="text" name="officer_is_injured" list="officer_is_injured" placeholder="Выбрать или заполнить (если да, то описать как и куда)" />
+                    <datalist id="officer_is_injured">
+                        <option value="Да">
+                        <option value="Нет">
+                    </datalist>
+            </div>
         </div><br>
         <div style="border-bottom: 1px solid #000; padding: 1px;"></div> <br>
         <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
