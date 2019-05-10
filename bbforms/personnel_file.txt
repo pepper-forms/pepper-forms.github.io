@@ -1,0 +1,21 @@
+[doc][doc_h]|CENTRAL PATROL DIVISION
+[b]PERSONNEL FILE[/b]|LOS SANTOS POLICE DEPARTMENT[/doc_h]
+[pblock=2,#000][color=#FFFFFF][center]I. GENERAL INFORMATION[/center][/color][/pblock][textarea=#000][color=#000000][coll3][list][img]https://i.imgur.com/OUaPj2o.png[/img][/list]|[left][size=85][b]хлъ[/b][/size]
+%text:officer_name%
+
+[size=85][b]брнпне хлъ[/b][/size]
+%text:officer_second_name%
+
+[size=85][b]тюлхкхъ[/b][/size]
+%text:officer_surname%[/left]|[size=85][b]гбюмхе[/b][/size]
+%text:officer_rank%
+
+[size=85][b]днкфмнярэ[/b][/size]
+%text:officer_position%
+
+[size=85][b]мювюкн пюанрш б дхбхгхнме[/b][/size]
+(( %text:officer_work_start% ))[/coll3][/color][/textarea][pblock=2,#000][color=#FFFFFF][center]II. PATROL LOGS[/center][/color][/pblock][textarea=#000] 
+[color=#000000][borderb=#000][b][size=85][patrol]╧|люпйхпнбйю|дюрю|бпелъ|мюоюпмхй[/patrol][/size][/b][/borderb]
+[patrol]╧|люпйхпнбйю|дюрю|бпелъ|мюоюпмхй[/patrol]
+[patrol]╧|люпйхпнбйю|дюрю|бпелъ|мюоюпмхй[/patrol][/color][/textarea]
+[borderb=#000][/borderb][/doc]
