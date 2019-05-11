@@ -41,6 +41,34 @@ body {
     box-sizing: content-box;
 }
 
+.form2, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form2 input[type="text"], select {
+    height: 18px;
+    width: calc(100% - 50px);
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.form2 textarea {
+    display: block;
+    margin: -5px;
+    width: calc(100% + 6px);
+    height: 85px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}
+
 
 .btn-container {
     text-align: center;

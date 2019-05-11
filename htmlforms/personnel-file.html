@@ -2,96 +2,260 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="/common/css/style.css">
-	<link rel="stylesheet" href="/common/css/micromodal.css">
-	<script src="/common/js/micromodal.min.js"></script>
-	<script src="/common/js/utils.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
 
-	<title>Personnel File Form - LSPD</title>
+    <title>Personnel File Form - LSPD</title>
 </head>
 
 <body>
-	<div class="form" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
-		<table width="100%">
-			<tbody>
-				<tr>
-					<td style="vertical-align: top; width:26%; padding-right:10px; color: rgb(0, 0, 0);">
-						<div align="left"> <br></div>
-					</td>
-					<td style="vertical-align: top; width:26%; color: rgb(0, 0, 0);">
-						<div align="center">CENTRAL PATROL DIVISION<br><span style="font-weight: bold">PERSONNEL FILE</span></div>
-					</td>
-					<td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
-						<div align="right"><span style="font-size: 85%; line-height: 116%; color: rgb(0, 0, 0);">LOS SANTOS POLICE DEPARTMENT</span></div>
-					</td>
-				</tr>
-			</tbody>
-		</table><br>
-		<div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
-			<div align="center">I. GENERAL INFORMATION</div>
-		</span></span></div>
-		<div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
-			<table width="100%">
-				<tbody>
-					<tr>
-						<td style="vertical-align: top; width:26%; padding-right:10px;">
-							<ul><img src="https://i.imgur.com/OUaPj2o.png" class="postimage" alt="Изображение"></ul>
-						</td>
-						<td style="vertical-align: top; width:26%; ">
-							<div align="left"><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ИМЯ</span></span><br>%text:officer_name%<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ВТОРОЕ ИМЯ</span></span><br>%text:officer_second_name%<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ФАМИЛИЯ</span></span><br>%text:officer_surname%</div>
-						</td>
-						<td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ЗВАНИЕ</span></span><br>%text:officer_rank%<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ДОЛЖНОСТЬ</span></span><br>%text:officer_position%<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">НАЧАЛО РАБОТЫ В ДИВИЗИОНЕ</span></span><br>(( %text:officer_work_start% ))</td>
-					</tr>
-				</tbody>
-			</table>
-		</span></div>
-		<div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
-			<div align="center">II. PATROL LOGS</div>
-		</span></span></div>
-		<div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
-			<div style="border-bottom: 1px solid #000; padding: 1px;"><span style="font-weight: bold"><span style="font-size: 85%; line-height: 116%;">
-				<table width="100%">
-					<tbody>
-						<tr>
-							<td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
-							<td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
-							<td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
-							<td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
-							<td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
-						</tr>
-					</tbody>
-				</table>
-			</span></span></div><br>
-			<table width="100%">
-				<tbody>
-					<tr>
-						<td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
-						<td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
-					</tr>
-				</tbody>
-			</table><br>
-			<table width="100%">
-				<tbody>
-					<tr>
-						<td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
-						<td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
-						<td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
-					</tr>
-				</tbody>
-			</table>
-		</span></div><br>
-		<div style="border-bottom: 1px solid #000; padding: 1px;"></div>
-	</div>
-	
+    <div class="form2" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px; color: rgb(0, 0, 0);">
+                        <div align="left"> <br></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; color: rgb(0, 0, 0);">
+                        <div align="center">CENTRAL PATROL DIVISION<br><span style="font-weight: bold">PERSONNEL FILE</span></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
+                        <div align="right"><span style="font-size: 85%; line-height: 116%; color: rgb(0, 0, 0);">LOS SANTOS POLICE DEPARTMENT</span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+            <div align="center">I. GENERAL INFORMATION</div>
+        </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:26%; padding-right:10px;">
+                            <ul><img src="https://i.imgur.com/OUaPj2o.png" class="postimage" alt="Изображение"></ul>
+                            <input type="text" name="image_url" placeholder="https://ссылка на изображение"/>
+                        </td>
+                        <td style="vertical-align: top; width:26%; ">
+                            <div align="left"><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ИМЯ</span></span><br>
+                            	<input type="text" name="officer_name" placeholder="NAME" oninput="this.value = this.value.toUpperCase()"/>
+                            	<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ВТОРОЕ ИМЯ</span></span><br>
+                            	<input type="text" name="officer_second_name" placeholder="SECOND NAME / N/A" oninput="this.value = this.value.toUpperCase()"/>
+                            	<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ФАМИЛИЯ</span></span><br>
+                            	<input type="text" name="officer_surname" placeholder="SURNAME" oninput="this.value = this.value.toUpperCase()"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ЗВАНИЕ</span></span><br>
+                        	<input type="text" name="officer_rank" list="officer_rank" placeholder="Выбрать или заполнить" oninput="this.value = this.value.toUpperCase()"/>
+                                    <datalist id="officer_rank">
+                                        <option value="POLICE OFFICER I">
+                                        <option value="POLICE OFFICER II">
+                                        <option value="POLICE OFFICER III">	
+                                        <option value="SERGEANT I">
+                                        <option value="SERGEANT II">
+                                        <option value="LIEUTENANT I">
+                                        <option value="LIEUTENANT II">
+                                        <option value="CAPTAIN I">		
+                                    </datalist>
+                        	<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">ДОЛЖНОСТЬ</span></span><br>
+                        	<input type="text" name="officer_position" list="officer_position" placeholder="Выбрать или заполнить" oninput="this.value = this.value.toUpperCase()"/>
+                                    <datalist id="officer_position">
+                                        <option value="PROBATIONARY OFFICER">
+                                        <option value="PATROL OFFICER">
+                                        <option value="FIELD TRAINING OFFICER">
+                                        <option value="PATROL FIELD SUPERVISOR">
+                                        <option value="FTP COORDINATOR">
+                                        <option value="WATCH COMMANDER">
+                                        <option value="COMMANDING OFFICER">		
+                                    </datalist>
+                        	<br><br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">НАЧАЛО РАБОТЫ В ДИВИЗИОНЕ</span></span><br>(( 
+                        	<input type="text" required="" class="datepicker" name="officer_work_start" placeholder="Дата перевода/вступления"/>
+                        	 ))</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span></div>
+        <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF">
+            <div align="center">II. PATROL LOGS</div>
+        </span></span></div>
+        <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000">
+            <div style="border-bottom: 1px solid #000; padding: 1px;"><span style="font-weight: bold"><span style="font-size: 85%; line-height: 116%;">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
+                            <td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
+                            <td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
+                            <td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
+                            <td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </span></span></div><br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
+                        <td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:5%; padding-right:10px;">№</td>
+                        <td style="vertical-align: top; width:22%; ">МАРКИРОВКА</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">ДАТА</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">ВРЕМЯ</td>
+                        <td style="vertical-align: top; width:22%; padding-left:10px;">НАПАРНИК</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span></div><br>
+        <div style="border-bottom: 1px solid #000; padding: 1px;"></div>
+    </div>
+    
+	<div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="checkTheImage()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Here is your BBCode!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__header">Topic Name</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <input type="text" class="form-control" id="output__header">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__body">BBCode</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <textarea class="form-control" rows="10" id="output__body"></textarea>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex align-items-center">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/posting.php?mode=post&f=111','_blank')">Create File</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    	String.prototype.capitalize = function () {
+		    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+		}
+
+        function generatePostTitle() {
+            var position = document.getElementsByName("officer_position")[0].value.toUpperCase();
+            var name = document.getElementsByName("officer_name")[0].value.capitalize();
+            var surname = document.getElementsByName("officer_surname")[0].value.capitalize();
+            var h_output = "";
+            if (position && name && surname) {
+            	h_output = position + " — " + name + " " + surname
+            }
+            return h_output;
+        }
+
+        function form2dict(form) {
+		    var values = form.querySelectorAll('[name]');
+		    var data = {};
+		    for (var i = 0; i < values.length; i++) {
+		        if (values[i].classList.contains('datepicker')) {
+		            data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || parseDate() || "N/A";
+		        } else {
+		            data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+		        }
+		    }
+		    return data;
+		}
+
+		function isURL(str) {
+		  var pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?'+ // protocol
+		  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name and extension
+		  '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+		  '(\\:\\d+)?'+ // port
+		  '(\\/[-a-z\\d%@_.~+&:]*)*'+ // path
+		  '(\\?[;&a-z\\d%@_.,~+&:=-]*)?'+ // query string
+		  '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+		  return pattern.test(str);
+		}
+
+		function applyValues(bbtemplate, dict) {
+		    var url = document.getElementsByName("image_url")[0].value;
+		    for (key in dict) {
+		        var regexp = new RegExp('%(text|textarea|span):'+key+'%', 'g')
+		        if (isURL(url)) {
+		        	bbtemplate = bbtemplate.replace("https://i.imgur.com/OUaPj2o.png", url)
+		        }
+		        bbtemplate = bbtemplate.replace(regexp, dict[key]);
+		    }
+		    return bbtemplate;
+		}
+
+		function getMeta(url) {
+		    return new Promise((resolve, reject) => {
+		        let img = new Image();
+		        img.onload = () => resolve(img);
+		        img.onerror = reject;
+		        img.src = url;
+		    });
+		}
+
+		async function checkTheImage() {
+			var url = document.getElementsByName("image_url")[0].value;
+			if (isURL(url)) {
+				let img = await getMeta(url);
+				if ((img.width == "130") && (img.height == "150")) {
+					showBB();
+				} else {
+					alert("Изображение должно быть 130x150");
+					document.getElementsByName("image_url")[0].value = "";
+				}
+		    } else {
+		    	showBB();
+		    }
+		}
+
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/personnel_file.txt';
+        document.querySelector('[name="officer_name"]').focus();   
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
