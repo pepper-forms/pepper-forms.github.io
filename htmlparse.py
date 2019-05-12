@@ -27,7 +27,7 @@ with open(input_file, 'r') as f:
     input_stream = f.read()
 
 
-keys = re.findall(r'(?<=%)[a-z_:]+?(?=%)', input_stream)
+keys = re.findall(r'(?<=%)[a-z0-9_:]+?(?=%)', input_stream)
 for key in keys:
     elem_type, key = key.split(':')
     print('Found key: \u001b[35m%s\u001b[0m (type: %s)' % (key, elem_type))

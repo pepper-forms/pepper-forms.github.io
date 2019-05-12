@@ -180,36 +180,36 @@
 				</div>
 			</div>
 
-			<script>
-				String.prototype.capitalize = function () {
-					return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
-				}
+	<script>
+		String.prototype.capitalize = function () {
+			return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+		}
 
-				function generatePostTitle() {
-					var position = document.getElementsByName("officer_position")[0].value.toUpperCase();
-					var name = document.getElementsByName("officer_name")[0].value.capitalize();
-					var surname = document.getElementsByName("officer_surname")[0].value.capitalize();
-					var h_output = "";
-					if (position && name && surname) {
-						h_output = position + " — " + name + " " + surname
-					}
-					return h_output;
-				}
+		function generatePostTitle() {
+			var position = document.getElementsByName("officer_position")[0].value.toUpperCase();
+			var name = document.getElementsByName("officer_name")[0].value.capitalize();
+			var surname = document.getElementsByName("officer_surname")[0].value.capitalize();
+			var h_output = "";
+			if (position && name && surname) {
+				h_output = position + " — " + name + " " + surname
+			}
+			return h_output;
+		}
 
-				function form2dict(form) {
-					var values = form.querySelectorAll('[name]');
-					var data = {};
-					for (var i = 0; i < values.length; i++) {
-						if (values[i].classList.contains('datepicker')) {
-							data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || parseDate() || "N/A";
-						} else {
-							data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
-						}
-					}
-					return data;
+		function form2dict(form) {
+			var values = form.querySelectorAll('[name]');
+			var data = {};
+			for (var i = 0; i < values.length; i++) {
+				if (values[i].classList.contains('datepicker')) {
+					data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || parseDate() || "N/A";
+				} else {
+					data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
 				}
+			}
+			return data;
+		}
 
-				function isURL(str) {
+		function isURL(str) {
 		  var pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?'+ // protocol
 		  '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name and extension
 		  '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
