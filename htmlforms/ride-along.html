@@ -1,197 +1,325 @@
-<div style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
-    <div align="center"><img src="http://i.imgur.com/BpXDfPE.png" class="postimage" alt="Изображение"></div>
-    <br>
-    <div align="center">LOS SANTOS POLICE DEPARTMENT
-        <br><span style="font-weight: bold">RIDE-ALONG</span>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+    
+    <title>Ride Along Application - LSPD</title>
+</head>
+
+<body>
+    <div class="form" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+        <div align="center"><img src="http://i.imgur.com/BpXDfPE.png" class="postimage" alt="Изображение"></div>
         <br>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">APPLICATION</span></span>
+        <div align="center">LOS SANTOS POLICE DEPARTMENT
+            <br><span style="font-weight: bold">RIDE-ALONG</span>
+            <br>
+            <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">APPLICATION</span></span>
+        </div>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Регистрационная информация</span></span>
+        <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Укажите ваши персональные данные в графах ниже.</div></span></span>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="name" placeholder="Name" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Второе имя</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="second_name" placeholder="Second Name"/></div>
+                    </td>
+                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="surname" placeholder="Surname"/></div>
+                    </td>
+                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="sex" list="sex" placeholder="Sex"/></div>
+                            <datalist id="sex">
+                                <option value="Male">
+                                <option value="Female">    
+                            </datalist>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" id="datepicker_full" name="date" placeholder="Дата рождения"/></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Телефон</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="phone" placeholder="xxx-xxx" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Email</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="email" placeholder="Email" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес проживания</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="adress" placeholder="Номер дома, улица, город, штат" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер водительской лицензии</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="drivers_license" placeholder="Номер лицензии" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Удобное время и дата</span></span>
+        <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Выберите три удобные для вас даты и определитесь со временем. Если ваше заявление одобрят, вам пришлют подходящий вариант даты и времени на электронную почту, или уведомят по телефону.</div></span></span>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold"><div align="center">Вариант 1</div></span></td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold"><div align="center">Вариант 2</div></span></td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold"><div align="center">Вариант 3</div></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="date1" placeholder="Первая дата"/></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="date2" placeholder="Вторая дата"/></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="date3" placeholder="Третья дата"/></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time1" placeholder="Удобное время (HH:MM)" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time2" placeholder="Удобное время (HH:MM)" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time3" placeholder="Удобное время (HH:MM)" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Область интересов</span></span>
+        <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Укажите предпочитаемые параметры. Их учтут при рассмотрении заявления.</div></span></span>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Предпочитаемый дивизион</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <select name="pref_division" style="width: calc(100% - 10px)">
+                                <option value="Central Patrol Division">Central Patrol Division</option>
+                                <option value="54th Street Patrol Division">54th Street Patrol Division</option>
+                                <option value="Air Support Division">Air Support Division</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пожелания по офицеру</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="pref_officer" placeholder="Name Surname или оставить пустым" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Почему вы решили подать заявление на Ride-Along?</span></span>
+        <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Подробно распишите вашу мотивацию. Что сподвигло вас подать заявление в данную программу? Если вы студент, укажите учебное заведение и год обучения. Эта информация может быть использована для создания новостного топика на сайте Департамента.</div></span></span><span style="font-weight: bold; font-size: 90%; line-height: 116%;"></span>
+        <br>
+        <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="why" placeholder="Минимум 3 строчки" ></textarea></div>
+        <br>
+        <br>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">(( OOC информация ))</span></span>
+        <br>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Имя</span></span>
+                        <br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_name" placeholder="Имя" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Возраст</span></span>
+                        <br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_age" placeholder="Возраст" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Часовой пояс</span></span>
+                        <br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="time_zone" placeholder="Часовой пояс (МСК/+3/-3 и т.д)" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на VK</span></span>
+                        <br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="vk_url" placeholder="Ссылка на ваш профиль в ВК" /></div>
+                    </td>
+                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на форумный аккаунт (G-RP)</span></span>
+                        <br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="forum_url" placeholder="Ссылка на ваш профиль на форуме Гамбита" /></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Соглашение</span></span>
+        <br>
+        <br><span style="font-size: 85%; line-height: 116%;"><div style="text-align: justify;">Обязательный Дресс-код для совместной поездки выглядит следующим образом:<ul><li>Мужчины: рубашка с воротником и брюки. (не синие джинсы или шорты)</li><li>Женщины: платье, юбка и блузка или брюки и блузка. (платья и юбки должны быть подходящей длины при сидении)</li></ul>Вы не должны иметь огнестрельное оружие или любое другое оружие (нож, спрей и т.д.).<br>Вы должны прибыть на станцию, по крайней мере за 10 минут до начала совместной поездки.<br>Вы должны предъявить действительную водительскую лицензию или удостоверение личности гражданина США.<br>Заявители с любой предшествующей криминальной историей будут дисквалифицированы.<br><br>Я даю разрешение Полицейскому департаменту Лос-Сантоса на обработку персональных данных. Я принимаю стандарты одежды, установленные Полицейским депаратментом, и я буду носить соответствующий дресс-код во время совместной поездки. Я также подпишу форму соглашения отказа и освобождения от претензий и возмещения (освобождение от ответственности) на дату моей совместной поездки.</div></span>
+        <br>
+        <div style="text-align: justify;"><span style="font-weight: bold"><input type="checkbox" class="checkbox" name="agreement" /> Я принимаю условия данного соглашения</span>
+            <br><span style="font-size: 75%; line-height: 116%;"><span style="font-style: italic">(Отметить галочкой)</span></span>
+        </div>
+        <div align="right"><span style="color: #FFFFFF">.</span></div>
+        </div>
+    
+    <div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')" disabled>Back</button>
     </div>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Регистрационная информация</span></span>
-    <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Укажите ваши персональные данные в графах ниже.</div></span></span>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="name"/></div>
-                </td>
-                <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Второе имя</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="second_name"/></div>
-                </td>
-                <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="surname"/></div>
-                </td>
-                <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="sex"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Телефон</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="phone"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Email</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="email"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес проживания</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="adress"/></div>
-                </td>
-                <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер водительской лицензии</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="drivers_license"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Удобное время и дата</span></span>
-    <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Выберите три удобные для вас даты и определитесь со временем. Если ваше заявление одобрят, вам пришлют подходящий вариант даты и времени на электронную почту, или уведомят по телефону.</div></span></span>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold"><div align="center">Вариант 1</div></span></td>
-                <td style="vertical-align: top; width:26%; "><span style="font-weight: bold"><div align="center">Вариант 2</div></span></td>
-                <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold"><div align="center">Вариант 3</div></span></td>
-            </tr>
-        </tbody>
-    </table>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date1"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date2"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="date3"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time1"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time2"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время:</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="time3"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Область интересов</span></span>
-    <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Укажите предпочитаемые параметры. Их учтут при рассмотрении заявления.</div></span></span>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Предпочитаемый дивизион</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="pref_division"/></div>
-                </td>
-                <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пожелания по офицеру</span>
-                    <br>
-                    <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="pref_officer"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Почему вы решили подать заявление на Ride-Along?</span></span>
-    <br><span style="color: #838383"><span style="font-size: 75%; line-height: 116%;"><div style="text-align: justify;">Подробно распишите вашу мотивацию. Что сподвигло вас подать заявление в данную программу? Если вы студент, укажите учебное заведение и год обучения. Эта информация может быть использована для создания новостного топика на сайте Департамента.</div></span></span><span style="font-weight: bold; font-size: 90%; line-height: 116%;"></span>
-    <br>
-    <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="why"></textarea></div>
-    <br>
-    <br>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">(( OOC информация ))</span></span>
-    <br>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Имя</span></span>
-                    <br>
-                    <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_name"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; "><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Возраст</span></span>
-                    <br>
-                    <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_age"/></div>
-                </td>
-                <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Часовой пояс</span></span>
-                    <br>
-                    <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="time_zone"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на VK</span></span>
-                    <br>
-                    <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="vk_url"/></div>
-                </td>
-                <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на форумный аккаунт (G-RP)</span></span>
-                    <br>
-                    <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="forum_url"/></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <hr>
-    <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Соглашение</span></span>
-    <br>
-    <br><span style="font-size: 85%; line-height: 116%;"><div style="text-align: justify;">Обязательный Дресс-код для совместной поездки выглядит следующим образом:<ul><li>Мужчины: рубашка с воротником и брюки. (не синие джинсы или шорты)</li><li>Женщины: платье, юбка и блузка или брюки и блузка. (платья и юбки должны быть подходящей длины при сидении)</li></ul>Вы не должны иметь огнестрельное оружие или любое другое оружие (нож, спрей и т.д.).<br>Вы должны прибыть на станцию, по крайней мере за 10 минут до начала совместной поездки.<br>Вы должны предъявить действительную водительскую лицензию или удостоверение личности гражданина США.<br>Заявители с любой предшествующей криминальной историей будут дисквалифицированы.<br><br>Я даю разрешение Полицейскому департаменту Лос-Сантоса на обработку персональных данных. Я принимаю стандарты одежды, установленные Полицейским депаратментом, и я буду носить соответствующий дресс-код во время совместной поездки. Я также подпишу форму соглашения отказа и освобождения от претензий и возмещения (освобождение от ответственности) на дату моей совместной поездки.</div></span>
-    <br>
-    <div style="text-align: justify;"><span style="font-weight: bold">[ <input type="text" name="agreement"/> ] Я принимаю условия данного заявления</span>
-        <br><span style="font-size: 75%; line-height: 116%;"><span style="font-style: italic">(Отметить Х)</span></span>
+
+    <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Here is your BBCode!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__header">Topic Name</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <input type="text" class="form-control" id="output__header">
+                            </div>
+                            <div class="col-3 col-lg-2">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__body">BBCode</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <textarea class="form-control" rows="10" id="output__body"></textarea>
+                            </div>
+                            <div class="col-3 col-lg-2 d-flex align-items-center">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/posting.php?mode=post&f=276','_blank')">Create Application</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div align="right"><span style="color: #FFFFFF">.</span></div>
-</div>
+
+
+
+
+    <script>
+        String.prototype.capitalize = function () {
+            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+        }
+
+        function generatePostTitle() {
+            var name = document.getElementsByName("name")[0].value.capitalize();
+            var surname = document.getElementsByName("surname")[0].value.capitalize();
+            var h_output = "RIDE-ALONG — ";
+            if (name && surname) {
+                h_output = h_output + name + " " + surname
+            }
+            return h_output;
+        }
+
+        function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("agreement")[0].checked ? ('X') : ''
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+
+        $("#datepicker_full").datepicker({ 
+            'dateFormat': 'dd/M/yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1920:+0'
+        });
+
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/ride_along.txt';
+        document.querySelector('[name="name"]').focus();   
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
