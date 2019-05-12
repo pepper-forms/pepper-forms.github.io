@@ -5,7 +5,7 @@
             <tr>
                <td style="vertical-align: top; width:26%; padding-right:10px;"></td>
                <td style="vertical-align: top; width:26%; ">
-                  <div align="center">%text:division%<br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">DAILY OBSERVATION REPORT</span></span></div>
+                  <div align="center"><input type="text" name="division"/><br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">DAILY OBSERVATION REPORT</span></span></div>
                </td>
                <td style="vertical-align: top; width:26%; padding-left:10px;">
                   <div align="right"><span style="font-size: 85%; line-height: 116%;"> <br>LOS SANTOS POLICE DEPARTMENT</span></div>
@@ -29,8 +29,8 @@
             <table width="100%">
                <tbody>
                   <tr>
-                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ПОЛНОЕ ИМЯ СТАЖЁРА:</span> %text:trainee_name% </span><br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">МАРКИРОВКА:</span> </span> %text:callsign%</td>
-                     <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ДАТА ПАТРУЛИРОВАНИЯ:</span> %text:patrol_date% </span> <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ:</span> %text:patrol_time%<br></span></td>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ПОЛНОЕ ИМЯ СТАЖЁРА:</span> <input type="text" name="trainee_name"/> </span><br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">МАРКИРОВКА:</span> </span> <input type="text" name="callsign"/></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ДАТА ПАТРУЛИРОВАНИЯ:</span> <input type="text" name="patrol_date"/> </span> <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ:</span> <input type="text" name="patrol_time"/><br></span></td>
                   </tr>
                </tbody>
             </table>
@@ -89,15 +89,15 @@
          <span style="color: #000000">
             <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ЧТО ВАМ БОЛЬШЕ ВСЕГО <span style="text-decoration: underline">ПОНРАВИЛОСЬ</span> В СТАЖЕРЕ ЗА ДЕНЬ?</span></span> <br>
             <blockquote class="uncited">
-               <div>%textarea:like%</div>
+               <div><textarea name="like"></textarea></div>
             </blockquote>
             <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ЧТО ВАМ БОЛЬШЕ ВСЕГО <span style="text-decoration: underline">НЕ ПОНРАВИЛОСЬ</span> В СТАЖЕРЕ ЗА ДЕНЬ?</span></span> <br>
             <blockquote class="uncited">
-               <div>%textarea:dislike%</div>
+               <div><textarea name="dislike"></textarea></div>
             </blockquote>
             <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ?</span></span> <br>
             <blockquote class="uncited">
-               <div>%textarea:phase_recommendations%</div>
+               <div><textarea name="phase_recommendations"></textarea></div>
             </blockquote>
          </span>
       </span>
@@ -132,7 +132,7 @@
          </span>
       </span>
    </div>
-   <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000"><span style="color: #000000"><br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ: </span></span><br>%textarea:skill%<br></span></span></div>
+   <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000"><span style="color: #000000"><br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ: </span></span><br><textarea name="skill"></textarea><br></span></span></div>
    <br>
    <div style="border-bottom: 1px solid #000; padding: 1px;"></div>
 </div>
