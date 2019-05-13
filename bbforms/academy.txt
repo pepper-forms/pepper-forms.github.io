@@ -8,7 +8,7 @@
 [a]%text:surname%[/a]|[size=90][b]Номер соц. страхования[/b][/size]
 [a]%text:social%[/a][/coll4]
 [coll][size=90][b]Дата рождения[/b][/size]
-[a]%text:date:birth%[/a]
+[a]%text:date_birth%[/a]
 [size=90][b]Телефон[/b][/size]
 [a]%text:telephone%[/a]
 [size=90][b]Электронный адрес[/b][/size]
