@@ -281,11 +281,14 @@
              var name = document.getElementsByName("name")[0].value.capitalize();
              var surname = document.getElementsByName("surname")[0].value.capitalize();
              var date  = new Date();
-             var month = date.getMonth();
+             var month = date.getMonth()+1;
              var year = date.getFullYear().toString().substr(-2);
              var h_output = "";
-             if (month && year && name && surname) {
-                 h_output = h_output + "[A" + month + "-" + year + "] " + name + " " + surname
+             if (month && year) {
+                 h_output = h_output + "[A" + month + "-" + year + "] "
+                 if (name && surname) {
+                     h_output = h_output + name + " " + surname
+                 }
              }
              return h_output;
          }
