@@ -203,11 +203,11 @@
                 <tr>
                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на VK</span></span>
                         <br>
-                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="vk_url" placeholder="Ссылка на ваш профиль в ВК" /></div>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="vk_url" placeholder="vk.com/..." /></div>
                     </td>
                     <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на форумный аккаунт (G-RP)</span></span>
                         <br>
-                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="forum_url" placeholder="Ссылка на ваш профиль на форуме Гамбита" /></div>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="forum_url" placeholder="forum.g-rp.su/members/..." /></div>
                     </td>
                 </tr>
             </tbody>
@@ -283,7 +283,7 @@
         function generatePostTitle() {
             var name = document.getElementsByName("name")[0].value.capitalize();
             var surname = document.getElementsByName("surname")[0].value.capitalize();
-            var h_output = "RIDE-ALONG — ";
+            var h_output = "[RIDE-ALONG] ";
             if (name && surname) {
                 h_output = h_output + name + " " + surname
             }
@@ -297,7 +297,7 @@
                 if (values[i].classList.contains('datepicker')) {
                     data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
                 } else if (values[i].classList.contains('checkbox')) {
-                    var checked = document.getElementsByName("agreement")[0].checked ? ('X') : ''
+                    var checked = document.getElementsByName("agreement")[0].checked ? ('X') : ' '
                     data[values[i].getAttribute('name')] = checked;
                 } else {
                     data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';

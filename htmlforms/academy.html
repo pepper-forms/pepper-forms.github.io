@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="stylesheet" href="/common/css/style.css">
+      <link rel="stylesheet" href="/common/css/micromodal.css">
+      <script src="/common/js/micromodal.min.js"></script>
+      <script src="/common/js/utils.js"></script>
+      <title>Daily Observation Report - LSPD</title>
+   </head>
+   <body>
+
+   <div class="form4" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+      <div style="padding: 10px; background-color: #fff;">
+         <span>
+            <div align="center"><img src="https://i.imgur.com/N3WoplA.png" class="postimage" alt="Изображение"></div>
+            <br>
+            <hr>
+            <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Регистрационная информация</span></span><br><br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:23%;">
+                        <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Имя</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="name" placeholder="Имя" /></div>
+                     </td>
+                     <td style="vertical-align: top; width:23%;">
+                        <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Второе имя</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="second_name" placeholder="Второе имя, если есть" /></div>
+                     </td>
+                     <td style="vertical-align: top; width:23%;">
+                        <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Фамилия</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="surname" placeholder="Фамилия" /></div>
+                     </td>
+                     <td style="vertical-align: top; width:23%;">
+                        <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Номер соц. страхования</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="social" placeholder="XXX-XX-XXXX" /></div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;">
+                        <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Дата рождения</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" required="" class="datepicker" style="" id="datepicker_full" name="date_birth" placeholder="Дата рождения"/></div>
+                        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Телефон</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="telephone" placeholder="XXX-XXX" /></div>
+                        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Электронный адрес</span></span><br>
+                        <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" autocomplete="off" name="email" placeholder="email" /></div>
+                     </td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <span style="color: #838383">
+                           <span style="font-size: 75%; line-height: 116%;">
+                              <div style="text-align: justify;">Федеральный закон (PL 93-579, раздел 7) требует, чтобы вы были проинформированы, когда вас попросили указать номер вашего социального обеспечения, чтобы этот номер был предоставлен, и что он будет использоваться для целей идентификации в экзаменах города, занятости и расчетах , Наши полномочия запрашивать и запрашивать эту информацию основаны на определенных положениях Кодекса внутренних доходов, Закона о социальном обеспечении с внесенными в него поправках и процедурах обработки заявок на получение заработной платы и обработки заявок на участие в Кандидатах (CAPS), которые были одобрены и реализованы 1 января 1975 года.</div>
+                           </span>
+                        </span>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <span style="color: #838383">
+               <span style="font-size: 75%; line-height: 116%;">
+                  <div style="text-align: justify;">Пожалуйста, предоставьте нам адрес электронной почты, который вы хотели бы, чтобы город Лос-Сантос использовал для связи с вами относительно вашего статуса в процессе отбора, ваших результатов теста или другой информации, связанной с вашей кандидатурой. Сообщения могут содержать конфиденциальную личную, справочную и / или медицинскую информацию. Город не может гарантировать, что электронное письмо достигнет предполагаемого адреса электронной почты, указанного ниже, или гарантирует, что другие, кроме вас, не будут иметь доступ к содержимому электронной почты. Согласившись разрешить Сити переписываться с вами по электронной почте, вы отказываетесь от каких-либо претензий на нарушение конфиденциальности для неправильного направления или неправильного использования материала, содержащегося в сообщении электронной почты, посторонним лицам или если электронное письмо не поступает предполагаемый адрес.</div>
+               </span>
+            </span>
+            <br><br>
+            <hr>
+            <br>
+            <span style="color: #838383">
+               <span style="font-size: 75%; line-height: 116%;">
+                  <div style="text-align: justify;">Пол и этническая идентификационная требуется по решению суда, если подается заявление в LSPD</div>
+               </span>
+            </span>
+            <br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;">
+                        <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span><br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                           <select name="sex">
+                              <option value="Мужской">Мужской</option>
+                              <option value="Женский">Женский</option>
+                           </select>
+                        </div>
+                     </td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Этническая группа / Раса</span><br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                           <select name="race">
+                              <option value="Светлокожий">Светлокожий</option>
+                              <option value="Темнокожий/Афроамериканец">Темнокожий/Афроамериканец</option>
+                              <option value="Мексиканец/Латиноамериканец">Мексиканец/Латиноамериканец</option>
+                              <option value="Индеец">Индеец</option>
+                              <option value="Азиат">Азиат</option>
+                              <option value="Филиппинец">Филиппинец</option>
+                           </select>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Гражданство</span>
+         </span>
+         <br>
+         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+            <select name="citizenship">
+               <option value="Гражданин США.">Гражданин США.</option>
+               <option value="Иностранный резидент, имеющий право работать и находящийся в процессе получения гражданства США.">Иностранный резидент, имеющий право работать и находящийся в процессе получения гражданства США.</option>
+               <option value="Ни один из перечисленных вариантов.">Ни один из перечисленных вариантов.</option>
+            </select>
+         </div>
+         <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Образование</span><br>
+         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+            <select name="education" style="font-size: 12px">
+               <option value="Я окончил(-а) государственную американскую среднюю школу или частную школу, аккредитованную агентством, признанным Министерством образования США.">Я окончил(-а) государственную американскую среднюю школу или частную школу, аккредитованную агентством, признанным Министерством образования США.</option>
+               <option value="Я получил(-а) диплом об общем образовании (GED) или эквивалент в американском институте.">Я получил(-а) диплом об общем образовании (GED) или эквивалент в американском институте.</option>
+               <option value="Я не окончил(-а) среднюю школу США или эквивалент, но я получил(-а) 2-летную (ассоциированный) или 4-летнею (бакалавр) степень в колледже или университете, который аккредитован агентством, признанным Министерством образования США.">Я не окончил(-а) среднюю школу США или эквивалент, но я получил(-а) 2-летную (ассоциированный) или 4-летнею (бакалавр) степень в колледже или университете, который аккредитован агентством, признанным Министерством образования США.</option>
+               <option value="Ни один из перечисленных вариантов.">Ни один из перечисленных вариантов.</option>
+            </select>
+         </div>
+         <br><br>
+         <hr>
+         <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">(( OOC информация ))</span></span><br><br>
+         <table width="100%">
+            <tbody>
+               <tr>
+                  <td style="vertical-align: top; width:23%;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Имя</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_name" autocomplete="off" placeholder="Имя" /></div>
+                  </td>
+                  <td style="vertical-align: top; width:23%;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Возраст</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ooc_age" autocomplete="off" placeholder="Возраст"/></div>
+                  </td>
+                  <td style="vertical-align: top; width:23%;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Место жительства</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="place" autocomplete="off" placeholder="Страна, город"/></div>
+                  </td>
+                  <td style="vertical-align: top; width:23%;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Часовой пояс</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="timezone" autocomplete="off" placeholder="МСК/+3/-3 и т.д."/></div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <table width="100%">
+            <tbody>
+               <tr>
+                  <td style="vertical-align: top; width:50%; padding-right:10px;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на VK</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="vk"  autocomplete="off" placeholder="vk.com/..."/></div>
+                  </td>
+                  <td style="vertical-align: top; width:50%; padding-left:10px;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ссылка на форумный аккаунт (G-RP)</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="grp_url" autocomplete="off" placeholder="forum.g-rp.su/members/..." /></div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <table width="100%">
+            <tbody>
+               <tr>
+                  <td style="vertical-align: top; width:50%; padding-right:10px;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ID вашего аккаунта (G-RP)</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="grp_id" autocomplete="off" placeholder="Номер аккаунта тут g-rp.su/profile" /></div>
+                  </td>
+                  <td style="vertical-align: top; width:50%; padding-left:10px;">
+                     <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Скрин UCP (+квента)</span></span><br>
+                     <div style="background-color:white; border:1px solid #ccc; color: #555555; margin-right: 10px"><input type="text" name="ucp_scrn_url" autocomplete="off" placeholder="ссылка на скриншот"/></div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Ваши интересные роли за историю игры (дата, сервер, ссылка на топики или СС)</span></span><br>
+         <div style="border: 1px solid #ccc; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <span style="color: #555555">
+               <div style="text-align: justify;"><textarea name="roles" autocomplete="off" placeholder="Расписать подробно"></textarea></div>
+            </span>
+         </div>
+         <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Что и кого планируете играть во фракции</span></span><br>
+         <div style="border: 1px solid #ccc; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <span style="color: #555555">
+               <div style="text-align: justify;"><textarea name="plans" autocomplete="off" placeholder="Расписать подробно"></textarea></div>
+            </span>
+         </div>
+         <br>
+         <table width="100%">
+            <tbody>
+               <tr>
+                  <td style="vertical-align: top; width:50%; padding-right:10px;">
+                     <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имеется ли у Вас TeamSpeak3 и рабочий микрофон?</span><br>
+                     <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="mic"/></div>
+                  </td>
+                  <td style="vertical-align: top; width:50%; padding-left:10px;">
+                     <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Можете ли Вы свободно общаться в TeamSpeak3?</span><br>
+                     <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="talk"/></div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <br>
+         <span style="font-size: 90%; line-height: 116%;">
+            <span style="font-weight: bold">Соглашение</span><br>
+            <div style="text-align: justify;">Я ознакомлен(-а) с разделом About Us и JoinLSPD. Я соглашаюсь, что если покину фракцию в течении 14 дней, то буду занесен в черный список (ЧС) фракции без права выхода. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES. После прохождения академии я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции.</div>
+            <br><input type="checkbox" class="checkbox" name="checkbox" /> Я принимаю условия данного заявления
+         </span>
+      </div>
+   </div>
+   <div class="btn-container">
+         <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+      </div>
+      <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Here is your BBCode!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__header">Topic Name</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <input type="text" class="form-control" id="output__header">
+                            </div>
+                            <div class="col-3 col-lg-2">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__body">BBCode</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <textarea class="form-control" rows="10" id="output__body"></textarea>
+                            </div>
+                            <div class="col-3 col-lg-2 d-flex align-items-center">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/viewforum.php?f=49','_blank')">Create Application</button>
+            </div>
+         </div>
+      </div>
+      <script>
+         String.prototype.capitalize = function () {
+            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+         }
+
+         function generatePostTitle() {
+             var name = document.getElementsByName("name")[0].value.capitalize();
+             var surname = document.getElementsByName("surname")[0].value.capitalize();
+             var date  = new Date();
+             var month = date.getMonth();
+             var year = date.getFullYear().toString().substr(-2);
+             var h_output = "";
+             if (month && year && name && surname) {
+                 h_output = h_output + "[A" + month + "-" + year + "] " + name + " " + surname
+             }
+             return h_output;
+         }
+
+         function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+
+        $("#datepicker_full").datepicker({ 
+            'dateFormat': 'dd/M/yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1920:+0',
+            constrainInput: false,
+        });
+         
+         MicroModal.init();
+         window.__bbcodeurl = '/bbforms/academy.txt';
+         document.querySelector('[name="name"]').focus();   
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
