@@ -86,7 +86,15 @@ body {
     margin-bottom: 20px;
 }
 
-.form3 input[type="text"], select {
+.form3 input[type="text"] {
+    height: 18px;
+    width: calc(100% - 50px);
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.form3 select {
     height: 18px;
     width: calc(100% - 50px);
     padding: 5px;
