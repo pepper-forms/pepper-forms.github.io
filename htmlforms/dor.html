@@ -54,15 +54,17 @@
                      <tr>
                         <td style="vertical-align: top; width:50%; padding-right:10px;">
                            <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛНОЕ ИМЯ СТАЖЁРА</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="trainee_name"/></div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                              <input type="text" name="trainee_name" placeholder="ПОЛНОЕ ИМЯ СТАЖЕРА" oninput="this.value = this.value.toUpperCase()"/>
+                              </div>
                            <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">МАРКИРОВКА</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign"/></div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign" placeholder="МАРКИРОВКА" oninput="this.value = this.value.toUpperCase()"/></div>
                         </td>
                         <td style="vertical-align: top; width:50%; padding-left:10px;">
                            <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДАТА ПАТРУЛИРОВАНИЯ</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_date"/></div>
-                           <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_time"/></div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="patrol_date" placeholder="ДАТА ПАТРУЛЯ"/></div>
+                           <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НАЧАЛО И КОНЕЦ ПАТРУЛЯ</span><br>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_time" placeholder="HH:MM - HH:MM" oninput="this.value = this.value.toUpperCase()"/></div>
                         </td>
                      </tr>
                   </tbody>
@@ -1030,13 +1032,13 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="like"></textarea></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="like" placeholder="Что вам ПОНРАВИЛОСЬ в стажере за этот патруль"></textarea></div>
             <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО НЕ ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span>
          </span>
          <br>
-         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="dislike"></textarea></div>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="dislike" placeholder="Что вам НЕ ПОНРАВИЛОСЬ в стажере за этот патруль"></textarea></div>
          <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ</span><br>
-         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="phase_recommendations"></textarea></div>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="phase_recommendations" placeholder="Рекомендуете ли вы переход стажера в следующую фазу и почему?"></textarea></div>
          <br>
       </div>
       <br><br>
@@ -1050,7 +1052,10 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗАДОКУМЕНТИРОВАННЫЕ СИТУАЦИИ</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="ds1"></textarea></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px;">
+               <textarea style="height: 75px" name="ds1" placeholder="1. Описание первой ситуации...
+2. Описание второй ситуации...
+и т.д. (не забудьте пронумеровать)"></textarea></div>
             <br>
          </span>
       </div>
@@ -1065,7 +1070,7 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="skill"></textarea></div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="skill" placeholder="Уровень игры, худа и соотвествие роли (роль прочекать в разделе &quot;Ваши персонажи&quot;) "></textarea></div>
             <br>
          </span>
       </div>
@@ -1121,14 +1126,14 @@
       }
 
       function form2dict(form) {
-            var values = form.querySelectorAll('[name]');
+            var values = form.querySelectorAll('[name]','[id]');
             var data = {};
             for (var i = 0; i < values.length; i++) {
                 if (values[i].classList.contains('datepicker')) {
                     data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
-                } else if (values[i].classList.contains('radio')) {
-                    var checked = values[i].value.checked ? ('X') : ''
-                    data[values[i].getAttribute('name')] = checked
+                } else if (values[i].type == 'radio') {
+                    var checked = values[i].checked ? ('X') : ' '
+                    data[values[i].getAttribute('id')] = checked
                 } else {
                     data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
                 }
