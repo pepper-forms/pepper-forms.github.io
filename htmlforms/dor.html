@@ -16,18 +16,22 @@
 </head>
 
 <body>
-
-   <div style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
-      <span style="color: #000000">
-         <table width="100%">
-            <tbody>
-               <tr>
-                  <td style="vertical-align: top; width:26%; padding-right:10px;"></td>
-                  <td style="vertical-align: top; width:26%; ">
-                     <div align="center">%text:division%<br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">DAILY OBSERVATION REPORT</span></span></div>
-                  </td>
-                  <td style="vertical-align: top; width:26%; padding-left:10px;">
-                     <div align="right"><span style="font-size: 85%; line-height: 116%;"> <br>LOS SANTOS POLICE DEPARTMENT</span></div>
+   <div class="form5" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+   <span style="color: #000000">
+      <table width="100%">
+         <tbody>
+            <tr>
+               <td style="vertical-align: top; width:26%; padding-right:10px;"></td>
+               <td style="vertical-align: top; width:26%; ">
+                  <div align="center">
+                     <select name="division" style="width: 100%; text-align-last: center; text-align: center; -ms-text-align-last: center; -moz-text-align-last: center;">
+                        <option value="CENTRAL PATROL DIVISION">CENTRAL PATROL DIVISION</option>
+                        <option value="54TH STREET PATROL DIVISION">54TH STREET PATROL DIVISION</option>
+                     </select>
+                     <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">DAILY OBSERVATION REPORT</span></span></div>
+               </td>
+               <td style="vertical-align: top; width:26%; padding-left:10px;">
+                  <div align="right"><span style="font-size: 85%; line-height: 116%;"> <br>LOS SANTOS POLICE DEPARTMENT</span></div>
                   </td>
                </tr>
             </tbody>
@@ -50,15 +54,15 @@
                      <tr>
                         <td style="vertical-align: top; width:50%; padding-right:10px;">
                            <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛНОЕ ИМЯ СТАЖЁРА</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">%text:trainee_name%</div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="trainee_name"/></div>
                            <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">МАРКИРОВКА</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">%text:callsign%</div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign"/></div>
                         </td>
                         <td style="vertical-align: top; width:50%; padding-left:10px;">
                            <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДАТА ПАТРУЛИРОВАНИЯ</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">%text:patrol_date%</div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_date"/></div>
                            <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ</span><br>
-                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">%text:patrol_time%</div>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_time"/></div>
                         </td>
                      </tr>
                   </tbody>
@@ -141,22 +145,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor11%]</div>
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor11"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor12%]</div>
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor12"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor13%]</div>
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor13"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor14%]</div>
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor14"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor15%]</div>
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor15"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS1%]</div>
+                                    <div align="center">
+                                       <select name="dorDS1" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -174,22 +192,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor21%]</div>
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor21"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor22%]</div>
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor22"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor23%]</div>
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor23"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor24%]</div>
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor24"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor25%]</div>
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor25"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS2]</div>
+                                    <div align="center">
+                                       <select name="dorDS2" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -207,22 +239,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor31%]</div>
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor31"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor32%]</div>
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor32"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor33%]</div>
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor33"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor34%]</div>
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor34"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor35%]</div>
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor35"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS3%]</div>
+                                    <div align="center">
+                                       <select name="dorDS3" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -240,22 +286,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor41%]</div>
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor41"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor42%]</div>
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor42"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor43%]</div>
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor43"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor44%]</div>
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor44"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor45%]</div>
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor45"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS4%]</div>
+                                    <div align="center">
+                                       <select name="dorDS4" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -316,22 +376,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor51%]</div>
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor51"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor52%]</div>
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor52"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor53%]</div>
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor53"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor54%]</div>
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor54"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor55%]</div>
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor55"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS5%]</div>
+                                    <div align="center">
+                                       <select name="dorDS5" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -349,22 +423,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor61%]</div>
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor61"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor62%]</div>
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor62"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor63%]</div>
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor63"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor64%]</div>
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor64"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor65%]</div>
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor65"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS6%]</div>
+                                    <div align="center">
+                                       <select name="dorDS6" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -425,22 +513,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor71%]</div>
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor71"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor72%]</div>
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor72"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor73%]</div>
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor73"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor74%]</div>
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor74"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor75%]</div>
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor75"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS7%]</div>
+                                    <div align="center">
+                                       <select name="dorDS7" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -458,22 +560,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor81%]</div>
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor81"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor82%]</div>
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor82"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor83%]</div>
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor83"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor84%]</div>
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor84"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor85%]</div>
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor85"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS8%]</div>
+                                    <div align="center">
+                                       <select name="dorDS8" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -491,22 +607,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor91%]</div>
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor91"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor92%]</div>
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor92"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor93%]</div>
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor93"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor94%]</div>
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor94"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor95%]</div>
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor95"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS9%]</div>
+                                    <div align="center">
+                                       <select name="dorDS9" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -524,22 +654,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor101%]</div>
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor101"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor102%]</div>
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor102"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor103%]</div>
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor103"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor104%]</div>
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor104"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor105%]</div>
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor105"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS10%]</div>
+                                    <div align="center">
+                                       <select name="dorDS10" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -557,22 +701,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor111%]</div>
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor111"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor112%]</div>
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor112"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor113%]</div>
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor113"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor114%]</div>
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor114"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor115%]</div>
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor115"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS11%]</div>
+                                    <div align="center">
+                                       <select name="dorDS11" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -589,23 +747,37 @@
                         <table width="100%">
                            <tbody>
                               <tr>
-                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor121%]</div>
+                                <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor121"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor122%]</div>
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor122"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor123%]</div>
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor123"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor124%]</div>
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor124"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor125%]</div>
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor125"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS12%]</div>
+                                    <div align="center">
+                                       <select name="dorDS12" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -623,22 +795,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor131%]</div>
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor131"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor132%]</div>
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor132"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor133%]</div>
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor133"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor134%]</div>
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor134"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor135%]</div>
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor135"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS13%]</div>
+                                    <div align="center">
+                                       <select name="dorDS13" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -656,22 +842,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor141%]</div>
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor141"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor142%]</div>
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor142"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor143%]</div>
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor143"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor144%]</div>
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor144"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor145%]</div>
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor145"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS14%]</div>
+                                    <div align="center">
+                                       <select name="dorDS14" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -689,22 +889,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor151%]</div>
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor151"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor152%]</div>
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor152"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor153%]</div>
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor153"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor154%]</div>
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor154"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor155%]</div>
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor155"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS15%]</div>
+                                    <div align="center">
+                                       <select name="dorDS15" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -765,22 +979,36 @@
                            <tbody>
                               <tr>
                                  <td style="vertical-align: top; width:16%; padding-right:10px;">
-                                    <div align="center">[%text:dor161%]</div>
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor161"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; ">
-                                    <div align="center">[%text:dor162%]</div>
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor162"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor163%]</div>
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor163"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor164%]</div>
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor164"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dor165%]</div>
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor165"/></div>
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
-                                    <div align="center">[%text:dorDS16%]</div>
+                                    <div align="center">
+                                       <select name="dorDS16" style="height: 25px">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
                                  </td>
                               </tr>
                            </tbody>
@@ -802,13 +1030,13 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">%textarea:like%</div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="like"></textarea></div>
             <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО НЕ ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span>
          </span>
          <br>
-         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">%textarea:dislike%</div>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="dislike"></textarea></div>
          <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ</span><br>
-         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">%textarea:phase_recommendations%</div>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="phase_recommendations"></textarea></div>
          <br>
       </div>
       <br><br>
@@ -822,7 +1050,7 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗАДОКУМЕНТИРОВАННЫЕ СИТУАЦИИ</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">%textarea:ds1%</div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="ds1"></textarea></div>
             <br>
          </span>
       </div>
@@ -837,7 +1065,7 @@
       <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
          <span style="color: #000000">
             <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">%textarea:skill%</div>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="skill"></textarea></div>
             <br>
          </span>
       </div>
@@ -862,18 +1090,7 @@
           </div>
           <div class="modal-body">
             <div class="container-fluid">
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <label for="output__header">Topic Name</label>
-                    </div>
-                    <div class="col-9 col-lg-10">
-                        <input type="text" class="form-control" id="output__header">
-                    </div>
-                    <div class="col-3 col-lg-2">
-                        <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
-                    </div>
-                </div>
-                <div class="row mb-3">
+               <div class="row mb-3">
                     <div class="col-12">
                         <label for="output__body">Report Code</label>
                     </div>
@@ -883,30 +1100,45 @@
                     <div class="col-3 col-lg-2 d-flex align-items-center">
                         <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
                     </div>
-                </div>
+               </div>
+
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/posting.php?mode=post&f=53','_blank')">Create Report</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/viewforum.php?f=86','_blank')">To FTP (54)</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/viewforum.php?f=116','_blank')">To FTP (CENT)</button>
           </div>
         </div>
       </div>
     
 
     <script>
-        function generatePostTitle() {
-            var incident_date = document.getElementsByName("incident_date")[0].value.toUpperCase();
-            var h_output = "INCIDENT REPORT #" + document.getElementsByName("case_number")[0].innerText;
-            h_output = incident_date ? (h_output + " from " + incident_date) : h_output;
-            return h_output;
+      async function showBB() {
+          output = await parseForm();
+          document.getElementById("output__body").value = output;
+          $('#output_modal').modal('show')
+      }
+
+      function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('radio')) {
+                    var checked = values[i].value.checked ? ('X') : ''
+                    data[values[i].getAttribute('name')] = checked
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/incident_report.txt';
-        document.querySelector('[name="today"]').innerText = parseDate();
-        document.querySelector('[name="case_number"]').innerText = Math.floor(Date.now() / 60000);
-        document.querySelector('[name="type_of_incident"]').focus();   
+        window.__bbcodeurl = '/bbforms/dor.txt';
+        document.querySelector('[name="trainee_name"]').focus();   
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
