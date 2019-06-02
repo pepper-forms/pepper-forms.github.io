@@ -2,10 +2,10 @@
 [size=120][b]DAILY OBSERVATION REPORT[/b][/size][/center]|[right][size=85] 
 LOS SANTOS POLICE DEPARTMENT[/size][/right][/coll3][/color]
 [doc_b=I. GENERAL INFORMATION][color=#000000]
-[coll][size=90][b]ПОЛНОЕ ИМЯ СТАЖЁРА:[/b] %text:trainee_name% [/size]
-[size=90][b]МАРКИРОВКА:[/b] [/size] %text:callsign%|[size=90][b]ДАТА ПАТРУЛИРОВАНИЯ:[/b] %text:patrol_date% [/size] 
-[size=90][b]НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ:[/b] %text:patrol_time%
-[/size][/coll][/color][/doc_b]
+[coll][a=ПОЛНОЕ ИМЯ СТАЖЁРА]%text:trainee_name%[/a]
+[a=МАРКИРОВКА]%text:callsign%[/a]|[a=ДАТА ПАТРУЛИРОВАНИЯ]%text:patrol_date%[/a]
+[a=НАЧАЛО И ОКОНЧАНИЕ ПАТРУЛИРОВАНИЯ]%text:patrol_time%[/a]
+[/coll][/color][/doc_b]
 [doc_b=II. RATING BY CATEGORY][color=#000000]
 [size=100][b][u]ЛИЧНЫЕ КАЧЕСТВА[/u][/b][/size]
 [size=90][b]1. ОТНОШЕНИЕ К КРИТИКЕ/КУРАТОРУ/ПРОГРАММЕ:[/b][/size] %text:rbc1%
@@ -29,28 +29,22 @@ LOS SANTOS POLICE DEPARTMENT[/size][/right][/coll3][/color]
 [size=90][b]15. ИСПОЛЬЗОВАНИЕ РАЦИИ:[/b][/size] %text:rbc15%
 
 [size=100][b][u]ЗНАНИЯ[/u][/b][/size]
-[size=90][b]16. ЗНАНИЕ ПОЛИТИК И ПРОЦЕДУР ДЕПАРТАМЕНТА:[/b][/size] %text:rbc15%
+[size=90][b]16. ЗНАНИЕ ПОЛИТИК И ПРОЦЕДУР ДЕПАРТАМЕНТА:[/b][/size] %text:rbc16%
 [/color][/doc_b]
 
-[doc_b=III. NARRATIVE EVALUATION][color=#000000]
-[size=90][b]ЧТО ВАМ БОЛЬШЕ ВСЕГО [u]ПОНРАВИЛОСЬ[/u] В СТАЖЕРЕ ЗА ДЕНЬ?[/b][/size] 
-[quote]%textarea:like%[/quote]
+[doc_b=III. NARRATIVE EVALUATION][color=#000000] 
+[ab=ЧТО ВАМ БОЛЬШЕ ВСЕГО ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?]%textarea:like%[/ab]
 
-[size=90][b]ЧТО ВАМ БОЛЬШЕ ВСЕГО [u]НЕ ПОНРАВИЛОСЬ[/u] В СТАЖЕРЕ ЗА ДЕНЬ?[/b][/size] 
-[quote]%textarea:dislike%[/quote]
+[ab=ЧТО ВАМ БОЛЬШЕ ВСЕГО НЕ ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?]%textarea:dislike%[/ab]
 
-[size=90][b]ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ?[/b][/size] 
-[quote]%textarea:phase_recommendations%[/quote]
+[ab=ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ]%textarea:phase_recommendations%[/ab]
 [/color][/doc_b]
 
 [doc_b=IV. DOCUMENTED SITUATIONS (DS)][color=#000000]
-[size=90][b]СИТУАЦИЯ №1:[/b][/size] [quote]%textarea:ds1%[/quote]
-
-[size=90][b]СИТУАЦИЯ №2:[/b][/size] [quote]%textarea:ds2%[/quote]
+[ab=ЗАДОКУМЕНТИРОВАННЫЕ СИТУАЦИИ]%textarea:ds1%[/ab]
 [/color][/doc_b]
 
 [doc_b=(( OOC. УРОВЕНЬ ИГРЫ ))][color=#000000]
-[size=90][b]КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ: [/b][/size]
-%textarea:skill%
+[ab=КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ]%textarea:skill%[/ab]
 [/color][/doc_b]
 [borderb=#000][/borderb][/doc]
