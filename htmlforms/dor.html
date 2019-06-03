@@ -1128,8 +1128,8 @@
                let index = values[i].getAttribute('name');
                console.log(ds_values[index])
                if (values[i].checked && ds_values[index].value == " ") {
-                  alert("Вы не указали DS в " + index + " категории. \nЕсли желаете исправить - закройте следующее окно, затем сгенерируйте код снова.");
-                  break;
+                  alert("Вы не указали DS в " + index + " категории.\nОценка N/I требует задокументированной ситуации.");
+                  return;
                }
           }
        }
