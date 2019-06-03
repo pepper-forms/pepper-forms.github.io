@@ -860,7 +860,7 @@
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
                                     <div align="center">
-                                       <select name="dorDS14" ">
+                                       <select name="dorDS14">
                                           <option value=" ">-</option>
                                           <option value="#1">№1</option>
                                           <option value="#2">№2</option>
@@ -907,7 +907,7 @@
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
                                     <div align="center">
-                                       <select name="dorDS15" ">
+                                       <select name="dorDS15">
                                           <option value=" ">-</option>
                                           <option value="#1">№1</option>
                                           <option value="#2">№2</option>
@@ -997,7 +997,7 @@
                                  </td>
                                  <td style="vertical-align: top; width:16%; padding-left:10px;">
                                     <div align="center">
-                                       <select name="dorDS16" ">
+                                       <select name="dorDS16">
                                           <option value=" ">-</option>
                                           <option value="#1">№1</option>
                                           <option value="#2">№2</option>
@@ -1079,7 +1079,7 @@
    </div>
 
    <div class="btn-container">
-        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+        <button class="modal__btn modal__btn-primary" onclick="checkNI()">Generate</button>
         <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
     </div>
 
@@ -1119,6 +1119,23 @@
     
 
     <script>
+      function checkNI() {
+         var values = document.querySelectorAll(".radio");
+         var ds_values = document.querySelectorAll("select");
+
+         for (var i = 0; i < values.length; i++) {
+            if (values[i].id.split('').pop() == '2') {
+               let index = values[i].getAttribute('name');
+               console.log(ds_values[index])
+               if (values[i].checked && ds_values[index].value == " ") {
+                  alert("Вы не указали DS в " + index + " категории. \nЕсли желаете исправить - закройте следующее окно, затем сгенерируйте код снова.");
+                  break;
+               }
+          }
+       }
+      showBB()
+    }
+
       async function showBB() {
           output = await parseForm();
           document.getElementById("output__body").value = output;
