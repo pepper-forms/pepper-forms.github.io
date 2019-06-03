@@ -189,7 +189,7 @@ body {
     margin-bottom: 20px;
 }
 
-.form5 input[type="text"], select {
+.form5 input[type="text"] {
     height: 18px;
     width: calc(100% - 10px);
     margin: 0;
@@ -200,21 +200,12 @@ body {
 }
 
 .form5 select {
-    height: 18px;
-    width: calc(100% - 10px);
-    margin: 0;
-    padding: 5px;
-    border: 0;
-    font-size: 16px;
-    box-sizing: content-box;
+    
 }
 
-.form5 input[type=checkbox] {
-  transform: scale(2);
+.form5 input[type=radio] {
+  transform: scale(1.2);
   vertical-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 15px;
 }
 
 .form5 textarea {
