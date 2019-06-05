@@ -23,8 +23,8 @@ if not os.path.exists(input_file):
     sys.exit(1)
 
 
-with open(input_file, 'r') as f:
-    input_stream = f.read()
+with open(input_file, 'rb') as f:
+    input_stream = f.read().decode("utf-8")
 
 
 keys = re.findall(r'(?<=%)[a-z0-9_:]+?(?=%)', input_stream)
@@ -38,7 +38,8 @@ for key in keys:
     print('done!')
 
 print('\u001b[35mSaving result into %s...\u001b[0m' % sys.argv[2])
-with open(sys.argv[2], 'w') as f:
-    f.write(input_stream)
+
+with open(sys.argv[2], 'wb') as f:
+    f.write(input_stream.encode('utf8'))
 
 print('\u001b[32m\u001b[1mSuccess!\u001b[0m')
