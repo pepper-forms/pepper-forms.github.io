@@ -246,9 +246,9 @@ https://www.upload.ee/image/997443.png" ></textarea>
                 var ssArray = ss.match(/[^\r\n]+/g);
 
                 for (var i = 0; i < ssArray.length; i++) {
-                    checkURLs(ssArray[i]);
+                    ssArray[i] = checkURLs(ssArray[i]);
                 }
-                document.getElementsByName("ss")[0].value = ssArray;
+                document.getElementsByName("ss")[0].value = ssArray.join('\n');
             }
 
             showBB();
