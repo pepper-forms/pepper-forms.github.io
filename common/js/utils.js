@@ -66,3 +66,37 @@ $(function() {
         'dateFormat': 'dd/M/yy'
     });
 });
+
+function uploadImage(input, allowedSize={w: 130, h: 150}) {
+    return new Promise(function (resolve, reject) {
+        $(input).click()
+        $(input).one('change', function() {
+            const file = $(input)[0].files[0]
+            if (file) {
+                const img = new Image()
+                img.src = window.URL.createObjectURL(file)
+                img.onload = function() {
+                    const width = img.naturalWidth,
+                          height = img.naturalHeight;
+                    window.URL.revokeObjectURL( img.src );
+                    if( width === allowedSize.w && height === allowedSize.h ) {
+                        const form = new FormData()
+                        form.append('image', file)
+                        fetch('https://api.imgbb.com/1/upload?key=66a092dd69070ff59ef5dafc4e34f815', { method: 'post', body: form })
+                            .then(response => response.json())
+                            .then(data => {
+                              resolve(data.data.display_url)
+                            })
+                            .catch(reject)
+                    }
+                    else {
+                        alert(`Изображение должно быть ${allowedSize.w}x${allowedSize.h}`);
+                        reject()
+                    }
+                };
+            } else {
+                reject()
+            }
+        })
+    })
+}

@@ -10,7 +10,10 @@ def get_html_element(elem_type, name):
         return '<span name="%s">%s</span>' % (name, name)
     if elem_type == 'textarea':
         return '<textarea name="%s"></textarea>' % name
+    if elem_type =='checkbox':
+        return '<input type="checkbox" name="%s">' %name
     return '%' + elem_type + ':' + name + '%'
+
 
 
 if len(sys.argv) < 3:

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="stylesheet" href="/common/css/style.css">
+      <link rel="stylesheet" href="/common/css/micromodal.css">
+      <script src="/common/js/micromodal.min.js"></script>
+      <script src="/common/js/utils.js"></script>
+      <title>Academy Application - LSPD</title>
+   </head>
+   <body>
+
+    <div class="form8" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+    <div align="center">
+        <img src="https://i.ibb.co/K71V4sB/N3WoplA.png" class="postimage" alt="Изображение">
+        <br>LOS SANTOS POLICE DEPARTMENT
+        <br><span style="font-weight: bold">PRELIMINARY BACKGROUND APPLICATION</span>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <input id="profilePhotoInput" type='file' class="hidden-input"/>
+    <div style="padding: 15px; background-color: #DCDCDC;">
+            <img src="https://i.ibb.co/L0JdHm8/130150.png" alt="130x150" title="Нажмите, чтобы загрузить" id="profilePhoto" style="float: left;margin: 10px 10px 10px 10px"/>
+            <span style="font-size: 85%; line-height: 116%; color: #838383; position: absolute;">Нажми сюда лох</span>
+        <br><div align="center"><span style="font-size: 130%; line-height: 116%;"><span style="font-weight: bold"> <input type='hidden' name="profilePhoto"/>
+        <input type="text" name="fullname" placeholder="FULL NAME" style="width: calc(30%); text-align: center;" autocomplete="off" oninput="this.value = this.value.toUpperCase()" /> </span></span>
+        <br><span style="font-size: 85%; line-height: 116%;">(ПОЛНОЕ ИМЯ)</span>
+    </div>
+    </span>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">1. ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</span></span>
+</span>
+</span>
+<br>
+<br>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.1</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <select name="sex">
+                        <option value="MALE">Мужской</option>
+                        <option value="FEMALE">Женский</option>
+                    </select>
+                </div>
+            </td>
+            <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="number" name="age" placeholder="AGE" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
+                </div>
+            </td>
+            <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" required="" class="datepicker" style="" id="datepicker_full" name="bdate" placeholder="DATE OF BIRTH"/>
+                </div>
+            </td>
+            <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.4</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер моб.телефона:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="tnumber" />
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">1.5</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Гражданство, подданство, резидентство:</span>
+<br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+    <input type="text" name="citizenship" />
+</div>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">1.6</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Этническая группа/раса:</span>
+<br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+    <input type="text" name="race" />
+</div>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">1.7</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Образование:</span>
+<br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+    <input type="text" name="education" />
+</div>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">1.8</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Место рождения:</span>
+<br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+    <input type="text" name="badress" />
+</div>
+<br><span style="text-decoration: underline"><span style="font-weight: bold">1.9</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес проживания:</span>
+<br>
+<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+    <input type="text" name="ladress" />
+</div>
+<br>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="text-decoration: underline"><span style="font-weight: bold">1.10</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес электронной почты:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="email" />
+                </div>
+            </td>
+            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="text-decoration: underline"><span style="font-weight: bold">1.10</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер соц.страхования:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="ssnumber" />
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Вам необходимо предоставить адрес электронной почты для связи с муниципальными органами города Лос-Сантоса. На указанный адрес электронной почты Вам будут приходить электронные письма, содержащие информацию о результатах прохождения отбора вашей кандидатуры в полицейскую академию города Лос-Сантос. Сообщения могут так же могут содержать конфиденциальную, личную или справочную информацию. Муниципальные органы города Лос-Сантос гарантируют ваше право на тайную переписки, что означает недопустимость третьих лиц к содержимому электронного письма. Муниципальные органы города Лос-Сантос не могут гарантировать, что электронное письмо будет отправлено на предполагаемый адрес электронной почты, указанный вами.</div></span></span>
+            </td>
+            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Давая своё соглашения на использование указанной вами электронной почты, вы принимаете на себя обязательство об отказе предъявления каких либо претензий, связанных с нарушением конфиденциальности переписки, неправомерности использования материалов, содержащихся в электронном письме, а также отказываетесь от предъявления претензий в случае, если электронное письмо не поступило на указанный вами адрес электронной почты.Федеральный закон (PL 93-579, раздел 7) гласит, что вы должны быть проинформированы о цели использования номера вашего социального страхования в данной анкете. На основании этого, мы информируем Вас, что номер вашего социального страхования будет использоваться для предоставлении информации в органы занятости населения, налоговые органы, а также для перечисления денежных средств в внебюджетный денежный фонд вашего страхового агентства.</div></span></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">2. УГОЛОВНЫЕ ПРАВОНАРУШЕНИЯ</span></span>
+</span>
+</span>
+<br>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">2.1</span></span>
+<input type="text" name="cb1" />Вы или члены Вашей семьи были когда-либо арестованы/задержаны?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">2.2</span></span>
+<input type="text" name="cb2" />Вы или члены Вашей семьи когда-либо судились за нарушения ПДД?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">2.3</span></span>
+<input type="text" name="cb3" />Вы или члены Вашей семьи имели когда-либо закрытые уголовные дела?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">2.4</span></span>
+<input type="text" name="cb4" />Вы или члены Вашей семь когда-либо были свидетелем в суде?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">2.5</span></span>
+<input type="text" name="cb5" />Брали ли у Вас когда-нибудь отпечатки ваших пальцев?
+<br>
+<br><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Уголовные правонарушения включают в себя правонарушения, состав которых классифицируется в соответствии с нормами уголовного права, а также влекут уголовную ответственность в соответствии с действующим законодательством.</div></span></span>
+<br>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">3. ЛИЦЕНЗИИ И РАЗРЕШЕНИЯ</span></span>
+</span>
+</span>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold">3.1</span></span>
+<input type="text" name="cb6" />У вас есть водительские права?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.2</span></span>
+<input type="text" name="cb7" />Были ли ваши водительские права когда-либо изъяты?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.3</span></span>
+<input type="text" name="cb8" />Имеются ли у Вас неоплаченные штрафы?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.4</span></span>
+<input type="text" name="cb9" />Получали ли вы штрафы за последние пять лет?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.5</span></span>
+<input type="text" name="cb10" />Были ли вы участником дорожно-транспортного происшествия?
+<br>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.6</span></span>
+<input type="text" name="cb11" />Вы имеете лицензию на огнестрельное оружие?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.7</span></span>
+<input type="text" name="cb12" />Была ли ваша оружейная лицензия когда-либо изъята?
+<br>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">4. ДЕКЛАРАЦИЯ АБИТУРИЕНТОВ</span></span>
+</span>
+</span>
+<br>
+<br>
+<ul>
+    <li>Я подтверждаю и утверждаю то, что все в этом заявление является истинной и в этом заявление не присутствует ни капли лжи. Я так же подтверждаю и утверждаю, что заявление было заполнено мной самостоятельно без чужой помощи и без психического или физического давления со стороны других людей. Я понимаю, что ложная информация в данном заявление может стать причиной отклонения заявки и заведения уголовного дела. Я даю согласие на обработку своих персональных данных.</li>
+</ul>
+<br>
+<br><span style="font-weight: bold"><input type="text" name="accept1"/> Я принимаю условия данного заявления</span>
+<br>
+<br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">5. OUT OF CHARACTER INFORMATION</span></span>
+</span>
+</span>
+<br>
+<br>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.1</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="oocname" />
+                </div>
+            </td>
+            <td style="vertical-align: top; width:26%; "><span style="font-weight: bold"><span style="text-decoration: underline">5.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="oocage" />
+                </div>
+            </td>
+            <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опыт игры:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="oocexp" />
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table width="100%">
+    <tbody>
+        <tr>
+            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.4</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Место жительства/часовой пояс:</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="oocplace" />
+                </div>
+            </td>
+            <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.5</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ссылка на вашу страницу vk.com</span>
+                <br>
+                <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                    <input type="text" name="vk" />
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">5.6</span></span>
+<input type="text" name="cb13" />Вы сможете проводить на лекциях около 3-х часов?
+<br><span style="text-decoration: underline"><span style="font-weight: bold">5.7</span></span>
+<input type="text" name="cb14" />Вы в состоянии эффективно функционировать в Teamspeak 3?
+<br><span style="text-decoration: underline"><span style="font-weight: bold">5.8</span></span>
+<input type="text" name="cb15" />У вас есть рабочий микрофон?
+<br>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">5.9</span></span>Перечислить все предыдущие имена персонажей (в том числе изменения имен):
+<br>
+<textarea name="prevnames"></textarea>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">5.10</span></span>Ссылка на снимок статистики всех ваших персонажей (Обрезайте так, чтобы было видно ник):
+<br>
+<textarea name="stats"></textarea>
+<br><span style="font-weight: bold"><span style="text-decoration: underline">5.11</span></span>Ваши интересные роли за историю игры (ссылки на топики или СС):
+<br>
+<textarea name="ss"></textarea>
+<br>
+<br><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Я ознакомлен(-а) с разделом About Us и JoinLSPD. Я соглашаюсь, что если покину фракцию в течении 14 дней, то буду занесен в черный список (ЧС) фракции без права выхода. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES. После прохождения академии я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции.</div><br><span style="font-weight: bold"><input type="text" name="accept2"/> Я принимаю условия данного заявления</span>
+<br>
+<br>
+<div style="padding: 10px; background-color: #F5F5F5;">
+    <div align="center"><span style="font-weight: bold"><span style="font-size: 105%; line-height: 116%;">" TO PROTECT AND TO SERVE "</span></span>
+        <br>
+        <img src="https://i.ibb.co/vQBFPxP/dPpHP8M.png" class="postimage" alt="Изображение">
+    </div>
+</div>
+</span>
+</span>
+</div>
+
+    <div class="btn-container">
+         <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+      </div>
+      <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Here is your BBCode!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__header">Topic Name</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <input type="text" class="form-control" id="output__header">
+                            </div>
+                            <div class="col-3 col-lg-2">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__body">BBCode</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <textarea class="form-control" rows="10" id="output__body"></textarea>
+                            </div>
+                            <div class="col-3 col-lg-2 d-flex align-items-center">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/posting.php?mode=post&f=49','_blank')">Create Application</button>
+            </div>
+         </div>
+      </div>
+      <script>
+         String.prototype.capitalize = function () {
+            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+         }
+
+         function generatePostTitle() {
+             var name = document.getElementsByName("name")[0].value.capitalize();
+             var surname = document.getElementsByName("surname")[0].value.capitalize();
+             var date  = new Date();
+             var month = date.getMonth()+1;
+             var year = date.getFullYear().toString().substr(-2);
+             var h_output = "";
+             if (month && year) {
+                 h_output = h_output + "[A" + month + "-" + year + "] "
+                 if (name && surname) {
+                     h_output = h_output + name + " " + surname
+                 }
+             }
+             return h_output;
+         }
+
+         function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+
+        $("#datepicker_full").datepicker({ 
+            'dateFormat': 'dd/M/yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1920:+0',
+            constrainInput: false,
+        });
+         
+         MicroModal.init();
+         window.__bbcodeurl = '/bbforms/academy_new.txt';
+         // document.querySelector('[name="name"]').focus();   
+
+
+        $('#profilePhoto').on('click', function() {
+            uploadImage('#profilePhotoInput').then(url => {
+                if (url) {
+                    $('#profilePhoto').attr('src', url)
+                    $('[name="profilePhoto"]').val(url)
+
+                }
+            }).catch()  
+        })
+        
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
