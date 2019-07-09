@@ -24,11 +24,10 @@
     <br>
     <hr>
     <br>
-    <input id="profilePhotoInput" type='file' class="hidden-input"/>
+    <input id="profilePhotoInput" type='file' class="hidden-input" />
     <div style="padding: 15px; background-color: #DCDCDC;">
-            <img src="https://i.ibb.co/L0JdHm8/130150.png" alt="130x150" title="Нажмите, чтобы загрузить" id="profilePhoto" style="float: left;margin: 10px 10px 10px 10px"/>
-            <span style="font-size: 85%; line-height: 116%; color: #838383; position: absolute;">Нажми сюда лох</span>
-        <br><div align="center"><span style="font-size: 130%; line-height: 116%;"><span style="font-weight: bold"> <input type='hidden' name="profilePhoto"/>
+            <img src="https://i.ibb.co/fqBX0Z4/130150-click.png" alt="130x150" title="Нажмите, чтобы загрузить" id="profilePhoto" style="float: left; margin: 10px 10px 10px 10px; padding-left: 50px;"/>
+        <br><div align="center"><span style="font-size: 130%; line-height: 116%;"><span style="font-weight: bold"> <input type='hidden' name="profilePhoto" value="https://i.ibb.co/L0JdHm8/130150.png" />
         <input type="text" name="fullname" placeholder="FULL NAME" style="width: calc(30%); text-align: center;" autocomplete="off" oninput="this.value = this.value.toUpperCase()" /> </span></span>
         <br><span style="font-size: 85%; line-height: 116%;">(ПОЛНОЕ ИМЯ)</span>
     </div>
@@ -52,15 +51,16 @@
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                     <select name="sex">
-                        <option value="MALE">Мужской</option>
-                        <option value="FEMALE">Женский</option>
+                        <option value="N/A" selected disabled hidden>Выберите пол</option>
+                        <option value="Male">Мужской</option>
+                        <option value="Female">Женский</option>
                     </select>
                 </div>
             </td>
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="number" name="age" placeholder="AGE" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
+                    <input type="number" name="age" placeholder="AGE" autocomplete="off"/>
                 </div>
             </td>
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения:</span>
@@ -72,7 +72,7 @@
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.4</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер моб.телефона:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="tnumber" />
+                    <input type="number" name="tnumber" placeholder="XXX-XXX" autocomplete="off" />
                 </div>
             </td>
         </tr>
@@ -81,27 +81,47 @@
 <br><span style="font-weight: bold"><span style="text-decoration: underline">1.5</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Гражданство, подданство, резидентство:</span>
 <br>
 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-    <input type="text" name="citizenship" />
+    <select name="citizenship">
+       <option value="N/A" selected disabled hidden>Выберите один из вариантов</option>
+       <option value="Гражданин США">Гражданин США</option>
+       <option value="Иностранный резидент, имеющий право работать и находящийся в процессе получения гражданства США">Иностранный резидент, имеющий право работать и находящийся в процессе получения гражданства США</option>
+       <option value="Ни один из перечисленных вариантов">Ни один из перечисленных вариантов</option>
+    </select>
 </div>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">1.6</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Этническая группа/раса:</span>
 <br>
 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-    <input type="text" name="race" />
+    <select name="race">
+      <option value="N/A" selected disabled hidden>Выберите один из вариантов</option>
+      <option value="Светлокожий">Светлокожий</option>
+      <option value="Темнокожий/Афроамериканец">Темнокожий/Афроамериканец</option>
+      <option value="Латиноамериканец">Латиноамериканец</option>
+      <option value="Индеец">Индеец</option>
+      <option value="Азиат">Азиат</option>
+      <option value="Островитянин">Островитянин</option>
+   </select>
 </div>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">1.7</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Образование:</span>
 <br>
-<div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-    <input type="text" name="education" />
-</div>
+    <label for="education1"><input type="radio" name="education" id="education1" style="margin-right: 10px;"/>Я окончил(-а) государственную американскую среднюю школу или частную школу, аккредитованную агентством, признанным Министерством образования США</label>
+    <label for="education2"><input type="radio" name="education" id="education2" style="margin-right: 10px;"/>Я получил(-а) диплом об общем образовании (GED) или эквивалент в американском институте</label>
+    <label for="education3"><input type="radio" name="education" id="education3" style="margin-right: 10px;"/>Я не окончил(-а) среднюю школу США или эквивалент, но я получил(-а) 2-летную (ассоциированный) или 4-летнею (бакалавр) степень в колледже или университете, который аккредитован агентством, признанным Министерством образования США</label>
+    <label for="education4"><input type="radio" name="education" id="education4" style="margin-right: 10px; margin-bottom: 10px"/>Ни один из перечисленных вариантов</label>
+
+       <!-- <option value="Я окончил(-а) государственную американскую среднюю школу или частную школу, аккредитованную агентством, признанным Министерством образования США">Я окончил(-а) государственную американскую среднюю школу или частную школу, аккредитованную агентством, признанным Министерством образования США</option>
+       <option value="Я получил(-а) диплом об общем образовании (GED) или эквивалент в американском институте">Я получил(-а) диплом об общем образовании (GED) или эквивалент в американском институте</option>
+       <option value="Я не окончил(-а) среднюю школу США или эквивалент, но я получил(-а) 2-летную (ассоциированный) или 4-летнею (бакалавр) степень в колледже или университете, который аккредитован агентством, признанным Министерством образования США">Я не окончил(-а) среднюю школу США или эквивалент, но я получил(-а) 2-летную (ассоциированный) или 4-летнею (бакалавр) степень в колледже или университете, который аккредитован агентством, признанным Министерством образования США</option>
+       <option value="Ни один из перечисленных вариантов">Ни один из перечисленных вариантов</option> -->
+
 <br><span style="font-weight: bold"><span style="text-decoration: underline">1.8</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Место рождения:</span>
 <br>
 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-    <input type="text" name="badress" />
+    <input type="text" name="badress" autocomplete="off" placeholder="Город, Штат, Страна" />
 </div>
 <br><span style="text-decoration: underline"><span style="font-weight: bold">1.9</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес проживания:</span>
 <br>
 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-    <input type="text" name="ladress" />
+    <input type="text" name="ladress" autocomplete="off" placeholder="Квартира, Дом, Улица, Город" />
 </div>
 <br>
 <table width="100%">
@@ -110,13 +130,13 @@
             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="text-decoration: underline"><span style="font-weight: bold">1.10</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес электронной почты:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="email" />
+                    <input type="text" name="email" autocomplete="off" placeholder="email" />
                 </div>
             </td>
             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="text-decoration: underline"><span style="font-weight: bold">1.10</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер соц.страхования:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="ssnumber" />
+                    <input type="number" name="ssnumber" autocomplete="off" placeholder="XXX-XX-XXXX" />
                 </div>
             </td>
         </tr>
@@ -140,15 +160,25 @@
 </span>
 <br>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">2.1</span></span>
-<input type="text" name="cb1" />Вы или члены Вашей семьи были когда-либо арестованы/задержаны?
+Вы или члены Вашей семьи были когда-либо арестованы/задержаны?
+    <label style="padding-left: 20px" for="cb11"><input type="radio" name="cb1" id="cb11" style="margin-right: 5px;"/>Да</label>
+    <label for="cb12"><input type="radio" name="cb1" id="cb12" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">2.2</span></span>
-<input type="text" name="cb2" />Вы или члены Вашей семьи когда-либо судились за нарушения ПДД?
+Вы или члены Вашей семьи когда-либо судились за нарушения ПДД?
+    <label style="padding-left: 20px" for="cb21"><input type="radio" name="cb2" id="cb21" style="margin-right: 5px;"/>Да</label>
+    <label for="cb22"><input type="radio" name="cb2" id="cb22" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">2.3</span></span>
-<input type="text" name="cb3" />Вы или члены Вашей семьи имели когда-либо закрытые уголовные дела?
+Вы или члены Вашей семьи имели когда-либо закрытые уголовные дела?
+    <label style="padding-left: 20px" for="cb31"><input type="radio" name="cb3" id="cb31" style="margin-right: 5px;"/>Да</label>
+    <label for="cb32"><input type="radio" name="cb3" id="cb32" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">2.4</span></span>
-<input type="text" name="cb4" />Вы или члены Вашей семь когда-либо были свидетелем в суде?
+Вы или члены Вашей семь когда-либо были свидетелем в суде?
+    <label style="padding-left: 20px" for="cb41"><input type="radio" name="cb4" id="cb41" style="margin-right: 5px;"/>Да</label>
+    <label for="cb42"><input type="radio" name="cb4" id="cb42" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">2.5</span></span>
-<input type="text" name="cb5" />Брали ли у Вас когда-нибудь отпечатки ваших пальцев?
+Брали ли у Вас когда-нибудь отпечатки ваших пальцев?
+    <label style="padding-left: 20px" for="cb51"><input type="radio" name="cb5" id="cb51" style="margin-right: 5px;"/>Да</label>
+    <label for="cb52"><input type="radio" name="cb5" id="cb52" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br>
 <br><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Уголовные правонарушения включают в себя правонарушения, состав которых классифицируется в соответствии с нормами уголовного права, а также влекут уголовную ответственность в соответствии с действующим законодательством.</div></span></span>
 <br>
@@ -157,21 +187,35 @@
 </span>
 </span>
 <br>
-<br><span style="text-decoration: underline"><span style="font-weight: bold">3.1</span></span>
-<input type="text" name="cb6" />У вас есть водительские права?
+<br><span style="font-weight: bold"><span style="text-decoration: underline">3.1</span></span>
+У вас есть водительские права?
+    <label style="padding-left: 20px" for="cb61"><input type="radio" name="cb6" id="cb61" style="margin-right: 5px;"/>Да</label>
+    <label for="cb62"><input type="radio" name="cb5" id="cb62" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.2</span></span>
-<input type="text" name="cb7" />Были ли ваши водительские права когда-либо изъяты?
+Были ли ваши водительские права когда-либо изъяты?
+    <label style="padding-left: 20px" for="cb71"><input type="radio" name="cb7" id="cb71" style="margin-right: 5px;"/>Да</label>
+    <label for="cb72"><input type="radio" name="cb7" id="cb72" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.3</span></span>
-<input type="text" name="cb8" />Имеются ли у Вас неоплаченные штрафы?
+Имеются ли у Вас неоплаченные штрафы?
+    <label style="padding-left: 20px" for="cb81"><input type="radio" name="cb8" id="cb81" style="margin-right: 5px;"/>Да</label>
+    <label for="cb82"><input type="radio" name="cb8" id="cb82" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.4</span></span>
-<input type="text" name="cb9" />Получали ли вы штрафы за последние пять лет?
+Получали ли вы штрафы за последние пять лет?
+    <label style="padding-left: 20px" for="cb91"><input type="radio" name="cb9" id="cb91" style="margin-right: 5px;"/>Да</label>
+    <label for="cb92"><input type="radio" name="cb9" id="cb92" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.5</span></span>
-<input type="text" name="cb10" />Были ли вы участником дорожно-транспортного происшествия?
+Были ли вы участником дорожно-транспортного происшествия?
+    <label style="padding-left: 20px" for="cb101"><input type="radio" name="cb10" id="cb101" style="margin-right: 5px;"/>Да</label>
+    <label for="cb102"><input type="radio" name="cb10" id="cb102" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.6</span></span>
-<input type="text" name="cb11" />Вы имеете лицензию на огнестрельное оружие?
+Вы имеете лицензию на огнестрельное оружие?
+    <label style="padding-left: 20px" for="cb111"><input type="radio" name="cb11" id="cb111" style="margin-right: 5px;"/>Да</label>
+    <label for="cb112"><input type="radio" name="cb11" id="cb112" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">3.7</span></span>
-<input type="text" name="cb12" />Была ли ваша оружейная лицензия когда-либо изъята?
+Была ли ваша оружейная лицензия когда-либо изъята?
+    <label style="padding-left: 20px" for="cb121"><input type="radio" name="cb12" id="cb121" style="margin-right: 5px;"/>Да</label>
+    <label for="cb122"><input type="radio" name="cb12" id="cb122" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br>
 <br>
 <br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">4. ДЕКЛАРАЦИЯ АБИТУРИЕНТОВ</span></span>
@@ -182,8 +226,7 @@
 <ul>
     <li>Я подтверждаю и утверждаю то, что все в этом заявление является истинной и в этом заявление не присутствует ни капли лжи. Я так же подтверждаю и утверждаю, что заявление было заполнено мной самостоятельно без чужой помощи и без психического или физического давления со стороны других людей. Я понимаю, что ложная информация в данном заявление может стать причиной отклонения заявки и заведения уголовного дела. Я даю согласие на обработку своих персональных данных.</li>
 </ul>
-<br>
-<br><span style="font-weight: bold"><input type="text" name="accept1"/> Я принимаю условия данного заявления</span>
+<span style="font-weight: bold; font-size: 85%;"><input type="checkbox" name="accept1"/> Я принимаю условия данного заявления</span>
 <br>
 <br><span style="text-decoration: underline"><span style="font-weight: bold"><span style="font-size: 150%; line-height: 116%;"><span style="color: #000000">5. OUT OF CHARACTER INFORMATION</span></span>
 </span>
@@ -196,19 +239,19 @@
             <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.1</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="oocname" />
+                    <input type="text" name="oocname" placeholder="Name" autocomplete="off" />
                 </div>
             </td>
             <td style="vertical-align: top; width:26%; "><span style="font-weight: bold"><span style="text-decoration: underline">5.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="oocage" />
+                    <input type="number" name="oocage" placeholder="Age" autocomplete="off" />
                 </div>
             </td>
             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опыт игры:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="oocexp" />
+                    <input type="text" name="oocexp" placeholder="Years/Months" autocomplete="off" />
                 </div>
             </td>
         </tr>
@@ -221,36 +264,44 @@
             <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.4</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Место жительства/часовой пояс:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="oocplace" />
+                    <input type="text" name="oocplace" autocomplete="off" placeholder="Moscow, MSK" />
                 </div>
             </td>
             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.5</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ссылка на вашу страницу vk.com</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="text" name="vk" />
+                    <input type="text" name="vk" placeholder="vk.com/ваш-айди" />
                 </div>
             </td>
         </tr>
     </tbody>
 </table>
 <br><span style="font-weight: bold"><span style="text-decoration: underline">5.6</span></span>
-<input type="text" name="cb13" />Вы сможете проводить на лекциях около 3-х часов?
+Вы сможете проводить на лекциях около 3-х часов?
+    <label style="padding-left: 20px" for="cb131"><input type="radio" name="cb13" id="cb131" style="margin-right: 5px;"/>Да</label>
+    <label for="cb132"><input type="radio" name="cb13" id="cb132" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="text-decoration: underline"><span style="font-weight: bold">5.7</span></span>
-<input type="text" name="cb14" />Вы в состоянии эффективно функционировать в Teamspeak 3?
+Вы в состоянии эффективно функционировать в Teamspeak 3?
+    <label style="padding-left: 20px" for="cb141"><input type="radio" name="cb14" id="cb141" style="margin-right: 5px;"/>Да</label>
+    <label for="cb142"><input type="radio" name="cb14" id="cb142" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br><span style="text-decoration: underline"><span style="font-weight: bold">5.8</span></span>
-<input type="text" name="cb15" />У вас есть рабочий микрофон?
+У вас есть рабочий микрофон?
+    <label style="padding-left: 20px" for="cb151"><input type="radio" name="cb15" id="cb151" style="margin-right: 5px;"/>Да</label>
+    <label for="cb152"><input type="radio" name="cb15" id="cb152" style="margin-right: 5px; margin-left: 10px"/>Нет</label>
 <br>
-<br><span style="font-weight: bold"><span style="text-decoration: underline">5.9</span></span>Перечислить все предыдущие имена персонажей (в том числе изменения имен):
+<br><span style="font-weight: bold"><span style="text-decoration: underline; padding-right: 10px">5.9</span></span>Перечислить все предыдущие имена персонажей (в том числе изменения имен):
 <br>
-<textarea name="prevnames"></textarea>
-<br><span style="font-weight: bold"><span style="text-decoration: underline">5.10</span></span>Ссылка на снимок статистики всех ваших персонажей (Обрезайте так, чтобы было видно ник):
+<textarea name="prevnames" autocomplete="off" placeholder="Name Surname, Name Surname, Name Surname"></textarea>
+<br><span style="font-weight: bold"><span style="text-decoration: underline; padding-right: 10px">5.10</span></span>Ссылка на снимок статистики всех ваших персонажей (Обрезайте так, чтобы было видно ник):
 <br>
-<textarea name="stats"></textarea>
-<br><span style="font-weight: bold"><span style="text-decoration: underline">5.11</span></span>Ваши интересные роли за историю игры (ссылки на топики или СС):
+<textarea name="stats" autocomplete="off" placeholder="Скрин с g-rp.su/profile"></textarea>
+<br><span style="font-weight: bold"><span style="text-decoration: underline; padding-right: 10px">5.11</span></span>Ваши интересные роли за историю игры (ссылки на топики или СС):
 <br>
-<textarea name="ss"></textarea>
+<textarea name="ss" autocomplete="off" placeholder="ссылка
+ссылка
+(каждую на новой строке)"></textarea>
 <br>
-<br><span style="font-size: 85%; line-height: 116%;"><span style="color: #838383"><div style="text-align: justify;">Я ознакомлен(-а) с разделом About Us и JoinLSPD. Я соглашаюсь, что если покину фракцию в течении 14 дней, то буду занесен в черный список (ЧС) фракции без права выхода. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES. После прохождения академии я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции.</div><br><span style="font-weight: bold"><input type="text" name="accept2"/> Я принимаю условия данного заявления</span>
+<br><span style="font-size: 85%; line-height: 116%;"><span><div style="text-align: justify;">Я ознакомлен(-а) с разделом About Us и JoinLSPD. Я соглашаюсь, что если покину фракцию в течении 14 дней, то буду занесен в черный список (ЧС) фракции без права выхода. Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES. После прохождения академии я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции.</div><span style="font-weight: bold"><input type="checkbox" name="accept2"/> Я принимаю условия данного заявления</span>
 <br>
 <br>
 <div style="padding: 10px; background-color: #F5F5F5;">
@@ -264,14 +315,14 @@
 </div>
 
     <div class="btn-container">
-         <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+         <button class="modal__btn modal__btn-primary" onclick="prepare()">Generate</button>
       </div>
       <!-- Modal -->
     <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Here is your BBCode!</h5>
+                    <h5 class="modal-title">Вот ваш BBCode!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -280,7 +331,7 @@
                     <div class="container-fluid">
                         <div class="row mb-3">
                             <div class="col-12">
-                                <label for="output__header">Topic Name</label>
+                                <label for="output__header">Заголовок темы</label>
                             </div>
                             <div class="col-9 col-lg-10">
                                 <input type="text" class="form-control" id="output__header">
@@ -291,7 +342,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-12">
-                                <label for="output__body">BBCode</label>
+                                <label for="output__body">Сообщение</label>
                             </div>
                             <div class="col-9 col-lg-10">
                                 <textarea class="form-control" rows="10" id="output__body"></textarea>
@@ -310,20 +361,19 @@
       </div>
       <script>
          String.prototype.capitalize = function () {
-            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+            return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
          }
 
          function generatePostTitle() {
-             var name = document.getElementsByName("name")[0].value.capitalize();
-             var surname = document.getElementsByName("surname")[0].value.capitalize();
+             var name = document.getElementsByName("fullname")[0].value.toLowerCase().capitalize();
              var date  = new Date();
              var month = date.getMonth()+1;
              var year = date.getFullYear().toString().substr(-2);
              var h_output = "";
              if (month && year) {
                  h_output = h_output + "[A" + month + "-" + year + "] "
-                 if (name && surname) {
-                     h_output = h_output + name + " " + surname
+                 if (name) {
+                     h_output = h_output + name
                  }
              }
              return h_output;
@@ -335,15 +385,78 @@
             for (var i = 0; i < values.length; i++) {
                 if (values[i].classList.contains('datepicker')) {
                     data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
-                } else if (values[i].classList.contains('checkbox')) {
-                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
-                    data[values[i].getAttribute('name')] = checked;
+                } else if (values[i].type == 'checkbox') {
+                    data[values[i].getAttribute('name')] = values[i].checked ? ('[check][/check]') : '[uncheck][/uncheck]';
+                } else if (values[i].type == 'radio') {
+                    if (values[i].name == 'education') {
+                        data[values[i].getAttribute('name')] = values[i].checked ? (values[i].value) : 'N/A';
+                    } else {
+                        data[values[i].getAttribute('name')] = values[i].checked ? ('[check][/check]') : '[uncheck][/uncheck]';
+                    }
                 } else {
                     data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
                 }
+
+
+                
+
+                // } else if (values[i].type == 'checkbox') {
+                //     var checked = document.getElementsByName("checkbox")[0].checked ? ('[check][/check]') : '[uncheck][/uncheck] '
+                //     data[values[i].getAttribute('name')] = checked;
+                // } else if (values[i].type == 'radio') {
+                //     var checkd = values[i].checkd ? ('[check][/check]') : '[uncheck][/uncheck]'
+                //     data[values[i].getAttribute('name')] = checkd
+                // } else {
+                //     data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                // }
             }
             return data;
         }
+
+        function isURL(str) {
+          var pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?'+ // protocol
+          '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name and extension
+          '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+          '(\\:\\d+)?'+ // port
+          '(\\/[-a-z\\d%@_.~+&:]*)*'+ // path
+          '(\\?[;&a-z\\d%@_.,~+&:=-]*)?'+ // query string
+          '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+          return pattern.test(str);
+        }
+
+        function isIMG(url) {
+            return(url.match(/\.(jpeg|jpg|gif|png|gif)$/) != null);
+        }
+
+        function checkURLs(str) {
+            if (isURL(str)) {
+                if (isIMG(str)) {
+                    str = "[spoiler=\"Изображение\"][url=" + str + "][img]" + str + "[/img][/url][/spoiler]";
+                } else {
+                    str = "[url]" + str + "[/url]";
+                }
+            }
+            return str;
+        }
+
+        function prepare() {
+            var vk = document.getElementsByName("vk")[0].value;
+            var stats = document.getElementsByName("stats")[0].value;
+            var ss = document.getElementsByName("ss")[0].value;
+
+            if (vk) { document.getElementsByName("vk")[0].value = checkURLs(vk); }
+            if (stats) { document.getElementsByName("stats")[0].value = checkURLs(stats); }
+            if (ss) {
+                var ssArray = ss.match(/[^\r\n]+/g);
+
+                for (var i = 0; i < ssArray.length; i++) {
+                    ssArray[i] = checkURLs(ssArray[i]);
+                }
+                document.getElementsByName("ss")[0].value = ssArray.join('\n');
+            }
+
+            showBB();
+         }
 
         $("#datepicker_full").datepicker({ 
             'dateFormat': 'dd/M/yy',
@@ -355,7 +468,7 @@
          
          MicroModal.init();
          window.__bbcodeurl = '/bbforms/academy_new.txt';
-         // document.querySelector('[name="name"]').focus();   
+         document.querySelector('[name="fullname"]').focus();   
 
 
         $('#profilePhoto').on('click', function() {
