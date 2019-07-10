@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body style="padding-bottom: 70px">
-    <header>
+<body>
+    <header class="mb-3 mb-md-4 mb-lg-5">
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
                 <a href="/" class="navbar-brand d-flex align-items-center">
@@ -23,90 +23,89 @@
     </header>
 
     <main role="main">
-      <!-- how to wrap decks: https://www.codeply.com/go/nIB6oSbv6q -->
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\IR_scrn.png" class="card-img-top" alt="Incident Report">
-                <div class="card-body">
-                  <h5 class="card-title">Incident Report Form</h5>
-                  <p class="card-text">Генератор формы отчета о произошедшем инциденте.</p>
-                  <a href="/htmlforms/incident-report.html" class="btn btn-primary">Fill It Now</a>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/IR_scrn.png" class="card-img-top" alt="Incident Report">
+                    <div class="card-body">
+                      <h5 class="card-title">Incident Report Form</h5>
+                      <p class="card-text">Генератор формы отчета о произошедшем инциденте.</p>
+                      <a href="/htmlforms/incident-report.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\CUOF_scrn.png" class="card-img-top" alt="Categorical Use of Force Report">
-                <div class="card-body">
-                  <h5 class="card-title">Categorical Use of Force Report</h5>
-                  <p class="card-text">Генератор формы отчета о применении летальной силы. </p>
-                  <a href="/htmlforms/use-of-force-report.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/CUOF_scrn.png" class="card-img-top" alt="Categorical Use of Force Report">
+                    <div class="card-body">
+                      <h5 class="card-title">Categorical Use of Force Report</h5>
+                      <p class="card-text">Генератор формы отчета о применении летальной силы. </p>
+                      <a href="/htmlforms/use-of-force-report.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\PF_scrn.png" class="card-img-top" alt="Personnel File">
-                <div class="card-body">
-                  <h5 class="card-title">Personnel File (Patrol)</h5>
-                  <p class="card-text">Генератор формы личного дела для офицеров патрульных дивизионов.</p>
-                  <a href="/htmlforms/personnel-file.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/PF_scrn.png" class="card-img-top" alt="Personnel File">
+                    <div class="card-body">
+                      <h5 class="card-title">Personnel File (Patrol)</h5>
+                      <p class="card-text">Генератор формы личного дела для офицеров патрульных дивизионов.</p>
+                      <a href="/htmlforms/personnel-file.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\DOR_scrn.png" class="card-img-top" alt="Placeholder">
-                <div class="card-body">
-                  <h5 class="card-title">Daily Observation Report (FTP)</h5>
-                  <p class="card-text">Генератор формы ежедневного отчета о наблюдении FTO за стажером.</p>
-                  <a href="/htmlforms/dor.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/DOR_scrn.png" class="card-img-top" alt="Placeholder">
+                    <div class="card-body">
+                      <h5 class="card-title">Daily Observation Report (FTP)</h5>
+                      <p class="card-text">Генератор формы ежедневного отчета о наблюдении FTO за стажером.</p>
+                      <a href="/htmlforms/dor.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\RA_scrn.png" class="card-img-top" alt="Ride-Along Application">
-                <div class="card-body">
-                  <h5 class="card-title">Ride-Along Application</h5>
-                  <p class="card-text">Генератор заявки на совместный патруль (Civils).</p>
-                  <a href="/htmlforms/ride-along.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/RA_scrn.png" class="card-img-top" alt="Ride-Along Application">
+                    <div class="card-body">
+                      <h5 class="card-title">Ride-Along Application</h5>
+                      <p class="card-text">Генератор заявки на совместный патруль (Civils).</p>
+                      <a href="/htmlforms/ride-along.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\AC_scrn.png" class="card-img-top" alt="Academy Application">
-                <div class="card-body">
-                  <h5 class="card-title">Academy Application</h5>
-                  <p class="card-text">Генератор заявки в полицейскую академию (Civils).</p>
-                  <a href="/htmlforms/academy.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/AC_scrn.png" class="card-img-top" alt="Academy Application">
+                    <div class="card-body">
+                      <h5 class="card-title">Academy Application</h5>
+                      <p class="card-text">Генератор заявки в полицейскую академию (Civils).</p>
+                      <a href="/htmlforms/academy.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\BH_scrn.png" class="card-img-top" alt="Back Home Application">
-                <div class="card-body">
-                  <h5 class="card-title">Reinstatement Program Application</h5>
-                  <p class="card-text">Генератор заявки в программу восстановления (Back Home).</p>
-                  <a href="/htmlforms/back-home.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/BH_scrn.png" class="card-img-top" alt="Back Home Application">
+                    <div class="card-body">
+                      <h5 class="card-title">Reinstatement Program Application</h5>
+                      <p class="card-text">Генератор заявки в программу восстановления (Back Home).</p>
+                      <a href="/htmlforms/back-home.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="card mb-4">
-                <img src="\static\img\RaC_scrn.png" class="card-img-top" alt="Report a Crime Application">
-                <div class="card-body">
-                  <h5 class="card-title">Report a Crime Application</h5>
-                  <p class="card-text">Генератор заявления в полицию о совершенном преступлении (Civils).</p>
-                  <a href="/htmlforms/rac.html" class="btn btn-primary">Fill It Now</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card mb-4">
+                    <img src="/static/img/RaC_scrn.png" class="card-img-top" alt="Report a Crime Application">
+                    <div class="card-body">
+                      <h5 class="card-title">Report a Crime Application</h5>
+                      <p class="card-text">Генератор заявления в полицию о совершенном преступлении (Civils).</p>
+                      <a href="/htmlforms/rac.html" class="btn btn-primary">Fill It Now</a>
+                    </div>
                 </div>
+              </div>
             </div>
-          </div>
         </div>
     </main>
 
