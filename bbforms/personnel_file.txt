@@ -1,6 +1,6 @@
 [doc][doc_h]|%text:division_name%
 [b]PERSONNEL FILE[/b]|LOS SANTOS POLICE DEPARTMENT[/doc_h]
-[pblock=2,#000][color=#FFFFFF][center]I. GENERAL INFORMATION[/center][/color][/pblock][textarea=#000][color=#000000][coll3][list][img]https://i.imgur.com/OUaPj2o.png[/img][/list]|[left][size=85][b]ИМЯ[/b][/size]
+[pblock=2,#000][color=#FFFFFF][center]I. GENERAL INFORMATION[/center][/color][/pblock][textarea=#000][color=#000000][coll3][list][img]%text:profilePhoto%[/img][/list]|[left][size=85][b]ИМЯ[/b][/size]
 %text:officer_name%
 
 [size=85][b]ВТОРОЕ ИМЯ[/b][/size]
