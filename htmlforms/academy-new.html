@@ -52,15 +52,15 @@
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                     <select name="sex">
                         <option value="N/A" selected disabled hidden>Выберите пол</option>
-                        <option value="Male">Мужской</option>
-                        <option value="Female">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                        <option value="Женский">Женский</option>
                     </select>
                 </div>
             </td>
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="number" name="age" placeholder="AGE" autocomplete="off"/>
+                    <input type="text" name="age" placeholder="AGE" autocomplete="off"/>
                 </div>
             </td>
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения:</span>
@@ -72,7 +72,7 @@
             <td style="vertical-align: top; width:23%;"><span style="font-weight: bold"><span style="text-decoration: underline">1.4</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер моб.телефона:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="number" name="tnumber" placeholder="XXX-XXX" autocomplete="off" />
+                    <input type="text" name="tnumber" placeholder="XXX-XXX" autocomplete="off" />
                 </div>
             </td>
         </tr>
@@ -136,7 +136,7 @@
             <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="text-decoration: underline"><span style="font-weight: bold">1.10</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Номер соц.страхования:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="number" name="ssnumber" autocomplete="off" placeholder="XXX-XX-XXXX" />
+                    <input type="text" name="ssnumber" autocomplete="off" placeholder="XXX-XX-XXXX" />
                 </div>
             </td>
         </tr>
@@ -245,7 +245,7 @@
             <td style="vertical-align: top; width:26%; "><span style="font-weight: bold"><span style="text-decoration: underline">5.2</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст:</span>
                 <br>
                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                    <input type="number" name="oocage" placeholder="Age" autocomplete="off" />
+                    <input type="text" name="oocage" placeholder="Age" autocomplete="off" />
                 </div>
             </td>
             <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold"><span style="text-decoration: underline">5.3</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опыт игры:</span>
@@ -388,10 +388,12 @@
                 } else if (values[i].type == 'checkbox') {
                     data[values[i].getAttribute('name')] = values[i].checked ? ('[check][/check]') : '[uncheck][/uncheck]';
                 } else if (values[i].type == 'radio') {
-                    if (values[i].name == 'education') {
-                        data[values[i].getAttribute('name')] = values[i].checked ? (values[i].value) : 'N/A';
+                    let name = values[i].getAttribute('name')
+                    let res = [].filter.call(document.querySelectorAll(`[name='${name}']`), item => item.checked)
+                    if (name == 'education') {
+                        data[name] = res.length ? res[0].labels[0].innerText : 'N/A'
                     } else {
-                        data[values[i].getAttribute('name')] = values[i].checked ? ('[check][/check]') : '[uncheck][/uncheck]';
+                        data[name] = (res.length && res[0].labels[0].innerText === 'Да') ? '[check][/check]' : '[uncheck][/uncheck]'
                     }
                 } else {
                     data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
