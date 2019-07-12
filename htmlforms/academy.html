@@ -93,7 +93,7 @@
 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
     <select name="race">
       <option value="N/A" selected disabled hidden>Выберите один из вариантов</option>
-      <option value="Светлокожий">Светлокожий</option>
+      <option value="Европеоидная">Европеоидная</option>
       <option value="Темнокожий/Афроамериканец">Темнокожий/Афроамериканец</option>
       <option value="Латиноамериканец">Латиноамериканец</option>
       <option value="Индеец">Индеец</option>
@@ -391,7 +391,20 @@
                     let name = values[i].getAttribute('name')
                     let res = [].filter.call(document.querySelectorAll(`[name='${name}']`), item => item.checked)
                     if (name == 'education') {
-                        data[name] = res.length ? res[0].labels[0].innerText : 'N/A'
+                        if (res.length) {
+                            try {
+                              if (debilTest()) {
+                                data[name] = res[0].labels[0].innerText + "."
+                              } else {
+                                data[name] = res[0].labels[0].innerText
+                              }
+                            } 
+                            catch(err) {
+                              console.log(err.message)
+                            }
+                        } else {
+                          data[name] = 'N/A'
+                        }
                     } else {
                         data[name] = (res.length && res[0].labels[0].innerText === 'Да') ? '[check][/check]' : '[uncheck][/uncheck]'
                     }
@@ -446,6 +459,15 @@
 
             showBB();
          }
+
+        function debilTest() {
+            var birthday = new Date(document.getElementsByName("bdate")[0].value);
+            var age = document.getElementsByName("age")[0].value;
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            var diff = ageDate.getUTCFullYear() - 1970
+            return age - diff == 0 ? (false) : true;
+        }
 
         $("#datepicker_full").datepicker({ 
             'dateFormat': 'dd/M/yy',
