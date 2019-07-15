@@ -388,3 +388,51 @@ body {
     position: absolute;
     left: -9999999px;
 }
+
+.form9, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form9 input[type="text"], select {
+    height: 18px;
+    width: calc(100% - 600px);
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.form9 select {
+    height: 18px;
+    width: calc(100% - 10px);
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.form9 input[type=checkbox] {
+  transform: scale(2);
+  vertical-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.form9 textarea {
+    display: block;
+    margin: -5px;
+    width: calc(100% + 6px);
+    height: 85px;
+    border: 0;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}

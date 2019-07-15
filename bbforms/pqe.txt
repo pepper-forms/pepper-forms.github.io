@@ -1,0 +1,20 @@
+[textarea][center][img]https://i.imgur.com/N3WoplA.png[/img]
+LOS SANTOS POLICE DEPARTMENT
+[b]PERSONAL QUALIFICATIONS ESSAY (PQE)[/b][/center]
+
+[hr][/hr]
+[background=#DCDCDC][center][size=130][b]%text:fullname%[/b][/size]
+[size=85](ПОЛНОЕ ИМЯ)[/size][/center][/background]
+
+[b][u]1.[/u][/b] [ab=Опишите себя как личность. Ваши навыки и умения, личные качества, ваше мировоззрение и ценности.]%textarea:ans1%[/ab]
+
+[b][u]2.[/u][/b] [ab=Какая наиболее сложная проблема была в Вашей жизни? Какие еще проблемы вам приходилось решать? Как вы подошли к их решению? Смогли ли Вы их решить?]%textarea:ans2%[/ab]
+
+[b][u]3.[/u][/b] [ab=Как Вы думаете, какие отношения должны быть между членами команды, напарниками? Как поступать, если между членами команды или напарниками происходит конфликт?]%textarea:ans3%[/ab]
+
+[b][u]4.[/u][/b] [ab=Какие сложности Вы видите в работе в департаменте полиции?]%textarea:ans4%[/ab]
+
+[b][u]5.[/u][/b] [ab=Как принять ответственное решение, когда Вы остались одни в опасной ситуации, а от вашего решения зависят жизни и судьбы людей?]%textarea:ans5%[/ab]
+
+[box=#F5F5F5][center][b][size=105]" TO PROTECT AND TO SERVE "[/size][/b]
+[img]http://i.imgur.com/dPpHP8M.png[/img][/center][/box][/textarea]
