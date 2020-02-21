@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+
+    <title>Daily Observation Report - SAHP</title>
+</head>
+
+<body>
+   <div class="form5" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+   <span style="color: #000000">
+      <table width="100%">
+         <tbody>
+            <tr>
+               <td style="vertical-align: top; width:26%; padding-right:10px;"></td>
+               <td style="vertical-align: top; width:26%; ">
+                  <div align="center">
+                     <select name="division" style="width: 100%; text-align-last: center; text-align: center; -ms-text-align-last: center; -moz-text-align-last: center; height: 18px; margin: 0; padding: 5px; border: 0; font-size: 16px; box-sizing: content-box;">
+                        <option value="SOUTHERN COMMAND">SOUTHERN COMMAND</option>
+                        <option value="NORTHERN COMMAND">NORTHERN COMMAND</option>
+                     </select>
+                     <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">DAILY OBSERVATION REPORT</span></span></div>
+               </td>
+               <td style="vertical-align: top; width:26%; padding-left:10px;">
+                  <div align="right"><span style="font-size: 85%; line-height: 116%;"> <b>DEPARTMENT OF PUBLIC SAFETY</b>  <br>SAN ANDREAS HIGHWAY PATROL</span></div>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </span>
+      <br>
+      <div style="padding: 2px; background-color: #000;">
+         <span>
+            <span style="color: #FFFFFF">
+               <div align="center">I. GENERAL INFORMATION</div>
+            </span>
+         </span>
+      </div>
+      <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+         <span style="color: #000000">
+            <span style="color: #000000">
+               <br>
+               <table width="100%">
+                  <tbody>
+                     <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;">
+                           <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛНОЕ ИМЯ СТАЖЁРА</span><br>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                              <input type="text" name="trainee_name" placeholder="ПОЛНОЕ ИМЯ СТАЖЕРА" oninput="this.value = this.value.toUpperCase()"/>
+                              </div>
+                           <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">МАРКИРОВКА</span><br>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="callsign" placeholder="МАРКИРОВКА" oninput="this.value = this.value.toUpperCase()"/></div>
+                        </td>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;">
+                           <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ДАТА ПАТРУЛИРОВАНИЯ</span><br>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" required="" class="datepicker" name="patrol_date" placeholder="ДАТА ПАТРУЛЯ"/></div>
+                           <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НАЧАЛО И КОНЕЦ ПАТРУЛЯ</span><br>
+                           <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px"><input type="text" name="patrol_time" placeholder="HH:MM - HH:MM" oninput="this.value = this.value.toUpperCase()"/></div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </span>
+         </span>
+      </div>
+      <br>
+      <div style="padding: 2px; background-color: #000;">
+         <span>
+            <span style="color: #FFFFFF">
+               <div align="center">II. RATING BY CATEGORY</div>
+            </span>
+         </span>
+      </div>
+      <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+         <span style="color: #000000">
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;">
+                        <div align="center"><span style="font-weight: bold">КАТЕГОРИИ</span></div>
+                     </td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><span style="font-weight: bold">N/O</span></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><span style="font-weight: bold">N/I</span></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><span style="font-weight: bold">C</span></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><span style="font-weight: bold">S</span></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><span style="font-weight: bold">NRT</span></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><span style="font-weight: bold">DS</span></div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 100%; line-height: 116%;"><span style="font-weight: bold"><span style="text-decoration: underline">ЛИЧНЫЕ КАЧЕСТВА</span></span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">1. ОТНОШЕНИЕ К КРИТИКЕ/КУРАТОРУ/ПРОГРАММЕ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor11"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor12"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor13"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor14"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="1" class="radio" id="dor15"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS1">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">2. ОТНОШЕНИЕ К ПОЛИЦЕЙСКОЙ РАБОТЕ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor21"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor22"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor23"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor24"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="2" class="radio" id="dor25"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS2">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">3. ЭТИКА И ДОБРОСОВЕСТНОСТЬ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor31"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor32"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor33"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor34"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="3" class="radio" id="dor35"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS3">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">4. УМЕНИЕ ВЛИЯТЬ НА ОКРУЖАЮЩИХ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor41"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor42"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor43"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor44"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="4" class="radio" id="dor45"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS4">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 100%; line-height: 116%;"><span style="font-weight: bold"><span style="text-decoration: underline">ВЗАИМООТНОШЕНИЯ</span></span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">5. С ГРАЖДАНАМИ/ОБЩЕСТВОМ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor51"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor52"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor53"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor54"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="5" class="radio" id="dor55"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS5">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">6. С ДРУГИМИ ОФИЦЕРАМИ ДЕПАРТАМЕНТА</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor61"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor62"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor63"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor64"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="6" class="radio" id="dor65"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS6">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 100%; line-height: 116%;"><span style="font-weight: bold"><span style="text-decoration: underline">НАВЫКИ</span></span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">7. НАВЫКИ ВОЖДЕНИЯ: НОРМАЛЬНЫЕ УСЛОВИЯ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor71"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor72"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor73"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor74"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="7" class="radio" id="dor75"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS7">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">8. НАВЫКИ ВОЖДЕНИЯ: ЧРЕЗВЫЧАЙНЫЕ СИТУАЦИИ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor81"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor82"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor83"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor84"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="8" class="radio" id="dor85"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS8">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">9. ЗНАНИЕ ГОРОДА, ОРИЕНТАЦИЯ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor91"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor92"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor93"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor94"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="9" class="radio" id="dor95"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS9">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">10. НАВЫКИ КООРДИНАЦИИ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor101"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor102"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor103"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor104"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="10" class="radio" id="dor105"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS10">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">11. ПОЛЕВЫЕ ПОКАЗАТЕЛИ: НОРМАЛЬНЫЕ УСЛОВИЯ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor111"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor112"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor113"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor114"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="11" class="radio" id="dor115"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS11">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">12. ПОЛЕВЫЕ ПОКАЗАТЕЛИ: СТРЕССОВЫЕ УСЛОВИЯ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor121"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor122"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor123"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor124"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="12" class="radio" id="dor125"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS12">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">13. ИНИЦИАТИВНОСТЬ В ВЫБОРЕ СИТУАЦИЙ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor131"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor132"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor133"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor134"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="13" class="radio" id="dor135"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS13">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">14. БЕЗОПАСНОСТЬ ОФИЦЕРА</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor141"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor142"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor143"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor144"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="14" class="radio" id="dor145"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS14">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">15. ИСПОЛЬЗОВАНИЕ РАЦИИ</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor151"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor152"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor153"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor154"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="15" class="radio" id="dor155"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS15">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <br>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 100%; line-height: 116%;"><span style="font-weight: bold"><span style="text-decoration: underline">ЗНАНИЯ</span></span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; "></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <table width="100%">
+               <tbody>
+                  <tr>
+                     <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">16. ЗНАНИЕ ПОЛИТИК И ПРОЦЕДУР ДЕПАРТАМЕНТА</span></span></td>
+                     <td style="vertical-align: top; width:50%; padding-left:10px;">
+                        <table width="100%">
+                           <tbody>
+                              <tr>
+                                 <td style="vertical-align: top; width:16%; padding-right:10px;">
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor161"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; ">
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor162"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor163"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor164"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center"><input type="radio" name="16" class="radio" id="dor165"/></div>
+                                 </td>
+                                 <td style="vertical-align: top; width:16%; padding-left:10px;">
+                                    <div align="center">
+                                       <select style="width:70%" name="dorDS16">
+                                          <option value=" ">-</option>
+                                          <option value="#1">№1</option>
+                                          <option value="#2">№2</option>
+                                          <option value="#3">№3</option>
+                                          <option value="#4">№4</option>
+                                          <option value="#5">№5</option>
+                                          <option value="#6">№6</option>
+                                          <option value="#7">№7</option>
+                                          <option value="#8">№8</option>
+                                          <option value="#9">№9</option>
+                                          <option value="#10">№10</option>
+                                       </select>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </span>
+      </div>
+      <br><br>
+      <div style="padding: 2px; background-color: #000;">
+         <span>
+            <span style="color: #FFFFFF">
+               <div align="center">III. NARRATIVE EVALUATION</div>
+            </span>
+         </span>
+      </div>
+      <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+         <span style="color: #000000">
+            <span style="color: #000000"> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span></span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="like" placeholder="Что вам ПОНРАВИЛОСЬ в стажере за этот патруль"></textarea></div>
+            <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВАМ БОЛЬШЕ ВСЕГО НЕ ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?</span>
+         </span>
+         <br>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="dislike" placeholder="Что вам НЕ ПОНРАВИЛОСЬ в стажере за этот патруль"></textarea></div>
+         <br><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ</span><br>
+         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="phase_recommendations" placeholder="Рекомендуете ли вы переход стажера в следующую фазу и почему?"></textarea></div>
+         <br>
+      </div>
+      <br><br>
+      <div style="padding: 2px; background-color: #000;">
+         <span>
+            <span style="color: #FFFFFF">
+               <div align="center">IV. DOCUMENTED SITUATIONS (DS)</div>
+            </span>
+         </span>
+      </div>
+      <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+         <span style="color: #000000">
+            <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЗАДОКУМЕНТИРОВАННЫЕ СИТУАЦИИ</span></span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px;">
+               <textarea style="height: 75px" name="ds1" placeholder="1. Описание первой ситуации...
+2. Описание второй ситуации...
+и т.д. (не забудьте пронумеровать)"></textarea></div>
+            <br>
+         </span>
+      </div>
+      <br><br>
+      <div style="padding: 2px; background-color: #000;">
+         <span>
+            <span style="color: #FFFFFF">
+               <div align="center">(( OOC. УРОВЕНЬ ИГРЫ ))</div>
+            </span>
+         </span>
+      </div>
+      <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+         <span style="color: #000000">
+            <span style="color: #000000"><br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">КАЧЕСТВО ОТЫГРОВОК, УРОВЕНЬ ХУДА, СООТВЕТСТВИЕ РОЛИ</span></span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="skill" placeholder="Уровень игры, худа и соотвествие роли (роль прочекать в разделе &quot;Ваши персонажи&quot;) "></textarea></div>
+            <br>
+         </span>
+      </div>
+      <br>
+      <div style="border-bottom: 1px solid #000; padding: 1px;"></div>
+   </div>
+
+   <div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="checkNI()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">BBCode</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+               <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__body">Report Code</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <textarea class="form-control" rows="10" id="output__body"></textarea>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex align-items-center">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                    </div>
+               </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/viewforum.php?f=86','_blank')">To FTP (54)</button> -->
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/hp/viewforum.php?f=198','_blank')">To FTP</button>
+          </div>
+        </div>
+      </div>
+    
+
+    <script>
+      function checkNI() {
+         var values = document.querySelectorAll(".radio");
+         var ds_values = document.querySelectorAll("select");
+
+         for (var i = 0; i < values.length; i++) {
+            if (values[i].id.split('').pop() == '2') {
+               let index = values[i].getAttribute('name');
+               console.log(ds_values[index])
+               if (values[i].checked && ds_values[index].value == " ") {
+                  alert("Вы не указали DS в " + index + " категории.\nОценка N/I требует задокументированной ситуации.");
+                  return;
+               }
+          }
+       }
+      showBB()
+    }
+
+      async function showBB() {
+          output = await parseForm();
+          document.getElementById("output__body").value = output;
+          $('#output_modal').modal('show')
+      }
+
+      function form2dict(form) {
+            var values = form.querySelectorAll('[name]','[id]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].type == 'radio') {
+                    var checked = values[i].checked ? ('X') : ' '
+                    data[values[i].getAttribute('id')] = checked
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/sahp/dor.txt';
+        document.querySelector('[name="trainee_name"]').focus();   
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+</body>
+
+</html>
