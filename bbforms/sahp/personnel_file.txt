@@ -1,0 +1,21 @@
+[doc][doc_h]|%text:division_name%
+[b]PERSONNEL FILE[/b]|DEPARTMENT OF PUBLIC SAFETY
+SAN ANDREAS HIGHWAY PATROL[/doc_h]
+[pblock=2,#000][color=#FFFFFF][center]I. GENERAL INFORMATION[/center][/color][/pblock][textarea=#000][color=#000000][coll3][list][img]%text:profilePhoto%[/img][/list]|[left][size=85][b]ИМЯ[/b][/size]
+%text:officer_name%
+
+[size=85][b]ВТОРОЕ ИМЯ[/b][/size]
+%text:officer_second_name%
+
+[size=85][b]ФАМИЛИЯ[/b][/size]
+%text:officer_surname%[/left]|[size=85][b]ЗВАНИЕ[/b][/size]
+%text:officer_rank%
+
+[size=85][b]ДОЛЖНОСТЬ[/b][/size]
+%text:officer_position%
+
+[size=85][b]НАЧАЛО РАБОТЫ В ДИВИЗИОНЕ[/b][/size]
+(( %text:officer_work_start% ))[/coll3][/color][/textarea][pblock=2,#000][color=#FFFFFF][center]II. PATROL LOGS[/center][/color][/pblock][textarea=#000][color=#000000][borderb=#000][b][size=85][patrol]№|МАРКИРОВКА|ДАТА|ВРЕМЯ|НАПАРНИК[/patrol][/size][/b][/borderb]
+[patrol]№|МАРКИРОВКА|ДАТА|ВРЕМЯ|НАПАРНИК[/patrol]
+[patrol]№|МАРКИРОВКА|ДАТА|ВРЕМЯ|НАПАРНИК[/patrol][/color][/textarea]
+[borderb=#000][/borderb][/doc]
