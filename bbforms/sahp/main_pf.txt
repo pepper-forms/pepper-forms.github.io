@@ -1,0 +1,15 @@
+[box=#003f6d][background=#eaf0fe][coll3][left][img]https://www.upload.ee/image/11230932/logo.png[/img][/left]|[center][size=130][b]%text:fullname%[/b]
+[i]%text:rank%[/i][/size]
+[tt]%text:PFid%[/tt][/center]|[right][img]%text:insigniaurl%[/img][/right][/coll3]
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll1-3][imgborder]%text:photourl%[/imgborder]|[left][coll][an=(Имя)]%text:name%[/an]|[an=(Второе имя)]%text:secondname%[/an][/coll]
+[an=(Фамилия)]%text:surname%[/an]
+[an=(Дата начала работы)]%text:datestarted%[/an][/left][/coll1-3]
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ОТДЕЛЫ И ДОЛЖНОСТИ[/b][/size][/center][/color][/block][textarea][coll3][left]%text:department%[/left]|[center][url=%text:divisionurl%]%text:division%[/url][/center]|[right]%text:position%[/right][/coll3][/textarea]
+[an=(Личное оружие)]%text:gun%[/an][/textareaa]
+
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ПЕРСОНАЛЬНЫЕ ДАННЫЕ[/b][/size][/center][/color][/block][textarea][an=(Место рождения)]%text:placeofbirth%[/an]
+[coll3][an=(Дата рождения)]%text:dateofbirth%[/an]|[an=(Полных лет)]%text:age%[/an]|[an=(Пол)]%text:sex%[/an][/coll3]
+[coll2-3][an=(Расовая принадлежность)]%text:race%[/an]|[an=(Семейное положение)]%text:marriagestatus%[/an][/coll2-3][/textarea]
+
+[block=#003f6d][color=#FFFFFF][center][size=110][b]КОНТАКТНЫЕ ДАННЫЕ[/b][/size][/center][/color][/block][textarea][an=(Адрес проживания)]%text:adress%[/an]
+[an=(Рабочий номер телефона)]%text:mobilenumber%[/an][/textarea][hr][/hr][coll][left]Личное дело сотрудника Дорожного Патруля[/left]|[right]Стандарт от 07 Марта 2020 г.[/right][/coll][/background][/box]
