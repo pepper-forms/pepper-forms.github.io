@@ -436,3 +436,41 @@ body {
     resize: vertical;
     box-sizing: content-box;
 }
+
+.pfForm, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pfForm input[type="text"] {
+    height: 18px;
+    width: calc(100% - 13px);
+    padding: 10px;
+    margin: -5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.pfForm select {
+    height: 18px;
+    width: calc(100% - 13px);
+    padding: 10px;
+    margin: -5px;
+    font-size: 16px;
+    box-sizing: content-box;
+    border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.pfForm textarea {
+    display: block;
+    margin-top: 2px;
+    width: calc(100% - 20px);
+    height: 85px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}
