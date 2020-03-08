@@ -4,7 +4,7 @@
 [block=#003f6d][color=#FFFFFF][center][size=110][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll1-3][imgborder]%text:photourl%[/imgborder]|[left][coll][an=(Имя)]%text:name%[/an]|[an=(Второе имя)]%text:secondname%[/an][/coll]
 [an=(Фамилия)]%text:surname%[/an]
 [an=(Дата начала работы)]%text:datestarted%[/an][/left][/coll1-3]
-[block=#003f6d][color=#FFFFFF][center][size=110][b]ОТДЕЛЫ И ДОЛЖНОСТИ[/b][/size][/center][/color][/block][textarea][coll3][left]%text:department%[/left]|[center][url=%text:divisionurl%]%text:division%[/url][/center]|[right]%text:position%[/right][/coll3][/textarea]
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ОТДЕЛЫ И ДОЛЖНОСТИ[/b][/size][/center][/color][/block][textarea][coll3][left][b]%text:department%[/b][/left]|[center][url=%text:divisionurl%]%text:division%[/url][/center]|[right]%text:position%[/right][/coll3][/textarea]
 [an=(Личное оружие)]%text:gun%[/an][/textareaa]
 
 [block=#003f6d][color=#FFFFFF][center][size=110][b]ПЕРСОНАЛЬНЫЕ ДАННЫЕ[/b][/size][/center][/color][/block][textarea][an=(Место рождения)]%text:placeofbirth%[/an]

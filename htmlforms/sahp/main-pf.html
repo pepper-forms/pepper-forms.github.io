@@ -32,15 +32,15 @@
 		                 </span><br><span style="font-style: italic"></span>
 		                 	<div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
                            		<select name="rank" id="rank">
-	                       			<option value="TROOPER" selected disabled hidden>Выберите ваш ранг</option>
-	                       			<option>TROOPER TRAINEE</option>
-	                       			<option>TROOPER</option>
-	                       			<option>SERGEANT</option>
-	                       			<option>LIEUTENANT</option>
-	                       			<option>CAPTAIN</option>
-	                       			<option>DEPUTY CHIEF</option>
-	                       			<option>LIEUTENANT COLONEL</option>
-	                       			<option>COLONEL</option>
+	                       			<option value="DPS OFFICER II" selected disabled hidden>Выберите ваш ранг</option>
+	                       			<option>DPS Officer I</option>
+	                       			<option>DPS Officer II</option>
+	                       			<option>DPS Sergeant</option>
+	                       			<option>DPS Lieutenant</option>
+	                       			<option>DPS Captain</option>
+	                       			<option>DPS Major</option>
+	                       			<option>Lieutenant Colonel</option>
+	                       			<option>Colonel</option>
 	                       		</select>	
                            	</div>
 		                <br>
@@ -83,12 +83,12 @@
 		                             <tr>
 		                                <td style="vertical-align: top; width:50%; padding-right:10px;">
 		                                   <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                                   		<input type="text" name="name" placeholder="LUCIFER" autofocus autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                                   		<input type="text" name="name" placeholder="PETR" autofocus autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
 		                                   <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Имя)</div>
 		                                </td>
 		                                <td style="vertical-align: top; width:50%; padding-left:10px;">
 		                                   <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                                   	<input type="text" name="secondname" placeholder="IS" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                                   	<input type="text" name="secondname" placeholder="Если есть" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
 		                                   <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Второе имя)</div>
 		                                </td>
 		                             </tr>
@@ -96,11 +96,11 @@
 		                       </table>
 		                       <br>
 		                       <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                       		<input type="text" name="surname" placeholder="STUPID NAME" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                       		<input type="text" name="surname" placeholder="TANKOVICH" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
 		                       <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Фамилия)</div>
 		                       <br>
 		                       <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                       		<input type="text" class="datepicker" name="datestarted" placeholder="Нажмите, чтобы выбрать" /></div>
+		                       		<input type="text" class="datepicker" name="datestarted" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/></div>
 		                       <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Дата начала работы)</div>
 		                    </div>
 		                 </td>
@@ -122,35 +122,28 @@
 		                    <td style="vertical-align: top; width:26%; padding-right:10px;">
 		                       <div style="text-align: left;">
 		                       		<select name="department" id="dep">
-		                       			<option value="FO" selected disabled hidden>Выберите офис</option>
-		                       			<option value="HQ">Headquarters</option>
-		                       			<option value="FO">Field Operations</option>
-		                       			<option value="ATO">ATO</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;(Administrative and Training Operations)</option>
-		                       			<option value="DPS ID">DPS Investigation Division</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;(Department of Public Safety...</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;... Investigation Division)</option>
-		                       			<option value="ICE">ICE</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;(Interdiction and Criminal Enforcement)</option>
-		                       			<option value="PSB">Professional Standarts Bureau</option>
-		                       			<option value="DPS DEM">DPS DEM</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;(Department of Public Safety...</option>
-		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;&nbsp;... Division of Emergency Managment)</option>
+		                       			<option value="HP" selected disabled hidden>Выберите дивизион</option>
+		                       			<option value="HP">Highway Patrol</option>
+		                       			<option value="ID">Investigation Division</option>
+		                       			<option value="TD">Training Division</option>
+		                       			<option value="HR">Human Resources</option>
+		                       			<option value="OPR">OPR</option>
+		                       			<option disabled style="font-style:italic">&nbsp;&nbsp;(Office of Professional Responsibility)</option>
 		                       		</select>
 		                       	</div>
 		                    </td>
 		                    <td style="vertical-align: top; width:26%; ">
 		                       <div style="text-align: center;">
-		                       		<span name="divisionurl"/></span>
+		                       		<input type="hidden" name="divisionurl"/>
 		                       		<select name="division" id="div"/>
-		                       			<option value="Southern Command" selected disabled hidden>Сначала выберите офис</option>
+		                       			<option value="Patrol Operations" selected disabled hidden>Сначала выберите дивизион</option>
 		                       		</select>
 		                       	</div>
 		                    </td>
 		                    <td style="vertical-align: top; width:26%; padding-left:10px;">
 		                       <div style="text-align: right;">
 		                       		<select name="position" id="pos"/>
-		                       			<option value="Trooper" selected disabled hidden>Сначала выберите дивизион</option>
+		                       			<option value="Trooper" selected disabled hidden>Сначала выберите отдел</option>
 		                       		</select>
 		                       	</div>
 		                    </td>
@@ -209,7 +202,7 @@
 		              <tr>
 		                 <td style="vertical-align: top; width:33%; padding-right:10px;">
 		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                    	<input type="text" class="datepicker" name="dateofbirth" placeholder="Нажмите, чтобы выбрать"/>
+		                    	<input type="text" class="datepicker" name="dateofbirth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
 		                    </div>
 		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Дата рождения)</div>
 		                 </td>
@@ -398,25 +391,12 @@
 			var id = document.getElementsByName("PFid")[0].value;
 			var name = document.getElementsByName("name")[0].value.capitalize();
 			var surname = document.getElementsByName("surname")[0].value.capitalize();
-			var rank = document.getElementsByName("rank")[0].value.capitalize();
+			var rank = document.getElementsByName("rank")[0].value;
 			var h_output = "";
 			if (id && name && surname && rank) {
 				h_output = id + " | " + rank + " " + name + " " + surname
 			}
 			return h_output;
-		}
-
-		function form2dict(form) {
-			var values = form.querySelectorAll('[name]');
-			var data = {};
-			for (var i = 0; i < values.length; i++) {
-				if (values[i].classList.contains('datepicker')) {
-					data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || parseDate() || "N/A";
-				} else {
-					data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
-				}
-			}
-			return data;
 		}
 
 		$.datepicker.setDefaults({ 
@@ -438,82 +418,106 @@
 
 		var sel_rank = 0;
 
+		const div = {
+		    "HP": "<option selected disabled hidden>Намжите для выбора</option><option>HP Office of Chief</option><option>Southern Command</option><option>Patrol Operations</option><option>Air Support Unit</option><option>K9 Unit</option><option>Emergency Services Unit</option><option>Special Response Team</option>",
+		    "ID": "<option selected disabled hidden>Намжите для выбора</option><option>HP Office of Chief</option><option>Narcotic Enforcement</option><option>Major Crimes Unit</option>",
+		    "TD": "<option selected disabled hidden>Намжите для выбора</option><option>Training Division</option><option>South Academy</option>",
+		    "HR": "<option selected disabled hidden>Намжите для выбора</option><option>Human Resources</option>",
+		    "OPR": "<option selected disabled hidden>Намжите для выбора</option><option value='Office of Professional Responsibility'>OPR</option>",
+		}
+		 
+		const pos = {
+		    "HP Office of Chief": "<option>Assistant Chief</option><option>Chief</option>",
+		    "Southern Command": "<option>Deputy Chief</option>",
+		    "Patrol Operations": "<option>Trainee Trooper</option><option>Trooper</option><option>Field Training Officer</option><option>Field Supervisor</option><option>Deputy Commander</option><option>Commander</option>",
+		    "Air Support Unit": "<option>Airplane Pilot</option><option>Helicopter Pilot</option><option select>Tactical Flight Officer</option><option>Commander</option>",
+		    "K9 Unit": "<option>K9 Handler</option><option>Commander</option>",
+		    "Emergency Services Unit": "<option>Commander</option>",
+		    "Special Response Team": "<option>SRT Officer</option><option>SRT Squad Leader</option><option>SRT Leader</option><option>SRT Commander</option>",
+		    "ID Office of Chief": "<option>Deputy Chief</option><option>Chief</option>",
+		    "Narcotic Enforcement": "<option>Investigator</option><option>Commander</option>",
+		    "Major Crimes Unit": "<option>Investigator</option><option>Commander</option>",
+		    "Training Division": "<option>Deputy Chief</option><option>Chief</option>",
+		    "South Academy": "<option>Training Officer</option><option>Commander</option>",
+		    "Human Resources": "<option>Analyst</option><option>Manager</option>",
+		    "Office of Professional Responsibility": "<option>Investigator</option><option>Commander</option>",
+		}
+
+		const posUrl = {
+			"HP Office of Chief": "https://sa-es.su/lv/hp/index.php",
+			"Southern Command": "https://sa-es.su/lv/hp/viewforum.php?f=192",
+		    "Patrol Operations": "https://sa-es.su/lv/hp/viewforum.php?f=195",
+		    "Air Support Unit": "https://sa-es.su/lv/hp/viewforum.php?f=244",
+		    "K9 Unit": "https://sa-es.su/lv/hp/viewforum.php?f=282",
+		    "Emergency Services Unit": "https://sa-es.su/lv/hp/viewforum.php?f=332",
+		    "Special Response Team": "https://sa-es.su/lv/hp/viewforum.php?f=291",
+		    "ID Office of Chief": "https://sa-es.su/lv/hp/viewforum.php?f=255",
+		    "Narcotic Enforcement": "https://sa-es.su/lv/hp/viewforum.php?f=263",
+		    "Major Crimes Unit": "https://sa-es.su/lv/hp/viewforum.php?f=318",
+		    "Training Division": "https://sa-es.su/lv/hp/viewforum.php?f=205",
+		    "South Academy": "https://sa-es.su/lv/hp/viewforum.php?f=333",
+		    "Human Resources": "https://sa-es.su/lv/hp/viewforum.php?f=234",
+		    "Office of Professional Responsibility": "https://sa-es.su/lv/hp/viewforum.php?f=258",
+		}
+
+		const default_select = "<option selected disabled hidden>Намжите для выбора</option>"
+
 		$(document).ready(function() {
-		    $("#dep").change(function() {
-		        var val = $(this).val();
-		        if (val == "FO") {
-		            $("#div").html("<option>Southern Command</option><option>Air Support Team</option>");
-		        } else if (val == "DPS DEM") {
-		            $("#div").html("<option>SWAT</option>");
-		        } else if (val == "DPS ID") {
-		            $("#div").html("<option value='DEG'>Drug Enforcement Group</option>");
-		        } else if (val == "PSB") {
-		            $("#div").html("<option value='IAG'>Internal Affairs Group</option>");
-		        } else if (val == "ICE") {
-		            $("#div").html("<option>K9 Unit</option>");
-		        } else if (val == "ATO") {
-		            $("#div").html("<option>Training Bureau</option><option>Personnel Bureau</option><option>Media Relations Bureau</option>");
-		        }
-		    });
-
-		    $("#div").change(function() {
-		        var val = $(this).val();
-		        if (val == "Southern Command") {
-		            $("#pos").html("<option value='test'>item1: test 1</option><option value='test2'>item1: test 2</option>");
-		        } else if (val == "item2") {
-		            $("#pos").html("<option value='test'>item2: test 1</option><option value='test2'>item2: test 2</option>");
-
-		        } else if (val == "item3") {
-		            $("#pos").html("<option value='test'>item3: test 1</option><option value='test2'>item3: test 2</option>");
-
-		        }
-		    });
+		    $(function() {
+			    $("#dep").on("change", function() {
+			        const val = $(this).val();
+			        $("#div").html(div[val]);
+			        $('#pos').html(default_select);
+			    });
+			    $("#div").on("change", function() {
+			        const val = $(this).val();
+			        $("#pos").html(pos[val]);
+			        document.getElementsByName("divisionurl")[0].value = posUrl[val];
+			    })
+			});
 
 		    $("#sexrange").change(function(){
-	            $("#sex").val = $(this).val();
-	        });
-
-		    $("#sexrange").change(function(){
-
 	            var val = $(this).val();
 	            if (val > 50) {
-	            	$("#mar").html("<option selected>Замужем</option><option>Не замужем</option><option>Гражданский брак</option><option>Разведена</option><option>Однополый брак</option>");
+	            	$("#mar").html("<option>Замужем</option><option selected>Не замужем</option><option>Гражданский брак</option><option>Разведена</option><option>Однополый брак</option>");
+	            	document.getElementsByName("sex")[0].value = "Женский";
 	            } else if (val < 50) {
-	            	$("#mar").html("<option selected>Женат</option><option>Не женат</option><option>Гражданский брак</option><option>Разведен</option><option>Однополый брак</option>");
+	            	$("#mar").html("<option>Женат</option><option selected>Не женат</option><option>Гражданский брак</option><option>Разведен</option><option>Однополый брак</option>");
+	            	document.getElementsByName("sex")[0].value = "Мужской";
 	            }
 	        });
 
 	        $("#rank").change(function(){
 	            $("#insigniaurl").val = $(this).val();
-	            if ($(this).val() == "SERGEANT") {
+	            if ($(this).val() == "DPS Sergeant") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/cY7u8kg.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/cY7u8kg.png")
 	            	sel_rank = 3
-	            } else if ($(this).val() == "LIEUTENANT") {
+	            } else if ($(this).val() == "DPS Lieutenant") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/uPeKxJH.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/uPeKxJH.png")
 	            	sel_rank = 4
-	            } else if ($(this).val() == "CAPTAIN") {
+	            } else if ($(this).val() == "DPS Captain") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/zNJJB6Q.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/zNJJB6Q.png")
 	            	sel_rank = 5
-	            } else if ($(this).val() == "DEPUTY CHIEF") {
+	            } else if ($(this).val() == "DPS Major") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/t0syBWy.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/t0syBWy.png")
 	            	sel_rank = 6
-	            } else if ($(this).val() == "LIEUTENANT COLONEL") {
+	            } else if ($(this).val() == "Lieutenant Colonel") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/lVDWsYH.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/lVDWsYH.png")
 	            	sel_rank = 7
-	            } else if ($(this).val() == "COLONEL") {
+	            } else if ($(this).val() == "Colonel") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/klKsIoH.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/klKsIoH.png")
 	            	sel_rank = 8
-	            } else if ($(this).val() == "TROOPER") {
+	            } else if ($(this).val() == "DPS Officer II") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/8hOIU84.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/8hOIU84.png")
 	            	sel_rank = 2
-	            } else if ($(this).val() == "TRAINEE TROOPER") {
+	            } else if ($(this).val() == "DPS Officer I") {
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/8hOIU84.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/8hOIU84.png")
 	            	sel_rank = 1
