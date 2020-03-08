@@ -241,7 +241,7 @@
 		              <tr>
 		                 <td style="vertical-align: top; width:75%; padding-right:10px;">
 		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                    	<select>
+		                    	<select name="race">
 				                   	<option value="N/A" selected disabled hidden>Выберите расу</option>
 									<option>Европеоидная</option>
 									<option>Негроидная</option>
@@ -387,7 +387,11 @@
             var ageDifMs = Date.now() - birthday.getTime();
             var ageDate = new Date(ageDifMs); // miliseconds from epoch
             var diff = ageDate.getUTCFullYear() - 1970
-            return age - diff == 0 ? (false) : true;
+            if (age) {
+            	return age - diff == 0 ? (false) : true;
+        	} else {
+        		return false;
+        	}
         }
 
 		function generatePostTitle() {
