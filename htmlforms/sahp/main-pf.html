@@ -202,13 +202,13 @@
 		              <tr>
 		                 <td style="vertical-align: top; width:33%; padding-right:10px;">
 		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                    	<input type="text" class="datepicker" name="dateofbirth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+		                    	<input type="text" class="datepicker" id="dateofbirth" name="dateofbirth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
 		                    </div>
 		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Дата рождения)</div>
 		                 </td>
 		                 <td style="vertical-align: top; width:33%; padding-left:10px;">
 		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
-		                    	<input type="text" name="age" placeholder="30" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+		                    	<input type="text" name="age" readonly="readonly" style="color: #787878" onfocus="blur()" placeholder="Выберите дату рождения" autocomplete="off"/>
 		                    </div>
 		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Полных лет)</div>
 		                 </td>
@@ -349,10 +349,6 @@
 		}
 
 		function prepare() {
-			if (debilTest()) {
-				alert(`Ошибка с возрастом. Тебе не может быть ` + document.getElementsByName("age")[0].value + ".");
-                reject()
-			}
 			if (document.getElementsByName("adress")[0].value == "555 Sunset Blvd, Las Venturas") {
 				alert(`Нельзя юзать адрес из плейсхолдера. Хитрожоп.`);
                 reject()
@@ -374,18 +370,14 @@
 			showBB()
 		}
 
-		function debilTest() {
-            var birthday = new Date(document.getElementsByName("dateofbirth")[0].value);
-            var age = document.getElementsByName("age")[0].value;
-            var ageDifMs = Date.now() - birthday.getTime();
-            var ageDate = new Date(ageDifMs); // miliseconds from epoch
-            var diff = ageDate.getUTCFullYear() - 1970
-            if (age) {
-            	return age - diff == 0 ? (false) : true;
-        	} else {
-        		return false;
-        	}
-        }
+		function calculateAge(birthday) {
+			return Math.floor((Date.now() - birthday.getTime()) / (1000* 60 * 60 * 24 * 365));
+		}
+
+		function getAge() {
+			var birthday = $.datepicker.parseDate('dd/M/yy', document.getElementsByName("dateofbirth")[0].value);
+			return calculateAge(birthday);
+		}
 
 		function generatePostTitle() {
 			var id = document.getElementsByName("PFid")[0].value;
@@ -478,6 +470,10 @@
 			        document.getElementsByName("divisionurl")[0].value = posUrl[val];
 			    })
 			});
+
+		    $("#dateofbirth").change(function(){
+	            document.getElementsByName("age")[0].value = getAge();
+	        });
 
 		    $("#sexrange").change(function(){
 	            var val = $(this).val();
