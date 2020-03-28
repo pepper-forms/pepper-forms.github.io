@@ -1,0 +1,17 @@
+﻿[box=#003f6d][background=#eaf0fe][coll1-3][center][img]https://www.upload.ee/image/11230932/logo.png[/img][/center]|[color=#003f6d][size=140][center]SAN ANDREAS DEPARTMENT OF PUBLIC SAFETY
+HUMAN RESOURCES[/size]
+
+[size=160][b]REINSTATEMENT PROGRAM[/b][/size][/center][/color][/coll1-3]
+
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ О ПЕРСОНАЖАХ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][an=ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС]%textarea:role%
+[spoiler="Полное описание"]%textarea:role_ext%[/spoiler][/an]
+[an=ВАШИ ПРЕДЫДУЩИЕ РОЛИ, ДАТА КОГДА ВЫ ИГРАЛИ, СЕРВЕР, ЛИДЕР (ТЕЗИСНО)]%textarea:roles%[/an]
+[an=ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ТОЛЬКО ХОРОШИЕ СС, ТЕЗИСНО ПО ПЕРСОНАЖАМ)]%textarea:ss%[/an][/textareaa]
+
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ ОБ АППЛИКАНТЕ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll3][an=КАК ВАС ЗОВУТ?]%text:aname%[/an]|[an=ВАШ НИКНЕЙМ В СООБЩЕСТВАХ (ЕСЛИ ЕСТЬ)]%text:anickname%[/an]|[an=ВАШ ВОЗРАСТ]%text:aage%[/an][/coll3]
+[coll][an=ССЫЛКА НА VK]%text:vkurl%[/an]|[an=ССЫЛКА НА ФОРУМНЫЙ АККАУНТ (G-RP)]%text:gurl%[/an][/coll][/textareaa]
+
+[block=#003f6d][color=#FFFFFF][center][size=110][b]ПРОЧАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll][an=ИГРАЛИ ЛИ ВЫ РАНЕЕ В НАШЕМ СООБЩЕСТВЕ? (LSPD.US)]%text:diduplayed%[/an]|[an=КАКАЯ ЗАЩИТА СТОИТ НА АККАУНТЕ]%text:protection%[/an][/coll]
+[an=ВАШИ ПРЕДПОЧТЕНИЯ ПО ОТДЕЛУ]%text:wishes%[/an]
+[an=ПОДАВАЛОСЬ ЛИ ПОДОБНОЕ ЗАЯВЛЕНИЕ РАНЕЕ?]%text:diduapply%[/an][/textareaa]
+[hr][/hr][coll][left]Форма Reinstatement Program[/left]|[right]Стандарт от 28 Марта 2020 г.[/right][/coll][/box][/background]

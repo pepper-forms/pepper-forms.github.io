@@ -474,3 +474,41 @@ body {
     resize: vertical;
     box-sizing: content-box;
 }
+
+.bhSAHPForm, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bhSAHPForm input[type="text"] {
+    height: 18px;
+    width: calc(100% - 13px);
+    padding: 10px;
+    margin: -5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.bhSAHPForm select {
+    height: 2em;
+    width: calc(100% );
+    margin: -5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.bhSAHPForm textarea {
+    display: block;
+    padding: 10px;
+    margin-top: 2px;
+    width: calc(100% - 11px);
+    margin: -5px;
+    height: 55px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}
