@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/common/css/style.css">
+	<link rel="stylesheet" href="/common/css/micromodal.css">
+	<script src="/common/js/micromodal.min.js"></script>
+	<script src="/common/js/utils.js"></script>
+
+	<title>Main Personnel File - LVMPD</title>
+</head>
+
+<body>
+	<div class="pfForm" style="padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+		<div style="padding: 10px; background-color: #003f6d;">
+		<div style="padding: 15px; background-color: #eaf0fe;">
+		  <span>
+		     <table width="100%">
+		        <tbody>
+		           <tr>
+		              <td style="vertical-align: top; width:26%; padding-right:10px;">
+		                 <div style="text-align: left;"><img src="https://i.imgur.com/NJi3FeS.png" class="postimage" alt="Изображение"></div>
+		              </td>
+		              <td style="vertical-align: top; width:26%; ">
+		                 <div style="text-align: center;"><span style="font-size: 130%; line-height: 116%;"><span style="font-weight: bold">
+		                 	<input type="hidden" name="fullname"/>
+		                 </span><br><span style="font-style: italic"></span>
+		                 	<div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+                           		<select name="rank" id="rank">
+	                       			<option value="POLICE OFFICER II" selected disabled hidden>Выберите ваш ранг</option>
+	                       			<option>POLICE OFFICER I</option>
+	                       			<option>POLICE OFFICER II</option>
+	                       			<option>DETECTIVE</option>
+	                       			<option>SERGEANT</option>
+	                       			<option>LIEUTENANT</option>
+	                       			<option>CAPTAIN</option>
+	                       			<option>DEPUTY CHIEF</option>
+	                       			<option>ASSISTANT SHERIFF</option>
+	                       			<option>UNDERSHERIFF</option>
+	                       			<option>SHERIFF</option>
+	                       		</select>	
+                           	</div>
+		                <br>
+		                <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                	<input type="hidden"  name="PFid">
+		                	<input type="text" name="badge" placeholder="Последние 3 цифры url профиля" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+		                </div>
+		                <div style="text-indent: 3%; text-align: left; font-size: 63%; line-height: 120%;">(Номер значка)</div>
+		              </td>
+		              <td style="vertical-align: top; width:26%; padding-left:10px;">
+		                 <div style="text-align: right;">
+		                 	<ul><img src="https://i.imgur.com/8hOIU84.png" alt="insignia" id="insigniaurl"/>
+							    <input type='hidden' name="insigniaurl" value="https://i.imgur.com/8hOIU84.png" />
+		                 </div>
+		              </td>
+		           </tr>
+		        </tbody>
+		     </table>
+		     <br>
+		     <div style="padding: 2px; background-color: #003f6d;">
+		        <span>
+		           <span style="color: #FFFFFF">
+		              <div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">ОСНОВНАЯ ИНФОРМАЦИЯ</span></span></div>
+		           </span>
+		        </span>
+		     </div>
+		     <div style="border: 1px solid black; padding: 10px; background-color: #FFFFFF; color: rgb(0, 0, 0);">
+		        <table width="100%">
+		           <tbody>
+		              <tr>
+		                 <td style="vertical-align: top; width:25%; padding-right:10px;">
+		                 		<input id="profilePhotoInput" type='file' class="hidden-input" />
+							    <ul><img src="https://i.imgur.com/XBp30ye.png" alt="150x150" title="Нажмите, чтобы загрузить" id="photourl"/>
+							    <input type='hidden' name="photourl" value="https://i.imgur.com/hloSVZl.png" />
+						 </td>
+		                 <td style="vertical-align: top; width:75%; padding-left:10px;">
+		                    <div style="text-align: left;">
+		                       <table width="100%">
+		                          <tbody>
+		                             <tr>
+		                                <td style="vertical-align: top; width:50%; padding-right:10px;">
+		                                   <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                                   		<input type="text" name="name" placeholder="PETR" autofocus autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                                   <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Имя)</div>
+		                                </td>
+		                                <td style="vertical-align: top; width:50%; padding-left:10px;">
+		                                   <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                                   	<input type="text" name="secondname" placeholder="Если есть" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                                   <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Второе имя)</div>
+		                                </td>
+		                             </tr>
+		                          </tbody>
+		                       </table>
+		                       <br>
+		                       <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                       		<input type="text" name="surname" placeholder="TANKOVICH" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/></div>
+		                       <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Фамилия)</div>
+		                       <br>
+		                       <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                       		<input type="text" class="datepicker" name="datestarted" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/></div>
+		                       <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Дата начала работы)</div>
+		                    </div>
+		                 </td>
+		              </tr>
+		           </tbody>
+		        </table>
+		        <br>
+		        <div style="padding: 2px; background-color: #003f6d;">
+		           <span>
+		              <span style="color: #FFFFFF">
+		                 <div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">ОТДЕЛЫ И ДОЛЖНОСТИ</span></span></div>
+		              </span>
+		           </span>
+		        </div>
+		        <div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+		           <table width="100%">
+		              <tbody>
+		                 <tr>
+		                    <td style="vertical-align: top; width:26%; padding-right:10px;">
+		                       <div style="text-align: left;">
+		                       		<select name="department" id="dep">
+		                       			<option value="CPD" selected disabled hidden>Выберите дивизион</option>
+		                       			<option value="CPD">Community Policing Division</option>
+		                       			<option value="ISD">Investigative Services Division</option>
+		                       			<option value="SWAT">Special Weapons and Tactics</option>
+		                       			<option value="PSD">Professional Standarts Division</option>
+		                       			<option value="SOB">Support Operations Bureau</option>
+		                       			<option value="IAB">Internal Affairs Bureau</option>
+		                       		</select>
+		                       	</div>
+		                    </td>
+		                    <td style="vertical-align: top; width:26%; ">
+		                       <div style="text-align: center;">
+		                       		<input type="hidden" name="divisionurl"/>
+		                       		<select name="division" id="div"/>
+		                       			<option value="Community Policing Division" selected disabled hidden>Сначала выберите дивизион</option>
+		                       		</select>
+		                       	</div>
+		                    </td>
+		                    <td style="vertical-align: top; width:26%; padding-left:10px;">
+		                       <div style="text-align: right;">
+		                       		<select name="position" id="pos"/>
+		                       			<option value="Police Officer II" selected disabled hidden>Сначала выберите отдел</option>
+		                       		</select>
+		                       	</div>
+		                    </td>
+		                 </tr>
+		              </tbody>
+		           </table>
+		        </div>
+		        <br>
+		        <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		        	<select name="gun">
+               			<option value="N/A" selected disabled hidden>Выберите сертифицированное Департаментом оружие</option>
+               			<option>Beretta 92FS, 9mm</option>
+               			<option>Beretta 92F,  9mm</option>
+               			<option>Beretta 845F,  .45 caliber</option>
+               			<option>Glock 17,  9mm</option>
+               			<option>Glock 19,  9mm</option>
+               			<option>Glock 21  .45 caliber</option>
+               			<option>Glock 22  .40 caliber</option>
+               			<option>Glock 23,  .40 caliber</option>
+               			<option>Glock 26, 9mm</option>
+               			<option>Glock 27, .40 caliber</option>
+               			<option>Glock 30, .45 caliber</option>
+               			<option>Glock 36,  .45 caliber</option>
+               			<option>Smith & Wesson, model 4506 .45 caliber</option>
+               			<option>Smith & Wesson, model 4566 .45 caliber</option>
+               			<option>Smith & Wesson, model 4516 .45 caliber</option>
+               			<option>Smith & Wesson, model 3914 9mm</option>
+               			<option>Smith & Wesson, model 3913 9mm</option>
+               			<option>Smith & Wesson, model 457 .45 caliber</option>
+               			<option>Smith & Wesson, model CS9 9mm</option>
+               			<option>Smith & Wesson, model 6904 9mm</option>
+               			<option>Smith & Wesson, model 5906 9mm</option>
+               			<option>Smith & Wesson, model 6906 9mm</option>
+               			<option>Kimber Custom 2 .45 caliber</option>
+               			<option>Kimber Classic .45 caliber</option>
+               		</select>
+		        </div>
+		        <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Личное оружие)</div>
+		     </div>
+		     <br><br>
+		     <div style="padding: 2px; background-color: #003f6d;">
+		        <span>
+		           <span style="color: #FFFFFF">
+		              <div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</span></span></div>
+		           </span>
+		        </span>
+		     </div>
+		     <div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+		        <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		        	<input type="text" name="placeofbirth" placeholder="Las Venturas, San Andreas" autocomplete="off"/>
+		        </div>
+		        <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Место рождения)</div>
+		        <br>
+		        <table width="100%">
+		           <tbody>
+		              <tr>
+		                 <td style="vertical-align: top; width:33%; padding-right:10px;">
+		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                    	<input type="text" class="datepicker" id="dateofbirth" name="dateofbirth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+		                    </div>
+		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Дата рождения)</div>
+		                 </td>
+		                 <td style="vertical-align: top; width:33%; padding-left:10px;">
+		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                    	<input type="text" name="age" readonly="readonly" style="color: #787878" onfocus="blur()" placeholder="Выберите дату рождения" autocomplete="off"/>
+		                    </div>
+		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Полных лет)</div>
+		                 </td>
+		                 <td style="vertical-align: top; width:33%; padding-left:10px;">
+		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                    	<input type="hidden" name="sex" id="sex">
+		                    	<div class="d-flex ">
+								  М
+								  <div style="width: calc(90%); align-content: center;"> 
+								  	<input type="range" class="custom-range" style="width: calc(100%); height: calc(0.8rem); padding-left: 7px; padding-right: 7px;" id="sexrange">
+								  </div>
+								  Ж
+								</div>
+		                    </div>
+		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Пол)</div>
+		                 </td>
+		              </tr>
+		           </tbody>
+		        </table>
+		        <br>
+		        <table width="100%">
+		           <tbody>
+		              <tr>
+		                 <td style="vertical-align: top; width:75%; padding-right:10px;">
+		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                    	<select name="race">
+				                   	<option value="N/A" selected disabled hidden>Выберите расу</option>
+									<option>Европеоидная</option>
+									<option>Негроидная</option>
+									<option>Восточноафриканская</option>
+									<option>Монголоидная</option>
+									<option>Американоидная</option>
+									<option>Австролоидная</option>
+							     </select>
+		                    </div>
+		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Расовая принадлежность)</div>
+		                 </td>
+		                 <td style="vertical-align: top; width:25%; padding-left:10px;">
+		                    <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		                    	<select name="marriagestatus" id="mar">
+		                       		<option value="N/A" selected disabled hidden>Сначала пол</option>
+		                       	</select>
+		                    </div>
+		                    <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Семейное положение)</div>
+		                 </td>
+		              </tr>
+		           </tbody>
+		        </table>
+		     </div>
+		     <br><br>
+		     <div style="padding: 2px; background-color: #003f6d;">
+		        <span>
+		           <span style="color: #FFFFFF">
+		              <div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">КОНТАКТНЫЕ ДАННЫЕ</span></span></div>
+		           </span>
+		        </span>
+		     </div>
+		     <div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+		        <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		        	<input type="text" name="adress" placeholder="555 Sunset Blvd, Las Venturas" autocomplete="off"/></div>
+		        <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Адрес проживания)</div>
+		        <br>
+		        <div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
+		        	<input type="text" name="mobilenumber" placeholder="123-123" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.-]/g, '').replace(/(\..*)\./g, '$1');"/></div>
+		        <div style="text-indent: 2%; font-size: 80%; line-height: 120%;">(Рабочий номер телефона)</div>
+		     </div>
+		     <hr>
+		     <table width="100%">
+		        <tbody>
+		           <tr>
+		              <td style="vertical-align: top; width:50%; padding-right:10px;">
+		                 <div style="text-align: left;">Личное дело сотрудника LVMPD</div>
+		              </td>
+		              <td style="vertical-align: top; width:50%; padding-left:10px;">
+		                 <div style="text-align: right;">Стандарт от 3 Июня 2020 г.</div>
+		              </td>
+		           </tr>
+		        </tbody>
+		     </table>
+		  </span>
+		</div>
+		</div>
+	</div>
+
+
+			<div class="btn-container">
+				<button class="modal__btn modal__btn-primary" onclick="prepare()">Generate</button>
+				<button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Here is your BBCode!</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid">
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="output__header">Topic Name</label>
+									</div>
+									<div class="col-9 col-lg-10">
+										<input type="text" class="form-control" id="output__header">
+									</div>
+									<div class="col-3 col-lg-2">
+										<button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="output__body">BBCode</label>
+									</div>
+									<div class="col-9 col-lg-10">
+										<textarea class="form-control" rows="10" id="output__body"></textarea>
+									</div>
+									<div class="col-3 col-lg-2 d-flex align-items-center">
+										<button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/mpd','_blank')">Go to Forum</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script>
+		String.prototype.capitalize = function () {
+			return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+		}
+
+		function prepare() {
+			if (document.getElementsByName("adress")[0].value == "555 Sunset Blvd, Las Venturas") {
+				alert(`Нельзя юзать адрес из плейсхолдера. Хитрожоп.`);
+                reject()
+			}
+			var rank = "FS"
+			if (sel_rank < 3) {
+				rank = "FS"
+			} else if (sel_rank == 3) {
+				rank = "SS"
+			} else if (sel_rank < 6) {
+				rank = "CS"
+			} else if (sel_rank >= 6) {
+				rank = "ES"
+			} else {
+				rank = "FS"
+			}
+			document.getElementsByName("PFid")[0].value = "PF-" + rank + "-" + document.getElementsByName("badge")[0].value
+			document.getElementsByName("fullname")[0].value = document.getElementsByName("name")[0].value + " " + document.getElementsByName("surname")[0].value
+			showBB()
+		}
+
+		function calculateAge(birthday) {
+			return Math.floor((Date.now() - birthday.getTime()) / (1000* 60 * 60 * 24 * 365));
+		}
+
+		function getAge() {
+			var birthday = $.datepicker.parseDate('dd/M/yy', document.getElementsByName("dateofbirth")[0].value);
+			return calculateAge(birthday);
+		}
+
+		function generatePostTitle() {
+			var id = document.getElementsByName("PFid")[0].value;
+			var name = document.getElementsByName("name")[0].value.capitalize();
+			var surname = document.getElementsByName("surname")[0].value.capitalize();
+			var rank = document.getElementsByName("rank")[0].value;
+			var h_output = "";
+			if (id && name && surname && rank) {
+				h_output = id + " | " + rank + " " + name + " " + surname
+			}
+			return h_output;
+		}
+
+		$.datepicker.setDefaults({ 
+            'dateFormat': 'dd/M/yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1920:+0',
+            constrainInput: false,
+        });
+
+		$('#photourl').on('click', function() {
+            uploadImage('#profilePhotoInput', allowedSize={w: 150, h: 150}).then(url => {
+                if (url) {
+                    $('#photourl').attr('src', url)
+                    $('[name="photourl"]').val(url)
+                }
+            }).catch()  
+        })
+
+		var sel_rank = 0;
+
+		const div = {
+		    "DPS": "<option selected disabled hidden>Намжите для выбора</option><option>Office of Director</option>",
+		    "HP": "<option selected disabled hidden>Намжите для выбора</option><option>HP Office of Chief</option><option>Southern Command</option><option>Patrol Operations</option><option>Air Support Unit</option><option>K9 Unit</option><option>Emergency Services Unit</option><option>Special Response Team</option>",
+		    "ID": "<option selected disabled hidden>Намжите для выбора</option><option>ID Office of Chief</option><option>Narcotic Enforcement</option><option>Major Crimes Unit</option>",
+		    "TD": "<option selected disabled hidden>Намжите для выбора</option><option>Training Division</option><option>South Academy</option>",
+		    "HR": "<option selected disabled hidden>Намжите для выбора</option><option>Human Resources</option>",
+		    "OPR": "<option selected disabled hidden>Намжите для выбора</option><option value='Office of Professional Responsibility'>OPR</option>",
+		}
+		 
+		const pos = {
+		    "Office of Director": "<option>Director</option><option>Deputy Director</option>",
+		    "HP Office of Chief": "<option>Assistant Chief</option><option>Chief</option>",
+		    "Southern Command": "<option>Deputy Chief</option>",
+		    "Patrol Operations": "<option>Trainee Trooper</option><option>Trooper</option><option>Field Training Officer</option><option>Field Training Coordinator</option><option>Field Supervisor</option><option>Deputy Commander</option><option>Commander</option>",
+		    "Air Support Unit": "<option>Airplane Pilot</option><option>Helicopter Pilot</option><option select>Tactical Flight Officer</option><option>Commander</option>",
+		    "K9 Unit": "<option>K9 Handler</option><option>Commander</option>",
+		    "Emergency Services Unit": "<option>Commander</option>",
+		    "Special Response Team": "<option>SRT Officer</option><option>SRT Squad Leader</option><option>SRT Leader</option><option>SRT Commander</option>",
+		    "ID Office of Chief": "<option>Deputy Chief</option><option>Chief</option>",
+		    "Narcotic Enforcement": "<option>Trainee Investigator</option><option>Investigator</option><option>Commander</option>",
+		    "Major Crimes Unit": "<option>Trainee Investigator</option><option>Investigator</option><option>Commander</option>",
+		    "Training Division": "<option>Deputy Chief</option><option>Chief</option>",
+		    "South Academy": "<option>Training Officer</option><option>Commander</option>",
+		    "Human Resources": "<option>Analyst</option><option>Manager</option>",
+		    "Office of Professional Responsibility": "<option>Investigator</option><option>Commander</option>",
+		}
+
+		const posUrl = {
+			"Office of Director": "https://sa-es.su/lv/hp/index.php",
+			"HP Office of Chief": "https://sa-es.su/lv/hp/index.php",
+			"Southern Command": "https://sa-es.su/lv/hp/viewforum.php?f=192",
+		    "Patrol Operations": "https://sa-es.su/lv/hp/viewforum.php?f=195",
+		    "Air Support Unit": "https://sa-es.su/lv/hp/viewforum.php?f=244",
+		    "K9 Unit": "https://sa-es.su/lv/hp/viewforum.php?f=282",
+		    "Emergency Services Unit": "https://sa-es.su/lv/hp/viewforum.php?f=332",
+		    "Special Response Team": "https://sa-es.su/lv/hp/viewforum.php?f=291",
+		    "ID Office of Chief": "https://sa-es.su/lv/hp/viewforum.php?f=255",
+		    "Narcotic Enforcement": "https://sa-es.su/lv/hp/viewforum.php?f=263",
+		    "Major Crimes Unit": "https://sa-es.su/lv/hp/viewforum.php?f=318",
+		    "Training Division": "https://sa-es.su/lv/hp/viewforum.php?f=205",
+		    "South Academy": "https://sa-es.su/lv/hp/viewforum.php?f=333",
+		    "Human Resources": "https://sa-es.su/lv/hp/viewforum.php?f=234",
+		    "Office of Professional Responsibility": "https://sa-es.su/lv/hp/viewforum.php?f=258",
+		}
+
+		const default_select = "<option selected disabled hidden>Намжите для выбора</option>"
+
+		$(document).ready(function() {
+		    $(function() {
+			    $("#dep").on("change", function() {
+			        const val = $(this).val();
+			        $("#div").html(div[val]);
+			        $('#pos').html(default_select);
+			    });
+			    $("#div").on("change", function() {
+			        const val = $(this).val();
+			        $("#pos").html(pos[val]);
+			        document.getElementsByName("divisionurl")[0].value = posUrl[val];
+			    })
+			});
+
+		    $("#dateofbirth").change(function(){
+	            document.getElementsByName("age")[0].value = getAge();
+	        });
+
+		    $("#sexrange").change(function(){
+	            var val = $(this).val();
+	            if (val > 50) {
+	            	$("#mar").html("<option>Замужем</option><option selected>Не замужем</option><option>Гражданский брак</option><option>Разведена</option><option>Однополый брак</option>");
+	            	document.getElementsByName("sex")[0].value = "Женский";
+	            } else if (val < 50) {
+	            	$("#mar").html("<option>Женат</option><option selected>Не женат</option><option>Гражданский брак</option><option>Разведен</option><option>Однополый брак</option>");
+	            	document.getElementsByName("sex")[0].value = "Мужской";
+	            }
+	        });
+
+	        $("#rank").change(function(){
+	            $("#insigniaurl").val = $(this).val();
+	            if ($(this).val() == "DPS Sergeant") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/cY7u8kg.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/cY7u8kg.png")
+	            	sel_rank = 3
+	            } else if ($(this).val() == "DPS Lieutenant") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/uPeKxJH.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/uPeKxJH.png")
+	            	sel_rank = 4
+	            } else if ($(this).val() == "DPS Captain") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/zNJJB6Q.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/zNJJB6Q.png")
+	            	sel_rank = 5
+	            } else if ($(this).val() == "DPS Major") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/t0syBWy.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/t0syBWy.png")
+	            	sel_rank = 6
+	            } else if ($(this).val() == "Lieutenant Colonel") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/lVDWsYH.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/lVDWsYH.png")
+	            	sel_rank = 7
+	            } else if ($(this).val() == "Colonel") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/klKsIoH.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/klKsIoH.png")
+	            	sel_rank = 8
+	            } else if ($(this).val() == "DPS Officer II") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/8hOIU84.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/8hOIU84.png")
+	            	sel_rank = 2
+	            } else if ($(this).val() == "DPS Officer I") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/8hOIU84.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/8hOIU84.png")
+	            	sel_rank = 1
+	            } else {
+	            	sel_rank = 0
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/8hOIU84.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/8hOIU84.png")
+	            }
+	        });
+
+		});
+
+		MicroModal.init();
+		window.__bbcodeurl = '/bbforms/sahp/main_pf.txt';   
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+</body>
+</html>

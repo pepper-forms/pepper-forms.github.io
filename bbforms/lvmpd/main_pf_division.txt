@@ -1,0 +1,1 @@
+[coll3][left][b]%text:department%[/b][/left]|[center][url=%text:divisionurl%]%text:division%[/url][/center]|[right]%text:position%[/right][/coll3]
