@@ -17,7 +17,7 @@
 
 <body>
 	<div class="pfForm" style="margin-top: 10%; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
-	    <div style="padding: 2px; background-color: #003f6d;">
+	    <div style="padding: 2px; background-color: #000000;">
 	       <span>
 	          <span style="color: #FFFFFF">
 	             <div style="text-align: center;"><span style="font-size: 110%; line-height: 116%;"><span style="font-weight: bold">ОТДЕЛЫ И ДОЛЖНОСТИ</span></span></div>
@@ -31,13 +31,14 @@
 	                <td style="vertical-align: top; width:26%; padding-right:10px;">
 	                   <div style="text-align: left;">
 	                   		<select name="department" id="dep">
-	                   			<option value="HP" selected disabled hidden>Выберите дивизион</option>
-	                   			<option value="HP">Highway Patrol</option>
-	                   			<option value="ID">Investigation Division</option>
-	                   			<option value="TD">Training Division</option>
-	                   			<option value="HR">Human Resources</option>
-	                   			<option value="OPR">OPR</option>
-	                   			<option disabled style="font-style:italic">&nbsp;&nbsp;(Office of Professional Responsibility)</option>
+	                   			<option value="POLICE OFFICER II" selected disabled hidden>Выберите ваш ранг</option>
+	                       			<option value="CPD" selected disabled hidden>Выберите дивизион</option>
+	                       			<option value="UA">Не является частью дивизиона</option>
+	                       			<option value="CPD">Community Policing Division</option>
+	                       			<option value="ISD">Investigative Services Division</option>
+	                       			<option value="HSD">Homeland Security Division</option>
+	                       			<option value="PSD">Professional Standarts Division</option>
+	                       			<option value="SOD">Special Operations Division</option>
 	                   		</select>
 	                   	</div>
 	                </td>
@@ -45,14 +46,14 @@
 	                   <div style="text-align: center;">
 	                   		<input type="hidden" name="divisionurl"/>
 	                   		<select name="division" id="div"/>
-	                   			<option value="Patrol Operations" selected disabled hidden>Сначала выберите дивизион</option>
+	                   			<option value="Community Policing Division" selected disabled hidden>Сначала выберите дивизион</option>
 	                   		</select>
 	                   	</div>
 	                </td>
 	                <td style="vertical-align: top; width:26%; padding-left:10px;">
 	                   <div style="text-align: right;">
 	                   		<select name="position" id="pos"/>
-	                   			<option value="Trooper" selected disabled hidden>Сначала выберите отдел</option>
+	                   			<option value="Police Officer II" selected disabled hidden>Сначала выберите отдел</option>
 	                   		</select>
 	                   	</div>
 	                </td>
@@ -111,48 +112,59 @@
 		}
 
 		const div = {
-		    "DPS": "<option selected disabled hidden>Намжите для выбора</option><option>Office of Director</option>",
-		    "HP": "<option selected disabled hidden>Намжите для выбора</option><option>HP Office of Chief</option><option>Southern Command</option><option>Patrol Operations</option><option>Air Support Unit</option><option>K9 Unit</option><option>Emergency Services Unit</option><option>Special Response Team</option>",
-		    "ID": "<option selected disabled hidden>Намжите для выбора</option><option>HP Office of Chief</option><option>Narcotic Enforcement</option><option>Major Crimes Unit</option>",
-		    "TD": "<option selected disabled hidden>Намжите для выбора</option><option>Training Division</option><option>South Academy</option>",
-		    "HR": "<option selected disabled hidden>Намжите для выбора</option><option>Human Resources</option>",
-		    "OPR": "<option selected disabled hidden>Намжите для выбора</option><option value='Office of Professional Responsibility'>OPR</option>",
+		    "UA": "<option selected disabled hidden>Намжите для выбора</option><option>Office of the Sheriff</option><option>Public Information Office</option><option>Administration and Support Group</option><option>Investigations and Support Group</option><option>Operations Group</option><option>Internal Affairs Bureau</option>",
+		    "CPD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Northeast Area Command</option><option>Northwest Area Command</option><option>South Central Area Command</option>",
+		    "ISD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Homicide and Sex Crimes Bureau</option><option>Major Violator/Narcotic Crimes Bureau</option><option>Theft Crimes Bureau</option><option>Gang/Vice Bureau</option>",
+		    "HSD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Special Weapons and Tactics Bureau</option>",
+		    "PSD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Office of Human Resources</option><option>Organizational Development Bureau</option>",
+		    "SOD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Support Operations Bureau</option><option>SOB: Air Support Section</option><option>SOB: Search and Rescue Section</option><option>SOB: K9 Section</option>",
 		}
 		 
 		const pos = {
-		    "Office of Director": "<option>Director</option><option>Deputy Director</option>",
-		    "HP Office of Chief": "<option>Assistant Chief</option><option>Chief</option>",
-		    "Southern Command": "<option>Deputy Chief</option>",
-		    "Patrol Operations": "<option>Trainee Trooper</option><option>Trooper</option><option>Field Training Officer</option><option>Field Training Coordinator</option><option>Field Supervisor</option><option>Deputy Commander</option><option>Commander</option>",
-		    "Air Support Unit": "<option>Airplane Pilot</option><option>Helicopter Pilot</option><option select>Tactical Flight Officer</option><option>Commander</option>",
-		    "K9 Unit": "<option>K9 Handler</option><option>Commander</option>",
-		    "Emergency Services Unit": "<option>Commander</option>",
-		    "Special Response Team": "<option>SRT Officer</option><option>SRT Squad Leader</option><option>SRT Leader</option><option>SRT Commander</option>",
-		    "ID Office of Chief": "<option>Deputy Chief</option><option>Chief</option>",
-		    "Narcotic Enforcement": "<option>Trainee Investigator</option><option>Investigator</option><option>Commander</option>",
-		    "Major Crimes Unit": "<option>Trainee Investigator</option><option>Investigator</option><option>Commander</option>",
-		    "Training Division": "<option>Deputy Chief</option><option>Chief</option>",
-		    "South Academy": "<option>Training Officer</option><option>Commander</option>",
-		    "Human Resources": "<option>Analyst</option><option>Manager</option>",
-		    "Office of Professional Responsibility": "<option>Investigator</option><option>Commander</option>",
+		    "Office of the Sheriff": "<option>Sheriff</option><option>Undersheriff</option>",
+		    "Public Information Office": "<option>Director</option><option>Public Information Officer</option><option>Community Relations Specialist</option>",
+		    "Administration and Support Group": "<option>Commanding Officer</option>",
+		    "Investigations and Support Group": "<option>Commanding Officer</option>",
+		    "Operations Group": "<option>Commanding Officer</option>",
+		    "Internal Affairs Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
+		    "Deputy Chief's Office": "<option>Commanding Officer</option>",
+		    "Northeast Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
+		    "Northwest Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
+		    "South Central Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
+		    "Homicide and Sex Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
+		    "Major Violator/Narcotic Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
+		    "Theft Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
+		    "Gang/Vice Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
+		    "Special Weapons and Tactics Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Squad Leader</option><option>SWAT Officer</option>",
+		    "Office of Human Resources": "<option>Director</option><option>Staff Specialist</option><option>Recruitment Officer</option>",
+		    "Organizational Development Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Training Coordinator</option><option>Training Officer</option>",
+		    "Support Operations Bureau": "<option>Commanding Officer</option>",
+		    "SOB: Air Support Section": "<option>Officer-in-Charge</option><option>Airplane Pilot</option><option>Helicopter Pilot</option><option>Tactical Flight Officer</option><option>Pilot Trainee</option>",
+		    "SOB: Search and Rescue Section": "<option>Officer-in-Charge</option>",
+		    "SOB: K9 Section": "<option>Officer-in-Charge</option><option>K9 Handler</option>",
 		}
 
 		const posUrl = {
-			"Office of Director": "https://sa-es.su/lv/hp/index.php",
-			"HP Office of Chief": "https://sa-es.su/lv/hp/index.php",
-			"Southern Command": "https://sa-es.su/lv/hp/viewforum.php?f=192",
-		    "Patrol Operations": "https://sa-es.su/lv/hp/viewforum.php?f=195",
-		    "Air Support Unit": "https://sa-es.su/lv/hp/viewforum.php?f=244",
-		    "K9 Unit": "https://sa-es.su/lv/hp/viewforum.php?f=282",
-		    "Emergency Services Unit": "https://sa-es.su/lv/hp/viewforum.php?f=332",
-		    "Special Response Team": "https://sa-es.su/lv/hp/viewforum.php?f=291",
-		    "ID Office of Chief": "https://sa-es.su/lv/hp/viewforum.php?f=255",
-		    "Narcotic Enforcement": "https://sa-es.su/lv/hp/viewforum.php?f=263",
-		    "Major Crimes Unit": "https://sa-es.su/lv/hp/viewforum.php?f=318",
-		    "Training Division": "https://sa-es.su/lv/hp/viewforum.php?f=205",
-		    "South Academy": "https://sa-es.su/lv/hp/viewforum.php?f=333",
-		    "Human Resources": "https://sa-es.su/lv/hp/viewforum.php?f=234",
-		    "Office of Professional Responsibility": "https://sa-es.su/lv/hp/viewforum.php?f=258",
+			"Office of the Sheriff": "https://sa-es.su/lv/mpd/index.php",
+			"Public Information Office": "https://sa-es.su/lv/mpd/viewforum.php?f=295",
+			"Administration and Support Group": "https://sa-es.su/lv/mpd/viewforum.php?f=292",
+		    "Investigations and Support Group": "https://sa-es.su/lv/mpd/viewforum.php?f=256",
+		    "Operations Group": "https://sa-es.su/lv/mpd/viewforum.php?f=254",
+		    "Internal Affairs Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=257",
+		    "Northeast Area Command": "https://sa-es.su/lv/mpd/viewforum.php?f=259",
+		    "Northwest Area Command": "https://sa-es.su/lv/mpd/index.php",
+		    "South Central Area Command": "https://sa-es.su/lv/mpd/index.php",
+		    "Homicide and Sex Crimes Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=133",
+		    "Major Violator/Narcotic Crimes Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=347",
+		    "Theft Crimes Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=350",
+		    "Gang/Vice Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=326",
+		    "Special Weapons and Tactics Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=334",
+		    "Office of Human Resources": "https://sa-es.su/lv/mpd/index.php",
+		    "Organizational Development Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=258",
+		    "Support Operations Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=345",
+		    "SOB: Air Support Section": "https://sa-es.su/lv/mpd/viewforum.php?f=313",
+		    "SOB: Search and Rescue Section": "https://sa-es.su/lv/mpd/index.php",
+		    "SOB: K9 Section": "https://sa-es.su/lv/mpd/viewforum.php?f=337",
 		}
 
 		const default_select = "<option selected disabled hidden>Намжите для выбора</option>"
@@ -174,7 +186,7 @@
 		});
 
 		MicroModal.init();
-		window.__bbcodeurl = '/bbforms/sahp/main_pf_division.txt';   
+		window.__bbcodeurl = '/bbforms/lvmpd/main_pf_division.txt';   
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

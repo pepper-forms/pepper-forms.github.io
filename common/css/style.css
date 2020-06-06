@@ -456,7 +456,7 @@ body {
 }
 
 .pfForm select {
-    height: 18px;
+    height: 25px;
     width: calc(100% - 13px);
     padding: 10px;
     margin: -5px;
