@@ -1,4 +1,4 @@
-﻿[box=#000000][background=#ffffff][coll3][left][img]https://i.imgur.com/NJi3FeS.png[/img][/left]|[center][size=130][b]%text:fullname%[/b]
+[box=#000000][background=#ffffff][coll3][left][img]https://i.imgur.com/NJi3FeS.png[/img][/left]|[center][size=130][b]%text:fullname%[/b]
 [i]%text:rank%[/i][/size]
 [tt]%text:PFid%[/tt][/center]|[right][img]http://%text:insigniaurl%[/img][/right][/coll3]
 [block=#000000][color=#FFFFFF][center][size=110][b]ОСНОВНАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll1-3][imgborder]%text:photourl%[/imgborder]|[left][coll][an=(Имя)]%text:name%[/an]|[an=(Второе имя)]%text:secondname%[/an][/coll]
