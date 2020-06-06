@@ -33,6 +33,7 @@
 		                 	<div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
                            		<select name="rank" id="rank">
 	                       			<option value="POLICE OFFICER II" selected disabled hidden>Выберите ваш ранг</option>
+	                       			<option>Director</option>
 	                       			<option>Staff Specialist</option>
 	                       			<option>Police Officer I</option>
 	                       			<option>Police Officer II</option>
@@ -360,7 +361,7 @@
 				rank = "FS"
 			} else if (sel_rank < 5) {
 				rank = "SS"
-			} else if (sel_rank < 6) {
+			} else if (sel_rank < 6 || sel_rank == 10) {
 				rank = "CS"
 			} else if (sel_rank >= 6) {
 				rank = "ES"
@@ -429,9 +430,9 @@
 		    "Operations Group": "<option>Commanding Officer</option>",
 		    "Internal Affairs Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
 		    "Deputy Chief's Office": "<option>Commanding Officer</option>",
-		    "Northeast Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
-		    "Northwest Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
-		    "South Central Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option>",
+		    "Northeast Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Field Training Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option><option>Probationary Officer</option>",
+		    "Northwest Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Field Training Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option><option>Probationary Officer</option>",
+		    "South Central Area Command": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Field Training Officer</option><option>Patrol Supervisor</option><option>Patrol Officer</option><option>Probationary Officer</option>",
 		    "Homicide and Sex Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
 		    "Major Violator/Narcotic Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
 		    "Theft Crimes Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
@@ -529,6 +530,10 @@
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/eUk30EB.png")
 	            	$('[name="insigniaurl"]').val("https://i.imgur.com/eUk30EB.png")
 	            	sel_rank = 9
+	            } else if ($(this).val() == "Director") {
+	            	$('#insigniaurl').attr('src', "https://i.imgur.com/eUk30EB.png")
+	            	$('[name="insigniaurl"]').val("https://i.imgur.com/eUk30EB.png")
+	            	sel_rank = 10
 	            } else {
 	            	sel_rank = 0
 	            	$('#insigniaurl').attr('src', "https://i.imgur.com/JfoumQn.png")
