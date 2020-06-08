@@ -67,6 +67,15 @@ $(function() {
     });
 });
 
+$(function() {
+    $(".datepicker_full").datepicker({ 
+        'dateFormat': 'dd/M/yy',
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1920:+0'
+    });
+});
+
 function uploadImage(input, allowedSize={w: 130, h: 150}) {
     return new Promise(function (resolve, reject) {
         $(input).click()

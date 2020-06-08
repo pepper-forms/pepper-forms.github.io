@@ -8,7 +8,7 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }
 
-.datepicker {
+.datepicker, .datepicker_full {
     text-transform: uppercase;
 }
 
@@ -494,7 +494,7 @@ body {
 }
 
 .bhSAHPForm select {
-    height: 2em;
+    height: 3em;
     width: calc(100% );
     margin: -5px;
     font-size: 16px;
@@ -511,4 +511,58 @@ body {
     font-size: 16px;
     resize: vertical;
     box-sizing: content-box;
+}
+
+.ACform, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ACform input[type="text"], select {
+    height: 30px;
+    width: calc(100% - 10px);
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.ACform select {
+    height: 30px;
+    width: calc(100% - 10px);
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.ACform input[type=checkbox] {
+  transform: scale(2);
+  vertical-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.ACform textarea {
+    display: block;
+    margin: 0;
+    width: calc(100% - 25px);
+    padding: 5px;
+    height: 75px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}
+
+.ACform input[type=radio] {
+  transform: scale(1.5);
+  vertical-align: center;
+  margin: 10px;
 }

@@ -11,11 +11,11 @@
 	      <link rel="stylesheet" href="/common/css/micromodal.css">
 	      <script src="/common/js/micromodal.min.js"></script>
 	      <script src="/common/js/utils.js"></script>
-	      <title>Reinstatement Program - LVMPD</title>
+	      <title>Police Academy - LVMPD</title>
 	   </head>
     </head>
     <body>
-    	<div class="bhSAHPForm" style="padding: 10px; background-color: #000000;">
+    	<div class="ACform" style="padding: 10px; background-color: #000000;">
 			<div style="padding: 10px; background-color: #000000;">
 				<div style="background:#ffffff;padding:5px;margin:0px;color:#000000;border:0px solid #000000;border-radius:0px">
 					<div align="center"><img src="https://i.imgur.com/NJi3FeS.png" class="postimage" alt="Изображение"></div>
@@ -39,7 +39,7 @@
 								</td>
 								<td style="vertical-align: top; width:23%;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Второе имя</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="sname" placeholder="напр. John" autocomplete="off"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="sname" placeholder="Если нет пропустить" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:23%;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span><br>
@@ -93,7 +93,7 @@
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения</span><br>
 									<div style="background-color:white; color: #555; border:1px solid #ccc;">
-										<input type="text" class="datepicker" name="birth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+										<input type="text" class="datepicker_full" name="birth" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
 									</div>
 								</td>
 							</tr>
@@ -114,15 +114,15 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имеются ли штрафы в настоящее время</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="tickets"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="tickets" placeholder="Да/Нет" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="color: #BF0000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Вы когда-нибудь обвинялись в вождении в нетрезвом виде</span></span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="drunkdrive"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="drunkdrive" placeholder="Да/Нет" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="color: #BF0000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Если да, то сколько раз вы обвинялись вождении в нетрезвом виде</span></span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="drunkdrivetimes"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="drunkdrivetimes" placeholder="Указать число или пропустить" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -142,11 +142,11 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Название средней школы</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="middlescool"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="middlescool" placeholder="напр. Hyde Park Middle School" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Название колледжа</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="college"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="college" placeholder="напр. Hyde Park High" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;"></td>
 							</tr>
@@ -159,11 +159,11 @@
 								<td style="vertical-align: top; width:26%; padding-right:10px;"></td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Завершены ли у вас старшие классы</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="isscooldone"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="isscooldone" placeholder="Да/Нет" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Год выпуска</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="graduation"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="graduation" placeholder="напр. 2001" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -183,12 +183,12 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Если вы являлись военнослужащим, то какова была ваша дата увольнения?</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="armyleavedate"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="armyleavedate" placeholder="напр. 03/MAY/2003 или пропустить" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; "></td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
-									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Отрасль обслуживания до вашего увольнения</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="armyleave"/></div>
+									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">В какой роте войск вы служили?</span><br>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="armyleave" placeholder="напр. Морпехи или пропустить" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -208,12 +208,12 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="color: #BF0000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Вы когда-нибудь были арестованы или осуждены за мелкое правонарушение или уголовное преступление ?</span></span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="smallcrime"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="smallcrime" placeholder="Да/Нет" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; "></td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="color: #BF0000"><span style="font-weight: bold">Если да</span></span>, <span style="font-weight: bold; font-size: 90%; line-height: 116%;">пожалуйста, объясните ниже, когда и , что это было за обвинение</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="smallcrimewhen"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="smallcrimewhen" placeholder="напр. Парковка в неположенном месте" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -228,7 +228,7 @@
 						</span>
 					</div>
 					<span style="color: #BF0000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ваша подготовка требует от вас участия в умеренно жесткой форме невооруженной самообороны и физической подготовки. У вас есть какой-нибудь тип физической неполноценности или ограниченности, которые помешали бы вам в полной мере участвовать в этих формах физической нагрузки?</span></span><br>
-					<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="physics"/></div>
+					<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="physics" placeholder="напр. Плоскостопие" autocomplete="off"/></div>
 					<br>
 					<div align="center">
 						<span style="font-weight: bold">
@@ -244,21 +244,21 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Нынешнее место работы</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="currentjob"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="currentjob" placeholder="напр. Ресторан быстрого питания" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Сколько она занимает часов в неделю</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobtime"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobtime" placeholder="напр. От 20 до 30 часов" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Должность</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobtitle"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobtitle" placeholder="напр. Официант" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 					<br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес</span><br>
-					<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobadress"/></div>
+					<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="jobadress" placeholder="напр. 151 West Avenue" autocomplete="off"/></div>
 					<br>
 					<div align="center">
 						<span style="font-weight: bold">
@@ -269,25 +269,29 @@
 						</span>
 					</div>
 					<br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Почему вы решили подать заявку в полицейскую академию?</span><br>
-					<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="whypolice"/></div>
+					<div style="background-color:white; color: #555; border:1px solid #ccc;">
+						<textarea name="whypolice" placeholder="Не менее 3 строк"></textarea>
+					</div>
 					<br>
 					<table width="100%">
 						<tbody>
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Как вы узнали о нас?</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="howuknowus"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="howuknowus" placeholder="напр. Из новостей по телевизору" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ваш размер одежды</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="dresssize"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="dresssize" placeholder="напр. 8" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;"></td>
 							</tr>
 						</tbody>
 					</table>
 					<span style="font-weight: bold"><span style="color: #BF0000"><span style="font-size: 85%; line-height: 116%;">Заполняя эту форму, я понимаю, что любое искажение фактов в этой форме может быть причиной отказа в приеме, отмены приема или отказа в приеме.</span></span></span> 
-					<div align="right"><span style="font-size: 140%; line-height: 116%;"><span style="font-weight: bold">ДАТА:</span> <input type="text" name="currentdate"/></span></div>
+					<div align="right"><span style="font-size: 140%; line-height: 116%;">
+						<span style="font-weight: bold">ДАТА: <span name="currentdate"></span> 
+					</div>
 					<br>
 					<div align="right"><span style="font-size: 85%; line-height: 116%;"></span></div>
 					<div style="border-bottom: 1px solid #000; padding: 1px;"></div>
@@ -308,15 +312,15 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="oocname"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="oocname" placeholder="напр. Андрей" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; ">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Возраст</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="oocage"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="oocage" placeholder="напр. 16" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Часовой пояс</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="timezone"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="timezone" placeholder="напр. МСК" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -327,12 +331,12 @@
 							<tr>
 								<td style="vertical-align: top; width:26%; padding-right:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ссылка на профиль ВК</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="vk"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="vk" placeholder="Полная ссылка" autocomplete="off"/></div>
 								</td>
 								<td style="vertical-align: top; width:26%; "></td>
 								<td style="vertical-align: top; width:26%; padding-left:10px;">
 									<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Ссылка на форумный аккаунт</span><br>
-									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="forum"/></div>
+									<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="forum" placeholder="Полная ссылка" autocomplete="off"/></div>
 								</td>
 							</tr>
 						</tbody>
@@ -340,29 +344,34 @@
 					<br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Проекты на которых играли раньше</span>
 				</span>
 				<br>
-				<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="projectsplayed"/></div>
+				<div style="background-color:white; color: #555; border:1px solid #ccc;">
+					<textarea name="projectsplayed" placeholder="Hugh Gardner, Гамбит ЛС лета 2019 года при Мюллере, Бернсе
+Beverly Hefner, Гамбит ЛС осень 2019 при кокаине и тд." autocomplete="off"/></textarea>
+				</div>
 				<br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Организации в которых играли раньше</span><br>
-				<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="orgsplayed"/></div>
+				<div style="background-color:white; color: #555; border:1px solid #ccc;">
+					<textarea name="orgsplayed" placeholder="SFPD Гамбит, ATF Гамбит ЛВ, Департамент планирования ЛС и т.п." autocomplete="off"/></textarea>
+				</div>
 				<br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Квента/описание вашего персонажа</span><br>
-				<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="chardescr"/></div>
+				<div style="background-color:white; color: #555; border:1px solid #ccc;">
+					<textarea type="text" name="chardescr" placeholder="Меньше биографии, больше описания" autocomplete="off"/></textarea>
+				</div>
 				<br>
 				<table width="100%">
 					<tbody>
 						<tr>
 							<td style="vertical-align: top; width:26%; padding-right:10px;">
 								<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имеется ли у Вас TeamSpeak3 и рабочий микрофон?</span><br>
-								<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="ts3"/></div>
+								<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="ts3" placeholder="Да/Нет" autocomplete="off"/></div>
 							</td>
 							<td style="vertical-align: top; width:26%; "></td>
 							<td style="vertical-align: top; width:26%; padding-left:10px;">
 								<span style="font-weight: bold; font-size: 90%; line-height: 116%;">Можете ли Вы свободно общаться в TeamSpeak3?</span><br>
-								<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="canutalk"/></div>
+								<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="canutalk" placeholder="Да/Нет" autocomplete="off"/></div>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<br><span style="font-weight: bold">Соглашение:</span><br><span style="color: #BF0000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Я полностью ознакомлен с разделом About Us. Я соглашаюсь с тем, что моё заявление может быть отклонено без объяснения мне причин. В случае утери информации через меня, или другой деятельности вредящей сообществу, я соглашаюсь с занесением в чёрный список, без шанса на выход из него. Обязуюсь изучить весь материал который будет дан в академии, и после неё. Соглашаюсь с тем, что могу быть исключён из академии, за нарушения её правил. Я даю согласие на обработку своих персональных данных.</span></span><br>
-				<div style="background-color:white; color: #555; border:1px solid #ccc;"><input type="text" name="agreement"/></div>
 			</div>
 		</div>
 		<div class="btn-container">
@@ -381,13 +390,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <b>1.</b> Я понимаю и соглашаюсь с тем, что мое заявление могут отклонить <a class="text-danger">без разъяснения причины отказа</a>. 
-			        <br><b>2.</b> Я понимаю и соглашаюсь с тем, что при одобрении моего заявления, я попаду на 7-ми дневный испытательный срок, в течении которого меня могут уволить с причиной провала испытательного срока.
+                    <b>1.</b> Я полностью ознакомлен с разделом About Us.. 
+			        <br><b>2.</b> Я соглашаюсь с тем, что моё заявление может быть отклонено <a class="text-danger">без объяснения мне причин.</a>
 			        <br><b>3.</b> Я понимаю и соглашаюсь с тем, что если покину фракцию в течении 7 дней, то буду занесен в черный список (ЧС) фракции. 
-			        <br><b>4.</b> Я понимаю и соглашаюсь с тем, что не все мои пожелания могут быть удовлетворены. 
-			        <br><b>5.</b> Я понимаю и соглашаюсь с тем, что в случае слива любой информации с форума я буду занесен в черный список LV-ES.
-			        <br><b>6.</b> В случае одобрения, я обязуюсь изучить всю информацию на форуме в разделе Documents, включая <a class="text-danger">структуру фракции, мануал, хендбук, правила фракции и новости фракции</a>, и соглашаюсь с тем, что могу быть уволен за нарушение любого пункта правил фракции. 
-			        <br><b>7.</b> Я понимаю и соглашаюсь с тем, что после получения групп на форуме и изучения документации, у меня будет 24 часа, чтобы пройти <a class="text-danger">квалификационный тест</a>.
+			        <br><b>4.</b> В случае утери информации через меня, или другой деятельности вредящей сообществу, я соглашаюсь с занесением в чёрный список, без шанса на выход из него. 
+			        <br><b>5.</b> Обязуюсь изучить весь материал который будет дан в академии, и после неё.
+			        <br><b>6.</b> Соглашаюсь с тем, что могу быть исключён из академии, за нарушения её правил.
+			        <br><b>7.</b> Я даю согласие на обработку своих персональных данных.
 			        <br><b>8.</b> Я имею интерес в развитии роли своего персонажа и готов создать топик СС при необходимости.
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
@@ -414,7 +423,7 @@
                                 <label for="output__header">Topic Name</label>
                             </div>
                             <div class="col-9 col-lg-10">
-                                <input type="text" class="form-control" id="output__header" placeholder="[BACK HOME] Name Surname (nickname)">
+                                <input type="text" class="form-control" id="output__header" placeholder="Name Surname">
                             </div>
                             <div class="col-3 col-lg-2">
                                 <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
@@ -435,7 +444,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/mpd/posting.php?mode=post&f=227','_blank')">Create Application</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/mpd/viewforum.php?f=226','_blank')">To Forum</button>
                 </div>
             </div>
         </div>
@@ -446,6 +455,8 @@
 
 	    $(function(){
 			$("#welcome_modal").modal("show");
+
+	        document.getElementsByName("currentdate")[0].textContent= parseDate();
 		})
 
          String.prototype.capitalize = function () {
@@ -453,15 +464,33 @@
 		        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
 		    });
 		}
-         function generatePostTitle() {
-             var cname = document.getElementsByName("cname")[0].value.capitalize();
-             var anickname = document.getElementsByName("anickname")[0].value;
-             var h_output = "";
-             
-             if (cname && anickname) {
-                 h_output = "[BACK HOME] "  + cname + " (" + anickname + ")"
-             }
 
+		function calculateAge(birthday) {
+			return Math.floor((Date.now() - birthday.getTime()) / (1000* 60 * 60 * 24 * 365));
+		}
+		
+		function getAge() {
+			var birthday = $.datepicker.parseDate('dd/M/yy', document.getElementsByName("birth")[0].value);
+			return calculateAge(birthday);
+		}
+
+		$(document.getElementsByName("birth")[0]).change(function(){
+            document.getElementsByName("birth")[0].value = document.getElementsByName("birth")[0].value + " (" + getAge() + ")";
+        });
+
+         function generatePostTitle() {
+             var name = document.getElementsByName("name")[0].value.capitalize();
+             var surname = document.getElementsByName("surname")[0].value.capitalize();
+             var date  = new Date();
+             var month = date.getMonth()+1;
+             var year = date.getFullYear().toString().substr(-2);
+             var h_output = "";
+             if (month && year) {
+                 h_output = h_output + "[A" + month + "-" + year + "] "
+                 if (name) {
+                     h_output = h_output + name + " " + surname
+                 }
+             }
              return h_output;
          }
 
@@ -492,28 +521,18 @@
         }
 
          function prepare() {
-            var vk = document.getElementsByName("vkurl")[0].value;
-            var grp = document.getElementsByName("gurl")[0].value;
-            var ss = document.getElementsByName("ss")[0].value;
+            var vk = document.getElementsByName("vk")[0].value;
+            var grp = document.getElementsByName("forum")[0].value;
 
-            if (vk) { document.getElementsByName("vkurl")[0].value = checkURLs(vk); }
+            if (vk) { document.getElementsByName("vk")[0].value = checkURLs(vk); }
 
-            if (grp) { document.getElementsByName("gurl")[0].value = checkURLs(grp); }
-
-            if (ss) {
-                var ssArray = ss.match(/[^\r\n]+/g);
-
-                for (var i = 0; i < ssArray.length; i++) {
-                    ssArray[i] = checkURLs(ssArray[i]);
-                }
-                document.getElementsByName("ss")[0].value = ssArray.join('\n');
-            }
+            if (grp) { document.getElementsByName("forum")[0].value = checkURLs(grp); }
 
             showBB();
          }
          
          MicroModal.init();
-         window.__bbcodeurl = '/bbforms/lvmpd/back_home.txt';
+         window.__bbcodeurl = '/bbforms/lvmpd/academy.txt';
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
