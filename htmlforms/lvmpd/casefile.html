@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/common/css/style.css">
+	<link rel="stylesheet" href="/common/css/micromodal.css">
+	<script src="/common/js/micromodal.min.js"></script>
+	<script src="/common/js/utils.js"></script>
+
+	<title>New Casefile - LVMPD</title>
+</head>
+
+<body>
+	<div class="pfForm" style="padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+		<div style="border: 1px solid black; padding: 10px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+			<span style="font-size: 150%; line-height: 116%;">
+				<div align="center"><span style="font-weight: bold;"><img src="https://i.imgur.com/xwrPq5r.png" class="postimage" alt="Изображение"><br><br>LAS VENTURAS METROPOLITAN POLICE DEPARTMENT<br>INVESTIGATIVE SERVICES DIVISION</span><br>
+					<select name="section" id="section" style="width: auto; margin-top: 10px;">
+				      <option value="" selected disabled hidden>Выберите отдел</option>
+				      <option>Homicide Section</option>
+					  <option>Sex Crimes Section</option>
+					  <option>Major Violator Section</option>
+					  <option>Narcotics Section</option>
+					  <option>Robbery Section</option>
+					  <option>Vice & Sex Trafficing Section</option>
+					  <option>Gang Crimes Section</option>
+					  <option>Gang Enforcement Unit</option>
+					  <option>Internal Affairs Bureau</option>
+				   </select>
+				</div>
+			</span>
+			<br><br>
+			<div align="center"><span style="font-size: 150%; line-height: 116%;"><span name="casenum" style="font-weight: bold">CASEFILE — #N/AXXXXXXXX</span></span><br><br>В отношении  <input type="text" name="regarding" placeholder="Имя Фамилия" autofocus autocomplete="off" style="width: auto; margin: 5px;" /> в совершении преступления, предусмотренного статьей 
+				<select name="pc" style="width: auto; margin: 5px;">
+						<option value="" selected disabled hidden>Выберите статью</option>
+						<option value="	(1)01	">	(1)01. Запугивание, шантаж	</option>
+						<option value="	(1)02	">	(1)02. Нападение	</option>
+						<option value="	(1)03	">	(1)03. Нападение с применением оружия	</option>
+						<option value="	(1)04	">	(1)04. Участие в драке	</option>
+						<option value="	(1)05	">	(1)05. Нанесение побоев	</option>
+						<option value="	(1)06	">	(1)06. Причинение легкого вреда здоровью	</option>
+						<option value="	(1)07	">	(1)07. Причинение средней тяжести вреда здоровью	</option>
+						<option value="	(1)08	">	(1)08. Причинение тяжкого вреда здоровью	</option>
+						<option value="	(1)09	">	(1)09. Покушение на убийство	</option>
+						<option value="	(1)10	">	(1)10. Непредумышленное причинение смерти	</option>
+						<option value="	(1)11	">	(1)11. Убийство	</option>
+						<option value="	(1)12	">	(1)12. Захват заложников	</option>
+						<option value="	(1)13	">	(1)13. Похищение детей	</option>
+						<option value="	(1)14	">	(1)14. Рэкет	</option>
+						<option value="	(1)15	">	(1)15. Наезд на пешехода.	</option>
+						<option value="	(1)16	">	(1)16. Доведение до самоубийства	</option>
+						<option value="	(1)17	">	(1)17. Клевета	</option>
+						<option value="	(2)01	">	(2)01. Поджог	</option>
+						<option value="	(2)02	">	(2)02. Незаконное проникновение на жилую территорию	</option>
+						<option value="	(2)03	">	(2)03. Проникновение на особо охраняемую территорию	</option>
+						<option value="	(2)04	">	(2)04. Кража со взломом.	</option>
+						<option value="	(2)05	">	(2)05. Хранение инструментов для взлома	</option>
+						<option value="	(2)06	">	(2)06. Грабеж	</option>
+						<option value="	(2)07	">	(2)07. Вооруженное ограбление	</option>
+						<option value="	(2)08	">	(2)08. Мелкая кража	</option>
+						<option value="	(2)09	">	(2)09. Кража	</option>
+						<option value="	(2)10	">	(2)10. Кража в особо крупном размере	</option>
+						<option value="	(2)11	">	(2)11. Кража автотранспортного средства	</option>
+						<option value="	(2)12	">	(2)12. Кража огнестрельного оружия	</option>
+						<option value="	(2)13	">	(2)13. Приобретение имущества, заведомо добытого преступным путем	</option>
+						<option value="	(2)14	">	(2)14. Вымогательство	</option>
+						<option value="	(2)15	">	(2)15. Подлог	</option>
+						<option value="	(2)16	">	(2)16. Мошенничество	</option>
+						<option value="	(2)17	">	(2)17. Вандализм	</option>
+						<option value="	(3)01	">	(3)01. Непристойное поведение в общественных местах	</option>
+						<option value="	(3)02	">	(3)02. Обнажение в общественном месте	</option>
+						<option value="	(3)03	">	(3)03. Проституция / сутенерство	</option>
+						<option value="	(3)04	">	(3)04. Незаконное содержание лиц, занимающихся проституцией	</option>
+						<option value="	(3)05	">	(3)05. Угроза сексуальным насилием	</option>
+						<option value="	(3)06	">	(3)06. Насильственные действия сексуального характера	</option>
+						<option value="	(3)07	">	(3)07. Изнасилование	</option>
+						<option value="	(3)08	">	(3)08. Половой контакт с несовершеннолетним лицом	</option>
+						<option value="	(3)09	">	(3)09. Нарушение действующей силы судебного постановления/приказа/ордера	</option>
+						<option value="	(3)10	">	(3)10. Приготовление к преступлению и покушение на преступление	</option>
+						<option value="	(3)11	">	(3)11. Нарушение авторских прав	</option>
+						<option value="	(3)12	">	(3)12. Воспрепятствование деятельности журналистов	</option>
+						<option value="	(3)13	">	(3)13. Необоснованное увольнение с работы	</option>
+						<option value="	(3)14	">	(3)14. Невыплата заработной платы, пособий и иных выплат	</option>
+						<option value="	(3)15	">	(3)15. Нарушение равенства прав и свобод человека	</option>
+						<option value="	(4)01	">	(4)01. Взяточничество	</option>
+						<option value="	(4)02	">	(4)02. Уклонение от уплаты штрафа	</option>
+						<option value="	(4)03	">	(4)03. Неуважение к суду	</option>
+						<option value="	(4)04	">	(4)04. Неявка на судебное заседание	</option>
+						<option value="	(4)05	">	(4)05. Отговаривание истца или ответчика	</option>
+						<option value="	(4)06	">	(4)06. Дезинформация государственного служащего	</option>
+						<option value="	(4)08	">	(4)08. Дача заведомо ложных показаний	</option>
+						<option value="	(4)09	">	(4)09. Уклонение от идентификации себя офицеру полиции	</option>
+						<option value="	(4)10	">	(4)10. Выдача себя за государственного служащего	</option>
+						<option value="	(4)11	">	(4)11. Воспрепятствование деятельности государственного служащего	</option>
+						<option value="	(4)12	">	(4)12. Сопротивление офицеру полиции	</option>
+						<option value="	(4)13	">	(4)13. Побег из-под стражи	</option>
+						<option value="	(4)14	">	(4)14. Побег	</option>
+						<option value="	(4)15	">	(4)15. Пособничество в побеге	</option>
+						<option value="	(4)16	">	(4)16. Торговля людьми	</option>
+						<option value="	(4)17	">	(4)17. Использование государственной телефонной линии не по назначению	</option>
+						<option value="	(4)18	">	(4)18. Подделка доказательств	</option>
+						<option value="	(4)19	">	(4)19. Контрабанда	</option>
+						<option value="	(4)20	">	(4)20. Нарушение правил УДО или испытательного срока	</option>
+						<option value="	(5)01	">	(5)01. Нарушение общественного порядка	</option>
+						<option value="	(5)02	">	(5)02. Незаконные протесты или митинги	</option>
+						<option value="	(5)04	">	(5)04. Незаконное осуществление ареста/судебного слушания	</option>
+						<option value="	(5)05	">	(5)05. Попытка переворота	</option>
+						<option value="	(6)01	">	(6)01. Незаконное хранение и использование запрещенных препаратов или наркотических веществ	</option>
+						<option value="	(6)02	">	(6)02. Хранение запрещенных препаратов или наркотических веществ с целью их сбыта	</option>
+						<option value="	(6)03	">	(6)03. Переработка запрещенных препаратов или наркотических веществ	</option>
+						<option value="	(6)04	">	(6)04. Производство запрещенных препаратов или наркотических веществ	</option>
+						<option value="	(6)05	">	(6)05. Торговля запрещенными препаратами или наркотическими веществами	</option>
+						<option value="	(6)06	">	(6)06. Употребление алкоголя в общественном месте	</option>
+						<option value="	(6)07	">	(6)07. Пребывание в состоянии опьянения в общественном месте	</option>
+						<option value="	(6)08	">	(6)08. Незаконное употребление запрещенных препаратов или наркотических веществ	</option>
+						<option value="	(6)09	">	(6)09. Намеренное сокрытие личности	</option>
+						<option value="	(6)10	">	(6)10. Терроризм	</option>
+						<option value="	(6)11	">	(6)11. Организация преступного сообщества	</option>
+						<option value="	(7)01	">	(7)01. Жестокое обращение с животными	</option>
+						<option value="	(7)02	">	(7)02. Жестокое обращение с детьми	</option>
+						<option value="	(7)03	">	(7)03. Продажа алкогольных напитков несовершеннолетнему лицу	</option>
+						<option value="	(7)04	">	(7)04. Распитие алкогольных напитков несовершеннолетними лицами	</option>
+						<option value="	(8)01	">	(8)01. Хранение лезвия в качестве оружия	</option>
+						<option value="	(8)02	">	(8)02. Владение огнестрельным оружием без соответствующего разрешения	</option>
+						<option value="	(8)03	">	(8)03. Незаконное владение огнестрельным оружием	</option>
+						<option value="	(8)04	">	(8)04. Незаконное владение крупнокалиберным огнестрельным оружием	</option>
+						<option value="	(8)05	">	(8)05. Незаконное осуществление торговли огнестрельным оружием	</option>
+						<option value="	(8)06	">	(8)06. Хранение взрывчатых устройств	</option>
+						<option value="	(8)07	">	(8)07. Производство запрещенных устройств/оборудований	</option>
+						<option value="	(8)08	">	(8)08. Владение оружием с целью сбыта	</option>
+						<option value="	(8)09	">	(8)09. Владение взрывными устройствами с целью сбыта	</option>
+						<option value="	(8)10	">	(8)10. Открытое ношение огнестрельного оружия	</option>
+						<option value="	(8)11	">	(8)11. Незаконное использование огнестрельного оружия	</option>
+						<option value="	(9)01	">	(9)01. Уклонение от уплаты налогов	</option>
+						<option value="	(9)02	">	(9)02. Отмывание денег	</option>
+						<option value="	(9)03	">	(9)03. Преступления в сфере медицины	</option>
+						<option value="	(9)04	">	(9)04. Преступление в сфере лицензированной деятельности	</option>
+						<option value="	(9)05	">	(9)05. Незаконное прослушивание	</option>
+						<option value="	(9)06	">	(9)06. Фальсификация итогов голосования	</option>
+						<option value="	(9)07	">	(9)07. Нарушения при исполнении служебных обязанностей	</option>
+						<option value="	(9)08	">	(9)08. Нарушения среди государственных служащих	</option>
+						<option value="	(9)09	">	(9)09. Провокация к бунту	</option>
+						<option value="	(9)10	">	(9)10. Конфликт интересов	</option>
+						<option value="	(10)01	">	(10)01. Исключающие обстоятельства	</option>
+						<option value="	(10)02	">	(10)02. Попытка совершить преступление	</option>
+						<option value="	(10)03	">	(10)03. Сговор	</option>
+						<option value="	(10)04	">	(10)04. Подстрекательство	</option>
+						<option value="	(10)05	">	(10)05. Случаи с участием Государственных Служащих	</option>
+						<option value="	(10)06	">	(10)06. Сделка между обвинением и защитой	</option>
+						<option value="	(10)07	">	(10)07. Политика двух предупреждений	</option>
+						<option value="	(10)08	">	(10)08. Преступления, связанные с оружием	</option>
+						<option value="	(10)09	">	(10)09. Соучастие в преступлении	</option>
+						<option value="	(10)10	">	(10)10. Укрывательство преступлений	</option>
+						<option value="	(11)01	">	(11)01. Ошибка в Факте, несоответствие	</option>
+						<option value="	(11)02	">	(11)02. Принуждение к опьянению	</option>
+						<option value="	(11)03	">	(11)03. Самозащита, самооборона, "Закон о защите жилья" и другие оборонительные законы.	</option>
+						<option value="	(11)04	">	(11)04. Крайняя необходимость	</option>
+						<option value="	(11)05	">	(11)05. Провоцирование	</option>
+						<option value="	(11)06	">	(11)06. Принуждение	</option>
+						<option value="	(11)07	">	(11)07. Исключения к условно-досрочному освобождению	</option>
+						<option value="	(11)08	">	(11)08. Политика Подозрения	</option>
+						<option value="	(11)09	">	(11)09. "Решение остается за Офицером"	</option>
+						<option value="	(11)10	">	(11)10. Гражданский арест	</option>
+						<option value="	(11)11	">	(11)11. Условия Задержания и Тюремного Заключения	</option>
+						<option value="	(11)12	">	(11)12. Максимальное тюремное заключение	</option>
+						<option value="	(11)13	">	(11)13. Политика прослушивания, видеонаблюдения и видеосъемки	</option>
+						<option value="	(11)14	">	(11)14. Политика преследования	</option>
+						<option value="	(11)15	">	(11)15. Политика осмотра местности и предположения	</option>
+						<option value="	(11)16	">	(11)16. Исправительные работы	</option>
+				</select><br><a href="https://sa-es.su/lv/ch/viewtopic.php?f=35&t=229&sid=c0d1e98a76c14a15889a1095d9a8caeb">Уголовного кодекса штата Сан-Андрес</a></div>
+		</div>
+
+	<div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">BBCode</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__header">Topic Name</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <input type="text" class="form-control" id="output__header">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <label for="output__body">Report Code</label>
+                    </div>
+                    <div class="col-9 col-lg-10">
+                        <textarea class="form-control" rows="10" id="output__body"></textarea>
+                    </div>
+                    <div class="col-3 col-lg-2 d-flex align-items-center">
+                        <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/mpd/posting.php?mode=post&f=416','_blank')">Create Report</button>
+          </div>
+        </div>
+      </div>
+    
+
+    <script>
+    	var dep = "";
+        var casenumber = "";
+
+    	String.prototype.capitalize = function () {
+		    return this.replace(/\w\S*/g, function(txt){
+		        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		    });
+		}
+
+        function generatePostTitle() {
+            var regarding = document.getElementsByName("regarding")[0].value.capitalize();
+            var date = parseDate();
+            var h_output = "";
+            if (regarding && date && casenumber) {
+                h_output = h_output + casenumber + " | Casefile on " + regarding +  " from " + date;
+            }
+            return h_output;
+        }
+
+        function setCasefileNumber() {
+        	var timecode = Math.floor(Date.now() / 60000);
+        	casenumber = "#" + dep + timecode;
+  			var title = "CASEFILE — " + casenumber;
+  			document.querySelector('[name="casenum"]').innerText = title;
+        }
+
+        $("#section").change(function(){
+            var val = $(this).val();
+            if (val == "Homicide Section") {
+            	dep = "H";
+            } else if (val == "Sex Crimes Section") {
+            	dep = "SC";
+            } else if (val == "Major Violator Section") {
+            	dep = "M";
+            } else if (val == "Narcotics Section") {
+            	dep = "N";
+            } else if (val == "Robbery Section") {
+            	dep = "R";
+            } else if (val == "Vice & Sex Trafficing Section") {
+            	dep = "V";
+            } else if (val == "Gang Crimes Section") {
+            	dep = "GC";
+            } else if (val == "Gang Enforcement Unit") {
+            	dep = "GE";
+            } else if (val == "Internal Affairs Bureau") {
+            	dep = "Y";
+            } else {
+            	dep = "N/A";
+            };
+            setCasefileNumber();
+        })
+
+        MicroModal.init();
+        window.__bbcodeurl = '/bbforms/lvmpd/casefile.txt';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+</body>
+
+</html>
