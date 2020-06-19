@@ -32,7 +32,7 @@
 		                 </span><br><span style="font-style: italic"></span>
 		                 	<div style="padding: 5px; font-weight: bold; font-size:120%; background-color:white; border:1px solid rgba(0, 0, 0, .3);">
                            		<select name="rank" id="rank">
-	                       			<option value="POLICE OFFICER II" selected disabled hidden>Выберите ваш ранг</option>
+	                       			<option value="Police Officer II" selected disabled hidden>Выберите ваш ранг</option>
 	                       			<option>Director</option>
 	                       			<option>Staff Specialist</option>
 	                       			<option>Police Officer I</option>
@@ -128,10 +128,10 @@
 		                       			<option value="CPD" selected disabled hidden>Выберите дивизион</option>
 		                       			<option value="UA">Не является частью дивизиона</option>
 		                       			<option value="CPD">Community Policing Division</option>
+		                       			<option value="TSD">Tourist Safety Division</option>
 		                       			<option value="ISD">Investigative Services Division</option>
 		                       			<option value="HSD">Homeland Security Division</option>
 		                       			<option value="PSD">Professional Standarts Division</option>
-		                       			<option value="SOD">Special Operations Division</option>
 		                       		</select>
 		                       	</div>
 		                    </td>
@@ -414,18 +414,18 @@
 		var sel_rank = 0;
 
 		const div = {
-		    "UA": "<option selected disabled hidden>Намжите для выбора</option><option>Office of the Sheriff</option><option>Public Information Office</option><option>Administration and Support Group</option><option>Investigations and Support Group</option><option>Operations Group</option><option>Internal Affairs Bureau</option>",
+		    "UA": "<option selected disabled hidden>Намжите для выбора</option><option>Office of the Sheriff</option><option>Public Information Office</option><option>Administration</option><option>Investigations and Support Group</option><option>Operations Group</option><option>Internal Affairs Bureau</option>",
 		    "CPD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Northeast Area Command</option><option>Northwest Area Command</option><option>South Central Area Command</option>",
 		    "ISD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Homicide and Sex Crimes Bureau</option><option>Major Violator/Narcotic Crimes Bureau</option><option>Theft Crimes Bureau</option><option>Gang/Vice Bureau</option>",
 		    "HSD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Special Weapons and Tactics Bureau</option>",
 		    "PSD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Office of Human Resources</option><option>Organizational Development Bureau</option>",
-		    "SOD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Support Operations Bureau</option><option>SOB: Air Support Section</option><option>SOB: Search and Rescue Section</option><option>SOB: K9 Section</option>",
+		    "TSD": "<option selected disabled hidden>Намжите для выбора</option><option>Deputy Chief's Office</option><option>Traffic Bureau</option><option>Support Operations Bureau</option><option>SOB: Air Support Section</option><option>SOB: Search and Rescue Section</option><option>SOB: K9 Section</option>",
 		}
 		 
 		const pos = {
 		    "Office of the Sheriff": "<option>Sheriff</option><option>Undersheriff</option>",
 		    "Public Information Office": "<option>Director</option><option>Public Information Officer</option><option>Community Relations Specialist</option>",
-		    "Administration and Support Group": "<option>Commanding Officer</option>",
+		    "Administration": "<option>Commanding Officer</option>",
 		    "Investigations and Support Group": "<option>Commanding Officer</option>",
 		    "Operations Group": "<option>Commanding Officer</option>",
 		    "Internal Affairs Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Supervisor</option><option>Detective</option>",
@@ -440,7 +440,8 @@
 		    "Special Weapons and Tactics Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Squad Leader</option><option>SWAT Officer</option>",
 		    "Office of Human Resources": "<option>Director</option><option>Staff Specialist</option><option>Recruitment Officer</option>",
 		    "Organizational Development Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option><option>Training Coordinator</option><option>Training Officer</option>",
-		    "Support Operations Bureau": "<option>Commanding Officer</option>",
+		    "Traffic Bureau": "<option>Commanding Officer</option>",
+		    "Support Operations Bureau": "<option>Commanding Officer</option><option>Assistant Commanding Officer</option>",
 		    "SOB: Air Support Section": "<option>Officer-in-Charge</option><option>Airplane Pilot</option><option>Helicopter Pilot</option><option>Tactical Flight Officer</option><option>Pilot Trainee</option>",
 		    "SOB: Search and Rescue Section": "<option>Officer-in-Charge</option>",
 		    "SOB: K9 Section": "<option>Officer-in-Charge</option><option>K9 Handler</option>",
@@ -449,7 +450,7 @@
 		const posUrl = {
 			"Office of the Sheriff": "https://sa-es.su/lv/mpd/index.php",
 			"Public Information Office": "https://sa-es.su/lv/mpd/viewforum.php?f=295",
-			"Administration and Support Group": "https://sa-es.su/lv/mpd/viewforum.php?f=292",
+			"Administration": "https://sa-es.su/lv/mpd/viewforum.php?f=292",
 		    "Investigations and Support Group": "https://sa-es.su/lv/mpd/viewforum.php?f=256",
 		    "Operations Group": "https://sa-es.su/lv/mpd/viewforum.php?f=254",
 		    "Internal Affairs Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=257",
@@ -464,6 +465,7 @@
 		    "Office of Human Resources": "https://sa-es.su/lv/mpd/index.php",
 		    "Organizational Development Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=258",
 		    "Support Operations Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=345",
+		    "Traffic Bureau": "https://sa-es.su/lv/mpd/viewforum.php?f=344",
 		    "SOB: Air Support Section": "https://sa-es.su/lv/mpd/viewforum.php?f=313",
 		    "SOB: Search and Rescue Section": "https://sa-es.su/lv/mpd/index.php",
 		    "SOB: K9 Section": "https://sa-es.su/lv/mpd/viewforum.php?f=337",
