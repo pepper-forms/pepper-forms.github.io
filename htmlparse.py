@@ -1,6 +1,7 @@
 import sys
 import os
 import re
+from bs4 import BeautifulSoup as bs
 
 
 def get_html_element(elem_type, name):
@@ -14,6 +15,10 @@ def get_html_element(elem_type, name):
         return '<input type="checkbox" name="%s">' %name
     return '%' + elem_type + ':' + name + '%'
 
+
+def prettify_html(html):
+    soup = bs(html, 'html.parser')
+    return soup.prettify()
 
 
 if len(sys.argv) < 3:
@@ -43,6 +48,6 @@ for key in keys:
 print('\u001b[35mSaving result into %s...\u001b[0m' % sys.argv[2])
 
 with open(sys.argv[2], 'wb') as f:
-    f.write(input_stream.encode('utf8'))
+    f.write(prettify_html(input_stream).encode('utf8'))
 
 print('\u001b[32m\u001b[1mSuccess!\u001b[0m')
