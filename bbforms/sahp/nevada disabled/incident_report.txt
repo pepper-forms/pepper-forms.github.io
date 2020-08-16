@@ -1,12 +1,12 @@
-[doc][doc_h]|SAN ANDREAS HIGHWAY PATROL
-GOLDEN GATE DIVISION
+[doc][doc_h]|DEPARTMENT OF PUBLIC SAFETY
+SAN ANDREAS HIGHWAY PATROL
 [b]INCIDENT REPORT[/b] #%span:case_number%|[right][color=#FFFFFF]_[/color]
 [size=85][b]Filed in:[/b] %span:today%[/right][/size][/doc_h][borderb=#000][/borderb] 
 [doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ][coll][a=Характер инцидента]%text:type_of_incident%[/a]|[a=Дата]%text:incident_date%[/a][/coll]
 [coll][a=Локация]%text:location%[/a]|[a=Время]%text:incident_time%[/a][/coll] 
 [ab=Подробное описание ситуации]%textarea:incident_description%[/ab][/doc_b]
 [doc_b=ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ][coll][a=Имя]%text:officer_name%[/a]|[a=Фамилия]%text:officer_surname%[/a][/coll] 
-[coll][a=Офис]%text:officer_division%[/a]|[a=Маркировка]%text:callsign%[/a][/coll] 
+[coll][a=Дивизион]%text:officer_division%[/a]|[a=Маркировка]%text:callsign%[/a][/coll] 
 [coll][a=Адрес места жительства]%text:officer_adress%[/a]|[a=Номер телефона для связи]%text:officer_number%[/a][/coll][/doc_b]
 [doc_b=ИНФОРМАЦИЯ ОБ УЧАСТНИКАХ][ab=Прочие офицеры на ситуации]%textarea:other_officers%[/ab] 
 [ab=Пострадавшие]%textarea:victims%[/ab] 

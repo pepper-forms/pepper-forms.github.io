@@ -1,17 +1,17 @@
-﻿[box=#003f6d][background=#eaf0fe][coll1-3][center][img]https://www.upload.ee/image/11230932/logo.png[/img][/center]|[color=#003f6d][size=140][center]SAN ANDREAS DEPARTMENT OF PUBLIC SAFETY
-HUMAN RESOURCES[/size]
+﻿[box=#000000][background=#ffffff][coll1-3][center][img]https://i.imgur.com/ze1FiYm.png[/img][/center]|[color=#000000][size=140][center]SAN ANDREAS HIGHWAY PATROL
+GOLDEN GATE DIVISION
+HUMAN RESOURCES SECTION[/size]
 
 [size=160][b]REINSTATEMENT PROGRAM[/b][/size][/center][/color][/coll1-3]
-
-[block=#003f6d][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ О ПЕРСОНАЖАХ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][anl=ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС]%textarea:role%
+[block=#000000][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ О ПЕРСОНАЖАХ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][anl=ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС]%textarea:role%
 [spoiler="Полное описание"]%textarea:role_ext%[/spoiler][/anl]
 [anl=ВАШИ ПРЕДЫДУЩИЕ РОЛИ, ДАТА КОГДА ВЫ ИГРАЛИ, СЕРВЕР, ЛИДЕР (ТЕЗИСНО)]%textarea:roles%[/anl]
 [anl=ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ТОЛЬКО ХОРОШИЕ СС, ТЕЗИСНО ПО ПЕРСОНАЖАМ)]%textarea:ss%[/anl][/textareaa]
 
-[block=#003f6d][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ ОБ АППЛИКАНТЕ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll3][anl=КАК ВАС ЗОВУТ?]%text:aname%[/anl]|[anl=ВАШ НИКНЕЙМ В СООБЩЕСТВАХ (ЕСЛИ ЕСТЬ)]%text:anickname%[/anl]|[anl=ВАШ ВОЗРАСТ]%text:aage%[/anl][/coll3]
+[block=#000000][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ ОБ АППЛИКАНТЕ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll3][anl=КАК ВАС ЗОВУТ?]%text:aname%[/anl]|[anl=ВАШ НИКНЕЙМ В СООБЩЕСТВАХ (ЕСЛИ ЕСТЬ)]%text:anickname%[/anl]|[anl=ВАШ ВОЗРАСТ]%text:aage%[/anl][/coll3]
 [coll][anl=ССЫЛКА НА VK]%text:vkurl%[/anl]|[anl=ССЫЛКА НА ФОРУМНЫЙ АККАУНТ (G-RP)]%text:gurl%[/anl][/coll][/textareaa]
 
-[block=#003f6d][color=#FFFFFF][center][size=110][b]ПРОЧАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll][anl=ИГРАЛИ ЛИ ВЫ РАНЕЕ В НАШЕМ СООБЩЕСТВЕ? (LSPD.US)]%text:diduplayed%[/anl]|[anl=КАКАЯ ЗАЩИТА СТОИТ НА АККАУНТЕ]%text:protection%[/anl][/coll]
+[block=#000000][color=#FFFFFF][center][size=110][b]ПРОЧАЯ ИНФОРМАЦИЯ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll][anl=ИГРАЛИ ЛИ ВЫ РАНЕЕ В НАШЕМ СООБЩЕСТВЕ? (LSPD.US)]%text:diduplayed%[/anl]|[anl=КАКАЯ ЗАЩИТА СТОИТ НА АККАУНТЕ]%text:protection%[/anl][/coll]
 [anl=ВАШИ ПРЕДПОЧТЕНИЯ ПО ОТДЕЛУ]%text:wishes%[/anl]
 [anl=ПОДАВАЛОСЬ ЛИ ПОДОБНОЕ ЗАЯВЛЕНИЕ РАНЕЕ?]%text:diduapply%[/anl][/textareaa]
-[hr][/hr][coll][left]Форма Reinstatement Program[/left]|[right]Стандарт от 28 Марта 2020 г.[/right][/coll][/box][/background]
+[hr][/hr][coll][left]Форма Reinstatement Program[/left]|[right]Стандарт от 31 Мая 2020 г.[/right][/coll][/box][/background]

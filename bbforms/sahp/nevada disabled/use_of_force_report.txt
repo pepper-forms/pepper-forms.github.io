@@ -1,5 +1,5 @@
-[doc][doc_h]|SAN ANDREAS HIGHWAY PATROL
-GOLDEN GATE DIVISION
+[doc][doc_h]|DEPARTMENT OF PUBLIC SAFETY
+SAN ANDREAS HIGHWAY PATROL
 [b]CUOF REPORT[/b] #%span:case_number%|[right][color=#FFFFFF]_[/color]
 [size=85][b]Filed in:[/b] %span:today%[/right][/size][/doc_h][borderb=#000][/borderb] 
 [doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ][coll][a=Локация]%text:location%[/a]|[a=Дата]%text:incident_date%[/a][/coll]
@@ -11,7 +11,7 @@ GOLDEN GATE DIVISION
 [a=Оказана помощь]%text:suspect_is_treated%[/a][/doc_b]
 [doc_b=ИНФОРМАЦИЯ ОБ ОФИЦЕРЕ][coll4][a=Имя]%text:officer_name%[/a]|[a=Фамилия]%text:officer_surname%[/a]|[a=Пол]%text:officer_sex%[/a]|[a=Возраст]%text:officer_age%[/a][/coll4] 
 [coll3][a=Адрес проживания]%text:officer_adress%[/a]|[a=Номер телефона]%text:officer_number%[/a]|[a=Расовая принадлежность]%text:officer_race%[/a][/coll3]
-[coll4][a=Офис]%text:officer_division%[/a]|[a=Маркировка]%text:callsign%[/a]|[a=Номер значка]%text:officer_badge%[/a]|[a=Статус на момент инцидента]%text:officer_duty%[/a][/coll4]
+[coll4][a=Дивизион]%text:officer_division%[/a]|[a=Маркировка]%text:callsign%[/a]|[a=Номер значка]%text:officer_badge%[/a]|[a=Статус на момент инцидента]%text:officer_duty%[/a][/coll4]
 [ab=Действия офицера на момент инцидента]%textarea:officer_activity%[/ab]
 [a=Оружие]%text:officer_gun%[/a]
 [a=Опишите места воздействия оружия]%text:gun_impact%[/a]

@@ -1,6 +1,6 @@
 ﻿[doc][color=#000000][coll3]|[center]%text:division%
-[size=120][b]DAILY OBSERVATION REPORT[/b][/size][/center]|[right][size=85]SAN ANDREAS HIGHWAY PATROL
-GOLDEN GATE DIVISION[/size][/right][/coll3][/color]
+[size=120][b]DAILY OBSERVATION REPORT[/b][/size][/center]|[right][size=85]DEPARTMENT OF PUBLIC SAFETY
+SAN ANDREAS HIGHWAY PATROL[/size][/right][/coll3][/color]
 [doc_b=I. GENERAL INFORMATION][color=#000000]
 [coll][a=ПОЛНОЕ ИМЯ СТАЖЁРА]%text:trainee_name%[/a]
 [a=МАРКИРОВКА]%text:callsign%[/a]|[a=ДАТА ПАТРУЛИРОВАНИЯ]%text:patrol_date%[/a]

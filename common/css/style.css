@@ -204,7 +204,11 @@ body {
 }
 
 .form5 select {
-    
+    height: 18px;
+    width: calc(100% );
+    margin: -5px;
+    font-size: 16px;
+    box-sizing: content-box;
 }
 
 .form5 input[type=radio] {
@@ -496,7 +500,7 @@ body {
 }
 
 .bhSAHPForm select {
-    height: 3em;
+    height: 18px;
     width: calc(100% );
     margin: -5px;
     font-size: 16px;
