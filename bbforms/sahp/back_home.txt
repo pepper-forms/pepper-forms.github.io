@@ -6,7 +6,7 @@ HUMAN RESOURCES SECTION[/size]
 [block=#000000][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ О ПЕРСОНАЖАХ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][anl=ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС]%textarea:role%
 [spoiler="Полное описание"]%textarea:role_ext%[/spoiler][/anl]
 [anl=ВАШИ ПРЕДЫДУЩИЕ РОЛИ, ДАТА КОГДА ВЫ ИГРАЛИ, СЕРВЕР, ЛИДЕР (ТЕЗИСНО)]%textarea:roles%[/anl]
-[anl=ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ТОЛЬКО ХОРОШИЕ СС, ТЕЗИСНО ПО ПЕРСОНАЖАМ)]%textarea:ss%[/anl][/textareaa]
+[anl=ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ТОЛЬКО ХОРОШИЕ СС, ТЕЗИСНО ПО ПЕРСОНАЖАМ)][spoiler="Доказательства игры"]%textarea:ss%[/spoiler][/anl][/textareaa]
 
 [block=#000000][color=#FFFFFF][center][size=110][b]ИНФОРМАЦИЯ ОБ АППЛИКАНТЕ[/b][/size][/center][/color][/block][textareaa=#FFFFFF][coll3][anl=КАК ВАС ЗОВУТ?]%text:aname%[/anl]|[anl=ВАШ НИКНЕЙМ В СООБЩЕСТВАХ (ЕСЛИ ЕСТЬ)]%text:anickname%[/anl]|[anl=ВАШ ВОЗРАСТ]%text:aage%[/anl][/coll3]
 [coll][anl=ССЫЛКА НА VK]%text:vkurl%[/anl]|[anl=ССЫЛКА НА ФОРУМНЫЙ АККАУНТ (G-RP)]%text:gurl%[/anl][/coll][/textareaa]
