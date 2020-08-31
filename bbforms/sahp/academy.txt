@@ -1,6 +1,6 @@
 [background=#FFFFFF][img]https://i.imgur.com/tdMHzvI.png[/img]
 [b][u]STEP 1.[/u][/b]
-[size=120][b]PRELIMINARY BACKGROUND APPLICATION — NAME SURNAME[/b][/size][/background]
+[size=120][b]PRELIMINARY BACKGROUND APPLICATION — %text:titlename%[/b][/size][/background]
 [background=#E9E8E8][doc_ac][b][size=110]ЧАСТЬ А. ЛИЧНАЯ ИНФОРМАЦИЯ[/size][/b]|[coll3][ab=A1. Имя]%text:a1%[/ab]|[ab=А2. Второе имя]%text:a2%[/ab]|[ab=А3. Фамилия]%text:a3%[/ab][/coll3]
 [coll3][ab=А4. Год рождения]%text:a4%[/ab]|[ab=А5. Страна и город вашего рождения]%text:a5%[/ab]|[ab=А6. Место проживания]%text:a6%[/ab][/coll3]
 [coll3][ab=А7. Пол]%text:a7%[/ab]|[ab=А8. Раса]%text:a8%[/ab]|[ab=А9. Номер телефона]%text:a9%[/ab][/coll3]

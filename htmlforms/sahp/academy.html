@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="/common/css/micromodal.css">
         <script src="/common/js/micromodal.min.js"></script>
         <script src="/common/js/utils.js"></script>
-        <title>Police Academy - LVMPD</title>
+        <title>SAHP Academy</title>
     </head>
 </head>
 
@@ -31,7 +31,7 @@
                 <br />
                 <span style="font-size: 120%; line-height: normal">
                     <strong>
-                        PRELIMINARY BACKGROUND APPLICATION — NAME SURNAME
+                        PRELIMINARY BACKGROUND APPLICATION — <span name="titlename">Name Surname</span>
                     </strong>
                 </span>
             </div>
@@ -668,6 +668,16 @@
 		    });
 		}
 
+		function generateTitleName() {
+			var name = document.getElementsByName("a1")[0].value.capitalize();
+            var surname = document.getElementsByName("a3")[0].value.capitalize();
+			
+			if (name && surname) {
+                     document.getElementsByName("titlename")[0].textContent = name + " " + surname;
+             	}
+			
+		}
+
 		function calculateAge(birthday) {
 			return Math.floor((Date.now() - birthday.getTime()) / (1000* 60 * 60 * 24 * 365));
 		}
@@ -690,7 +700,7 @@
              var h_output = "";
              if (month && year) {
                  h_output = h_output + "[A" + month + "-" + year + "] "
-                 if (name) {
+                 if (name && surname) {
                      h_output = h_output + name + " " + surname
                  }
              }
@@ -740,6 +750,8 @@
                 }
                 document.getElementsByName("e8")[0].value = ssArray.join('\n');
             }
+
+            generateTitleName();
 
             showBB();
          }
