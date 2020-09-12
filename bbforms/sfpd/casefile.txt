@@ -1,0 +1,91 @@
+[float=left][img]https://i.imgur.com/TNGYmLU.png[/img][/float][background=#00012d]
+[size=165][b][color=#FFFFFF]SAN FIERRO POLICE DEPARTMENT[/b][/size][/color]
+[size=135][color=#FFFFFF]%text:department%[/color][/size]
+[color=#FFFFFF]201 Madison ave, Garcia
+San Fierro, SA 94124[/color][/background][background=white][/background][background=#00012d][b][color=#FFFFFF][size=145]FOLDER-%text:casenumber%[/size][/color][/b][/background]
+[textarea][left][b]TASK FORCE:[/b]
+
+[u]ВЕДУЩИЙ ДЕТЕКТИВ[/u]:
+[list][*]%text:leaddetective%
+[/list]
+
+[u]СОСТАВ ДЕТЕКТИВОВ ПО ДЕЛУ[/u]:
+[list]%textarea:detectivesoncase%[/list]
+
+ДАТА ВОЗБУЖДЕНИЯ ДЕЛА:
+%text:caseopendate%[/left][/textarea]
+
+[hr][/hr]
+[textarea][center][b]MAIN DESCRIPTION[/b][/center]
+
+
+[b]МЕСТО ПРЕСТУПЛЕНИЯ:[/b] %text:crimescene%
+[b]ДАТА СОВЕРШЕНИЯ ПРЕСТУПЛЕНИЯ:[/b] %text:crimedate%
+[sp=INCIDENT REPORT]%textarea:incidentreport%[/sp]
+[hr][/hr]
+
+[sp=PARTICIPANTS OF THE INCIDENT]
+[float=right][mugshot=%text:mugshot1%][/float]
+[size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
+%text:namesurname1%
+
+[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+%text:dateofbirth1%
+
+[size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
+%text:adress1%
+
+[size=85][b]СТАТУС[/b][/size]
+%text:status1%
+
+[size=85][b]ТЕКУЩЕЕ СОСТОЯНИЕ[/b][/size]
+%text:state1%
+
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
++1 (212) %text:contact1%
+[hr][/hr]
+[float=right][mugshot=%text:mugshot2%][/float]
+[size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
+%text:namesurname2%
+
+[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+%text:dateofbirth2%
+
+[size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
+%text:adress2%
+
+[size=85][b]СТАТУС[/b][/size]
+%text:status2%
+
+[size=85][b]ТЕКУЩЕЕ СОСТОЯНИЕ[/b][/size]
+%text:state2%
+
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
++1 (212) %text:contact2%
+[hr][/hr]
+[float=right][mugshot=%text:mugshot3%][/float]
+[size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
+%text:namesurname3%
+
+[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+%text:dateofbirth3%
+
+[size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
+%text:adress3%
+
+[size=85][b]СТАТУС[/b][/size]
+%text:status3%
+
+[size=85][b]ТЕКУЩЕЕ СОСТОЯНИЕ[/b][/size]
+%text:state3%
+
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
++1 (212) %text:contact3%
+[hr][/hr][/sp]
+[hr][/hr][center][b]DECISION[/b][/center]
+
+На основании вышеизложенного, полагаю, что в в действиях подозреваемого содержится состав преступления, предусмотренный ст. %text:penalcode% Уголовного Кодекса штата Сан-Андрес. Немедленно открыть дело, приступить к его расследованию в установленном порядке.
+
+
+[right][b]%text:department%[/b]
+[i]%text:leaddetective%[/i][/right]

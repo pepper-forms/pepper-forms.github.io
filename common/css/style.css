@@ -572,3 +572,49 @@ body {
   vertical-align: center;
   margin: 10px;
 }
+
+.SFPDform, .btn-container {
+    width: calc(100% - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.SFPDform input[type="text"] {
+    height: 18px;
+    width: calc(100% - 50px);
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.SFPDform select {
+    width: calc(100% - 50px);
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: content-box;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+.SFPDform textarea {
+    display: block;
+    margin: 0px;
+    padding: 5px;
+    width: calc(100% - 50px);
+    height: 85px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: content-box;
+}
+
+.SFPDformSP input[type="text"] {
+    height: 18px;
+    width: calc(40%);
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: content-box;
+}
