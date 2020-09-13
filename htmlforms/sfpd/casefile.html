@@ -32,7 +32,7 @@
                 <br />
                 <span style="font-size:135%;line-height:116%">
                     <span style="color:#FFFFFF">
-                        <input name="department" id="topdepartment" type="text" value="1ST ORGANIZED CRIME CONTROL SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="off"/>
+                        <input name="department" id="topdepartment" type="text" value="1ST ORGANIZED CRIME CONTROL SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"/>
                     </span>
                 </span>
                 <br />
@@ -53,7 +53,7 @@
                     <span style="color:#FFFFFF">
                         <span style="font-size:145%;line-height:116%">
                             FOLDER-
-                            <input name="casenumber" type="text" style="all: unset; width: calc(60%)" placeholder="Номер/Название фолдера" autocomplete="off"/>
+                            <input name="casenumber" type="text" style="all: unset; width: calc(60%)" placeholder="Номер/Название фолдера" autocomplete="my-field-name1"/>
                         </span>
                     </span>
                 </strong>
@@ -72,7 +72,7 @@
                 :
                 <ul>
                     <li>
-                        <input id="topleaddetective" name="leaddetective" type="text" style="margin-top: 10px;" placeholder="Rank - Name Surname" autocomplete="off"/>
+                        <input id="topleaddetective" name="leaddetective" type="text" style="margin-top: 10px;" placeholder="Rank - Name Surname" autocomplete="my-field-name1"/>
                     </li>
                 </ul>
                 <span style="text-decoration:underline">
@@ -83,12 +83,12 @@
                     <li>
                         <textarea name="detectivesoncase" style="margin-top: 10px;" placeholder="Rank - Name Surname
 Rank - Name Surname
-каждого с новой строки" autocomplete="off"></textarea>
+каждого с новой строки" autocomplete="my-field-name1"></textarea>
                     </li>
                 </ul>
                 ДАТА ВОЗБУЖДЕНИЯ ДЕЛА:
                 <br />
-                <input type="text" class="datepicker_full" name="caseopendate" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+                <input type="text" class="datepicker_full" name="caseopendate" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
             </div>
         </div>
         <hr />
@@ -102,19 +102,19 @@ Rank - Name Surname
                 <strong class="text-strong">
                 МЕСТО ПРЕСТУПЛЕНИЯ:
                 </strong>
-                <input name="crimescene" type="text" placeholder="(Апартамент), Улица, (Район), Город, Штат" autocomplete="off"/>
+                <input name="crimescene" type="text" placeholder="(Апартамент), Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
                 <br /><br />
                 <strong class="text-strong">
                     ДАТА СОВЕРШЕНИЯ ПРЕСТУПЛЕНИЯ:
                 </strong>
-                <input type="text" class="datepicker_full" name="crimedate" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+                <input type="text" class="datepicker_full" name="crimedate" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
                 <br /><br />
             <div>
                 <div onclick="hidn = this.parentNode.getElementsByTagName('div')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
                     INCIDENT REPORT
                 </div>
                 <div style="background: rgb(246, 246, 246); padding-top: 10px; padding-left: 10px; text-align: center; display: none;">
-                    <textarea name="incidentreport" style="height: 200px;" placeholder="Детальное описание случившегося" autocomplete="off"></textarea>
+                    <textarea name="incidentreport" style="height: 200px;" placeholder="Детальное описание случившегося" autocomplete="my-field-name1"></textarea>
                 </div>
             </div>
             <hr />
@@ -123,10 +123,12 @@ Rank - Name Surname
                     PARTICIPANTS OF THE INCIDENT
                 </div>
 
-
-
                 <div class="SFPDform" style="background: rgb(246, 246, 246); padding: 6px; display: none;">
-                    <div class="container">
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #1</span>
+                        <input type="hidden" name="participant1">
+                    </div>
+                    <div class="container" style="display: none">
                         <div class="row">
                             <div class="col-7">
                                 <span style="font-size:85%;line-height:116%">
@@ -135,16 +137,16 @@ Rank - Name Surname
                                     </strong>
                                 </span>
                                 <br />
-                                <input name="namesurname1" type="text" placeholder="Имя Фамилия" autocomplete="off"/>
+                                <input name="namesurname1" type="text" placeholder="Имя Фамилия" autocomplete="my-field-name1"/>
                                 <br />
                                 <br />
                                 <span style="font-size:85%;line-height:116%">
                                     <strong class="text-strong">
-                                        ВОЗРАСТ, ДАТА РОЖДЕНИЯ
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
                                     </strong>
                                 </span>
                                 <br />
-                                <input type="text" class="datepicker_full" name="dateofbirth1" placeholder="Нажмите, чтобы выбрать" autocomplete="off"/>
+                                <input type="text" class="datepicker_full" name="dateofbirth1" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
                                 <br />
                                 <br />
                                 <span style="font-size:85%;line-height:116%">
@@ -153,7 +155,7 @@ Rank - Name Surname
                                     </strong>
                                 </span>
                                 <br />
-                                <input name="adress1" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="off"/>
+                                <input name="adress1" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
                                 <br />
                                 <br />
                                 <span style="font-size:85%;line-height:116%">
@@ -163,6 +165,7 @@ Rank - Name Surname
                                 </span>
                                 <br />
                                     <select name="status1"/>
+                                        <option value="N/A" selected disabled hidden>Выберите статус</option>
                                         <option>Подозреваемый</option>
                                         <option>Потерпевший</option>
                                         <option>Свидетель</option>
@@ -176,6 +179,7 @@ Rank - Name Surname
                                 </span>
                                 <br />
                                     <select name="state1"/>
+                                        <option value="N/A" selected disabled hidden>Выберите текущее состояние</option>
                                         <option>Жив</option>
                                         <option>Мертв</option>
                                     </select>
@@ -187,7 +191,7 @@ Rank - Name Surname
                                     </strong>
                                 </span>
                                 <br />
-                                <input name="contact1" type="text" value="+1 (212) " maxlength="16" placeholder="+1 (212) xxx xxx" autocomplete="off"/>
+                                <input name="contact1" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img 
@@ -196,131 +200,178 @@ Rank - Name Surname
                                     id="mugshotimage1" 
                                         onclick="showGalleryModal().then(function(id) {
                                         $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                        $('[name=\'mugshot1\']').val(id);
+                                        $('[name=\'mugshot1\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
-                                <input type="hidden" name="mugshot1" />
+                                <input type="hidden" name="mugshot1" class="mugshot" />
                             </div>
                         </div>
                     </div>
                     <hr/>
-
-                    <div style="float:right;padding:10px">
-                        [mugshot=
-                        <input name="mugshot2" type="text" />
-                        ]
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #2</span>
+                        <input type="hidden" name="participant2">
                     </div>
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ИМЯ, ФАМИЛИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="namesurname2" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ВОЗРАСТ, ДАТА РОЖДЕНИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="dateofbirth2" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            АДРЕС ПРОЖИВАНИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="adress2" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            СТАТУС
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="status2" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ТЕКУЩЕЕ СОСТОЯНИЕ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="state2" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            КОНТАКТНАЯ ИНФОРМАЦИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    +1 (212)
-                    <input name="contact2" type="text" />
+                    <div class="container" style="display: none">
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ИМЯ, ФАМИЛИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname2" type="text" placeholder="Имя Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth2" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress2" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                    <select name="status2"/>
+                                        <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                        <option>Подозреваемый</option>
+                                        <option>Потерпевший</option>
+                                        <option>Свидетель</option>
+                                    </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ТЕКУЩЕЕ СОСТОЯНИЕ
+                                    </strong>
+                                </span>
+                                <br />
+                                    <select name="state2"/>
+                                        <option value="N/A" selected disabled hidden>Выберите текущее состояние</option>
+                                        <option>Жив</option>
+                                        <option>Мертв</option>
+                                    </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact2" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img 
+                                    style="max-width: 100%; cursor: pointer;" 
+                                    src="/static/img/placeholder.png"
+                                    id="mugshotimage2" 
+                                        onclick="showGalleryModal().then(function(id) {
+                                        $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('[name=\'mugshot2\']').val(id);
+                                })">
+                                <input type="hidden" name="mugshot2"  class="mugshot"/>
+                            </div>
+                        </div>
+                    </div>
                     <hr />
-                    <div style="float:right;padding:10px">
-                        [mugshot=
-                        <input name="mugshot3" type="text" />
-                        ]
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[2]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #3</span>
+                        <input type="hidden" name="participant3">
                     </div>
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ИМЯ, ФАМИЛИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="namesurname3" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ВОЗРАСТ, ДАТА РОЖДЕНИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="dateofbirth3" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            АДРЕС ПРОЖИВАНИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="adress3" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            СТАТУС
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="status3" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            ТЕКУЩЕЕ СОСТОЯНИЕ
-                        </strong>
-                    </span>
-                    <br />
-                    <input name="state3" type="text" />
-                    <br />
-                    <br />
-                    <span style="font-size:85%;line-height:116%">
-                        <strong class="text-strong">
-                            КОНТАКТНАЯ ИНФОРМАЦИЯ
-                        </strong>
-                    </span>
-                    <br />
-                    +1 (212)
-                    <input name="contact3" type="text" />
+                    <div class="container" style="display: none">
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ИМЯ, ФАМИЛИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname3" type="text" placeholder="Имя Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth3" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress3" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                    <select name="status3"/>
+                                        <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                        <option>Подозреваемый</option>
+                                        <option>Потерпевший</option>
+                                        <option>Свидетель</option>
+                                    </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ТЕКУЩЕЕ СОСТОЯНИЕ
+                                    </strong>
+                                </span>
+                                <br />
+                                    <select name="state3"/>
+                                        <option value="N/A" selected disabled hidden>Выберите текущее состояние</option>
+                                        <option>Жив</option>
+                                        <option>Мертв</option>
+                                    </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact3" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img 
+                                    style="max-width: 100%; cursor: pointer;" 
+                                    src="/static/img/placeholder.png"
+                                    id="mugshotimage3" 
+                                        onclick="showGalleryModal().then(function(id) {
+                                        $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('[name=\'mugshot3\']').val(id);
+                                })">
+                                <input type="hidden" name="mugshot3" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
                     <hr />
                 </div>
             </div>
@@ -332,7 +383,7 @@ Rank - Name Surname
             </div>
             На основании вышеизложенного, полагаю, что в в действиях подозреваемого содержится состав преступления, предусмотренный статьей
             <div style="text-align: center; padding: 10px;"><select name="penalcode">
-                        <option value="" selected disabled hidden>Выберите статью</option>
+                        <option value="N/A" selected disabled hidden>Выберите статью</option>
                         <option value=" (1)01   ">  (1)01. Запугивание, шантаж  </option>
                         <option value=" (1)02   ">  (1)02. Нападение    </option>
                         <option value=" (1)03   ">  (1)03. Нападение с применением оружия   </option>
@@ -504,7 +555,7 @@ Rank - Name Surname
                                 <label for="output__header">Topic Name</label>
                             </div>
                             <div class="col-9 col-lg-10">
-                                <input type="text" class="form-control" id="output__header" placeholder="[BACK HOME] Name Surname (nickname)">
+                                <input type="text" class="form-control" id="output__header" placeholder="Folder #xxxxxxxx from dd/mmm/yyyy">
                             </div>
                             <div class="col-3 col-lg-2">
                                 <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
@@ -525,13 +576,11 @@ Rank - Name Surname
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-hp.com','_blank')">Create Application</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open('https://sfpolice.ru/viewforum.php?f=78','_blank')">Create Application</button>
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <!-- start of gallery modal -->
     <div class="modal fade" id="gallery_modal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -551,11 +600,7 @@ Rank - Name Surname
             </div>
         </div>
     </div>
-
     <!-- end of gallery modal -->
-
-
-
 
     <script>
 
@@ -576,6 +621,53 @@ Rank - Name Surname
         });
     }
 
+    function setParticipantValue(participantNumber, noValue) {
+        if (noValue) {
+            document.getElementsByName("participant" + participantNumber)[0].value = 'Participant #' + participantNumber + " - N/A"
+        } else {
+            document.getElementsByName("participant" + participantNumber)[0].value = 
+                document.getElementsByName("status" + participantNumber)[0].value + " " + 
+                document.getElementsByName("namesurname" + participantNumber)[0].value
+        }
+    }
+
+    function setParticipants(participantsNumber) {
+        for (let i = 1; i <= participantsNumber; i++) {
+            if (document.getElementsByName("namesurname" + i)[0].value && document.getElementsByName("status" + i)[0].value != "N/A") {
+                setParticipantValue(i, false)
+            } else {
+                setParticipantValue(i, true)
+            }
+        }
+    }
+
+    function setContacts(participantsNumber) {
+        for (let i = 1; i <= participantsNumber; i++) {
+            if (document.getElementsByName("contact" + i)[0].value == "+1 (0212) ") {
+                document.getElementsByName("contact" + i)[0].value = "N/A"
+            }
+        }
+    }
+
+    function calculateAge(birthday) {
+        return Math.floor((Date.now() - birthday.getTime()) / (1000* 60 * 60 * 24 * 365));
+    }
+    
+    function getAge(element) {
+        var birthday = $.datepicker.parseDate('dd/M/yy', document.getElementsByName(element)[0].value);
+        return calculateAge(birthday);
+    }
+
+    $(document.getElementsByName("dateofbirth1")[0]).change(function(){
+        document.getElementsByName("dateofbirth1")[0].value = document.getElementsByName("dateofbirth1")[0].value + " (" + getAge("dateofbirth1") + ")";
+    });
+    $(document.getElementsByName("dateofbirth2")[0]).change(function(){
+        document.getElementsByName("dateofbirth2")[0].value = document.getElementsByName("dateofbirth2")[0].value + " (" + getAge("dateofbirth2") + ")";
+    });
+    $(document.getElementsByName("dateofbirth3")[0]).change(function(){
+        document.getElementsByName("dateofbirth3")[0].value = document.getElementsByName("dateofbirth3")[0].value + " (" + getAge("dateofbirth3") + ")";
+    });
+
     function setCasefileNumber() {
         var timecode = Math.floor(Date.now() / 60000);
         casenumber = "#" + timecode;
@@ -583,43 +675,32 @@ Rank - Name Surname
     }
 
     function generatePostTitle() {
-        var cname = document.getElementsByName("cname")[0].value.capitalize();
-        var anickname = document.getElementsByName("anickname")[0].value;
+        var leaddetectivename = document.getElementsByName("leaddetective")[0].value;
+        var casenumber = document.getElementsByName("casenumber")[0].value
+        var date = parseDate();
         var h_output = "";
 
-        if (cname && anickname) {
-            h_output = cname + " (" + anickname + ")"
+        if (leaddetectivename && casenumber && date) {
+            h_output = "Folder " + casenumber + " from " + date
         }
 
         return h_output;
     }
 
-    function isURL(str) {
-        var pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?' + // protocol
-            '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name and extension
-            '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-            '(\\:\\d+)?' + // port
-            '(\\/[-a-z\\d%@_.~+&:]*)*' + // path
-            '(\\?[;&a-z\\d%@_.,~+&:=-]*)?' + // query string
-            '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
-        return pattern.test(str);
-    }
-
-    function isIMG(url) {
-        return (url.match(/\.(jpeg|jpg|gif|png)$/) != null);
-    }
-
-    function checkURLs(str) {
-        if (isURL(str)) {
-            if (isIMG(str)) {
-                str = "[spoiler=\"" + str + "\"][url=" + str + "][img]" + str + "[/img][/url][/spoiler]";
+    function form2dict(form) {
+        var values = form.querySelectorAll('[name]');
+        var data = {};
+        for (var i = 0; i < values.length; i++) {
+            if (values[i].classList.contains('datepicker')) {
+                data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+            } else if (values[i].classList.contains('mugshot')) {
+                data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || '';
             } else {
-                str = "[url]" + str + "[/url]";
+                data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
             }
         }
-        return str;
+        return data;
     }
-
 
     /** start gallery stuff **/
     async function showGalleryModal() {
@@ -660,6 +741,8 @@ Rank - Name Surname
     /** end gallery stuff **/
 
     function prepare() {
+        setParticipants(3);
+        setContacts(3);
         showBB();
     }
 

@@ -25,11 +25,11 @@ San Fierro, SA 94124[/color][/background][background=white][/background][backgro
 [hr][/hr]
 
 [sp=PARTICIPANTS OF THE INCIDENT]
-[float=right][mugshot=%text:mugshot1%][/float]
+[sp=%text:participant1%][float=right]%text:mugshot1%[/float]
 [size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
 %text:namesurname1%
 
-[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ[/b][/size]
 %text:dateofbirth1%
 
 [size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
@@ -42,13 +42,13 @@ San Fierro, SA 94124[/color][/background][background=white][/background][backgro
 %text:state1%
 
 [size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
-+1 (212) %text:contact1%
+%text:contact1%[/sp]
 [hr][/hr]
-[float=right][mugshot=%text:mugshot2%][/float]
+[sp=%text:participant2%][float=right]%text:mugshot2%[/float]
 [size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
 %text:namesurname2%
 
-[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ[/b][/size]
 %text:dateofbirth2%
 
 [size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
@@ -61,13 +61,13 @@ San Fierro, SA 94124[/color][/background][background=white][/background][backgro
 %text:state2%
 
 [size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
-+1 (212) %text:contact2%
+%text:contact2%[/sp]
 [hr][/hr]
-[float=right][mugshot=%text:mugshot3%][/float]
+[sp=%text:participant3%][float=right]%text:mugshot3%[/float]
 [size=85][b]ИМЯ, ФАМИЛИЯ[/b][/size]
 %text:namesurname3%
 
-[size=85][b]ВОЗРАСТ, ДАТА РОЖДЕНИЯ[/b][/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ[/b][/size]
 %text:dateofbirth3%
 
 [size=85][b]АДРЕС ПРОЖИВАНИЯ[/b][/size]
@@ -80,11 +80,11 @@ San Fierro, SA 94124[/color][/background][background=white][/background][backgro
 %text:state3%
 
 [size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ[/b][/size]
-+1 (212) %text:contact3%
+%text:contact3%[/sp]
 [hr][/hr][/sp]
 [hr][/hr][center][b]DECISION[/b][/center]
 
-На основании вышеизложенного, полагаю, что в в действиях подозреваемого содержится состав преступления, предусмотренный ст. %text:penalcode% Уголовного Кодекса штата Сан-Андрес. Немедленно открыть дело, приступить к его расследованию в установленном порядке.
+На основании вышеизложенного, полагаю, что в в действиях подозреваемого содержится состав преступления, предусмотренный ст. %text:penalcode% [url="https://sa-es.su/sf/ch/viewtopic.php?f=768&t=4606"]Уголовного Кодекса штата Сан-Андрес[/url]. Немедленно открыть дело, приступить к его расследованию в установленном порядке.
 
 
 [right][b]%text:department%[/b]
