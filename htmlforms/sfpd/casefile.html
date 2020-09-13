@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/gallery.css">
     <link rel="stylesheet" href="/common/css/micromodal.css">
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
@@ -121,6 +122,9 @@ Rank - Name Surname
                 <div onclick="hidn = this.parentNode.getElementsByTagName('div')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
                     PARTICIPANTS OF THE INCIDENT
                 </div>
+
+
+
                 <div class="SFPDform" style="background: rgb(246, 246, 246); padding: 6px; display: none;">
                     <div class="container">
                         <div class="row">
@@ -186,10 +190,20 @@ Rank - Name Surname
                                 <input name="contact1" type="text" value="+1 (212) " maxlength="16" placeholder="+1 (212) xxx xxx" autocomplete="off"/>
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
-                                <input name="mugshot1" type="text" style="width: 10px;" />
+                                <img 
+                                    style="max-width: 100%; cursor: pointer;" 
+                                    src="/static/img/placeholder.png"
+                                    id="mugshotimage1" 
+                                        onclick="showGalleryModal().then(function(id) {
+                                        $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('[name=\'mugshot1\']').val(id);
+                                })">
+                                <input type="hidden" name="mugshot1" />
                             </div>
                         </div>
-                    </div><hr />
+                    </div>
+                    <hr/>
+
                     <div style="float:right;padding:10px">
                         [mugshot=
                         <input name="mugshot2" type="text" />
@@ -516,6 +530,33 @@ Rank - Name Surname
             </div>
         </div>
     </div>
+
+
+
+    <!-- start of gallery modal -->
+    <div class="modal fade" id="gallery_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select a mugshot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="gallery-images-container" id="gallery-images-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of gallery modal -->
+
+
+
+
     <script>
 
     $(function() {
@@ -579,29 +620,51 @@ Rank - Name Surname
         return str;
     }
 
-    function prepare() {
-        var vk = document.getElementsByName("vkurl")[0].value;
-        var grp = document.getElementsByName("gurl")[0].value;
-        var ss = document.getElementsByName("ss")[0].value;
 
-        if (vk) { document.getElementsByName("vkurl")[0].value = checkURLs(vk); }
-
-        if (grp) { document.getElementsByName("gurl")[0].value = checkURLs(grp); }
-
-        if (ss) {
-            var ssArray = ss.match(/[^\r\n]+/g);
-
-            for (var i = 0; i < ssArray.length; i++) {
-                ssArray[i] = checkURLs(ssArray[i]);
-            }
-            document.getElementsByName("ss")[0].value = ssArray.join('\n');
+    /** start gallery stuff **/
+    async function showGalleryModal() {
+        let d = $.Deferred();
+        renderGalleryItems(0, 299);
+        d.done(function(id) {
+            $(`.gallery-image-item`).removeClass('selected');
+            $(`.gallery-image-item[data-shotid="${id}"]`).addClass('selected');
+            $('#gallery_modal').modal('hide');
+            return id;
+        });
+        $(`.gallery-image-item`).on('click', function() {
+            const id = $(this).data('shotid');
+            d.resolve(id);
+        });
+        $('#gallery_modal').modal('show');
+        return d;
+    }
+    function generateGalleryItem(id) {
+        return `<div class="gallery-image-item" data-shotid="${id}">
+            <img src="https://sa-es.su/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
+            <p>${id}</p>
+        </div>`
+    }
+    function deleteGalleryItem(id) {
+        $(`.gallery-image-item[data-shotid="${id}"]`).remove();
+    }
+    function generateGalleryItems(start, stop) {
+        let output = '';
+        for (let i = start; i <= stop; i++) {
+            output += generateGalleryItem(i);
         }
+        return output;
+    }
+    function renderGalleryItems(start, stop) {
+        $('#gallery-images-container').html(generateGalleryItems(start, stop));
+    }
+    /** end gallery stuff **/
 
+    function prepare() {
         showBB();
     }
 
     MicroModal.init();
-    window.__bbcodeurl = '/bbforms/sahp/back_home.txt';
+    window.__bbcodeurl = '/bbforms/sfpd/casefile.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

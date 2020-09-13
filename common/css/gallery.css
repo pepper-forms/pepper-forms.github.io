@@ -1,0 +1,27 @@
+.gallery-images-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+}
+
+.gallery-image-item {
+	padding: 12px 12px 4px 12px;
+	border-radius: 4px;
+	display: block;
+	cursor: pointer;
+}
+
+.gallery-image-item.selected {
+	box-shadow: 0px 0px 0px 2px #0088ff
+}
+
+.gallery-image-item img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.gallery-image-item p {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
