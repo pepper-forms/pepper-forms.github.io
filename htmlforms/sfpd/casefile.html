@@ -283,7 +283,7 @@ Rank - Name Surname
                                     id="mugshotimage2" 
                                         onclick="showGalleryModal().then(function(id) {
                                         $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                        $('[name=\'mugshot2\']').val(id);
+                                        $('[name=\'mugshot2\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
                                 <input type="hidden" name="mugshot2"  class="mugshot"/>
                             </div>
@@ -366,7 +366,7 @@ Rank - Name Surname
                                     id="mugshotimage3" 
                                         onclick="showGalleryModal().then(function(id) {
                                         $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                        $('[name=\'mugshot3\']').val(id);
+                                        $('[name=\'mugshot3\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
                                 <input type="hidden" name="mugshot3" class="mugshot" />
                             </div>
