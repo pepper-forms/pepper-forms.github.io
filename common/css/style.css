@@ -618,3 +618,8 @@ body {
     font-size: 16px;
     box-sizing: content-box;
 }
+
+.span-space span {
+    display: inline-block;
+    padding-top: 20px;
+}

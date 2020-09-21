@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/gallery.css">
+    <link rel="stylesheet" href="/common/css/micromodal.css">
+    <script src="/common/js/micromodal.min.js"></script>
+    <script src="/common/js/utils.js"></script>
+    <title>Casefile - SFPD Homicide</title>
+</head>
+
+<body>
+    <div class="SFPDform" style="padding: 10px; background-color: white; border: 10px solid black;">
+        <div style="float:left;padding:10px">
+            <img alt="Изображение" class="postimage" src="https://i.imgur.com/TNGYmLU.png" />
+        </div>
+        <div style="padding:10px;background-color:#00012d">
+            <span>
+                <span style="font-size:165%;line-height:116%">
+                    <strong class="text-strong">
+                        <span style="color:#FFFFFF">
+                            SAN FIERRO POLICE DEPARTMENT
+                        </span>
+                    </strong>
+                </span>
+                <br />
+                <span style="font-size:135%;line-height:116%">
+                    <span style="color:#FFFFFF">
+                        <input name="department" type="text" value="1ST PRECINCT, HOMICIDE & GENERAL CRIME SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"/>
+                    </span>
+                </span>
+                <br />
+                <span style="color:#FFFFFF">
+                    226 Harrison ave, Downtown
+                    <br />
+                    San Fierro, SA 30303
+                </span>
+            </span>
+        </div>
+        <div style="padding:10px;background-color:white">
+            <span>
+            </span>
+        </div>
+        <div style="padding:10px;background-color:#00012d">
+            <span>
+                <strong class="text-strong">
+                    <span style="color:#FFFFFF">
+                        <span style="font-size:145%;line-height:116%">
+                            ДЕЛО
+                            <input name="casenumber" type="text" style="all: unset; width: calc(60%)" placeholder="Номер/Название фолдера" autocomplete="my-field-name1"/>
+                        </span>
+                    </span>
+                </strong>
+            </span>
+        </div>
+        <table style="width:100%;display:inline-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="padding: 10px;">
+                            <span style="font-size:95%;line-height:116%">
+                                <strong class="text-strong">
+                                    СТАТУС ДЕЛА:
+                                </strong>
+                                <span style="color:#00BF40">
+                                    ОТКРЫТО
+                                </span>
+                            </span>
+                            <br />
+                            <span style="font-size:95%;line-height:116%">
+                                <strong class="text-strong">
+                                    ДАТА ОТКРЫТИЯ ДЕЛА:
+                                </strong>
+                                <input type="text" class="datepicker_full" name="caseopendate" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                            </span>
+                            <br />
+                            <span style="font-size:95%;line-height:116%">
+                                <strong class="text-strong">
+                                    ДАТА ЗАКРЫТИЯ ДЕЛА:
+                                </strong>
+                                <input type="text" disabled placeholder="Заполняется вручную, по закрытию дела" autocomplete="my-field-name1"/>
+                            </span>
+                        </td>
+                        <td>
+                            <span style="font-size:95%;line-height:116%">
+                                <strong class="text-strong">
+                                    ВЕДУЩИЙ(Е) СЛЕДОВАТЕЛЬ(И):
+                                </strong>
+                            </span>
+                            <br />
+                            <span style="font-size:95%;line-height:116%">
+                                <input name="leaddetective" type="text" style="margin-top: 10px;" placeholder="Rank - Name Surname" autocomplete="my-field-name1"/>
+                                <br />
+                                <input name="leaddetective2" type="text" class="secondDetective" style="margin-top: 10px;" placeholder="Rank - Name Surname" autocomplete="my-field-name1"/>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <div onclick="hidn = this.parentNode.getElementsByTagName('div')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                ИНФОРМАЦИЯ О РАССЛЕДОВАНИИ
+            </div>
+            <div style="background: rgb(246, 246, 246); padding: 6px; display: none;">
+                <span style="font-size:95%;line-height:116%">
+                    <textarea name="fabula" style="height: 200px;" placeholder="Фабула" autocomplete="my-field-name1"></textarea>
+                </span>
+            </div>
+        </div>
+        <div>
+            <div onclick="hidn = this.parentNode.getElementsByTagName('div')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                ИНФОРМАЦИЯ О ФИГУРАНТАХ ДЕЛА
+            </div>
+            <div style="background: rgb(246, 246, 246); padding: 6px; display: none;">
+                <div>
+                    <hr />
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #1</span>
+                        <input type="hidden" name="participant1">
+                    </div>
+                    <div class="container span-space" style="display: none;">
+                        <hr \>
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="status1"/>
+                                    <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                    <option>Подозреваемый</option>
+                                    <option>Потерпевший</option>
+                                    <option>Свидетель</option>
+                                </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛНОЕ ИМЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname1" type="text" placeholder="Имя (Второе Имя) Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth1" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛ
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="sex1"/>
+                                    <option value="N/A" selected disabled hidden>Выберите пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        РАСА
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="race1">
+                                  <option value="N/A" selected disabled hidden>Выберите расу</option>
+                                  <option value="Европеоидная">Европеоидная</option>
+                                  <option value="Негроидная">Негроидная</option>
+                                  <option value="Восточноафриканская">Восточноафриканская</option>
+                                  <option value="Монголоидная">Монголоидная</option>
+                                  <option value="Американоидная">Американоидная</option>
+                                  <option value="Австролоидная">Австролоидная</option>
+                               </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НАЦИОНАЛЬНОСТЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="nationality1" type="text" placeholder="Национальность" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact1" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress1" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ОПИСАНИЕ ВНЕШНОСТИ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="description1" type="text" placeholder="Описание" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ЛИЧНЫЙ АВТОМОБИЛЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="car1" type="text" placeholder="Марка, цвет" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НОМЕРНОЙ ЗНАК
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="plate1" type="text" placeholder="Номерной знак авто" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <textarea name="additional1" style="height: 50px;" placeholder="Дополнительная информация, если имеется" autocomplete="my-field-name1"></textarea>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage1" onclick="showGalleryModal().then(function(id) {
+                                                    $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('[name=\'mugshot1\']').val(id ? '[mugshot=' + id + ']' : '');
+                                            })">
+                                <input type="hidden" name="mugshot1" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
+        
+                <hr />
+                <div>
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #2</span>
+                        <input type="hidden" name="participant2">
+                    </div>
+                    <div class="container span-space" style="display: none;">
+                        <hr \>
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="status2"/>
+                                    <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                    <option>Подозреваемый</option>
+                                    <option>Потерпевший</option>
+                                    <option>Свидетель</option>
+                                </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛНОЕ ИМЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname2" type="text" placeholder="Имя (Второе Имя) Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth2" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛ
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="sex2"/>
+                                    <option value="N/A" selected disabled hidden>Выберите пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        РАСА
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="race2">
+                                  <option value="N/A" selected disabled hidden>Выберите расу</option>
+                                  <option value="Европеоидная">Европеоидная</option>
+                                  <option value="Негроидная">Негроидная</option>
+                                  <option value="Восточноафриканская">Восточноафриканская</option>
+                                  <option value="Монголоидная">Монголоидная</option>
+                                  <option value="Американоидная">Американоидная</option>
+                                  <option value="Австролоидная">Австролоидная</option>
+                               </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НАЦИОНАЛЬНОСТЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="nationality2" type="text" placeholder="Национальность" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact2" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress2" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ОПИСАНИЕ ВНЕШНОСТИ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="description2" type="text" placeholder="Описание" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ЛИЧНЫЙ АВТОМОБИЛЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="car2" type="text" placeholder="Марка, цвет" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НОМЕРНОЙ ЗНАК
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="plate2" type="text" placeholder="Номерной знак авто" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <textarea name="additional2" style="height: 50px;" placeholder="Дополнительная информация, если имеется" autocomplete="my-field-name1"></textarea>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage2" onclick="showGalleryModal().then(function(id) {
+                                                    $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('[name=\'mugshot2\']').val(id ? '[mugshot=' + id + ']' : '');
+                                            })">
+                                <input type="hidden" name="mugshot2" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #3</span>
+                        <input type="hidden" name="participant3">
+                    </div>
+                    <div class="container span-space" style="display: none;">
+                        <hr \>
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="status3"/>
+                                    <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                    <option>Подозреваемый</option>
+                                    <option>Потерпевший</option>
+                                    <option>Свидетель</option>
+                                </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛНОЕ ИМЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname3" type="text" placeholder="Имя (Второе Имя) Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth3" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛ
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="sex3"/>
+                                    <option value="N/A" selected disabled hidden>Выберите пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        РАСА
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="race3">
+                                  <option value="N/A" selected disabled hidden>Выберите расу</option>
+                                  <option value="Европеоидная">Европеоидная</option>
+                                  <option value="Негроидная">Негроидная</option>
+                                  <option value="Восточноафриканская">Восточноафриканская</option>
+                                  <option value="Монголоидная">Монголоидная</option>
+                                  <option value="Американоидная">Американоидная</option>
+                                  <option value="Австролоидная">Австролоидная</option>
+                               </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НАЦИОНАЛЬНОСТЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="nationality3" type="text" placeholder="Национальность" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact3" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress3" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ОПИСАНИЕ ВНЕШНОСТИ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="description3" type="text" placeholder="Описание" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ЛИЧНЫЙ АВТОМОБИЛЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="car3" type="text" placeholder="Марка, цвет" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НОМЕРНОЙ ЗНАК
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="plate3" type="text" placeholder="Номерной знак авто" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <textarea name="additional3" style="height: 50px;" placeholder="Дополнительная информация, если имеется" autocomplete="my-field-name1"></textarea>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage3" onclick="showGalleryModal().then(function(id) {
+                                                    $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('[name=\'mugshot3\']').val(id ? '[mugshot=' + id + ']' : '');
+                                            })">
+                                <input type="hidden" name="mugshot3" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div>
+            <div onclick="hidn = this.parentNode.getElementsByTagName('div')[1]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                ИНКРИМИНИРУЕМЫЕ СТАТЬИ
+            </div>
+            <div style="background: rgb(246, 246, 246); padding: 6px; display: none;">
+                <span style="font-size:95%;line-height:116%">
+                    <input name="penalcode" id='penalcode' type="hidden" />
+                    <div id='penals' style="padding: 10px;">
+                        <!-- addPenal generates elements here -->
+                    </div>
+                    <button type="button" onclick='addPenal()' class="btn btn-primary btn-sm btn-block">Добавить статью</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="modal__btn modal__btn-primary" onclick="prepare()">Generate</button>
+        <!-- <button class="modal__btn" onclick="window.location.assign('/')">Back</button> -->
+    </div>
+    <!-- Output Modal -->
+    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Вот ваш BBCode для форума!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__header">Заголовок топика</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <input type="text" class="form-control" id="output__header" placeholder="Folder #xxxxxxxx from dd/mmm/yyyy">
+                            </div>
+                            <div class="col-3 col-lg-2">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="output__body">BBCode</label>
+                            </div>
+                            <div class="col-9 col-lg-10">
+                                <textarea class="form-control" rows="10" id="output__body" style="min-height: 300px;"></textarea>
+                            </div>
+                            <div class="col-3 col-lg-2 d-flex align-items-center">
+                                <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open('https://sfpolice.ru/posting.php?mode=post&f=18','_blank')">Create Casefile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start of gallery modal -->
+    <div class="modal fade" id="gallery_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select a mugshot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="gallery-images-container" id="gallery-images-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of gallery modal -->
+    <script>
+    $(function() {
+        setCasefileNumber();
+        addPenal();
+        $('#delPenal').prop('disabled', true);
+    })
+
+    function addPenal() {
+        let penalSelect = document.createElement('div');
+        penalSelect.innerHTML = 
+        '<div class="input-group" style="padding: 5px;"> <select class="custom-select"> <option value="N/A" selected disabled hidden>Выберите статью</option> <option value=" (1)01 "> (1)01. Запугивание, шантаж </option> <option value=" (1)02 "> (1)02. Нападение </option> <option value=" (1)03 "> (1)03. Нападение с применением оружия </option> <option value=" (1)04 "> (1)04. Участие в драке </option> <option value=" (1)05 "> (1)05. Нанесение побоев </option> <option value=" (1)06 "> (1)06. Причинение легкого вреда здоровью </option> <option value=" (1)07 "> (1)07. Причинение средней тяжести вреда здоровью </option> <option value=" (1)08 "> (1)08. Причинение тяжкого вреда здоровью </option> <option value=" (1)09 "> (1)09. Покушение на убийство </option> <option value=" (1)10 "> (1)10. Непредумышленное причинение смерти </option> <option value=" (1)11 "> (1)11. Убийство </option> <option value=" (1)12 "> (1)12. Захват заложников </option> <option value=" (1)13 "> (1)13. Похищение детей </option> <option value=" (1)14 "> (1)14. Рэкет </option> <option value=" (1)15 "> (1)15. Наезд на пешехода. </option> <option value=" (1)16 "> (1)16. Доведение до самоубийства </option> <option value=" (1)17 "> (1)17. Клевета </option> <option value=" (2)01 "> (2)01. Поджог </option> <option value=" (2)02 "> (2)02. Незаконное проникновение на жилую территорию </option> <option value=" (2)03 "> (2)03. Проникновение на особо охраняемую территорию </option> <option value=" (2)04 "> (2)04. Кража со взломом. </option> <option value=" (2)05 "> (2)05. Хранение инструментов для взлома </option> <option value=" (2)06 "> (2)06. Грабеж </option> <option value=" (2)07 "> (2)07. Вооруженное ограбление </option> <option value=" (2)08 "> (2)08. Мелкая кража </option> <option value=" (2)09 "> (2)09. Кража </option> <option value=" (2)10 "> (2)10. Кража в особо крупном размере </option> <option value=" (2)11 "> (2)11. Кража автотранспортного средства </option> <option value=" (2)12 "> (2)12. Кража огнестрельного оружия </option> <option value=" (2)13 "> (2)13. Приобретение имущества, заведомо добытого преступным путем </option> <option value=" (2)14 "> (2)14. Вымогательство </option> <option value=" (2)15 "> (2)15. Подлог </option> <option value=" (2)16 "> (2)16. Мошенничество </option> <option value=" (2)17 "> (2)17. Вандализм </option> <option value=" (3)01 "> (3)01. Непристойное поведение в общественных местах </option> <option value=" (3)02 "> (3)02. Обнажение в общественном месте </option> <option value=" (3)03 "> (3)03. Проституция / сутенерство </option> <option value=" (3)04 "> (3)04. Незаконное содержание лиц, занимающихся проституцией </option> <option value=" (3)05 "> (3)05. Угроза сексуальным насилием </option> <option value=" (3)06 "> (3)06. Насильственные действия сексуального характера </option> <option value=" (3)07 "> (3)07. Изнасилование </option> <option value=" (3)08 "> (3)08. Половой контакт с несовершеннолетним лицом </option> <option value=" (3)09 "> (3)09. Нарушение действующей силы судебного постановления/приказа/ордера </option> <option value=" (3)10 "> (3)10. Приготовление к преступлению и покушение на преступление </option> <option value=" (3)11 "> (3)11. Нарушение авторских прав </option> <option value=" (3)12 "> (3)12. Воспрепятствование деятельности журналистов </option> <option value=" (3)13 "> (3)13. Необоснованное увольнение с работы </option> <option value=" (3)14 "> (3)14. Невыплата заработной платы, пособий и иных выплат </option> <option value=" (3)15 "> (3)15. Нарушение равенства прав и свобод человека </option> <option value=" (4)01 "> (4)01. Взяточничество </option> <option value=" (4)02 "> (4)02. Уклонение от уплаты штрафа </option> <option value=" (4)03 "> (4)03. Неуважение к суду </option> <option value=" (4)04 "> (4)04. Неявка на судебное заседание </option> <option value=" (4)05 "> (4)05. Отговаривание истца или ответчика </option> <option value=" (4)06 "> (4)06. Дезинформация государственного служащего </option> <option value=" (4)08 "> (4)08. Дача заведомо ложных показаний </option> <option value=" (4)09 "> (4)09. Уклонение от идентификации себя офицеру полиции </option> <option value=" (4)10 "> (4)10. Выдача себя за государственного служащего </option> <option value=" (4)11 "> (4)11. Воспрепятствование деятельности государственного служащего </option> <option value=" (4)12 "> (4)12. Сопротивление офицеру полиции </option> <option value=" (4)13 "> (4)13. Побег из-под стражи </option> <option value=" (4)14 "> (4)14. Побег </option> <option value=" (4)15 "> (4)15. Пособничество в побеге </option> <option value=" (4)16 "> (4)16. Торговля людьми </option> <option value=" (4)17 "> (4)17. Использование государственной телефонной линии не по назначению </option> <option value=" (4)18 "> (4)18. Подделка доказательств </option> <option value=" (4)19 "> (4)19. Контрабанда </option> <option value=" (4)20 "> (4)20. Нарушение правил УДО или испытательного срока </option> <option value=" (5)01 "> (5)01. Нарушение общественного порядка </option> <option value=" (5)02 "> (5)02. Незаконные протесты или митинги </option> <option value=" (5)04 "> (5)04. Незаконное осуществление ареста/судебного слушания </option> <option value=" (5)05 "> (5)05. Попытка переворота </option> <option value=" (6)01 "> (6)01. Незаконное хранение и использование запрещенных препаратов или наркотических веществ </option> <option value=" (6)02 "> (6)02. Хранение запрещенных препаратов или наркотических веществ с целью их сбыта </option> <option value=" (6)03 "> (6)03. Переработка запрещенных препаратов или наркотических веществ </option> <option value=" (6)04 "> (6)04. Производство запрещенных препаратов или наркотических веществ </option> <option value=" (6)05 "> (6)05. Торговля запрещенными препаратами или наркотическими веществами </option> <option value=" (6)06 "> (6)06. Употребление алкоголя в общественном месте </option> <option value=" (6)07 "> (6)07. Пребывание в состоянии опьянения в общественном месте </option> <option value=" (6)08 "> (6)08. Незаконное употребление запрещенных препаратов или наркотических веществ </option> <option value=" (6)09 "> (6)09. Намеренное сокрытие личности </option> <option value=" (6)10 "> (6)10. Терроризм </option> <option value=" (6)11 "> (6)11. Организация преступного сообщества </option> <option value=" (7)01 "> (7)01. Жестокое обращение с животными </option> <option value=" (7)02 "> (7)02. Жестокое обращение с детьми </option> <option value=" (7)03 "> (7)03. Продажа алкогольных напитков несовершеннолетнему лицу </option> <option value=" (7)04 "> (7)04. Распитие алкогольных напитков несовершеннолетними лицами </option> <option value=" (8)01 "> (8)01. Хранение лезвия в качестве оружия </option> <option value=" (8)02 "> (8)02. Владение огнестрельным оружием без соответствующего разрешения </option> <option value=" (8)03 "> (8)03. Незаконное владение огнестрельным оружием </option> <option value=" (8)04 "> (8)04. Незаконное владение крупнокалиберным огнестрельным оружием </option> <option value=" (8)05 "> (8)05. Незаконное осуществление торговли огнестрельным оружием </option> <option value=" (8)06 "> (8)06. Хранение взрывчатых устройств </option> <option value=" (8)07 "> (8)07. Производство запрещенных устройств/оборудований </option> <option value=" (8)08 "> (8)08. Владение оружием с целью сбыта </option> <option value=" (8)09 "> (8)09. Владение взрывными устройствами с целью сбыта </option> <option value=" (8)10 "> (8)10. Открытое ношение огнестрельного оружия </option> <option value=" (8)11 "> (8)11. Незаконное использование огнестрельного оружия </option> <option value=" (9)01 "> (9)01. Уклонение от уплаты налогов </option> <option value=" (9)02 "> (9)02. Отмывание денег </option> <option value=" (9)03 "> (9)03. Преступления в сфере медицины </option> <option value=" (9)04 "> (9)04. Преступление в сфере лицензированной деятельности </option> <option value=" (9)05 "> (9)05. Незаконное прослушивание </option> <option value=" (9)06 "> (9)06. Фальсификация итогов голосования </option> <option value=" (9)07 "> (9)07. Нарушения при исполнении служебных обязанностей </option> <option value=" (9)08 "> (9)08. Нарушения среди государственных служащих </option> <option value=" (9)09 "> (9)09. Провокация к бунту </option> <option value=" (9)10 "> (9)10. Конфликт интересов </option> <option value=" (10)01 "> (10)01. Исключающие обстоятельства </option> <option value=" (10)02 "> (10)02. Попытка совершить преступление </option> <option value=" (10)03 "> (10)03. Сговор </option> <option value=" (10)04 "> (10)04. Подстрекательство </option> <option value=" (10)05 "> (10)05. Случаи с участием Государственных Служащих </option> <option value=" (10)06 "> (10)06. Сделка между обвинением и защитой </option> <option value=" (10)07 "> (10)07. Политика двух предупреждений </option> <option value=" (10)08 "> (10)08. Преступления, связанные с оружием </option> <option value=" (10)09 "> (10)09. Соучастие в преступлении </option> <option value=" (10)10 "> (10)10. Укрывательство преступлений </option> <option value=" (11)01 "> (11)01. Ошибка в Факте, несоответствие </option> <option value=" (11)02 "> (11)02. Принуждение к опьянению </option> <option value=" (11)03 "> (11)03. Самозащита, самооборона, "Закон о защите жилья" и другие оборонительные законы. </option> <option value=" (11)04 "> (11)04. Крайняя необходимость </option> <option value=" (11)05 "> (11)05. Провоцирование </option> <option value=" (11)06 "> (11)06. Принуждение </option> <option value=" (11)07 "> (11)07. Исключения к условно-досрочному освобождению </option> <option value=" (11)08 "> (11)08. Политика Подозрения </option> <option value=" (11)09 "> (11)09. "Решение остается за Офицером" </option> <option value=" (11)10 "> (11)10. Гражданский арест </option> <option value=" (11)11 "> (11)11. Условия Задержания и Тюремного Заключения </option> <option value=" (11)12 "> (11)12. Максимальное тюремное заключение </option> <option value=" (11)13 "> (11)13. Политика прослушивания, видеонаблюдения и видеосъемки </option> <option value=" (11)14 "> (11)14. Политика преследования </option> <option value=" (11)15 "> (11)15. Политика осмотра местности и предположения </option> <option value=" (11)16 "> (11)16. Исправительные работы </option> </select> <div class="input-group-append"> <button class="btn btn-outline-danger" id="delPenal" onClick="deletePenal(this)" type="button">Удалить</button> </div> </div>'
+        document.getElementById("penals").appendChild(penalSelect);   
+    }
+
+    function deletePenal(e) {
+        e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
+    }
+
+    function setPenals() {
+        var penals = $('.custom-select :selected').map(function(i,v) {
+            if ($(this).text() != 'Выберите статью') {
+                return 'ст. [url="https://sa-es.su/sf/ch/search.php?keywords=' + $(this).text() + '&t=4606"]' + $(this).text() + '[/url] Уголовного Кодекса штата Сан-Андрес';  
+            } 
+        }).toArray().join("\r\n");
+
+        document.getElementById('penalcode').value = penals;
+    }
+
+    String.prototype.capitalize = function() {
+        return this.replace(/\w\S*/g, function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    }
+
+    function setParticipantValue(participantNumber, noValue) {
+        if (noValue) {
+            document.getElementsByName("participant" + participantNumber)[0].value = 'Participant #' + participantNumber + " - N/A"
+        } else {
+            document.getElementsByName("participant" + participantNumber)[0].value =
+                document.getElementsByName("status" + participantNumber)[0].value + " " +
+                document.getElementsByName("namesurname" + participantNumber)[0].value
+        }
+    }
+
+    function setParticipants(participantsNumber) {
+        for (let i = 1; i <= participantsNumber; i++) {
+            if (document.getElementsByName("namesurname" + i)[0].value && document.getElementsByName("status" + i)[0].value != "N/A") {
+                setParticipantValue(i, false)
+            } else {
+                setParticipantValue(i, true)
+            }
+        }
+    }
+
+    function setContacts(participantsNumber) {
+        for (let i = 1; i <= participantsNumber; i++) {
+            if (document.getElementsByName("contact" + i)[0].value == "+1 (0212) ") {
+                document.getElementsByName("contact" + i)[0].value = "N/A"
+            }
+        }
+    }
+
+    function calculateAge(birthday) {
+        return Math.floor((Date.now() - birthday.getTime()) / (1000 * 60 * 60 * 24 * 365));
+    }
+
+    function getAge(element) {
+        var birthday = $.datepicker.parseDate('dd/M/yy', document.getElementsByName(element)[0].value);
+        return calculateAge(birthday);
+    }
+
+    $(document.getElementsByName("dateofbirth1")[0]).change(function() {
+        document.getElementsByName("dateofbirth1")[0].value = document.getElementsByName("dateofbirth1")[0].value + " (" + getAge("dateofbirth1") + ")";
+    });
+    $(document.getElementsByName("dateofbirth2")[0]).change(function() {
+        document.getElementsByName("dateofbirth2")[0].value = document.getElementsByName("dateofbirth2")[0].value + " (" + getAge("dateofbirth2") + ")";
+    });
+    $(document.getElementsByName("dateofbirth3")[0]).change(function() {
+        document.getElementsByName("dateofbirth3")[0].value = document.getElementsByName("dateofbirth3")[0].value + " (" + getAge("dateofbirth3") + ")";
+    });
+
+    function setCasefileNumber() {
+        var timecode = Math.floor(Date.now() / 60000);
+        casenumber = "#" + timecode;
+        document.querySelector('[name="casenumber"]').value = casenumber;
+    }
+
+    function generatePostTitle() {
+        var casenumber = document.getElementsByName("casenumber")[0].value
+        var date = parseDate();
+        var h_output = "";
+
+        if (casenumber && date) {
+            h_output = "Folder " + casenumber + " from " + date
+        }
+
+        return h_output;
+    }
+
+    function form2dict(form) {
+        var values = form.querySelectorAll('[name]');
+        var data = {};
+        for (var i = 0; i < values.length; i++) {
+            if (values[i].classList.contains('datepicker')) {
+                data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+            } else if (values[i].classList.contains('mugshot')) {
+                data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || '';
+            } else if (values[i].classList.contains('secondDetective')) {
+                data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || '';
+            } else {
+                data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+            }
+        }
+        return data;
+    }
+
+    /** start gallery stuff **/
+    async function showGalleryModal() {
+        let d = $.Deferred();
+        renderGalleryItems(0, 299);
+        d.done(function(id) {
+            $(`.gallery-image-item`).removeClass('selected');
+            $(`.gallery-image-item[data-shotid="${id}"]`).addClass('selected');
+            $('#gallery_modal').modal('hide');
+            return id;
+        });
+        $(`.gallery-image-item`).on('click', function() {
+            const id = $(this).data('shotid');
+            d.resolve(id);
+        });
+        $('#gallery_modal').modal('show');
+        return d;
+    }
+
+    function generateGalleryItem(id) {
+        return `<div class="gallery-image-item" data-shotid="${id}">
+            <img src="https://sa-es.su/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
+            <p>${id}</p>
+        </div>`
+    }
+
+    function deleteGalleryItem(id) {
+        $(`.gallery-image-item[data-shotid="${id}"]`).remove();
+    }
+
+    function generateGalleryItems(start, stop) {
+        let output = '';
+        for (let i = start; i <= stop; i++) {
+            output += generateGalleryItem(i);
+        }
+        return output;
+    }
+
+    function renderGalleryItems(start, stop) {
+        $('#gallery-images-container').html(generateGalleryItems(start, stop));
+    }
+    /** end gallery stuff **/
+
+    function prepare() {
+        setParticipants(3);
+        setContacts(3);
+        setPenals();
+        showBB();
+    }
+
+    MicroModal.init();
+    window.__bbcodeurl = '/bbforms/sfpd/homicide/casefile.txt';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    ! function(e, t, a, n, c, m, r) {
+        e.ym = e.ym || function() {
+            (e.ym.a = e.ym.a || []).push(arguments)
+        }, e.ym.l = 1 * new Date, m = t.createElement(a), r = t.getElementsByTagName(a)[0], m.async = 1, m.src = "https://mc.yandex.ru/metrika/tag.js", r.parentNode.insertBefore(m, r)
+    }(window, document, "script"), ym(54400579, "init", { clickmap: !0, trackLinks: !0, accurateTrackBounce: !0 })
+    </script>
+    <noscript>
+        <div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div>
+    </noscript>
+</body>
+
+</html>

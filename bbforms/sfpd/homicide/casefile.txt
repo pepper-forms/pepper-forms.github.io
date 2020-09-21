@@ -1,0 +1,69 @@
+[float=left][img]https://i.imgur.com/TNGYmLU.png[/img][/float][background=#00012d]
+[size=165][b][color=#FFFFFF]SAN FIERRO POLICE DEPARTMENT[/b][/size][/color]
+[size=135][color=#FFFFFF]%text:department%[/color][/size]
+[color=#FFFFFF]226 Harrison ave, Downtown
+San Fierro, SA 30303[/color][/background][background=white][/background][background=#00012d][b][color=#FFFFFF][size=145]ДЕЛО %text:casenumber%[/size][/color][/b][/background][tab][tr][td][size=95][b]СТАТУС ДЕЛА:[/b] [color=#00BF40]ОТКРЫТО[/color][/size]
+[size=95][b]ДАТА ОТКРЫТИЯ ДЕЛА:[/b] %text:caseopendate%[/size]
+[size=95][b]ДАТА ЗАКРЫТИЯ ДЕЛА:[/b] DD/MMM/YYYY[/size][/td]
+[td][size=95][b]ВЕДУЩИЙ(Е) СЛЕДОВАТЕЛЬ(И):[/b][/size]
+[size=95]%text:leaddetective%
+%text:leaddetective2%[/size][/td][/tr][/tab]
+[sp=ИНФОРМАЦИЯ О РАССЛЕДОВАНИИ][size=95]%text:fabula%[/size][/sp]
+[sp=ИНФОРМАЦИЯ О ФИГУРАНТАХ ДЕЛА][sp=%text:participant1%][hr][/hr][float=right]%text:mugshot1%[/float]
+[size=85][b]СТАТУС[/b][/size]
+%text:status1%
+
+[size=85][b]ПОЛНОЕ ИМЯ:[/b] %text:namesurname1%[/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ:[/b] %text:dateofbirth1%[/size]
+[size=85][b]ПОЛ:[/b] %text:sex1%[/size]
+[size=85][b]РАСА:[/b] %text:race1%[/size]
+[size=85][b]НАЦИОНАЛЬНОСТЬ:[/b] %text:nationality1%[/size]
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ:[/b] %text:contact1%[/size]
+[size=85][b]АДРЕС ПРОЖИВАНИЯ:[/b] %text:adress1%[/size]
+[size=85][b]ОПИСАНИЕ ВНЕШНОСТИ:[/b] %text:description1%[/size]
+
+[size=85][b]ЛИЧНЫЙ АВТОМОБИЛЬ:[/b] %text:car1%[/size]
+[size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate1%[/size]
+
+[size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional1%[/size]
+[/sp]
+[hr][/hr]
+[sp=%text:participant2%][float=right]%text:mugshot2%[/float]
+[size=85][b]СТАТУС[/b][/size]
+%text:status2%
+
+[size=85][b]ПОЛНОЕ ИМЯ:[/b] %text:namesurname2%[/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ:[/b] %text:dateofbirth2%[/size]
+[size=85][b]ПОЛ:[/b] %text:sex2%[/size]
+[size=85][b]РАСА:[/b] %text:race2%[/size]
+[size=85][b]НАЦИОНАЛЬНОСТЬ:[/b] %text:nationality2%[/size]
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ:[/b] %text:contact2%[/size]
+[size=85][b]АДРЕС ПРОЖИВАНИЯ:[/b] %text:adress2%[/size]
+[size=85][b]ОПИСАНИЕ ВНЕШНОСТИ:[/b] %text:description2%[/size]
+
+[size=85][b]ЛИЧНЫЙ АВТОМОБИЛЬ:[/b] %text:car2%[/size]
+[size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate2%[/size]
+
+[size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional2%[/size]
+[/sp]
+[hr][/hr]
+[sp=%text:participant3%][float=right]%text:mugshot3%[/float]
+[size=85][b]СТАТУС[/b][/size]
+%text:status3%
+
+[size=85][b]ПОЛНОЕ ИМЯ:[/b] %text:namesurname3%[/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ:[/b] %text:dateofbirth3%[/size]
+[size=85][b]ПОЛ:[/b] %text:sex3%[/size]
+[size=85][b]РАСА:[/b] %text:race3%[/size]
+[size=85][b]НАЦИОНАЛЬНОСТЬ:[/b] %text:nationality3%[/size]
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ:[/b] %text:contact3%[/size]
+[size=85][b]АДРЕС ПРОЖИВАНИЯ:[/b] %text:adress3%[/size]
+[size=85][b]ОПИСАНИЕ ВНЕШНОСТИ:[/b] %text:description3%[/size]
+
+[size=85][b]ЛИЧНЫЙ АВТОМОБИЛЬ:[/b] %text:car3%[/size]
+[size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate3%[/size]
+
+[size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional3%[/size]
+[/sp]
+[hr][/hr][/sp]
+[sp=ИНКРИМИНИРУЕМЫЕ СТАТЬИ][size=95]%text:penalcode%[/size][/sp]
