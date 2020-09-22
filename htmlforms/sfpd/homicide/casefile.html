@@ -10,9 +10,49 @@
     <link rel="stylesheet" href="/common/css/style.css">
     <link rel="stylesheet" href="/common/css/gallery.css">
     <link rel="stylesheet" href="/common/css/micromodal.css">
+    <link rel="stylesheet" href="/common/css/jquery.highlight-within-textarea.css">
+    <script src="/common/js/jquery.highlight-within-textarea.js"></script>
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
     <title>Casefile - SFPD Homicide</title>
+
+    <style>
+		.hwt-container {
+			background-color: #f8f9fa;
+			width: 100%;
+			height: 350px;
+		}
+
+		.hwt-content {
+			width: 100%;
+			height: inherit;
+			padding: 5px;
+			border: 1px solid #adb5bd;
+			color: inherit;
+			font: 16px 'Droid Sans Mono', sans-serif;
+		}
+
+		.hwt-input:focus {
+			outline-color: #495057;
+		}
+
+		.hwt-content mark {
+			border-radius: 3px;
+			background-color: #d0bfff;
+		}
+
+		.hwt-content mark.red {
+			background-color: #ffc9c9;
+		}
+
+		.hwt-content mark.blue {
+			background-color: #a3daff;
+		}
+
+		.hwt-content mark.yellow {
+			background-color: #ffec99;
+		}
+	</style>
 </head>
 
 <body>
@@ -32,7 +72,7 @@
                 <br />
                 <span style="font-size:135%;line-height:116%">
                     <span style="color:#FFFFFF">
-                        <input name="department" type="text" value="1ST PRECINCT, HOMICIDE & GENERAL CRIME SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"/>
+                        <input name="department" type="text" value="1ST PRECINCT, HOMICIDE & GENERAL CRIME SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"  data-toggle="tooltip" data-placement="bottom" title="Название отдела можно поменять"/>
                     </span>
                 </span>
                 <br />
@@ -53,7 +93,7 @@
                     <span style="color:#FFFFFF">
                         <span style="font-size:145%;line-height:116%">
                             ДЕЛО
-                            <input name="casenumber" type="text" style="all: unset; width: calc(60%)" placeholder="Номер/Название фолдера" autocomplete="my-field-name1"/>
+                            <input name="casenumber" type="text" style="all: unset; width: calc(60%);" value="#00XX" placeholder="Номер/Название фолдера" autocomplete="my-field-name1"  data-toggle="tooltip" data-placement="bottom" title="Не забудь указать номер дела"/>
                         </span>
                     </span>
                 </strong>
@@ -110,7 +150,17 @@
             </div>
             <div style="background: rgb(246, 246, 246); padding: 6px; display: none;">
                 <span style="font-size:95%;line-height:116%">
-                    <textarea name="fabula" style="height: 200px;" placeholder="Фабула" autocomplete="my-field-name1"></textarea>
+                	<div class="alert alert-primary" role="alert">
+                	   <b>Заполни поля, выделенные квадратными скобками <a style="border-radius: 3px; background-color: #d0bfff;">и цветом</a></b>
+                	</div>
+                    <textarea name="fabula" class="fabula" placeholder="Фабула" autocomplete="my-field-name1">
+[какого-то числа] в [какое-то время] [полуденного времени/до полуденного времени] диспетчером колл-центра службы спасения зарегистрирован вызов от [кого?], сообщившей о [чем?]. Вызов был обработан к [какому времени?].
+
+[Должность, имя фамилия следователя, ведущего дело] отдела убийств и общих преступлений детективного бюро 1-ого участка департамента полиции Сан Фиерро зафиксирован факт совершения преступн[ого/ых] деяни[я/й], классифицирующ[егося/ихся] [классификация деяния], произошедшим в обстоятельствах [каких?].
+
+На основании вышеизложенного, полагаю, что в в действиях подозреваемого содержится состав преступления, предусмотренный ст. [какой?] Уголовного Кодекса штата Сан-Андрес. Немедленно открыть дело, приступить к его расследованию в установленном порядке.
+
+По вышеизложенным обстоятельствам установить в действиях лица или группы лиц содержание состава [какой статьи УК?]. Постановить инициирование уголовного дела с присвоением таковому индивидуального номера [номер дела] от [какой даты], по факту чего начать расследование с оповещением окружного прокурора и направлением ему копии материалов дела.</textarea>
                 </span>
             </div>
         </div>
@@ -254,7 +304,6 @@
                             </div>
                         </div>
                     </div>
-        
                 <hr />
                 <div>
                     <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
@@ -528,6 +577,278 @@
                     </div>
                 </div>
                 <hr />
+                <div>
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #4</span>
+                        <input type="hidden" name="participant4">
+                    </div>
+                    <div class="container span-space" style="display: none;">
+                        <hr \>
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="status4"/>
+                                    <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                    <option>Подозреваемый</option>
+                                    <option>Потерпевший</option>
+                                    <option>Свидетель</option>
+                                </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛНОЕ ИМЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname4" type="text" placeholder="Имя (Второе Имя) Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth4" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛ
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="sex4"/>
+                                    <option value="N/A" selected disabled hidden>Выберите пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        РАСА
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="race4">
+                                  <option value="N/A" selected disabled hidden>Выберите расу</option>
+                                  <option value="Европеоидная">Европеоидная</option>
+                                  <option value="Негроидная">Негроидная</option>
+                                  <option value="Восточноафриканская">Восточноафриканская</option>
+                                  <option value="Монголоидная">Монголоидная</option>
+                                  <option value="Американоидная">Американоидная</option>
+                                  <option value="Австролоидная">Австролоидная</option>
+                               </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НАЦИОНАЛЬНОСТЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="nationality4" type="text" placeholder="Национальность" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact4" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress4" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ОПИСАНИЕ ВНЕШНОСТИ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="description4" type="text" placeholder="Описание" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ЛИЧНЫЙ АВТОМОБИЛЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="car4" type="text" placeholder="Марка, цвет" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НОМЕРНОЙ ЗНАК
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="plate4" type="text" placeholder="Номерной знак авто" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <textarea name="additional4" style="height: 50px;" placeholder="Дополнительная информация, если имеется" autocomplete="my-field-name1"></textarea>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage4" onclick="showGalleryModal().then(function(id) {
+                                                    $('#mugshotimage4').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('[name=\'mugshot4\']').val(id ? '[mugshot=' + id + ']' : '');
+                                            })">
+                                <input type="hidden" name="mugshot4" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr \>
+                <div>
+                    <div onclick="hidn = this.parentNode.getElementsByClassName('container')[0]; btn = this.getElementsByTagName('img')[0]; if (hidn.style.display != '') { hidn.style.display = ''; orimg = btn.src; btn.src = 'data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw=='; } else { hidn.style.display = 'none'; btn.src = orimg; }" style="background:#192439;padding:0.4em;border:1px solid #bbb;cursor:pointer;color:#fff">
+                        <span>Participant #5</span>
+                        <input type="hidden" name="participant5">
+                    </div>
+                    <div class="container span-space" style="display: none;">
+                        <hr \>
+                        <div class="row">
+                            <div class="col-7">
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        СТАТУС
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="status5"/>
+                                    <option value="N/A" selected disabled hidden>Выберите статус</option>
+                                    <option>Подозреваемый</option>
+                                    <option>Потерпевший</option>
+                                    <option>Свидетель</option>
+                                </select>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛНОЕ ИМЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="namesurname5" type="text" placeholder="Имя (Второе Имя) Фамилия" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДАТА РОЖДЕНИЯ, ВОЗРАСТ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input type="text" class="datepicker_full" name="dateofbirth5" placeholder="Нажмите, чтобы выбрать" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ПОЛ
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="sex5"/>
+                                    <option value="N/A" selected disabled hidden>Выберите пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        РАСА
+                                    </strong>
+                                </span>
+                                <br />
+                                <select name="race5">
+                                  <option value="N/A" selected disabled hidden>Выберите расу</option>
+                                  <option value="Европеоидная">Европеоидная</option>
+                                  <option value="Негроидная">Негроидная</option>
+                                  <option value="Восточноафриканская">Восточноафриканская</option>
+                                  <option value="Монголоидная">Монголоидная</option>
+                                  <option value="Американоидная">Американоидная</option>
+                                  <option value="Австролоидная">Австролоидная</option>
+                               </select>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НАЦИОНАЛЬНОСТЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="nationality5" type="text" placeholder="Национальность" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="contact5" type="text" value="+1 (0212) " maxlength="16" placeholder="+1 (0212) xxxxxx" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        АДРЕС ПРОЖИВАНИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="adress5" type="text" placeholder="Апартамент, Улица, (Район), Город, Штат" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ОПИСАНИЕ ВНЕШНОСТИ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="description5" type="text" placeholder="Описание" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ЛИЧНЫЙ АВТОМОБИЛЬ
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="car5" type="text" placeholder="Марка, цвет" autocomplete="my-field-name1"/>
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        НОМЕРНОЙ ЗНАК
+                                    </strong>
+                                </span>
+                                <br />
+                                <input name="plate5" type="text" placeholder="Номерной знак авто" autocomplete="my-field-name1"/>
+                                <br />
+                                <br />
+                                <span style="font-size:85%;line-height:116%">
+                                    <strong class="text-strong">
+                                        ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+                                    </strong>
+                                </span>
+                                <br />
+                                <textarea name="additional5" style="height: 50px;" placeholder="Дополнительная информация, если имеется" autocomplete="my-field-name1"></textarea>
+                            </div>
+                            <div class="col-5" style="float:right;padding:10px">
+                                <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage5" onclick="showGalleryModal().then(function(id) {
+                                                    $('#mugshotimage5').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('[name=\'mugshot5\']').val(id ? '[mugshot=' + id + ']' : '');
+                                            })">
+                                <input type="hidden" name="mugshot5" class="mugshot" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr \>
             </div>
         </div>
         <div>
@@ -612,12 +933,20 @@
     </div>
     <!-- end of gallery modal -->
     <script>
+
     $(function() {
-        setCasefileNumber();
         addPenal();
         $('#delPenal').prop('disabled', true);
+        $('[data-toggle="tooltip"]').tooltip();
     })
 
+    String.prototype.capitalize = function() {
+        return this.replace(/\w\S*/g, function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
+    }
+
+    /** Penals setup here **/
     function addPenal() {
         let penalSelect = document.createElement('div');
         penalSelect.innerHTML = 
@@ -639,11 +968,12 @@
         document.getElementById('penalcode').value = penals;
     }
 
-    String.prototype.capitalize = function() {
-        return this.replace(/\w\S*/g, function(txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
-    }
+    /** Textarea Highlights **/
+    $('[name="fabula"]').highlightWithinTextarea({
+        highlight: /\[.*?\]/g // string, regexp, array, function, or custom object
+    });
+
+    /** Participants setup here **/
 
     function setParticipantValue(participantNumber, noValue) {
         if (noValue) {
@@ -664,6 +994,8 @@
             }
         }
     }
+
+    /** Overall page setup **/
 
     function setContacts(participantsNumber) {
         for (let i = 1; i <= participantsNumber; i++) {
@@ -703,8 +1035,8 @@
         var date = parseDate();
         var h_output = "";
 
-        if (casenumber && date) {
-            h_output = "Folder " + casenumber + " from " + date
+        if (casenumber/* && date*/) {
+            h_output = "CF #" + casenumber /* + " from " + date*/
         }
 
         return h_output;
@@ -727,7 +1059,7 @@
         return data;
     }
 
-    /** start gallery stuff **/
+    /** Gallery Setup **/
     async function showGalleryModal() {
         let d = $.Deferred();
         renderGalleryItems(0, 299);

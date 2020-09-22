@@ -599,7 +599,7 @@ body {
     border: 1px solid rgb(118, 118, 118);
 }
 
-.SFPDform textarea {
+.SFPDform textarea:not(.fabula) {
     display: block;
     margin: 0px;
     padding: 5px;

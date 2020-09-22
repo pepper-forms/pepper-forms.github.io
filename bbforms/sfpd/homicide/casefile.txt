@@ -65,5 +65,43 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional3%[/size]
 [/sp]
+[hr][/hr]
+[sp=%text:participant2%][float=right]%text:mugshot4%[/float]
+[size=85][b]СТАТУС[/b][/size]
+%text:status4%
+
+[size=85][b]ПОЛНОЕ ИМЯ:[/b] %text:namesurname4%[/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ:[/b] %text:dateofbirth4%[/size]
+[size=85][b]ПОЛ:[/b] %text:sex4%[/size]
+[size=85][b]РАСА:[/b] %text:race4%[/size]
+[size=85][b]НАЦИОНАЛЬНОСТЬ:[/b] %text:nationality4%[/size]
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ:[/b] %text:contact4%[/size]
+[size=85][b]АДРЕС ПРОЖИВАНИЯ:[/b] %text:adress4%[/size]
+[size=85][b]ОПИСАНИЕ ВНЕШНОСТИ:[/b] %text:description4%[/size]
+
+[size=85][b]ЛИЧНЫЙ АВТОМОБИЛЬ:[/b] %text:car4%[/size]
+[size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate4%[/size]
+
+[size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional4%[/size]
+[/sp]
+[hr][/hr]
+[sp=%text:participant5%][float=right]%text:mugshot5%[/float]
+[size=85][b]СТАТУС[/b][/size]
+%text:status5%
+
+[size=85][b]ПОЛНОЕ ИМЯ:[/b] %text:namesurname5%[/size]
+[size=85][b]ДАТА РОЖДЕНИЯ, ВОЗРАСТ:[/b] %text:dateofbirth5%[/size]
+[size=85][b]ПОЛ:[/b] %text:sex5%[/size]
+[size=85][b]РАСА:[/b] %text:race5%[/size]
+[size=85][b]НАЦИОНАЛЬНОСТЬ:[/b] %text:nationality5%[/size]
+[size=85][b]КОНТАКТНАЯ ИНФОРМАЦИЯ:[/b] %text:contact5%[/size]
+[size=85][b]АДРЕС ПРОЖИВАНИЯ:[/b] %text:adress5%[/size]
+[size=85][b]ОПИСАНИЕ ВНЕШНОСТИ:[/b] %text:description5%[/size]
+
+[size=85][b]ЛИЧНЫЙ АВТОМОБИЛЬ:[/b] %text:car5%[/size]
+[size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate5%[/size]
+
+[size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional5%[/size]
+[/sp]
 [hr][/hr][/sp]
 [sp=ИНКРИМИНИРУЕМЫЕ СТАТЬИ][size=95]%text:penalcode%[/size][/sp]
