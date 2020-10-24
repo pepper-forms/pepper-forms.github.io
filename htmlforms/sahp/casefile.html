@@ -14,7 +14,7 @@
     <script src="/common/js/jquery.highlight-within-textarea.js"></script>
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
-    <title>Casefile - SFPD Homicide</title>
+    <title>Casefile Header - SAHP</title>
 
     <style>
 		.hwt-container {
@@ -58,28 +58,28 @@
 <body>
     <div class="SFPDform" style="padding: 10px; background-color: white; border: 10px solid black;">
         <div style="float:left;padding:10px">
-            <img alt="Изображение" class="postimage" src="https://i.imgur.com/TNGYmLU.png" />
+            <img alt="Изображение" class="postimage" src="https://i.imgur.com/vJYkiDS.png" height="120px" weight="120px" />
         </div>
         <div style="padding:10px;background-color:#00012d">
             <span>
                 <span style="font-size:165%;line-height:116%">
                     <strong class="text-strong">
                         <span style="color:#FFFFFF">
-                            SAN FIERRO POLICE DEPARTMENT
+                            SAN ANDREAS HIGHWAY PATROL
                         </span>
                     </strong>
                 </span>
                 <br />
                 <span style="font-size:135%;line-height:116%">
                     <span style="color:#FFFFFF">
-                        <input name="department" type="text" value="1ST PRECINCT, HOMICIDE & GENERAL CRIME SQUAD" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"  data-toggle="tooltip" data-placement="bottom" title="Название отдела можно поменять"/>
+                        <input name="department" type="text" value="INVESTIGATIVE SERVICES UNIT" style="all: unset; width: calc(60%)" placeholder="Название отдела" autocomplete="my-field-name1"  data-toggle="tooltip" data-placement="bottom" title="Название отдела можно поменять"/>
                     </span>
                 </span>
                 <br />
                 <span style="color:#FFFFFF">
-                    226 Harrison ave, Downtown
+                    Juniper Hollow #4, 
                     <br />
-                    San Fierro, SA 30303
+                    San Fierro, SA 85098
                 </span>
             </span>
         </div>
@@ -93,7 +93,7 @@
                     <span style="color:#FFFFFF">
                         <span style="font-size:145%;line-height:116%">
                             ДЕЛО
-                            <input name="casenumber" type="text" style="all: unset; width: calc(60%);" value="#00XX" placeholder="Номер/Название фолдера" autocomplete="my-field-name1"  data-toggle="tooltip" data-placement="bottom" title="Не забудь указать номер дела"/>
+                            <input name="casenumber" type="text" style="all: unset; width: calc(60%);" value="№XXXXXXXX" placeholder="Номер/Название фолдера" autocomplete="off"  data-toggle="tooltip" data-placement="bottom" title="Номер дела генерируется автоматически"/>
                         </span>
                     </span>
                 </strong>
@@ -151,14 +151,10 @@
             <div style="background: rgb(246, 246, 246); padding: 6px; display: none;">
                 <span style="font-size:95%;line-height:116%">
                 	<div class="alert alert-primary" role="alert">
-                	   <b>Заполни поля, выделенные квадратными скобками <a style="border-radius: 3px; background-color: #d0bfff;">и цветом</a></b>
+                	   <b>Введите известную вам информацию о преступлении</b>
                 	</div>
                     <textarea name="fabula" class="fabula" placeholder="Фабула" autocomplete="my-field-name1">
-[какого-то числа] в [какое-то время] [полуденного времени/до полуденного времени] диспетчером колл-центра службы спасения зарегистрирован вызов от [кого?], сообщившей о [чем?]. Вызов был обработан к [какому времени?].
-
-[Должность, имя фамилия следователя, ведущего дело] отдела убийств и общих преступлений детективного бюро 1-ого участка департамента полиции Сан Фиерро зафиксирован факт совершения преступн[ого/ых] деяни[я/й], классифицирующ[егося/ихся] [классификация деяния], произошедшим в обстоятельствах [каких?].
-
-По вышеизложенным обстоятельствам установить в действиях лица или группы лиц содержание состава [какой статьи УК?]. Постановить инициирование уголовного дела с присвоением таковому индивидуального номера [номер дела] от [какой даты], по факту чего начать расследование с оповещением окружного прокурора и направлением ему копии материалов дела.</textarea>
+В результате опроса выяснилось, что 02.09.2019 года по адресу бульвар Святого Лоуренса на мистера Джеймса Бонда было совершен разбой, то есть нападение в целях хищения чужого имущества, совершенное с применением насилия опасного для жизни и здоровья человека. Приблизительно в 9:36 p.m. мистер Джеймс Бонд двигался по Бульвару Святого Лоуренса на север, в сторону магазина аммунации. На пересечении с Пасадена Бульвар, к мистеру Джеймсу Бонду подошел ранее не знакомый ему мужчина, одетый в черную одежду, который вытащил нож и нанес три колотых ранения в область грудной клетки мистеру Джеймсу Бонду. После чего, со слов мистера Джеймса Бонда, неизвестный похитил имущество, а именно: Мобильный телефон "Iphone 11 pro Max", кожаный кошелек ручной работы и находящиеся в нем денежные средства, в размере 600 долларов США. В виду полученных травм мистер Джеймс Бонд потерял сознание на месте происшествия, поэтому не смог определить последнее местоположение и действия злоумышленника.</textarea>
                 </span>
             </div>
         </div>
@@ -296,7 +292,7 @@
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage1" onclick="showGalleryModal().then(function(id) {
                                                     $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                                    $('[name=\'mugshot1\']').val(id ? '[mugshot=' + id + ']' : '');
+                                                    $('[name=\'mugshot1\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot1" class="mugshot" />
                             </div>
@@ -431,7 +427,7 @@
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage2" onclick="showGalleryModal().then(function(id) {
                                                     $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                                    $('[name=\'mugshot2\']').val(id ? '[mugshot=' + id + ']' : '');
+                                                    $('[name=\'mugshot2\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot2" class="mugshot" />
                             </div>
@@ -567,7 +563,7 @@
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage3" onclick="showGalleryModal().then(function(id) {
                                                     $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                                    $('[name=\'mugshot3\']').val(id ? '[mugshot=' + id + ']' : '');
+                                                    $('[name=\'mugshot3\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot3" class="mugshot" />
                             </div>
@@ -703,7 +699,7 @@
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage4" onclick="showGalleryModal().then(function(id) {
                                                     $('#mugshotimage4').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                                    $('[name=\'mugshot4\']').val(id ? '[mugshot=' + id + ']' : '');
+                                                    $('[name=\'mugshot4\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot4" class="mugshot" />
                             </div>
@@ -839,7 +835,7 @@
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage5" onclick="showGalleryModal().then(function(id) {
                                                     $('#mugshotimage5').attr('src', `https://sa-es.su/shots/${id}.png`);
-                                                    $('[name=\'mugshot5\']').val(id ? '[mugshot=' + id + ']' : '');
+                                                    $('[name=\'mugshot5\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot5" class="mugshot" />
                             </div>
@@ -859,7 +855,7 @@
                     <div id='penals' style="padding: 10px;">
                         <!-- addPenal generates elements here -->
                     </div>
-                    <button type="button" onclick='addPenal()' class="btn btn-primary btn-sm btn-block">Добавить статью</button>
+                    <button type="button" onclick='addPenal()' class="btn btn-primary btn-sm btn-block">Добавить еще одну статью</button>
                 </span>
             </div>
         </div>
@@ -906,7 +902,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="window.open('https://sfpolice.ru/posting.php?mode=post&f=18','_blank')">Create Casefile</button>
+                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-hp.com/posting.php?mode=post&f=481','_blank')">Create Casefile</button>
                 </div>
             </div>
         </div>
@@ -933,6 +929,7 @@
     <script>
 
     $(function() {
+        setCasefileNumber();
         addPenal();
         $('#delPenal').prop('disabled', true);
         $('[data-toggle="tooltip"]').tooltip();
@@ -959,7 +956,7 @@
     function setPenals() {
         var penals = $('.custom-select :selected').map(function(i,v) {
             if ($(this).text() != 'Выберите статью') {
-                return 'ст. [url="https://sa-es.su/sf/ch/search.php?keywords=' + $(this).text() + '&t=4606"]' + $(this).text() + '[/url] Уголовного Кодекса штата Сан-Андрес';  
+                return 'ст. [url=https://sa-es.su/sf/ch/search.php?keywords=' + $(this).text() + '&t=4606]' + $(this).text() + '[/url] Уголовного Кодекса штата Сан-Андрес';  
             } 
         }).toArray().join("\r\n");
 
@@ -1030,7 +1027,7 @@
 
     function setCasefileNumber() {
         var timecode = Math.floor(Date.now() / 60000);
-        casenumber = "#" + timecode;
+        casenumber = "№" + timecode;
         document.querySelector('[name="casenumber"]').value = casenumber;
     }
 
@@ -1039,8 +1036,8 @@
         var date = parseDate();
         var h_output = "";
 
-        if (casenumber/* && date*/) {
-            h_output = "CF #" + casenumber /* + " from " + date*/
+        if (casenumber && date) {
+            h_output = "CASEFILE — " + casenumber  + " from " + date
         }
 
         return h_output;
@@ -1106,14 +1103,14 @@
     /** end gallery stuff **/
 
     function prepare() {
-        setParticipants(4);
-        setContacts(4);
+        setParticipants(5);
+        setContacts(5);
         setPenals();
         showBB();
     }
 
     MicroModal.init();
-    window.__bbcodeurl = '/bbforms/sfpd/homicide/casefile.txt';
+    window.__bbcodeurl = '/bbforms/sahp/casefile.txt';
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

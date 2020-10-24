@@ -1,15 +1,14 @@
-[float=left][img]https://i.imgur.com/TNGYmLU.png[/img][/float][background=#00012d]
-[size=165][b][color=#FFFFFF]SAN FIERRO POLICE DEPARTMENT[/b][/size][/color]
+[float=left][imgsize=120x120]https://i.imgur.com/6biHcec.png[/imgsize][/float][background=#00012d][size=165][b][color=#FFFFFF]SAN ANDREAS HIGHWAY PATROL[/b][/size][/color]
 [size=135][color=#FFFFFF]%text:department%[/color][/size]
-[color=#FFFFFF]226 Harrison ave, Downtown
-San Fierro, SA 30303[/color][/background][background=white][/background][background=#00012d][b][color=#FFFFFF][size=145]ДЕЛО %text:casenumber%[/size][/color][/b][/background][tab][tr][td][size=95][b]СТАТУС ДЕЛА:[/b] [color=#00BF40]ОТКРЫТО[/color][/size]
+[color=#FFFFFF]Juniper Hollow #4, San Fierro, SA 85098
+[/color][/background][background=white][/background][background=#00012d][b][color=#FFFFFF][size=145]ДЕЛО %text:casenumber%[/size][/color][/b][/background][tab][tr][td][size=95][b]СТАТУС ДЕЛА:[/b] [color=#00BF40]ОТКРЫТО[/color][/size]
 [size=95][b]ДАТА ОТКРЫТИЯ ДЕЛА:[/b] %text:caseopendate%[/size]
 [size=95][b]ДАТА ЗАКРЫТИЯ ДЕЛА:[/b] DD/MMM/YYYY[/size][/td]
 [td][size=95][b]ВЕДУЩИЙ(Е) СЛЕДОВАТЕЛЬ(И):[/b][/size]
 [size=95]%text:leaddetective%
 %text:leaddetective2%[/size][/td][/tr][/tab]
 [sp=ИНФОРМАЦИЯ О РАССЛЕДОВАНИИ][size=95]%text:fabula%[/size][/sp]
-[sp=ИНФОРМАЦИЯ О ФИГУРАНТАХ ДЕЛА][sp=%text:participant1%][hr][/hr][float=right]%text:mugshot1%[/float]
+[sp=ИНФОРМАЦИЯ О ФИГУРАНТАХ ДЕЛА][spoiler="%text:participant1%"][hr][/hr][float=right]%text:mugshot1%[/float]
 [size=85][b]СТАТУС[/b][/size]
 %text:status1%
 
@@ -26,9 +25,9 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 [size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate1%[/size]
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional1%[/size]
-[/sp]
-[hr][/hr]
-[sp=%text:participant2%][float=right]%text:mugshot2%[/float]
+[/spoiler]
+
+[spoiler="%text:participant2%"][float=right]%text:mugshot2%[/float]
 [size=85][b]СТАТУС[/b][/size]
 %text:status2%
 
@@ -45,9 +44,9 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 [size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate2%[/size]
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional2%[/size]
-[/sp]
-[hr][/hr]
-[sp=%text:participant3%][float=right]%text:mugshot3%[/float]
+[/spoiler]
+
+[spoiler="%text:participant3%"][float=right]%text:mugshot3%[/float]
 [size=85][b]СТАТУС[/b][/size]
 %text:status3%
 
@@ -64,9 +63,9 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 [size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate3%[/size]
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional3%[/size]
-[/sp]
-[hr][/hr]
-[sp=%text:participant4%][float=right]%text:mugshot4%[/float]
+[/spoiler]
+
+[spoiler="%text:participant4%"][float=right]%text:mugshot4%[/float]
 [size=85][b]СТАТУС[/b][/size]
 %text:status4%
 
@@ -83,9 +82,9 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 [size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate4%[/size]
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional4%[/size]
-[/sp]
-[hr][/hr]
-[sp=%text:participant5%][float=right]%text:mugshot5%[/float]
+[/spoiler]
+
+[spoiler="%text:participant5%"][float=right]%text:mugshot5%[/float]
 [size=85][b]СТАТУС[/b][/size]
 %text:status5%
 
@@ -102,6 +101,5 @@ San Fierro, SA 30303[/color][/background][background=white][/background][backgro
 [size=85][b]НОМЕРНОЙ ЗНАК:[/b] %text:plate5%[/size]
 
 [size=85][b]ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ:[/b] %text:additional5%[/size]
-[/sp]
-[hr][/hr][/sp]
+[/spoiler][/sp]
 [sp=ИНКРИМИНИРУЕМЫЕ СТАТЬИ][size=95]%text:penalcode%[/size][/sp]
