@@ -1,0 +1,42 @@
+[textarea][doc_f]%text:docheader%[/doc_f]
+[center][size=180][b]Верховный Суд штата Сан-Андреас[/b][/size]
+[size=150]округа Сан-Фиерро[/size][/center]
+
+[tab][tr][tdcus=40][center][b][br][/br]Народ штата Сан-Андреас[/b]
+[size=85]против[/size]
+[b]%text:accusee%[/b][/center][/tdcus]
+[tdcus=20][center])
+)
+)
+)
+)[/center][/tdcus]
+[tdcus=45][br][/br]
+Дело [url=%text:casefileurl%]№%text:casefile%[/url][/tdcus][/tr][/tab]
+[br][/br]
+[center][b][size=100]ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ ПОСТАНОВЛЕНИЯ ОБ АРЕСТЕ[/size][/b][/center]
+[br][/br]
+Я, сотрудник правоохранительных органов, запрашиваю постановление об аресте:
+[background=Silver][size=95]%text:accusee%[/size][/background]
+Уголовное преследование указанного лица, связано с нарушениями:
+[background=Silver][size=95]%text:penalcode%[/size][/background]
+Арест указанного лица основан на следующих фактах:
+[background=Silver][size=95]%text:facts%[/size][/background]
+Прилагаю к запросу последнюю известную информацию об обвиняемом:
+[br][/br]
+[center][size=85](КОНФЕДЕНЦИАЛЬНАЯ ИНФОРМАЦИЯ)[/size][/center][size=95]
+[b]ПОЛНОЕ ИМЯ ОБВИНЯЕМОГО:[/b] %text:accusee%
+[b]ИЗВЕСТНЫЕ ПСЕВДОНИМЫ:[/b] %text:anick%
+[b]ПОСЛЕДНЕЕ ИЗВЕСТНОЕ МЕСТО ЖИТЕЛЬСТВА:[/b] %text:alastplace%
+[b]ПРЕДЫДУЩИЕ АДРЕСА, С КОТОРЫМИ ОБВИНЯЕМЫЙ МОЖЕТ ИМЕТЬ СВЯЗИ:[/b] %text:aplaces%
+[b]ПОСЛЕДНЕЕ ИЗВЕСТНОЕ МЕСТО РАБОТЫ:[/b] %text:awork%
+[b]ПОСЛЕДНИЕ ИЗВЕСТНЫЕ НОМЕРА ТЕЛЕФОНОВ:[/b] %text:aphones%
+[b]МЕСТО РОЖДЕНИЯ:[/b] %text:abirthplace%
+[b]ДАТА РОЖДЕНИЯ:[/b] %text:abirthdate%
+[b]ПОЛ:[/b] %text:sex%
+[b]РАСА:[/b] %text:race%
+[b]ШРАМЫ, ТАТУИРОВКИ, ДРУГИЕ ОТЛИЧИТЕЛЬНЫЕ ПРИЗНАКИ:[/b] %text:afeatures%
+[b]ПРЕДВАРИТЕЛЬНАЯ ИСТОРИЯ О НАСИЛИИ, ОРУЖИИ, УПОТРЕБЛЕНИИ НАРКОТИКОВ:[/b] %text:acrimerecord%
+[b]ИЗВЕСТНЫЕ РОДСТВЕННИКИ, ДРУЗЬЯ И ДРУГИЕ ПАРТНЕРЫ:[/b] %text:apartners%
+[b]ПОЛНОЕ ОПИСАНИЕ ТРАНСПОРТНОГО СРЕДСТВА (ЕСЛИ ПРИМЕНИМО):[/b] %text:atransport%
+[/size]
+[br][/br][/textarea]
