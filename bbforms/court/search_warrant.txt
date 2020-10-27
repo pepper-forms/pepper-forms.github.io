@@ -1,0 +1,25 @@
+[textarea][doc_f]%text:docheader%[/doc_f]
+[center][size=180][b]Верховный Суд штата Сан-Андреас[/b][/size]
+[size=150]округа Сан-Фиерро[/size][/center][br][/br]
+[tab][tr][tdcus=40][center][b][br][/br]Народ штата Сан-Андреас[/b]
+[size=85]против[/size]
+[b]%text:accusee%[/b][/center][/tdcus]
+[tdcus=20][center])
+)
+)
+)
+)[/center][/tdcus]
+[tdcus=45][br][/br]
+Дело [url=%text:casefileurl%]№%text:casefile%[/url][/tdcus][/tr][/tab]
+[br][/br]
+[center][b][size=100]ЗАЯВЛЕНИЕ НА ПОЛУЧЕНИЕ ПОСТАНОВЛЕНИЯ ОБ ОБЫСКЕ И ИЗЪЯТИИ[/size][/b][/center]
+[br][/br]
+Я, сотрудник правоохранительных органов, запрашиваю постановление об обыске и изъятии. Под уголовной ответственностью за лжесвидетельство, заявляю, что у меня есть основания полагать, что следующее имущество или лицо, расположенное по адресу:
+[background=Silver][size=95]%text:accuseeinfo%[/size][/background]
+В настоящее время может скрывать следующее:
+[background=Silver][size=95]%text:stuff%[/size][/background]
+Уголовное преследование описанного имущества или лица, связано с нарушениями:
+[background=Silver][size=95]%text:penalcode%[/size][/background]
+Обыск указанного имущества или лица основано на следующих фактах:
+[background=Silver][size=95]%text:facts%[/size][/background]
+[br][/br][/textarea]
