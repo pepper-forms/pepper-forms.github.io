@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="stylesheet" href="/common/css/style.css">
+      <link rel="stylesheet" href="/common/css/micromodal.css">
+      <script src="/common/js/micromodal.min.js"></script>
+      <script src="/common/js/utils.js"></script>
+      <title>Reinstatement Program - LSPD</title>
+   </head>
+   <body>
+
+    <div class="form6" style="border: 1px solid black; padding: 15px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000"><div align="center"><img src="http://i.imgur.com/BpXDfPE.png" class="postimage" alt="Изображение"></div><br><div align="center">LOS SANTOS POLICE DEPARTMENT<br><span style="font-weight: bold">BACKHOME PROGRAM</span>
+        <br>
+        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">APPLICATION</span></span>
+    </div>
+    <div style="border-bottom: 1px solid #000; padding: 1px;"></div>
+    <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ ПЕРСОНАЖА:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="name" placeholder="Name" autocomplete="off" />
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФАМИЛИЯ ПЕРСОНАЖА:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="surname" placeholder="Surname" autocomplete="off" />
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШ NICKNAME:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="nickname" placeholder="Nickname или форумный ник" autocomplete="off" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШИ ИНТЕРЕСНЫЕ РОЛИ, ДАТА КОГДА ВЫ ИГРАЛИ И СЕРВЕР:</span>
+        <br>
+        <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
+            <textarea name="roles" placeholder="1. Какая роль. Когда. На каком сервере.
+2. Какая роль. Когда. На каком сервере.
+3. и т.д." ></textarea>
+        </div>
+        <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС, ОПИСАНИЕ:</span>
+        <br>
+        <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px;">
+            <textarea name="role" placeholder="Краткое описание роли" style="height: 60px"></textarea>
+            <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛНОЕ ОПИСАНИЕ ПЕРСОНАЖА:</span>
+        <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
+                <textarea name="role_ext" placeholder="Подробное описание (квента)"></textarea>
+            </div>
+        </div>
+        <br>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА VK:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="vkurl" placeholder="vk.com/ваш_айди" />
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">АЙДИ ВАШЕГО АККАУНТА НА ГАМБИТЕ:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="gid" placeholder="Номер аккаунта тут g-rp.su/profile" />
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШ ВОЗРАСТ:</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="age" placeholder="Возраст (ООС)" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА ФОРУМНЫЙ АККАУНТ (G-RP):</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="gurl" placeholder="forum.g-rp.su/members/..." />
+                        </div>
+                    </td>
+                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">СКРИНШОТ UCP (+КВЕНТА):</span>
+                        <br>
+                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+                            <input type="text" name="ucp" placeholder="cсылка на изображение" />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ССЫЛКИ НА СС):</span></span>
+        <br>
+        <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
+            <textarea name="ss" placeholder="Cсылки на СС. Каждую на новой строке. Пример:
+https://i.imgur.com/ayZzs6d.png
+https://www.upload.ee/image/997443.png" ></textarea>
+        </div>
+        <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЖЕЛАНИЯ:</span>
+        <br>
+        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
+            <input type="text" name="wishes" placeholder="Должность, отдел" />
+        </div>
+        <br>
+        <br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">СОГЛАШЕНИЕ</span></span>
+        <br>
+        <br><b>1.</b> Я ознакомлен с разделом "Часто задаваемые вопросы". 
+        <br><b>2.</b> Я понимаю, что при одобрении моего заявления, я попаду на испытательный срок. 
+        <br><b>3.</b> Я соглашаюсь, что если покину фракцию в течении 7 дней, то буду занесен в черный список (ЧС) фракции без права выхода. 
+        <br><b>4.</b> Я понимаю, что не все мои перечисленные пожелания могут быть удовлетворены и всё равно соглашаюсь играть. 
+        <br><b>5.</b> Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. 
+        <br><b>6.</b> Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES.
+        <br><b>7.</b> В случае одобрения, я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции. 
+        <br><b>8.</b> Я имею интерес в создании топика своего персонажа и дальнейшего развития своей роли.
+        <br>
+        <br><span style="font-weight: bold; padding-bottom: 50px"><input type="checkbox" class="checkbox" name="checkbox" /> Я принимаю условия данного заявления</span>
+        </span>
+    </span>
+    </div>
+
+            <div class="btn-container">
+                <button class="modal__btn modal__btn-primary" onclick="prepare()">Generate</button>
+                <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Here is your BBCode!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="output__header">Topic Name</label>
+                                    </div>
+                                    <div class="col-9 col-lg-10">
+                                        <input type="text" class="form-control" id="output__header" placeholder="[BACK HOME] Name Surname (nickname)">
+                                    </div>
+                                    <div class="col-3 col-lg-2">
+                                        <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <label for="output__body">BBCode</label>
+                                    </div>
+                                    <div class="col-9 col-lg-10">
+                                        <textarea class="form-control" rows="10" id="output__body"></textarea>
+                                    </div>
+                                    <div class="col-3 col-lg-2 d-flex align-items-center">
+                                        <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/ls/pd/posting.php?mode=post&f=51','_blank')">Create Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+      <script>
+         String.prototype.capitalize = function () {
+            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+         }
+
+         function generatePostTitle() {
+             var name = document.getElementsByName("name")[0].value.capitalize();
+             var surname = document.getElementsByName("surname")[0].value.capitalize();
+             var nickname = document.getElementsByName("nickname")[0].value;
+             var h_output = "";
+             
+             if (name && surname && nickname) {
+                 h_output = "[BACK HOME] "  + name + " " + surname + " (" + nickname + ")"
+             }
+
+             return h_output;
+         }
+
+         function isURL(str) {
+          var pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?'+ // protocol
+          '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name and extension
+          '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+          '(\\:\\d+)?'+ // port
+          '(\\/[-a-z\\d%@_.~+&:]*)*'+ // path
+          '(\\?[;&a-z\\d%@_.,~+&:=-]*)?'+ // query string
+          '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+          return pattern.test(str);
+        }
+
+        function isIMG(url) {
+            return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+        }
+
+        function checkURLs(str) {
+            if (isURL(str)) {
+                if (isIMG(str)) {
+                    str = "[spoiler=\"Изображение\"][url=" + str + "][img]" + str + "[/img][/url][/spoiler]";
+                } else {
+                    str = "[url]" + str + "[/url]";
+                }
+            }
+            return str;
+        }
+
+         function prepare() {
+            var vk = document.getElementsByName("vkurl")[0].value;
+            var grp = document.getElementsByName("gurl")[0].value;
+            var ss = document.getElementsByName("ss")[0].value;
+            var ucp = document.getElementsByName("ucp")[0].value;
+
+            if (vk) { document.getElementsByName("vkurl")[0].value = checkURLs(vk); }
+
+            if (grp) { document.getElementsByName("gurl")[0].value = checkURLs(grp); }
+
+            if (ucp) { document.getElementsByName("ucp")[0].value = checkURLs(ucp); }
+
+            if (ss) {
+                var ssArray = ss.match(/[^\r\n]+/g);
+
+                for (var i = 0; i < ssArray.length; i++) {
+                    ssArray[i] = checkURLs(ssArray[i]);
+                }
+                document.getElementsByName("ss")[0].value = ssArray.join('\n');
+            }
+
+            showBB();
+         }
+
+         async function showBB() {
+            output = await parseForm();
+            h_output = generatePostTitle();
+            document.getElementById("output__header").value = h_output;
+            document.getElementById("output__body").value = output;
+            $('#output_modal').modal('show')
+        }
+
+         function form2dict(form) {
+            var values = form.querySelectorAll('[name]');
+            var data = {};
+            for (var i = 0; i < values.length; i++) {
+                if (values[i].classList.contains('datepicker')) {
+                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                } else if (values[i].classList.contains('checkbox')) {
+                    var checked = document.getElementsByName("checkbox")[0].checked ? ('X') : ' '
+                    data[values[i].getAttribute('name')] = checked;
+                } else {
+                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                }
+            }
+            return data;
+        }
+         
+         MicroModal.init();
+         window.__bbcodeurl = '/bbforms/back_home.txt';
+         document.querySelector('[name="name"]').focus();   
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>      
+   </body>
+</html>

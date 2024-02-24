@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="PepperSpray">
         <title>Pepper Forms</title>
         <link rel="stylesheet" href="/common/css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <meta http-equiv="refresh" content="0; URL='/lscsd.html'" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-3 mb-md-4 mb-lg-5">
@@ -22,11 +21,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item disabled">
-                            <a class="nav-link disabled" href="/lspd.html">LSPD</a>
-                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link active" href="/lscsd.html">LSCSD<span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="#">LSPD<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="/sahp.html">SAHP</a>
@@ -42,89 +38,126 @@
             <div class="container">
                 <div class="card-deck mb-4">
                     <div class="card">
-                        <img src="/static/img/IR_scrn.png" class="card-img-top" alt="Incident Report">
+                        <img src="/static/img/DOR_scrn.png" class="card-img-top" alt="Daily Observation Report">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h5 class="card-title">Daily Observation Report (FTEP)</h5>
+                                <p class="card-text">Генератор формы ежедневного отчета о наблюдении FTO за стажером.</p>
+                            </div>
+                            <a href="/htmlforms/lspd/dor.html" class="btn btn-primary">Заполнить</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/SAHP_IR_scrn.png" class="card-img-top" alt="Incident Report">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <h5 class="card-title">Incident Report Form</h5>
                                 <p class="card-text">Генератор формы отчета о произошедшем инциденте.</p>
                             </div>
-                            <a href="/htmlforms/incident-report.html" class="btn btn-primary">Fill It Now</a>
+                            <a href="/htmlforms/sahp/incident-report.html" class="btn btn-primary">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/static/img/CUOF_scrn.png" class="card-img-top" alt="Categorical Use of Force Report">
+                        <img src="/static/img/SAHP_CUOF_scrn.png" class="card-img-top" alt="Categorical Use of Force Report">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <h5 class="card-title">Categorical Use of Force Report</h5>
                                 <p class="card-text">Генератор формы отчета о применении летальной силы. </p>
                             </div>
-                            <a href="/htmlforms/use-of-force-report.html" class="btn btn-primary">Fill It Now</a>
+                            <a href="/htmlforms/sahp/use-of-force-report.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/static/img/PF_scrn.png" class="card-img-top" alt="Personnel File">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="mb-3">
-                                <h5 class="card-title">Personnel File (Patrol)</h5>
-                                <p class="card-text">Генератор формы личного дела для офицеров патрульных дивизионов.</p>
-                            </div>
-                            <a href="/htmlforms/personnel-file.html" class="btn btn-primary">Fill It Now</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/static/img/DOR_scrn.png" class="card-img-top" alt="Placeholder">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="mb-3">
-                                <h5 class="card-title">Daily Observation Report (FTP)</h5>
-                                <p class="card-text">Генератор формы ежедневного отчета о наблюдении FTO за стажером.</p>
-                            </div>
-                            <a href="/htmlforms/dor.html" class="btn btn-primary">Fill It Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-deck mb-4">
-                    <div class="card">
-                        <img src="/static/img/RA_scrn.png" class="card-img-top" alt="Ride-Along Application">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="mb-3">
-                                <h5 class="card-title">Ride-Along Application</h5>
-                                <p class="card-text">Генератор заявки на совместный патруль (Civils).</p>
-                            </div>
-                            <a href="/htmlforms/ride-along.html" class="btn btn-primary">Fill It Now</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/static/img/AC_scrn.png" class="card-img-top" alt="Academy Application">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="mb-3">
-                                <h5 class="card-title">Academy Application</h5>
-                                <p class="card-text">Генератор заявки в полицейскую академию (Civils).</p>
-                            </div>
-                            <a href="/htmlforms/academy.html" class="btn btn-primary">Fill It Now</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/static/img/BH_scrn.png" class="card-img-top" alt="Back Home Application">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Back Home Application">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <h5 class="card-title">Reinstatement Program Application</h5>
                                 <p class="card-text">Генератор заявки в программу восстановления (Back Home).</p>
                             </div>
-                            <a href="/htmlforms/back-home.html" class="btn btn-primary">Fill It Now</a>
+                            <a href="/htmlforms/sahp/back-home.html" class="btn btn-primary disabled">Заполнить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck mb-4">
+                    <div class="card">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Academy Application">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h5 class="card-title">Academy Application</h5>
+                                <p class="card-text">Генератор заявки в полицейскую академию SAHP.</p>
+                            </div>
+                            <a href="/htmlforms/sahp/academy.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/static/img/RaC_scrn.png" class="card-img-top" alt="Report a Crime Application">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Casefile Header">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h5 class="card-title">Open Casefile</h5>
+                                <p class="card-text">Генератор хедера кейсфайла для следователей.</p>
+                            </div>
+                            <a href="/htmlforms/sahp/casefile.html" class="btn btn-primary disabled">Заполнить</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Ride-Along Application">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h5 class="card-title">Ride-Along Application</h5>
+                                <p class="card-text">Генератор заявки на совместный патруль.</p>
+                            </div>
+                            <a href="/htmlforms/ride-along.html" class="btn btn-primary disabled">Заполнить</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Report a Crime Application">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <h5 class="card-title">Report a Crime Application</h5>
                                 <p class="card-text">Генератор заявления в полицию о совершенном преступлении (Civils).</p>
                             </div>
-                            <a href="/htmlforms/rac.html" class="btn btn-primary">Fill It Now</a>
+                            <a href="/htmlforms/sahp/rac.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                 </div>
+            <div class="card-deck mb-4">
+                    
+                <div class="card">
+                    <img src="/static/img/placeholder.png" class="card-img-top" alt="Personnel File">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="mb-3">
+                            <h5 class="card-title">Personnel File</h5>
+                            <p class="card-text">Генератор формы личного дела для офицеров SAHP.</p>
+                        </div>
+                        <a href="/htmlforms/sahp/main-pf.html" class="btn btn-primary disabled">Заполнить</a>
+                        <a href="/htmlforms/sahp/main-pf-division.html" class="btn btn-primary disabled">Добавить дивизион</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/static/img/placeholder.png" class="card-img-top" alt="Non-Sworn Employment">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="mb-3">
+                            <h5 class="card-title">Apply for Non-Sworn Job</h5>
+                            <p class="card-text">Генератор заявления на гражданскую должность в SAHP.</p>
+                        </div>
+                        <a href="/htmlforms/sahp/non-sworn-employment.html" class="btn btn-primary disabled">Заполнить</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/static/img/placeholder.png" class="card-img-top" alt="CCW">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div class="mb-3">
+                            <h5 class="card-title">Apply for CCW License</h5>
+                            <p class="card-text">Генератор заявления на получение лицензии скрытого ношения оружия.</p>
+                        </div>
+                        <a href="/htmlforms/sahp/ccw.html" class="btn btn-primary disabled">Заполнить</a>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                </div>
             </div>
+        </div>
         </main>
         <footer class="text-muted navbar">
             <div class="container">
