@@ -1,0 +1,38 @@
+﻿[doc][center][img]https://i.imgur.com/ah150GK.png[/img][/center]
+[center]LOS SANTOS COUNTY SHERIFF'S DEPARTMENT
+REPORT A CRIME
+
+[size=120][b]APPLICATION[/b][/size][/center][borderb=#000][/borderb]
+[justify]Эта форма используется только для подачи заявления о преступлении в юрисдикции Департамета шерифа округа Лос-Сантоса. Департамент шерифа округа Лос-Сантоса не расследует дела, произошедшие за пределами его юрисдикции.[/justify]
+[doc_b=ИНФОРМАЦИЯ О ВАС]
+
+[coll4][a=Имя]%text:name%[/a]|[a=Второе имя]%text:second_name%[/a]|[a=Фамилия]%text:surname%[/a]|[a=Пол]%text:sex%[/a][/coll4]
+[coll3][a=Дата рождения]%text:birth%[/a]|[a=Телефон]%text:telephone%[/a]|[a=Email]%text:email%[/a][/coll3]
+[a=Адрес]%text:adress%[/a][/doc_b]
+
+[doc_b=ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ]
+
+[coll3][a=Дата инцидента]%text:incident_date%[/a]|[a=Время]%text:incident_time%[/a]|[a=Локация]%text:incident_location%[/a][/coll3]
+[size=90][b]Подавалось ли это заявление или связанное с ним ранее?[/b]
+[%text:checkbox1%] Да    [%text:checkbox2%] Нет[/size][/doc_b]
+
+[doc_b=ИНФОРМАЦИЯ О ПОДОЗРЕВАЕМЫХ]
+
+[size=90][b]Вы знаете имена подозреваемых? Если да, перечислите любых из них.[/b]
+[%text:checkbox3%] Да    [%text:checkbox4%] Нет[/size]
+
+[coll][a=Подозреваемый 1 & имя, фамилия, примерное описание]%text:suspect1%[/a]|[a=Подозреваемый 2 & имя, фамилия, примерное описание]%text:suspect2%[/a][/coll]
+[coll][a=Подозреваемый 3 & имя, фамилия, примерное описание]%text:suspect3%[/a]|[a=Подозреваемый 4 & имя, фамилия, примерное описание]%text:suspect4%[/a][/coll][/doc_b]
+
+[doc_b=ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ]
+
+[size=90][b]Присутствовали ли на ситуации свидетели и знаете ли Вы их имена и контакты? Если да, перечислите любых из них.[/b]
+[%text:checkbox5%] Да    [%text:checkbox6%] Нет[/size]
+
+[coll][a=Свидетель 1 Имя, Телефон]%text:witness1%[/a]|[a=Свидетель 2 Имя, Телефон]%text:witness2%[/a][/coll]
+[coll][a=Свидетель 3 Имя, Телефон]%text:witness3%[/a]|[a=Свидетель 4 Имя, Телефон]%text:witness4%[/a][/coll][/doc_b]
+
+[doc_b=СВОДКА]
+
+[size=90]Просьба представить информацию об инциденте. Включить дополнительных свидетелей, очевидцев, подозреваемых и полное описание произошедшего.[/size]
+[textarea=#ccc][color=#555555][justify]%textarea:info%[/justify][/color][/textarea][/doc_b][/doc]
