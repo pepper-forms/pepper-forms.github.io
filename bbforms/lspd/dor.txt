@@ -1,0 +1,40 @@
+﻿[doc][color=#000000][coll3]|[center]%text:division%
+[size=120][b]DAILY OBSERVATION REPORT[/b][/size][/center]|[right][size=85]LOS SANTOS POLICE DEPARTMENT
+CENTRAL PATROL DIVISION[/size][/right][/coll3][/color]
+[doc_b=I. GENERAL INFORMATION][color=#000000]
+[coll][a=ПОЛНОЕ ИМЯ СТАЖЁРА]%text:trainee_name%[/a]
+[a=МАРКИРОВКА]%text:callsign%[/a]|[a=ДАТА ПАТРУЛИРОВАНИЯ]%text:patrol_date%[/a]
+[a=НАЧАЛО И КОНЕЦ ПАТРУЛЯ]%text:patrol_time%[/a]
+[/coll][/color][/doc_b]
+[doc_b=II. RATING BY CATEGORY][coll][center][b]КАТЕГОРИИ[/b][/center]	|[coll6]	[center][b]N/O[/b][/center]	|	[center][b]N/I[/b][/center]	|	[center][b]C[/b][/center]	|	[center][b]S[/b][/center]	|	[center][b]NRT[/b][/center]	|	[center][b]DS[/b][/center]	[/coll6][/coll][hr][/hr][coll][size=100][b][u]ЛИЧНЫЕ КАЧЕСТВА[/u][/b][/size]	|[coll6]		|		|		|		|		|		[/coll6][/coll][coll][size=90][b]1. ОТНОШЕНИЕ К КРИТИКЕ/КУРАТОРУ/ПРОГРАММЕ[/b][/size]	|[coll6]	[center][%text:dor11%][/center]	|	[center][%text:dor12%][/center]	|	[center][%text:dor13%][/center]	|	[center][%text:dor14%][/center]	|	[center][%text:dor15%][/center]	|	[center]%text:dorDS1%[/center]	[/coll6][/coll][coll][size=90][b]2. ОТНОШЕНИЕ К ПОЛИЦЕЙСКОЙ РАБОТЕ[/b][/size]	|[coll6]	[center][%text:dor21%][/center]	|	[center][%text:dor22%][/center]	|	[center][%text:dor23%][/center]	|	[center][%text:dor24%][/center]	|	[center][%text:dor25%][/center]	|	[center]%text:dorDS2%[/center]	[/coll6][/coll][coll][size=90][b]3. ЭТИКА И ДОБРОСОВЕСТНОСТЬ[/b][/size]	|[coll6]	[center][%text:dor31%][/center]	|	[center][%text:dor32%][/center]	|	[center][%text:dor33%][/center]	|	[center][%text:dor34%][/center]	|	[center][%text:dor35%][/center]	|	[center]%text:dorDS3%[/center]	[/coll6][/coll][coll][size=90][b]4. УМЕНИЕ ВЛИЯТЬ НА ОКРУЖАЮЩИХ[/b][/size]	|[coll6]	[center][%text:dor41%][/center]	|	[center][%text:dor42%][/center]	|	[center][%text:dor43%][/center]	|	[center][%text:dor44%][/center]	|	[center][%text:dor45%][/center]	|	[center]%text:dorDS4%[/center]	[/coll6][/coll][coll]	|[coll6]		|		|		|		|		|		[/coll6][/coll]
+[coll][size=100][b][u]ВЗАИМООТНОШЕНИЯ[/u][/b][/size]	|[coll6]		|		|		|		|		|		[/coll6][/coll][coll][size=90][b]5. С ГРАЖДАНАМИ/ОБЩЕСТВОМ[/b][/size]	|[coll6]	[center][%text:dor51%][/center]	|	[center][%text:dor52%][/center]	|	[center][%text:dor53%][/center]	|	[center][%text:dor54%][/center]	|	[center][%text:dor55%][/center]	|	[center]%text:dorDS5%[/center]	[/coll6][/coll][coll][size=90][b]6. С ДРУГИМИ ОФИЦЕРАМИ ДЕПАРТАМЕНТА[/b][/size]	|[coll6]	[center][%text:dor61%][/center]	|	[center][%text:dor62%][/center]	|	[center][%text:dor63%][/center]	|	[center][%text:dor64%][/center]	|	[center][%text:dor65%][/center]	|	[center]%text:dorDS6%[/center]	[/coll6][/coll][coll]	|[coll6]		|		|		|		|		|		[/coll6][/coll]
+[coll][size=100][b][u]НАВЫКИ[/u][/b][/size]	|[coll6]		|		|		|		|		|		[/coll6][/coll][coll][size=90][b]7. НАВЫКИ ВОЖДЕНИЯ[/b][/size]	|[coll6]	[center][%text:dor71%][/center]	|	[center][%text:dor72%][/center]	|	[center][%text:dor73%][/center]	|	[center][%text:dor74%][/center]	|	[center][%text:dor75%][/center]	|	[center]%text:dorDS7%[/center]	[/coll6][/coll][coll][size=90][b]8. ЗНАНИЕ ГОРОДА, ОРИЕНТАЦИЯ[/b][/size]	|[coll6]	[center][%text:dor81%][/center]	|	[center][%text:dor82%][/center]	|	[center][%text:dor83%][/center]	|	[center][%text:dor84%][/center]	|	[center][%text:dor85%][/center]	|	[center]%text:dorDS8%[/center]	[/coll6][/coll][coll][size=90][b]9. НАВЫКИ КООРДИНАЦИИ[/b][/size]	|[coll6]	[center][%text:dor91%][/center]	|	[center][%text:dor92%][/center]	|	[center][%text:dor93%][/center]	|	[center][%text:dor94%][/center]	|	[center][%text:dor95%][/center]	|	[center]%text:dorDS9%[/center]	[/coll6][/coll][coll][size=90][b]10. ПОЛЕВЫЕ ПОКАЗАТЕЛИ: НОРМАЛЬНЫЕ УСЛОВИЯ[/b][/size]	|[coll6]	[center][%text:dor101%][/center]	|	[center][%text:dor102%][/center]	|	[center][%text:dor103%][/center]	|	[center][%text:dor104%][/center]	|	[center][%text:dor105%][/center]	|	[center]%text:dorDS10%[/center]	[/coll6][/coll][coll][size=90][b]11. ПОЛЕВЫЕ ПОКАЗАТЕЛИ: СТРЕССОВЫЕ УСЛОВИЯ[/b][/size]	|[coll6]	[center][%text:dor111%][/center]	|	[center][%text:dor112%][/center]	|	[center][%text:dor113%][/center]	|	[center][%text:dor114%][/center]	|	[center][%text:dor115%][/center]	|	[center]%text:dorDS11%[/center]	[/coll6][/coll][coll][size=90][b]12. ИНИЦИАТИВНОСТЬ В ВЫБОРЕ СИТУАЦИЙ[/b][/size]	|[coll6]	[center][%text:dor121%][/center]	|	[center][%text:dor122%][/center]	|	[center][%text:dor123%][/center]	|	[center][%text:dor124%][/center]	|	[center][%text:dor125%][/center]	|	[center]%text:dorDS12%[/center]	[/coll6][/coll][coll][size=90][b]13. БЕЗОПАСНОСТЬ ОФИЦЕРА[/b][/size]	|[coll6]	[center][%text:dor131%][/center]	|	[center][%text:dor132%][/center]	|	[center][%text:dor133%][/center]	|	[center][%text:dor134%][/center]	|	[center][%text:dor135%][/center]	|	[center]%text:dorDS13%[/center]	[/coll6][/coll][coll][size=90][b]14. ИСПОЛЬЗОВАНИЕ РАЦИИ[/b][/size]	|[coll6]	[center][%text:dor141%][/center]	|	[center][%text:dor142%][/center]	|	[center][%text:dor143%][/center]	|	[center][%text:dor144%][/center]	|	[center][%text:dor145%][/center]	|	[center]%text:dorDS14%[/center]	[/coll6][/coll][coll]	|[coll6]		|		|		|		|		|		[/coll6][/coll]
+[coll][size=100][b][u]ЗНАНИЯ[/u][/b][/size]	|[coll6]		|		|		|		|		|		[/coll6][/coll][coll][size=90][b]15. ЗНАНИЕ ПОЛИТИК И ПРОЦЕДУР ДЕПАРТАМЕНТА[/b][/size]	|[coll6]	[center][%text:dor151%][/center]	|	[center][%text:dor152%][/center]	|	[center][%text:dor153%][/center]	|	[center][%text:dor154%][/center]	|	[center][%text:dor155%][/center]	|	[center]%text:dorDS15%[/center]	[/coll6][/coll][/doc_b]
+
+[doc_b=III. NARRATIVE EVALUATION][color=#000000] 
+[b]ЧТО ВАМ БОЛЬШЕ ВСЕГО ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?[/b]
+[quote]%textarea:like%[/quote]
+
+[b]ЧТО ВАМ БОЛЬШЕ ВСЕГО НЕ ПОНРАВИЛОСЬ В СТАЖЕРЕ ЗА ДЕНЬ?[/b]
+[quote]%textarea:dislike%[/quote]
+
+[b]ВАШИ РЕКОМЕНДАЦИИ ПО ПЕРЕХОДУ СТАЖЕРА В СЛЕДУЮЩУЮ ФАЗУ[/b]
+[quote]%textarea:phase_recommendations%[/quote]
+[/color][/doc_b]
+
+[doc_b=IV. DOCUMENTED SITUATIONS (DS)][color=#000000]
+[b]ЗАДОКУМЕНТИРОВАННЫЕ СИТУАЦИИ[/b]
+[quote]%textarea:ds1%[/quote]
+[/color][/doc_b]
+
+[doc_b=(( OOC. УРОВЕНЬ ИГРЫ ))][color=#000000]
+[b]КАЧЕСТВО И УРОВЕНЬ ИГРЫ, СООТВЕТСТВИЕ РОЛИ[/b]
+[quote]%textarea:skill1%[/quote]
+
+[b]ПОВЕДЕНИЕ ИГРОКА В ООС[/b]
+[quote]%textarea:skill2%[/quote]
+
+[b]ВАШИ ЛИЧНЫЕ РЕКОМЕНДАЦИИ/КОММЕНТАРИИ И ЗАМЕЧАНИЯ[/b]
+[quote]%textarea:skill3%[/quote]
+[/color][/doc_b]
+[borderb=#000][/borderb][/doc]

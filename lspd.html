@@ -22,7 +22,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link active" href="#">LSPD<span class="sr-only">(current)</span></a>
+                            <a class="nav-link active" href="/lspd.html">LSPD<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="/lscsd.html">LSCSD</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="/sahp.html">SAHP</a>
@@ -48,13 +51,23 @@
                         </div>
                     </div>
                     <div class="card">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Report a Crime Application">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h5 class="card-title">Report a Crime Application</h5>
+                                <p class="card-text">Генератор заявления в полицию о совершенном преступлении (Civils).</p>
+                            </div>
+                            <a href="/htmlforms/lspd/rac.html" class="btn btn-primary">Заполнить</a>
+                        </div>
+                    </div>
+                    <div class="card">
                         <img src="/static/img/SAHP_IR_scrn.png" class="card-img-top" alt="Incident Report">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
                                 <h5 class="card-title">Incident Report Form</h5>
                                 <p class="card-text">Генератор формы отчета о произошедшем инциденте.</p>
                             </div>
-                            <a href="/htmlforms/sahp/incident-report.html" class="btn btn-primary">Заполнить</a>
+                            <a href="/htmlforms/lspd/" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
@@ -64,17 +77,7 @@
                                 <h5 class="card-title">Categorical Use of Force Report</h5>
                                 <p class="card-text">Генератор формы отчета о применении летальной силы. </p>
                             </div>
-                            <a href="/htmlforms/sahp/use-of-force-report.html" class="btn btn-primary disabled">Заполнить</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Back Home Application">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <div class="mb-3">
-                                <h5 class="card-title">Reinstatement Program Application</h5>
-                                <p class="card-text">Генератор заявки в программу восстановления (Back Home).</p>
-                            </div>
-                            <a href="/htmlforms/sahp/back-home.html" class="btn btn-primary disabled">Заполнить</a>
+                            <a href="/htmlforms/lspd/use-of-force-report.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                 </div>
@@ -86,7 +89,7 @@
                                 <h5 class="card-title">Academy Application</h5>
                                 <p class="card-text">Генератор заявки в полицейскую академию SAHP.</p>
                             </div>
-                            <a href="/htmlforms/sahp/academy.html" class="btn btn-primary disabled">Заполнить</a>
+                            <a href="/htmlforms/lspd/academy.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
@@ -96,7 +99,7 @@
                                 <h5 class="card-title">Open Casefile</h5>
                                 <p class="card-text">Генератор хедера кейсфайла для следователей.</p>
                             </div>
-                            <a href="/htmlforms/sahp/casefile.html" class="btn btn-primary disabled">Заполнить</a>
+                            <a href="/htmlforms/lspd/casefile.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                     <div class="card">
@@ -110,13 +113,13 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Report a Crime Application">
+                        <img src="/static/img/placeholder.png" class="card-img-top" alt="Back Home Application">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="mb-3">
-                                <h5 class="card-title">Report a Crime Application</h5>
-                                <p class="card-text">Генератор заявления в полицию о совершенном преступлении (Civils).</p>
+                                <h5 class="card-title">Reinstatement Program Application</h5>
+                                <p class="card-text">Генератор заявки в программу восстановления (Back Home).</p>
                             </div>
-                            <a href="/htmlforms/sahp/rac.html" class="btn btn-primary disabled">Заполнить</a>
+                            <a href="/htmlforms/lspd/back-home.html" class="btn btn-primary disabled">Заполнить</a>
                         </div>
                     </div>
                 </div>
@@ -129,8 +132,8 @@
                             <h5 class="card-title">Personnel File</h5>
                             <p class="card-text">Генератор формы личного дела для офицеров SAHP.</p>
                         </div>
-                        <a href="/htmlforms/sahp/main-pf.html" class="btn btn-primary disabled">Заполнить</a>
-                        <a href="/htmlforms/sahp/main-pf-division.html" class="btn btn-primary disabled">Добавить дивизион</a>
+                        <a href="/htmlforms/lspd/main-pf.html" class="btn btn-primary disabled">Заполнить</a>
+                        <a href="/htmlforms/lspd/main-pf-division.html" class="btn btn-primary disabled">Добавить дивизион</a>
                     </div>
                 </div>
                 <div class="card">
@@ -140,7 +143,7 @@
                             <h5 class="card-title">Apply for Non-Sworn Job</h5>
                             <p class="card-text">Генератор заявления на гражданскую должность в SAHP.</p>
                         </div>
-                        <a href="/htmlforms/sahp/non-sworn-employment.html" class="btn btn-primary disabled">Заполнить</a>
+                        <a href="/htmlforms/lspd/non-sworn-employment.html" class="btn btn-primary disabled">Заполнить</a>
                     </div>
                 </div>
                 <div class="card">
@@ -150,7 +153,7 @@
                             <h5 class="card-title">Apply for CCW License</h5>
                             <p class="card-text">Генератор заявления на получение лицензии скрытого ношения оружия.</p>
                         </div>
-                        <a href="/htmlforms/sahp/ccw.html" class="btn btn-primary disabled">Заполнить</a>
+                        <a href="/htmlforms/lspd/ccw.html" class="btn btn-primary disabled">Заполнить</a>
                     </div>
                 </div>
                 <div class="card">

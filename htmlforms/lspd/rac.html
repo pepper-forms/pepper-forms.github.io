@@ -1,328 +1,327 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/common/css/style.css">
-    <link rel="stylesheet" href="/common/css/micromodal.css">
-    <script src="/common/js/micromodal.min.js"></script>
-    <script src="/common/js/utils.js"></script>
-    
-    <title>Report a Crime Application - LSPD</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/common/css/style.css">
+        <link rel="stylesheet" href="/common/css/micromodal.css">
+        <script src="/common/js/micromodal.min.js"></script>
+        <script src="/common/js/utils.js"></script>
+        
+        <title>Report a Crime Application - LSPD</title>
+    </head>
 
-<body>
-    <div class="form7" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" bis_skin_checked="1">
-        <div align="center" bis_skin_checked="1"><img src="http://i.imgur.com/BpXDfPE.png" class="postimage" alt="Изображение"></div>
-        <br>
-        <div align="center" bis_skin_checked="1">LOS SANTOS POLICE DEPARTMENT
-            <br>REPORT A CRIME
+    <body>
+        <div class="form7" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" bis_skin_checked="1">
+            <div align="center" bis_skin_checked="1"><img src="https://i.imgur.com/qQU4nxH.png" class="postimage" alt="Изображение"></div>
             <br>
-            <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">APPLICATION</span></span>
+            <div align="center" bis_skin_checked="1">LOS SANTOS POLICE DEPARTMENT
+                <br>REPORT A CRIME
+                <br>
+                <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">APPLICATION</span></span>
+            </div>
+            <div style="border-bottom: 1px solid #000; padding: 1px;" bis_skin_checked="1"></div>
+            <br>
+            <div style="text-align: justify;" bis_skin_checked="1">Эта форма используется только для подачи заявления о преступлении в юрисдикции Департамета полиции города Лос-Сантос. Департамент полиции города Лос-Сантос не расследует дела, произошедшие за пределами его юрисдикции.</div>
+            <br><div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF"><div align="center">ИНФОРМАЦИЯ О ВАС</div></span></span></div>
+            <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="name" placeholder="ИМЯ" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Второе имя</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="second_name" placeholder="Оставить пустым если нет" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="surname" placeholder="ФАМИЛИЯ" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <select name="sex">
+                                <option value="МУЖСКОЙ">МУЖСКОЙ</option>
+                                <option value="ЖЕНСКИЙ">ЖЕНСКИЙ</option>
+                            </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" required="" class="datepicker" style="" id="datepicker_full" name="birth" placeholder="ДАТА РОЖДЕНИЯ"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Телефон</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="telephone" placeholder="XXX XXX" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Email</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="email" placeholder="EMAIL" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес</span>
+            <br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                <input type="text" name="adress" placeholder="№ Дома Улица, Город, Штат" autocomplete="off"/>
+            </div>
         </div>
-        <div style="border-bottom: 1px solid #000; padding: 1px;" bis_skin_checked="1"></div>
-        <br>
-        <div style="text-align: justify;" bis_skin_checked="1">Эта форма используется только для подачи заявления о преступлении в юрисдикции Департамета полиции Лос-Сантоса. Департамент полиции Лос-Сантоса не расследует дела, произошедшии за пределами его юрисдикции .</div>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Информация о Вас</span></span>
-        <br>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Имя</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="name" placeholder="ИМЯ" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Второе имя</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="second_name" placeholder="Оставить пустым если нет" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Фамилия</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="surname" placeholder="ФАМИЛИЯ" autocomplete="off" oninput="this.value = this.value.toUpperCase()"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:23%;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пол</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <select name="sex">
-                              <option value="MALE">МУЖСКОЙ</option>
-                              <option value="FEMALE">ЖЕНСКИЙ</option>
-                           </select>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата рождения</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" required="" class="datepicker" style="" id="datepicker_full" name="birth" placeholder="ДАТА РОЖДЕНИЯ"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Телефон</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="telephone" placeholder="XXX XXX" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Email</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="email" placeholder="EMAIL" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Адрес</span>
-        <br>
-        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-            <input type="text" name="adress" placeholder="№ Дома Улица, Город, Штат" autocomplete="off"/>
+            <br><div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF"><div align="center">ИНФОРМАЦИЯ ОБ ИНЦИДЕНТЕ</div></span></span></div>
+            <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата инцидента</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" required="" class="datepicker" name="incident_date" placeholder="ДАТА ИНЦИДЕНТА"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="incident_time" placeholder="HH:MM" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Локация</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="incident_location" placeholder="Локация" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Подавалось ли это заявление или связанное с ним ранее?</span>
+            <br>
+            <input type="radio" name="1" class="radio" id="checkbox1"/> Да 
+            <input type="radio" name="1" class="radio" id="checkbox2"/> Нет</span>
+            </div>
+            <br>
+            <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF"><div align="center">ИНФОРМАЦИЯ О ПОДОЗРЕВАЕМЫХ</div></span></span></div>
+            <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Вы знаете имена подозреваемых? Если да, перечислите любых из них.</span>
+            <br>
+            <input type="radio" name="2" class="radio" id="checkbox3"/> Да 
+            <input type="radio" name="2" class="radio" id="checkbox4"/> Нет</span>
+            <br>
+            <br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 1</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="suspect1" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 2</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="suspect2" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 3</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="suspect3" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 4</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="suspect4" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table></div>
+            <br><div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF"><div align="center">ИНФОРМАЦИЯ О СВИДЕТЕЛЯХ</div></span></span></div>
+            <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Присутствовали ли на ситуации свидетели и знаете ли Вы их имена и контакты? Если да, перечислите любых из них.</span>
+            <br>
+            <input type="radio" name="3" class="radio" id="checkbox5"/> Да    
+            <input type="radio" name="3" class="radio" id="checkbox6"/> Нет</span>
+            <br>
+            <br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 1</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="witness1" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 2</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="witness2" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table width="100%">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 3</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="witness3" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
+                            </div>
+                        </td>
+                        <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 4</span>
+                            <br>
+                            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
+                                <input type="text" name="witness4" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <br>
+            <div style="padding: 2px; background-color: #000;"><span><span style="color: #FFFFFF"><div align="center">СВОДКА</div></span></span></div>
+            <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+            <span style="font-size: 90%; line-height: 116%;">Просьба представить информацию об инциденте. Включить дополнительных свидетелей, очевидцев, подозреваемых и полное описание произошедшего.</span>
+            <br>
+            <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px; margin-bottom: 5px" bis_skin_checked="1">
+                <input type="text" name="topic" placeholder="Краткий заголовок (прим. Ограбление/Похищение/Угон)" autocomplete="off"/>
+            </div>
+            <div style="border: 1px solid #ccc; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" bis_skin_checked="1"><span style="color: #555555"><div style="text-align: justify;" bis_skin_checked="1">
+                <textarea name="info" placeholder="Подробное описание инцидента"></textarea>
+            </div></span></div></div>
         </div>
-        <br>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Информация о инциденте</span></span>
-        <br>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Дата инцидента</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" required="" class="datepicker" name="incident_date" placeholder="ДАТА ИНЦИДЕНТА"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Время</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="incident_time" placeholder="HH:MM" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Локация</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="incident_location" placeholder="Локация" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Подавалось ли это заявление или связанное с ним ранее?</span>
-        <br>
-        <input type="radio" name="1" class="radio" id="checkbox1"/> Да 
-        <input type="radio" name="1" class="radio" id="checkbox2"/> Нет</span>
-        <br>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Информация о подозреваемых</span></span>
-        <br>
-        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Вы знаете имена подозреваемых? Если да, перечислите любых из них.</span>
-        <br>
-        <input type="radio" name="2" class="radio" id="checkbox3"/> Да 
-        <input type="radio" name="2" class="radio" id="checkbox4"/> Нет</span>
-        <br>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 1</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="suspect1" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 2</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="suspect2" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 3</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="suspect3" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемый 4</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="suspect4" placeholder="Имя Фамилия, примерное описание" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Информация о свидетелях</span></span>
-        <br>
-        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">Присутствовали ли на ситуации свидетели и знаете ли Вы их имена и контакты? Если да, перечислите любых из них.</span>
-        <br>
-        <input type="radio" name="3" class="radio" id="checkbox5"/> Да    
-        <input type="radio" name="3" class="radio" id="checkbox6"/> Нет</span>
-        <br>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 1</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="witness1" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 3</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="witness2" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 3</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="witness3" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетель 4</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px" bis_skin_checked="1">
-                            <input type="text" name="witness4" placeholder="Имя Фамилия, Телефон" autocomplete="off"/>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <br><span style="font-size: 120%; line-height: 116%;"><span style="font-weight: bold">Сводка</span></span>
-        <br>
-        <br><span style="font-size: 90%; line-height: 116%;">Просьба представить  информацию об инциденте. Включить дополнительных свидетелей, очевидцев, подозреваемых и полное описание, произошедшего .</span>
-        <br>
-        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px; margin-bottom: 5px" bis_skin_checked="1">
-            <input type="text" name="topic" placeholder="Краткий заголовок (прим. Ограбление/Похищение/Угон)" autocomplete="off"/>
-        </div>
-        <div style="border: 1px solid #ccc; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" bis_skin_checked="1"><span style="color: #555555"><div style="text-align: justify;" bis_skin_checked="1">
-            <textarea name="info" placeholder="Подробное описание инцидента"></textarea>
-        </div></span></div>
-    </div>
 
-    <div class="btn-container">
-        <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
-        <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
-    </div>
+        <div class="btn-container">
+            <button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+            <button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+        </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Here is your BBCode!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <label for="output__header">Topic Name</label>
+        <!-- Modal -->
+        <div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Here is your BBCode!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <label for="output__header">Topic Name</label>
+                                </div>
+                                <div class="col-9 col-lg-10">
+                                    <input type="text" class="form-control" id="output__header" placeholder="RoC #НОМЕР | Заголовок (прим. Ограбление)">
+                                </div>
+                                <div class="col-3 col-lg-2">
+                                    <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+                                </div>
                             </div>
-                            <div class="col-9 col-lg-10">
-                                <input type="text" class="form-control" id="output__header" placeholder="RoC #НОМЕР | Заголовок (прим. Ограбление)">
-                            </div>
-                            <div class="col-3 col-lg-2">
-                                <button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <label for="output__body">BBCode</label>
-                            </div>
-                            <div class="col-9 col-lg-10">
-                                <textarea class="form-control" rows="10" id="output__body"></textarea>
-                            </div>
-                            <div class="col-3 col-lg-2 d-flex align-items-center">
-                                <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <label for="output__body">BBCode</label>
+                                </div>
+                                <div class="col-9 col-lg-10">
+                                    <textarea class="form-control" rows="10" id="output__body"></textarea>
+                                </div>
+                                <div class="col-3 col-lg-2 d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lv/mpd/posting.php?mode=post&f=342','_blank')">Create Application</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/sd/posting.php?mode=post&f=765','_blank')">Create Application</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        String.prototype.capitalize = function () {
-            return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
-        }
-
-        function generatePostTitle() {
-            var h_output = "RoC #" + Math.floor(Date.now() / 60000) + " | ";
-            var topic = document.getElementsByName("topic")[0].value;
-            if (h_output && topic) {
-                h_output = h_output + topic
+        <script>
+            String.prototype.capitalize = function () {
+                return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
             }
-            return h_output;
-        }
 
-        function form2dict(form) {
-            var values = form.querySelectorAll('[name]','[id]');
-            var data = {};
-            for (var i = 0; i < values.length; i++) {
-                if (values[i].classList.contains('datepicker')) {
-                    data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
-                } else if (values[i].type == 'radio') {
-                    var checked = values[i].checked ? ('X') : ' '
-                    data[values[i].getAttribute('id')] = checked
-                } else {
-                    data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+            function generatePostTitle() {
+                var h_output = "RoC #" + Math.floor(Date.now() / 60000) + " | ";
+                var topic = document.getElementsByName("topic")[0].value;
+                if (h_output && topic) {
+                    h_output = h_output + topic
                 }
+                return h_output;
             }
-            return data;
-        }
 
-        $("#datepicker_full").datepicker({ 
-            'dateFormat': 'dd/M/yy',
-            changeMonth: true,
-            changeYear: true,
-            yearRange: '1920:+0'
-        });
+            function form2dict(form) {
+                var values = form.querySelectorAll('[name]','[id]');
+                var data = {};
+                for (var i = 0; i < values.length; i++) {
+                    if (values[i].classList.contains('datepicker')) {
+                        data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || 'N/A';
+                    } else if (values[i].type == 'radio') {
+                        var checked = values[i].checked ? ('X') : ' '
+                        data[values[i].getAttribute('id')] = checked
+                    } else {
+                        data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+                    }
+                }
+                return data;
+            }
 
-        MicroModal.init();
-        window.__bbcodeurl = '/bbforms/rac.txt';
-        document.querySelector('[name="name"]').focus();   
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
-      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
-</body>
-</html>
+            $("#datepicker_full").datepicker({ 
+                'dateFormat': 'dd/M/yy',
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '1920:+0'
+            });
+
+            MicroModal.init();
+            window.__bbcodeurl = '/bbforms/lspd/rac.txt';
+            document.querySelector('[name="name"]').focus();   
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+        <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+    </body>
+    </html>
