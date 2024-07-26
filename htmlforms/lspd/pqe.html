@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/common/css/style.css">
+	<link rel="stylesheet" href="/common/css/micromodal.css">
+	<script src="/common/js/micromodal.min.js"></script>
+	<script src="/common/js/utils.js"></script>
+
+	<title>Personal Qualification Essay (PQE) - LSPD Academy</title>
+</head>
+
+<body>
+	<div class="form9" style="border: 1px solid black; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+	    <div align="center"><img src="https://i.ibb.co/K71V4sB/N3WoplA.png" class="postimage" alt="Изображение">
+	        <br>LOS SANTOS POLICE DEPARTMENT
+	        <br><span style="font-weight: bold">PERSONAL QUALIFICATIONS ESSAY (PQE)</span></div>
+	    <br>
+	    <br>
+	    <hr>
+	    <br>
+	    <div style="padding: 15px; background-color: #DCDCDC;"><span><div align="center"><span style="font-size: 130%; line-height: 116%;"><span style="font-weight: bold"><input type="text" name="fullname" placeholder="FULL NAME" style="width: calc(30%); text-align: center;" autocomplete="off" oninput="this.value = this.value.toUpperCase()" /></span></span>
+	        <br><span style="font-size: 85%; line-height: 116%;">(ПОЛНОЕ ИМЯ)</span></div>
+	    </span>
+	</div>
+	<br>
+	<br><span style="font-weight: bold"><span style="text-decoration: underline">1.</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Опишите себя как личность. Ваши навыки и умения, личные качества, ваше мировоззрение и ценности.</span>
+	<br>
+	<div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">
+	    <textarea name="ans1" autocomplete="off" placeholder="Подробный ответ. Не менее 150 слов."></textarea>
+	</div>
+	<br>
+	<br><span style="font-weight: bold"><span style="text-decoration: underline">2.</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Какая наиболее сложная проблема была в Вашей жизни? Какие еще проблемы вам приходилось решать? Как вы подошли к их решению? Смогли ли Вы их решить?</span>
+	<br>
+	<div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">
+	    <textarea name="ans2" autocomplete="off" placeholder="Подробный ответ. Не менее 150 слов."></textarea>
+	</div>
+	<br>
+	<br><span style="font-weight: bold"><span style="text-decoration: underline">3.</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Как Вы думаете, какие отношения должны быть между членами команды, напарниками? Как поступать, если между членами команды или напарниками происходит конфликт?</span>
+	<br>
+	<div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">
+	    <textarea name="ans3" autocomplete="off" placeholder="Подробный ответ. Не менее 150 слов."></textarea>
+	</div>
+	<br>
+	<br><span style="font-weight: bold"><span style="text-decoration: underline">4.</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Какие сложности Вы видите в работе в департаменте полиции?</span>
+	<br>
+	<div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">
+	    <textarea name="ans4" autocomplete="off" placeholder="Подробный ответ. Не менее 150 слов."></textarea>
+	</div>
+	<br>
+	<br><span style="font-weight: bold"><span style="text-decoration: underline">5.</span></span> <span style="font-weight: bold; font-size: 90%; line-height: 116%;">Как принять ответственное решение, когда Вы остались одни в опасной ситуации, а от вашего решения зависят жизни и судьбы людей?</span>
+	<br>
+	<div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px">
+	    <textarea name="ans5" autocomplete="off" placeholder="Подробный ответ. Не менее 150 слов."></textarea>
+	</div>
+	<br>
+	<br>
+	<div style="padding: 10px; background-color: #F5F5F5;">
+	    <div align="center"><span style="font-weight: bold"><span style="font-size: 105%; line-height: 116%;">" TO PROTECT AND TO SERVE "</span></span>
+	        <br><img src="https://i.ibb.co/vQBFPxP/dPpHP8M.png" class="postimage" alt="Изображение"></div>
+	</div>
+	</div>
+
+	<div class="btn-container">
+				<button class="modal__btn modal__btn-primary" onclick="showBB()">Generate</button>
+				<button class="modal__btn" onclick="window.location.assign('/')">Back</button>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="output_modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Here is your BBCode!</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid">
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="output__header">Topic Name</label>
+									</div>
+									<div class="col-9 col-lg-10">
+										<input type="text" class="form-control" id="output__header">
+									</div>
+									<div class="col-3 col-lg-2">
+										<button class="btn btn-outline-secondary" type="button" data-field="output__header" onclick="copyCode(this)">Copy</button>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="output__body">BBCode</label>
+									</div>
+									<div class="col-9 col-lg-10">
+										<textarea class="form-control" rows="10" id="output__body"></textarea>
+									</div>
+									<div class="col-3 col-lg-2 d-flex align-items-center">
+										<button class="btn btn-outline-secondary" type="button" data-field="output__body" onclick="copyCode(this)">Copy</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.su/lspd/','_blank')">Create PQE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script>
+		String.prototype.capitalize = function () {
+            return this.replace( /(^|\s)([a-z])/g , function(m,p1,p2){ return p1+p2.toUpperCase(); } );
+         }
+
+         function generatePostTitle() {
+             var name = document.getElementsByName("fullname")[0].value.toLowerCase().capitalize();
+             var h_output = "";
+             if (name) {
+                 h_output = h_output + name
+             }
+             return h_output;
+         }
+
+		function form2dict(form) {
+			var values = form.querySelectorAll('[name]');
+			var data = {};
+			for (var i = 0; i < values.length; i++) {
+				if (values[i].classList.contains('datepicker')) {
+					data[values[i].getAttribute('name')] = values[i].value.toUpperCase() || parseDate() || "N/A";
+				} else {
+					data[values[i].getAttribute('name')] = values[i].value || values[i].innerText || 'N/A';
+				}
+			}
+			return data;
+		}
+
+		MicroModal.init();
+		window.__bbcodeurl = '/bbforms/lspd/pqe.txt';
+		document.querySelector('[name="fullname"]').focus();   
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script>!function(e,t,a,n,c,m,r){e.ym=e.ym||function(){(e.ym.a=e.ym.a||[]).push(arguments)},e.ym.l=1*new Date,m=t.createElement(a),r=t.getElementsByTagName(a)[0],m.async=1,m.src="https://mc.yandex.ru/metrika/tag.js",r.parentNode.insertBefore(m,r)}(window,document,"script"),ym(54400579,"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0})</script>
+      <noscript><div><img src='https://mc.yandex.ru/watch/54400579' style='position:absolute;left:-9999px' alt=''></div></noscript>
+</body>
+</html>
