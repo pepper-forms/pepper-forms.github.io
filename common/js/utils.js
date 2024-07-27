@@ -148,13 +148,10 @@ function resizeImage(imgToResize, { w, h }) {
   const width = originalWidth * scaleFactor;
   const height = originalHeight * scaleFactor;
 
-  const offsetY = (h - height) / 2;
-  const offsetX = (w - width) / 2;
+  canvas.width = width;
+  canvas.height = height;
 
-  canvas.width = w;
-  canvas.height = h;
-
-  context.drawImage(imgToResize, offsetX, offsetY, width, height);
+  context.drawImage(imgToResize, 0, 0, width, height);
 
   return canvas;
 }
