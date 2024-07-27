@@ -110,13 +110,13 @@ function uploadImage(inputSelector, allowedSize = { w: 130, h: 150 }) {
         img.onload = () => {
           const resized = resizeImage(img, allowedSize);
           resized.toBlob((blob) => {
-            const name = `${new Date().toISOString()}.jpg`;
+            const name = `${new Date().toISOString()}.png`;
             const file = new File([blob], name, {
-              type: "image/jpeg",
+              type: "image/png",
             });
             const form = new FormData();
             form.append("image", file);
-            form.append("name", name.replace(".jpg", ""));
+            form.append("name", name.replace(".png", ""));
             fetch(
               "https://api.imgbb.com/1/upload?key=66a092dd69070ff59ef5dafc4e34f815",
               { method: "post", body: form }
@@ -126,7 +126,7 @@ function uploadImage(inputSelector, allowedSize = { w: 130, h: 150 }) {
                 resolve(data.data.display_url);
               })
               .catch(reject);
-          }, "image/jpeg");
+          }, "image/png");
         };
       },
       { once: true }
@@ -138,6 +138,7 @@ function uploadImage(inputSelector, allowedSize = { w: 130, h: 150 }) {
 function resizeImage(imgToResize, { w, h }) {
   const canvas = document.createElement("canvas");
   const context = canvas.getContext("2d");
+  context.globalAlpha = 0.0;
 
   const originalWidth = imgToResize.width;
   const originalHeight = imgToResize.height;
