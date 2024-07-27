@@ -3,7 +3,7 @@ LOS SANTOS POLICE DEPARTMENT
 [b]PRELIMINARY BACKGROUND APPLICATION[/b][/center]
 
 [hr][/hr]
-[background=#DCDCDC][imgalign=left]%text:profilePhoto%[/imgalign]
+[background=#DCDCDC][imgalign=left]https://i.imgur.com/o4C0LSu.png[/imgalign][imgalign=left]%text:profilePhoto%[/imgalign]
 [center][size=130][b] %text:fullname% [/b][/size]
 [size=85](ПОЛНОЕ ИМЯ)[/size][/center][/background]
 
