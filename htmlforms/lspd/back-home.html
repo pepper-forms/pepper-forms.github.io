@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="/common/css/micromodal.css">
       <script src="/common/js/micromodal.min.js"></script>
       <script src="/common/js/utils.js"></script>
-      <title>Reinstatement Program - LSPD</title>
+      <title>Back Home Program - LSPD</title>
    </head>
    <body>
 
@@ -23,42 +23,37 @@
         <table width="100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ИМЯ ПЕРСОНАЖА:</span>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НИК ПЕРСОНАЖА:</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="name" placeholder="Name" autocomplete="off" />
+                            <input type="text" name="nickname" placeholder="Name" autocomplete="off" />
                         </div>
                     </td>
-                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФАМИЛИЯ ПЕРСОНАЖА:</span>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ООС НИКНЕЙМ:</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="surname" placeholder="Surname" autocomplete="off" />
-                        </div>
-                    </td>
-                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШ NICKNAME:</span>
-                        <br>
-                        <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="nickname" placeholder="Nickname или форумный ник" autocomplete="off" />
+                            <input type="text" name="ooc_name" placeholder="Nickname или форумный ник" autocomplete="off" />
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
         <br>
-        <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШИ ИНТЕРЕСНЫЕ РОЛИ, ДАТА КОГДА ВЫ ИГРАЛИ И СЕРВЕР:</span>
+        <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ФРАКЦИИ В КОТОРЫХ ВЫ СОСТОЯЛИ:</span>
         <br>
         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
-            <textarea name="roles" placeholder="1. Какая роль. Когда. На каком сервере.
-2. Какая роль. Когда. На каком сервере.
-3. и т.д." ></textarea>
+            <textarea name="roles" placeholder="Проект, Никнейм, Фракция, Лидер, Дата, Причина ухода
+Проект, Никнейм, Фракция, Лидер, Дата, Причина ухода
+Проект, Никнейм, Фракция, Лидер, Дата, Причина ухода
+            " ></textarea>
         </div>
-        <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЧТО ВЫ ПЛАНИРУЕТЕ ИГРАТЬ У НАС, ОПИСАНИЕ:</span>
+        <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПЛАНЫ НА БУДУЩЕГО ПЕРСОНАЖА, ОПИСАНИЕ:</span>
         <br>
         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px;">
-            <textarea name="role" placeholder="Краткое описание роли" style="height: 60px"></textarea>
+            <textarea name="role" placeholder="Краткое описание планов/роли" style="height: 60px"></textarea>
             <span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЛНОЕ ОПИСАНИЕ ПЕРСОНАЖА:</span>
         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
-                <textarea name="role_ext" placeholder="Подробное описание (квента)"></textarea>
+                <textarea name="role_ext" placeholder="Подробное описание персонажа (квента)"></textarea>
             </div>
         </div>
         <br>
@@ -66,22 +61,24 @@
         <table width="100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА VK:</span>
+                    <td style="vertical-align: top; width:26%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА ФОРУМНЫЙ АККАУНТ
+                        (G-RP):</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="vkurl" placeholder="vk.com/ваш_айди" />
+                            <input type="text" name="grp" placeholder="https://forum.gambit-rp.ru/..." />
                         </div>
                     </td>
-                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">АЙДИ ВАШЕГО АККАУНТА НА ГАМБИТЕ:</span>
+                    <td style="vertical-align: top; width:26%; "><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НЕОБРАБОТАННЫЙ СКРИНШОТ ДВУХФАКТОРНОЙ ЗАЩИТЫ (TG/GOOGLE):</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="gid" placeholder="Номер аккаунта тут g-rp.su/profile" />
+                            <input type="text" name="2fa" placeholder="https://imgur.com/..." />
                         </div>
                     </td>
-                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ВАШ ВОЗРАСТ:</span>
+                    <td style="vertical-align: top; width:26%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">НЕОБРАБОТАННЫЙ СКРИНШОТ
+                        UCP:</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="age" placeholder="Возраст (ООС)" />
+                            <input type="text" name="ucp" placeholder="https://imgur.com/..." />
                         </div>
                     </td>
                 </tr>
@@ -91,45 +88,43 @@
         <table width="100%">
             <tbody>
                 <tr>
-                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА ФОРУМНЫЙ АККАУНТ (G-RP):</span>
+                    <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ССЫЛКА НА СТРАНИЦУ ВКОНТАКТЕ:</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="gurl" placeholder="forum.g-rp.su/members/..." />
+                            <input type="text" name="vk" placeholder="https:/vk.com/..." />
                         </div>
                     </td>
-                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">СКРИНШОТ UCP (+КВЕНТА):</span>
+                    <td style="vertical-align: top; width:50%; padding-left:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ЛОГИН DISCORD:</span>
                         <br>
                         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-                            <input type="text" name="ucp" placeholder="cсылка на изображение" />
+                            <input type="text" name="discord" placeholder="pepper" />
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
         <br>
-        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (ССЫЛКИ НА СС):</span></span>
+        <br><span style="font-size: 90%; line-height: 116%;"><span style="font-weight: bold">ДОКАЗАТЕЛЬСТВА ВАШЕЙ ИГРЫ (СС, НЕОБЯЗАТЕЛЬНО ЗА КОПОВ):</span></span>
         <br>
         <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px; margin-right: 10px">
-            <textarea name="ss" placeholder="Cсылки на СС. Каждую на новой строке. Пример:
-https://i.imgur.com/ayZzs6d.png
-https://www.upload.ee/image/997443.png" ></textarea>
+            <textarea name="ss" placeholder="Каждая ссылка - новая строка
+ссылка
+ссылка
+    ..." ></textarea>
         </div>
         <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">ПОЖЕЛАНИЯ:</span>
         <br>
         <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
-            <input type="text" name="wishes" placeholder="Должность, отдел" />
+            <input type="text" name="wishes" placeholder="Звание, отдел" />
         </div>
         <br>
         <br><span style="font-size: 85%; line-height: 116%;"><span style="font-weight: bold">СОГЛАШЕНИЕ</span></span>
         <br>
-        <br><b>1.</b> Я ознакомлен с разделом "Часто задаваемые вопросы". 
-        <br><b>2.</b> Я понимаю, что при одобрении моего заявления, я попаду на испытательный срок. 
-        <br><b>3.</b> Я соглашаюсь, что если покину фракцию в течении 7 дней, то буду занесен в черный список (ЧС) фракции без права выхода. 
-        <br><b>4.</b> Я понимаю, что не все мои перечисленные пожелания могут быть удовлетворены и всё равно соглашаюсь играть. 
-        <br><b>5.</b> Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин. 
-        <br><b>6.</b> Я понимаю, что в случае слива любой информации с форумов сообщества LS-ES я буду занесен в черный список LS-ES.
-        <br><b>7.</b> В случае одобрения, я обязуюсь изучить всю информацию на форуме (включая мануал и хендбук) и соглашаюсь с тем, что могу быть уволен за несоблюдение мануала фракции. 
-        <br><b>8.</b> Я имею интерес в создании топика своего персонажа и дальнейшего развития своей роли.
+        <br><b>1.</b> Я ознакомлен(-а) с правилами подачи заявления в программу возвращения домой и условиями вступления во фракцию. 
+        <br><b>2.</b> Я соглашаюсь, что если покину фракцию в течении 14 дней, то буду занесен в черный список (ЧС) фракции без права выхода.
+        <br><b>3.</b> Я соглашаюсь, что мое заявление может быть отклонено без объяснения причин.
+        <br><b>4.</b> Я понимаю, что в случае слива любой информации с ресурсов фракции я буду занесен в черный список.
+        <br><b>5.</b> В случае одобрения, я обязуюсь изучить всю важную информацию фракции (руководства, правила фракции и т.д).
         <br>
         <br><span style="font-weight: bold; padding-bottom: 50px"><input type="checkbox" class="checkbox" name="checkbox" /> Я принимаю условия данного заявления</span>
         </span>
@@ -179,7 +174,7 @@ https://www.upload.ee/image/997443.png" ></textarea>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.online/ls/pd/posting.php?mode=post&f=51','_blank')">Create Application</button>
+                            <button type="button" class="btn btn-primary" onclick="window.open('https://sa-es.online/lspd/posting.php?mode=post&f=907','_blank')">Create Application</button>
                         </div>
                     </div>
                 </div>
@@ -192,13 +187,12 @@ https://www.upload.ee/image/997443.png" ></textarea>
          }
 
          function generatePostTitle() {
-             var name = document.getElementsByName("name")[0].value.capitalize();
-             var surname = document.getElementsByName("surname")[0].value.capitalize();
-             var nickname = document.getElementsByName("nickname")[0].value;
+             var name = document.getElementsByName("nickname")[0].value;
+             var nickname = document.getElementsByName("ooc_name")[0].value;
              var h_output = "";
              
-             if (name && surname && nickname) {
-                 h_output = "[BACK HOME] "  + name + " " + surname + " (" + nickname + ")"
+             if (name && nickname) {
+                 h_output = "[BACK HOME] "  + name + " (" + nickname + ")"
              }
 
              return h_output;
@@ -231,16 +225,16 @@ https://www.upload.ee/image/997443.png" ></textarea>
         }
 
          function prepare() {
-            var vk = document.getElementsByName("vkurl")[0].value;
-            var grp = document.getElementsByName("gurl")[0].value;
-            var ss = document.getElementsByName("ss")[0].value;
+            var grp = document.getElementsByName("grp")[0].value;
+            var twofa = document.getElementsByName("2fa")[0].value;
             var ucp = document.getElementsByName("ucp")[0].value;
+            var vk = document.getElementsByName("vk")[0].value;
+            var ss = document.getElementsByName("ss")[0].value;
 
-            if (vk) { document.getElementsByName("vkurl")[0].value = checkURLs(vk); }
-
-            if (grp) { document.getElementsByName("gurl")[0].value = checkURLs(grp); }
-
+            if (grp) { document.getElementsByName("grp")[0].value = checkURLs(grp); }
+            if (twofa) { document.getElementsByName("2fa")[0].value = checkURLs(twofa); }
             if (ucp) { document.getElementsByName("ucp")[0].value = checkURLs(ucp); }
+            if (vk) { document.getElementsByName("vk")[0].value = checkURLs(vk); }
 
             if (ss) {
                 var ssArray = ss.match(/[^\r\n]+/g);
@@ -279,8 +273,8 @@ https://www.upload.ee/image/997443.png" ></textarea>
         }
          
          MicroModal.init();
-         window.__bbcodeurl = '/bbforms/back_home.txt';
-         document.querySelector('[name="name"]').focus();   
+         window.__bbcodeurl = '/bbforms/lspd/back_home.txt';
+         document.querySelector('[name="nickname"]').focus();   
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
