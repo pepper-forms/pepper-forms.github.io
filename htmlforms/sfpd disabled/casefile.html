@@ -200,7 +200,7 @@ Rank - Name Surname
                                     src="/static/img/placeholder.png"
                                     id="mugshotimage1" 
                                         onclick="showGalleryModal().then(function(id) {
-                                        $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('#mugshotimage1').attr('src', `https://sa-es.online/shots/${id}.png`);
                                         $('[name=\'mugshot1\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
                                 <input type="hidden" name="mugshot1" class="mugshot" />
@@ -284,7 +284,7 @@ Rank - Name Surname
                                     src="/static/img/placeholder.png"
                                     id="mugshotimage2" 
                                         onclick="showGalleryModal().then(function(id) {
-                                        $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('#mugshotimage2').attr('src', `https://sa-es.online/shots/${id}.png`);
                                         $('[name=\'mugshot2\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
                                 <input type="hidden" name="mugshot2"  class="mugshot"/>
@@ -368,7 +368,7 @@ Rank - Name Surname
                                     src="/static/img/placeholder.png"
                                     id="mugshotimage3" 
                                         onclick="showGalleryModal().then(function(id) {
-                                        $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                        $('#mugshotimage3').attr('src', `https://sa-es.online/shots/${id}.png`);
                                         $('[name=\'mugshot3\']').val(id ? '[mugshot=' + id + ']' : '');
                                 })">
                                 <input type="hidden" name="mugshot3" class="mugshot" />
@@ -528,7 +528,7 @@ Rank - Name Surname
                                 <option value=" (11)15 "> (11)15. Политика осмотра местности и предположения </option>
                                 <option value=" (11)16 "> (11)16. Исправительные работы </option>
                 </select></div>
-                <a href="https://sa-es.su/sf/ch/viewtopic.php?f=768&t=4606" target="_blank">Уголовного кодекса штата Сан-Андрес</a>
+                <a href="https://sa-es.online/sf/ch/viewtopic.php?f=768&t=4606" target="_blank">Уголовного кодекса штата Сан-Андрес</a>
             . Немедленно открыть дело, приступить к его расследованию в установленном порядке.
             <br />
             <br />
@@ -730,7 +730,7 @@ Rank - Name Surname
     }
     function generateGalleryItem(id) {
         return `<div class="gallery-image-item" data-shotid="${id}">
-            <img src="https://sa-es.su/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
+            <img src="https://sa-es.online/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
             <p>${id}</p>
         </div>`
     }

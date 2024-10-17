@@ -292,7 +292,7 @@
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage1" onclick="showGalleryModal().then(function(id) {
-                                                    $('#mugshotimage1').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('#mugshotimage1').attr('src', `https://sa-es.online/shots/${id}.png`);
                                                     $('[name=\'mugshot1\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot1" class="mugshot" />
@@ -427,7 +427,7 @@
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage2" onclick="showGalleryModal().then(function(id) {
-                                                    $('#mugshotimage2').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('#mugshotimage2').attr('src', `https://sa-es.online/shots/${id}.png`);
                                                     $('[name=\'mugshot2\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot2" class="mugshot" />
@@ -563,7 +563,7 @@
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage3" onclick="showGalleryModal().then(function(id) {
-                                                    $('#mugshotimage3').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('#mugshotimage3').attr('src', `https://sa-es.online/shots/${id}.png`);
                                                     $('[name=\'mugshot3\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot3" class="mugshot" />
@@ -699,7 +699,7 @@
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage4" onclick="showGalleryModal().then(function(id) {
-                                                    $('#mugshotimage4').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('#mugshotimage4').attr('src', `https://sa-es.online/shots/${id}.png`);
                                                     $('[name=\'mugshot4\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot4" class="mugshot" />
@@ -835,7 +835,7 @@
                             </div>
                             <div class="col-5" style="float:right;padding:10px">
                                 <img style="max-width: 100%; cursor: pointer;" src="/static/img/placeholder.png" id="mugshotimage5" onclick="showGalleryModal().then(function(id) {
-                                                    $('#mugshotimage5').attr('src', `https://sa-es.su/shots/${id}.png`);
+                                                    $('#mugshotimage5').attr('src', `https://sa-es.online/shots/${id}.png`);
                                                     $('[name=\'mugshot5\']').val(id ? '[mug]' + id + '[/mug]' : '');
                                             })">
                                 <input type="hidden" name="mugshot5" class="mugshot" />
@@ -957,7 +957,7 @@
     function setPenals() {
         var penals = $('.custom-select :selected').map(function(i,v) {
             if ($(this).text() != 'Выберите статью') {
-                return 'ст. [url=https://sa-es.su/sf/ch/search.php?keywords=' + $(this).text() + '&t=4606]' + $(this).text() + '[/url] Уголовного Кодекса штата Сан-Андрес';  
+                return 'ст. [url=https://sa-es.online/sf/ch/search.php?keywords=' + $(this).text() + '&t=4606]' + $(this).text() + '[/url] Уголовного Кодекса штата Сан-Андрес';  
             } 
         }).toArray().join("\r\n");
 
@@ -1081,7 +1081,7 @@
 
     function generateGalleryItem(id) {
         return `<div class="gallery-image-item" data-shotid="${id}">
-            <img src="https://sa-es.su/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
+            <img src="https://sa-es.online/shots/${id}.png" alt="" onerror="deleteGalleryItem(${id})">
             <p>${id}</p>
         </div>`
     }

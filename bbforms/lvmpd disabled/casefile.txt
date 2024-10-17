@@ -7,4 +7,4 @@ INVESTIGATIVE SERVICES DIVISION[/b]
 [center][size=150][b]%text:casenum%[/b][/size]
 
 В отношении %text:regarding% в совершении преступления,
-предусмотренного ст. %text:pc% [url=https://sa-es.su/lv/ch/viewtopic.php?f=35&t=229&sid=c0d1e98a76c14a15889a1095d9a8caeb]Уголовного кодекса штата Сан-Андрес[/url][/center][/textarea]
+предусмотренного ст. %text:pc% [url=https://sa-es.online/lv/ch/viewtopic.php?f=35&t=229&sid=c0d1e98a76c14a15889a1095d9a8caeb]Уголовного кодекса штата Сан-Андрес[/url][/center][/textarea]
