@@ -12,7 +12,7 @@
     <script src="/common/js/micromodal.min.js"></script>
     <script src="/common/js/utils.js"></script>
 
-    <title>Incident Report Form - SAHP</title>
+    <title>Incident Report Form - LSPD</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                         <div align="left"> <br></div>
                     </td>
                     <td style="vertical-align: top; width:26%; color: rgb(0, 0, 0);">
-                        <div align="center"> SAN ANDREAS HIGHWAY PATROL<br> GOLDEN GATE DIVISION<br><span style="font-weight: bold">INCIDENT REPORT</span> #<span name="case_number">case_number</span></div>
+                        <div align="center"> LOS SANTOS POLICE DEPARTMENT<br><span style="font-weight: bold">INCIDENT REPORT</span> #<span name="case_number">case_number</span></div>
                     </td>
                     <td style="vertical-align: top; width:26%; padding-left:10px;"> <br>
                         <div align="right"><span style="font-size: 85%; line-height: 116%; color: rgb(0, 0, 0);">
@@ -91,12 +91,14 @@
                 <table width="100%">
                     <tbody>
                         <tr>
-                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Офис</span><br>
+                            <td style="vertical-align: top; width:50%; padding-right:10px;"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подрезделение</span><br>
                                 <div style="background-color:white; color: #555; border:1px solid #ccc; margin-right: 10px">
                                     <input type="text" name="officer_division" list="officer_division" placeholder="Выбрать или заполнить" />
                                     <datalist id="officer_division">
-                                        <option>San Fierro Area</option>
-                                        <option>Bayside Area</option>
+                                        <option>Southeast Community Police Station</option>
+                                        <option>Central Community Police Station</option>
+                                        <option>Vinewood Community Police Station</option>
+                                        <option>77th Street Community Police Station</option>
                                     </datalist>
                                 </div>
                             </td>
@@ -123,10 +125,10 @@
                     <div align="center">ИНФОРМАЦИЯ ОБ УЧАСТНИКАХ</div>
                 </span></span></div>
         <div style="border: 1px solid #000; padding: 5px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span style="color: #000000"><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Прочие офицеры на ситуации</span></span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="other_officers" placeholder="Полные имена, телефоны, адреса&#10;(( ссылки на патруль лог ))"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пострадавшие</span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="victims" placeholder="Полные имена, телефоны, адреса"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетели</span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="witnesses" placeholder="Полные имена, телефоны, адреса"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемые</span><br>
-            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="suspects" placeholder="Полные имена, телефоны, адреса"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Улики</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="other_officers" placeholder="Звания, полные имена, телефоны"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Пострадавшие</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="victims" placeholder="Звания, полные имена, телефоны"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Свидетели</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="witnesses" placeholder="Звания, полные имена, телефоны"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Подозреваемые</span><br>
+            <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="suspects" placeholder="Звания, полные имена, телефоны"></textarea></div> <br><span style="font-weight: bold; font-size: 90%; line-height: 116%;">Улики</span><br>
             <div style="background-color:white; border:1px solid #ccc; color: #555555; padding: 5px"><textarea name="evidences" placeholder="Перечислить"></textarea></div>
         </div><br>
         <div style="border-bottom: 1px solid #000; padding: 1px;"></div> <br>
@@ -224,7 +226,7 @@
         }
 
         MicroModal.init();
-        window.__bbcodeurl = '/bbforms/sahp/incident_report.txt';
+        window.__bbcodeurl = '/bbforms/lspd/incident_report.txt';
         document.querySelector('[name="today"]').innerText = parseDate();
         document.querySelector('[name="case_number"]').innerText = Math.floor(Date.now() / 60000);
         document.querySelector('[name="type_of_incident"]').focus();   
